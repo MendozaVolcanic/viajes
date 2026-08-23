@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Panoramas — calendario de viajes</title>
+<meta name="description" content="Calendario y línea de tiempo de las mejores ventanas para viajes, fiestas y fenómenos naturales en Chile y el Cono Sur.">
+<link rel="stylesheet" href="assets/styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌋</text></svg>">
+</head>
+<body>
+
+<header class="top">
+  <div class="top-in">
+    <div class="brand">
+      <h1>Panoramas</h1>
+      <span class="sub">Ventanas óptimas para viajes, fiestas y fenómenos naturales · base Temuco · 2026–2030</span>
+    </div>
+    <nav class="tabs">
+      <button data-v="plan">Plan por año</button>
+      <button data-v="tl" class="on">Línea de tiempo</button>
+      <button data-v="cal">Calendario</button>
+      <button data-v="fichas">Fichas</button>
+      <button data-v="conf">Choques de fecha</button>
+      <button data-v="parques">Parques nacionales</button>
+      <button data-v="como">Cómo se usa</button>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="filters" id="filters"></div>
+
+  <section class="view" id="v-plan">
+    <div id="plan"></div>
+  </section>
+
+  <section class="view on" id="v-tl">
+    <div class="tl-wrap"><div class="tl" id="tl"></div></div>
+    <div class="legend">
+      <span><i style="background:#eab308"></i>línea amarilla = feriado en Chile</span>
+      <span><i style="background:#ef4444"></i>línea roja = hoy</span>
+      <span><i style="background:#fff"></i>barra con borde blanco = peak de la ventana</span>
+      <span>barra tenue = temporada completa · punto = fecha de un solo día</span>
+    </div>
+    <p class="note">Arrastra horizontalmente para moverte en el tiempo. Cada barra es una ventana en que el panorama vale la pena;
+      la barra con borde es el peak. Haz clic en cualquier barra o nombre para ver la ficha completa.</p>
+  </section>
+
+  <section class="view" id="v-cal">
+    <div class="cal-years" id="cal-years"></div>
+    <div class="cal-grid" id="cal"></div>
+    <p class="note">Días amarillos = feriados legales de Chile. Los puntos bajo cada día indican cuántos panoramas están
+      en ventana ese día, por color de categoría. Los feriados 2028 son calculados, no oficiales: verificar antes de comprar pasajes.</p>
+  </section>
+
+  <section class="view" id="v-fichas">
+    <div class="cards" id="cards"></div>
+  </section>
+
+  <section class="view" id="v-conf">
+    <h2 style="margin-bottom:6px;font-size:16px">Fechas que se pisan</h2>
+    <p class="note" style="margin:0 0 16px">Ventanas de prioridad 4 o 5 que se solapan y que duran menos de 40 días,
+      es decir, casos en que hay que elegir. El criterio para decidir es simple: lo que se repite todos los años cede
+      ante lo que ocurre una sola vez.</p>
+    <div id="conf"></div>
+  </section>
+
+  <section class="view" id="v-parques">
+    <div id="parques"></div>
+  </section>
+
+  <section class="view" id="v-como">
+    <div style="max-width:80ch;display:flex;flex-direction:column;gap:16px">
+      <h2 style="font-size:16px">Cómo está armado esto</h2>
+      <p class="p">Cada panorama tiene una <b>ventana</b>, no una fecha. Hay cuatro maneras de saber cuándo cae, y el visor
+        las distingue porque no todas merecen la misma confianza:</p>
+      <ul class="p" style="padding-left:20px;display:flex;flex-direction:column;gap:6px">
+        <li><b>Fecha fija</b> — efeméride astronómica o fecha oficial confirmada. No se mueve. Ejemplo: el eclipse del 6 de febrero de 2027.</li>
+        <li><b>Fecha calculada</b> — atada a un ciclo que se puede computar (Pascua, solsticio). Los carnavales de 2028 en adelante son de este tipo: calculados, no publicados.</li>
+        <li><b>Fecha por confirmar</b> — se repite todos los años en la misma época, pero cada edición anuncia su fecha con pocos meses. Antes de comprar pasajes hay que verificar.</li>
+        <li><b>Depende del clima</b> — no hay fecha: hay probabilidad. El desierto florido, la floración de otoño, el espejo de Uyuni. La ventana es un pronóstico, no un compromiso.</li>
+      </ul>
+      <h2 style="font-size:16px;margin-top:8px">Cómo agregar o corregir un panorama</h2>
+      <p class="p">Todo vive en <code>data/eventos.json</code>. Un evento nuevo necesita, como mínimo:
+        <code>id</code>, <code>nombre</code>, <code>cat</code>, <code>pais</code>, <code>zona</code>, <code>dur</code>,
+        <code>dias</code>, <code>prio</code>, <code>certeza</code>, <code>porque</code>, y una de dos formas de fecha:
+        <code>fechas</code> (lista de ventanas explícitas con <code>ini</code>/<code>fin</code>) o
+        <code>temporada</code> (<code>ini</code>/<code>fin</code> en formato <code>MM-DD</code>, que el visor repite
+        cada año automáticamente, incluso si cruza el año nuevo).</p>
+      <p class="p">Los feriados salen de <code>data/feriados.json</code> y los parques de <code>data/parques.json</code>.
+        No hay build ni dependencias: se edita el JSON, se hace commit y GitHub Pages lo publica.</p>
+      <h2 style="font-size:16px;margin-top:8px">Lo que este visor no sabe</h2>
+      <p class="p">No conoce tus días de vacaciones disponibles, ni tu presupuesto, ni los turnos de OVDAS. Tampoco reserva nada.
+        Es una herramienta para no perder ventanas por no haberlas visto a tiempo, que es la forma en que se pierden casi todas.</p>
+      <p class="note" id="fuentes-note"></p>
+    </div>
+  </section>
+</main>
+
+<div class="mask" id="mask"><div class="modal" id="modal"></div></div>
+<script src="assets/app.js"></script>
+</body>
+</html>

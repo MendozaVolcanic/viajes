@@ -1,0 +1,713 @@
+{
+  "_meta": {
+    "version": "1.0",
+    "actualizado": "2026-08-23",
+    "base": "Temuco (OVDAS)",
+    "certeza": {
+      "fija": "Fecha confirmada por fuente oficial o efemeride astronomica. No se mueve.",
+      "movil": "Fecha calculable pero atada a un ciclo (Pascua, solsticio). Calculada, no publicada aun.",
+      "estimada": "Se repite todos los anos en la misma epoca, pero la fecha exacta de cada edicion se anuncia con pocos meses. VERIFICAR antes de comprar.",
+      "clima": "No hay fecha: depende de lluvia, nieve o floracion. La ventana es probabilistica."
+    },
+    "duracion": {
+      "finde": "2-3 dias, sale desde Temuco sin pedir vacaciones",
+      "escapada": "3-6 dias, un feriado largo o pocos dias de vacaciones",
+      "grande": "7-16 dias, el viaje ancla del ano"
+    }
+  },
+
+  "categorias": {
+    "astro":   { "n": "Astronomico",   "c": "#8b5cf6" },
+    "geo":     { "n": "Geologia",      "c": "#f97316" },
+    "paisaje": { "n": "Paisaje",       "c": "#22c55e" },
+    "cultural":{ "n": "Cultural",      "c": "#ec4899" },
+    "gastro":  { "n": "Costumbrista",  "c": "#eab308" },
+    "roadtrip":{ "n": "Road trip",     "c": "#3b82f6" },
+    "fauna":   { "n": "Fauna",         "c": "#14b8a6" }
+  },
+
+  "eventos": [
+
+    {
+      "id": "eclipse-anular-2027",
+      "nombre": "Eclipse anular — anillo de fuego",
+      "cat": "astro",
+      "pais": "Chile",
+      "zona": "Los Lagos / Aysen (Futaleufu, Palena, Chaiten, Quellon, Melinka)",
+      "lat": -43.18, "lon": -71.86,
+      "dur": "escapada", "dias": [4, 7], "prio": 5, "certeza": "fija",
+      "fechas": [{ "ini": "2027-02-06", "fin": "2027-02-06", "tag": "Anularidad ~11:46-11:59 h" }],
+      "porque": "Es el unico evento solar de primera magnitud que toca suelo chileno en el horizonte de este visor. La franja de anularidad tiene ~130 km de ancho: entra por el Pacifico, cruza el sur de Los Lagos y el norte de Aysen, y sigue por El Bolson, Esquel y Trevelin hasta Buenos Aires. Futaleufu queda entre los mejores puntos, con hasta 7 min 29 s de anillo. Fuera de esa franja se ve solo un parcial. Despues de este, lo proximo para el pais es un parcial en el extremo austral el 5-dic-2029.",
+      "logistica": "Dos accesos desde Temuco. (A) Futaleufu por Argentina: paso Mamuil Malal o Cardenal Samore hasta Esquel y cruce en Futaleufu; ~2 dias de manejo. (B) Chiloe sur / Quellon por Ruta 5 + Chacao; mas simple pero costero. Criterio meteorologico: en febrero la costa de Chiloe y Melinka tienen mucha probabilidad de nubosidad marina; los valles interiores a sotavento (Futaleufu, Palena, Trevelin) estan en sombra de precipitacion y ofrecen mejor probabilidad de cielo abierto. Alojamiento: reservar con >12 meses. Plan B movil: tener auto y un punto alternativo dentro de la franja a <2 h.",
+      "alerta": "Choca de frente con el Carnaval de Oruro, el Carnaval de Rio y la Tapati Rapa Nui. Los tres se repiten todos los anos; el eclipse no.",
+      "fuentes": [
+        { "t": "BioBioChile — recorrido del eclipse", "u": "https://www.biobiochile.cl/noticias/servicios/toma-nota/2026/02/17/chile-tendra-un-eclipse-solar-anular-en-2027-revisa-donde-se-vera-y-cual-sera-el-recorrido-del-sol.shtml" },
+        { "t": "TVN — horarios y zonas", "u": "https://www.tvn.cl/noticias/tendencias/eclipse-solar-anular-de-2027-chile-sera-protagonista-del-anillo-de-fuego" },
+        { "t": "TheSkyLive — circunstancias locales", "u": "https://theskylive.com/solar-eclipse?id=2027-02-06&cc=CL" }
+      ]
+    },
+
+    {
+      "id": "desierto-florido-2026",
+      "nombre": "Desierto Florido 2026",
+      "cat": "paisaje",
+      "pais": "Chile",
+      "zona": "Atacama (Chanaral, Caldera, Copiapo, Vallenar, Huasco, Freirina)",
+      "lat": -28.47, "lon": -70.98,
+      "dur": "escapada", "dias": [4, 6], "prio": 5, "certeza": "clima",
+      "fechas": [
+        { "ini": "2026-08-20", "fin": "2026-09-05", "tag": "Primeras floraciones" },
+        { "ini": "2026-09-05", "fin": "2026-11-10", "tag": "Temporada" },
+        { "ini": "2026-10-01", "fin": "2026-10-25", "tag": "PEAK: maxima diversidad y abundancia" }
+      ],
+      "porque": "Las lluvias inusuales de agosto de 2026 en la Region de Atacama hacen prever un evento de gran magnitud, con hasta ~15.000 km2 de superficie florida. Un desierto florido de esta escala no es anual: responde a anomalias de precipitacion, historicamente asociadas a fases calidas de ENSO. Si la proyeccion se cumple, esta es la mejor ventana de los proximos anos y esta a 6 semanas.",
+      "logistica": "Vuelo Temuco/Santiago → Copiapo (Desierto de Atacama, CPO) y auto arrendado, o Ruta 5 en auto. Nucleos: PN Llanos de Challe (costa de Huasco/Freirina), PN Desierto Florido, sector Travesia (Copiapo), costa de Caldera. Regla de oro: la floracion se mueve semana a semana, asi que decidir el destino exacto 7-10 dias antes con los reportes regionales, no meses antes. Los pasajes si conviene comprarlos ya; el itinerario fino, no.",
+      "alerta": "Es la unica ventana del 2026 que no se puede postergar. Si esperas a 2027 puede que no haya lluvia.",
+      "fuentes": [
+        { "t": "Atacama prepara la temporada 2026 (coordinacion regional)", "u": "https://www.atacamanoticias.cl/2026/08/21/atacama-prepara-una-gran-temporada-del-desierto-florido-2026-con-coordinacion-regional-promocion-turistica-y-puntos-de-avistamiento/" },
+        { "t": "Chile es Tuyo — donde y cuando", "u": "https://chileestuyo.cl/desierto-florido-en-chile-donde-ver-el-fenomeno-natural/" }
+      ]
+    },
+
+    {
+      "id": "longaniza-chillan",
+      "nombre": "Fiesta de la Longaniza de Chillan",
+      "cat": "gastro",
+      "pais": "Chile",
+      "zona": "Nuble — Plaza de Armas de Chillan",
+      "lat": -36.606, "lon": -72.103,
+      "dur": "finde", "dias": [2, 3], "prio": 4, "certeza": "estimada",
+      "fechas": [{ "ini": "2026-08-21", "fin": "2026-08-23", "tag": "Edicion 2026 (confirmada)" }],
+      "temporada": { "ini": "08-15", "fin": "08-25", "nota": "Se hace en la segunda quincena de agosto, en torno al feriado local del 20 de agosto (Natalicio de O'Higgins, feriado solo en Chillan y Chillan Viejo)." },
+      "porque": "Entrada liberada, espectaculos gratis, ~281 expositores en 2026 (77% de Chillan; el resto cecineros, artesanos, vinateros y cerveceros de otras comunas). Taste Atlas la puso entre los 15 mejores eventos gastronomicos del mundo para visitar en agosto. Es la fiesta costumbrista de mejor relacion distancia/calidad desde Temuco.",
+      "logistica": "Ruta 5 Norte desde Temuco, ~4-4,5 h a Chillan. Se hace en un fin de semana sin pedir dias. El feriado del viernes 20 de agosto rige solo en Chillan y Chillan Viejo, no para ti, pero explica por que la fiesta cae ahi.",
+      "alerta": "La edicion 2026 termina HOY domingo 23 de agosto. Si no alcanzas, la proxima es agosto de 2027.",
+      "fuentes": [
+        { "t": "Sitio oficial — Municipalidad de Chillan", "u": "https://www.municipalidadchillan.cl/fiestadelalonganiza/" },
+        { "t": "CNN Chile — programacion 2026", "u": "https://www.cnnchile.com/cultura/fiesta-de-la-longaniza-de-chillan-2026-se-realizara-el-21-22-y-23-de-agosto-revisa-la-programacion/" }
+      ]
+    },
+
+    {
+      "id": "carnaval-oruro",
+      "nombre": "Carnaval de Oruro",
+      "cat": "cultural",
+      "pais": "Bolivia",
+      "zona": "Oruro, altiplano boliviano (3.700 m)",
+      "lat": -17.97, "lon": -67.11,
+      "dur": "escapada", "dias": [4, 6], "prio": 5, "certeza": "movil",
+      "fechas": [
+        { "ini": "2027-02-04", "fin": "2027-02-09", "tag": "Sabado de Peregrinacion 6-feb; Corso 7-feb" },
+        { "ini": "2028-02-26", "fin": "2028-02-29", "tag": "Calculado desde Pascua 16-abr-2028" },
+        { "ini": "2029-02-10", "fin": "2029-02-13", "tag": "Calculado desde Pascua 1-abr-2029" },
+        { "ini": "2030-03-02", "fin": "2030-03-05", "tag": "Calculado desde Pascua 21-abr-2030" }
+      ],
+      "porque": "Obra Maestra del Patrimonio Oral e Intangible de la Humanidad (UNESCO). ~40 fraternidades bailando 4 km hasta el Santuario del Socavon durante ~20 horas continuas. El Socavon es literalmente una bocamina: la fiesta nace del sincretismo entre la Virgen de la Candelaria y el Tio de la mina, la devocion minera del altiplano. Para un geologo es una lectura directa de como la mineria configuro la cultura andina.",
+      "logistica": "Vuelo a La Paz y bus/tren a Oruro (~3-4 h), o via Iquique-Oruro por paso Colchane en bus. Altura 3.700 m: llegar 1-2 dias antes. Palcos y alojamiento se venden con meses de anticipacion. Combina naturalmente con Uyuni (temporada de espejo en febrero) en un solo viaje.",
+      "alerta": "En 2027 cae exactamente el mismo fin de semana que el eclipse anular chileno y que el Carnaval de Rio. El Carnaval se repite cada ano; el eclipse no. Si el objetivo es Oruro, la edicion natural es la de 2028.",
+      "fuentes": [
+        { "t": "Bolivia Turismo — Carnaval de Oruro 2027", "u": "https://www.boliviaturismo.com.bo/carnaval-oruro-2027.html" },
+        { "t": "Carnaval de Oruro (oficial)", "u": "https://www.carnavaloruro.net/" }
+      ]
+    },
+
+    {
+      "id": "carnaval-brasil",
+      "nombre": "Carnaval de Brasil (Rio / Salvador / Olinda)",
+      "cat": "cultural",
+      "pais": "Brasil",
+      "zona": "Rio de Janeiro, Salvador de Bahia, Olinda-Recife",
+      "lat": -22.91, "lon": -43.20,
+      "dur": "grande", "dias": [7, 12], "prio": 4, "certeza": "movil",
+      "fechas": [
+        { "ini": "2027-02-05", "fin": "2027-02-10", "tag": "Rio: Grupo Especial 7, 8 y 9-feb; Desfile de Campeones 10-feb" },
+        { "ini": "2028-02-26", "fin": "2028-03-01", "tag": "Calculado (Martes de Carnaval 29-feb-2028)" },
+        { "ini": "2029-02-10", "fin": "2029-02-14", "tag": "Calculado (Martes de Carnaval 13-feb-2029)" },
+        { "ini": "2030-03-02", "fin": "2030-03-06", "tag": "Calculado (Martes de Carnaval 5-mar-2030)" }
+      ],
+      "porque": "Tres carnavales distintos, no uno. Rio es el espectaculo producido del Sambodromo; Salvador es el trio electrico en la calle; Olinda-Recife es el carnaval popular y gratuito de los bonecos gigantes, el frevo y los maracatus en calles de adoquin. Si lo que te tira es la actividad humana mas que el show, Olinda y Salvador rinden mas que Rio.",
+      "logistica": "Vuelo Santiago → Rio/Salvador/Recife. Pasajes y alojamiento suben 3-5x en carnaval: comprar con 8-10 meses. Un viaje de 10-12 dias permite carnaval + una segunda pata (Chapada Diamantina desde Salvador es geologicamente potente: cuarcitas proterozoicas, cavernas y cascadas).",
+      "alerta": "Mismo choque de febrero 2027 que Oruro y el eclipse.",
+      "fuentes": [
+        { "t": "Fechas Carnaval de Rio 2027", "u": "https://www.riocarnaval.org/es/fechas-de-carnaval/fechas" },
+        { "t": "Carnavales de Brasil 2027", "u": "https://www.carnavales-brasil.com/brasil/carnaval/carnaval-2027" }
+      ]
+    },
+
+    {
+      "id": "tapati-rapa-nui",
+      "nombre": "Tapati Rapa Nui",
+      "cat": "cultural",
+      "pais": "Chile",
+      "zona": "Isla de Pascua / Rapa Nui",
+      "lat": -27.12, "lon": -109.36,
+      "dur": "grande", "dias": [7, 10], "prio": 5, "certeza": "estimada",
+      "fechas": [{ "ini": "2027-01-30", "fin": "2027-02-12", "tag": "59a edicion" }],
+      "temporada": { "ini": "01-28", "fin": "02-14", "nota": "Siempre en las dos primeras semanas de febrero, con arranque a fines de enero." },
+      "porque": "Dos alianzas de clanes compiten durante dos semanas en deportes ancestrales, canto, danza y artesania. El Haka Pei — bajar el cono de escoria del Maunga Pu'i tendido sobre troncos de platanera — se corre sobre un volcan. La isla completa es un edificio volcanico: Rano Kau, Rano Raraku (la cantera de toba donde estan los moai inconclusos), Terevaka. Es de los pocos lugares donde la geologia explica directamente la arqueologia: los moai son toba del Rano Raraku, los pukao escoria roja del Puna Pau.",
+      "logistica": "Vuelo LATAM Santiago → Mataveri, unico operador. En Tapati los pasajes y el alojamiento se agotan con meses. Minimo util: 7 dias (5 no alcanzan para la isla + la fiesta).",
+      "alerta": "Solapa con el eclipse del 6-feb-2027 y con los carnavales. La Tapati se repite todos los anos.",
+      "fuentes": [
+        { "t": "Imagina Rapa Nui — Tapati 2027", "u": "https://imaginarapanui.com/en/tapati-2027-dates-schedule-activities-rapa-nui-festival/" }
+      ]
+    },
+
+    {
+      "id": "carnaval-arica",
+      "nombre": "Carnaval Andino con la Fuerza del Sol",
+      "cat": "cultural",
+      "pais": "Chile",
+      "zona": "Arica",
+      "lat": -18.48, "lon": -70.31,
+      "dur": "escapada", "dias": [4, 6], "prio": 4, "certeza": "estimada",
+      "fechas": [{ "ini": "2027-01-22", "fin": "2027-01-24", "tag": "Edicion 2027 anunciada: 22, 23 y 24 de enero" }],
+      "temporada": { "ini": "01-20", "fin": "02-15", "nota": "Historicamente entre fines de enero y febrero; la fecha cambia por edicion." },
+      "porque": "El carnaval andino mas grande de Chile: mas de 10.000 bailarines en tres dias de morenada, tinku, caporales y diablada por la costanera. Es la version chilena del mismo complejo cultural de Oruro, a un tercio del costo y sin cruzar dos fronteras. Buena puerta de entrada si quieres calibrar cuanto te gusta el formato antes de comprometerte con Oruro.",
+      "logistica": "Vuelo a Arica. Se encadena perfecto con altiplano de Parinacota (Putre, Lauca, Chungara, Surire) en la misma escapada, pero ojo: enero es invierno boliviano, con lluvia y caminos de ripio complicados en el altiplano.",
+      "fuentes": [
+        { "t": "Sitio oficial Carnaval Andino", "u": "https://aricafuerzadelsol.cl/" },
+        { "t": "Confirmacion edicion enero 2027", "u": "https://tarapacaonline.cl/2026/02/02/confirmado-el-carnaval-andino-vuelve-a-arica-en-enero-2027-con-tres-dias-de-fiesta/" }
+      ]
+    },
+
+    {
+      "id": "carretera-austral",
+      "nombre": "Carretera Austral (Ruta 7)",
+      "cat": "roadtrip",
+      "pais": "Chile",
+      "zona": "Puerto Montt → Villa O'Higgins",
+      "lat": -46.0, "lon": -72.7,
+      "dur": "grande", "dias": [10, 16], "prio": 5, "certeza": "clima",
+      "temporada": { "ini": "12-01", "fin": "03-15", "peak": [{ "ini": "01-05", "fin": "02-28" }], "nota": "Ferries y transbordadores operan con frecuencia util solo en verano. Fuera de temporada los tramos Hornopiren-Caleta Gonzalo y Puerto Yungay-Rio Bravo se vuelven cuello de botella." },
+      "porque": "1.240 km sobre el frente volcanico austral y los Campos de Hielo. En un solo recorrido: el Chaiten (erupcion 2008, la primera riolitica del mundo observada en tiempo real), el Michinmahuida, el Hudson, los bosques de alerce, el lago General Carrera y las Capillas de Marmol. Es el road trip que mejor combina el paisaje grande con tu oficio.",
+      "logistica": "Idealmente 4x4 o alta camioneta; mucho ripio. Los transbordadores (Hornopiren-Leptepu y Puerto Yungay-Rio Bravo) se reservan con anticipacion en enero-febrero. Se puede hacer de ida por Chile y volver por Ruta 40 argentina, o al reves.",
+      "combo": ["eclipse-anular-2027", "capillas-marmol"],
+      "fuentes": []
+    },
+
+    {
+      "id": "campo-piedra-pomez",
+      "nombre": "Puna catamarquena: Campo de Piedra Pomez y Volcan Galan",
+      "cat": "geo",
+      "pais": "Argentina",
+      "zona": "Antofagasta de la Sierra, Catamarca",
+      "lat": -26.05, "lon": -67.42,
+      "dur": "grande", "dias": [8, 14], "prio": 5, "certeza": "clima",
+      "temporada": { "ini": "04-01", "fin": "06-15", "peak": [{ "ini": "04-15", "fin": "05-31" }], "nota": "Segunda ventana buena: septiembre a noviembre. Evitar enero-marzo (invierno boliviano, tormentas y rutas cortadas) y julio-agosto (frio extremo y viento blanco)." },
+      "porque": "Es probablemente el mejor destino geologico accesible del Cono Sur. El Campo de Piedra Pomez es un mar de ignimbrita pumicea esculpida por el viento sobre ~25 km2. A su lado esta la caldera del Cerro Galan, una de las calderas de colapso mas grandes del planeta (~35x25 km), fuente de la Ignimbrita Galan. Sumas ademas el Salar del Hombre Muerto (litio), el Cono de Arita, los volcanes Antofalla y Carachi Pampa, y campos de lavas recientes. Paisaje grande y geologia de primera linea en el mismo lugar.",
+      "logistica": "Base natural: Antofagasta de la Sierra (3.400 m), via Belen o via Salta-Cachi-Ruta 40. Requiere 4x4 y, para varios sectores, guia habilitada. Se puede armar como circuito Salta → Cachi → Ruta 40 → Antofagasta de la Sierra → Fiambala → Tinogasta, de 10-14 dias. Cargar combustible en cada oportunidad: hay tramos de 300+ km sin surtidor.",
+      "combo": ["quebrada-humahuaca", "ischigualasto-talampaya"],
+      "fuentes": []
+    },
+
+    {
+      "id": "ischigualasto-talampaya",
+      "nombre": "Ischigualasto (Valle de la Luna) y Talampaya",
+      "cat": "geo",
+      "pais": "Argentina",
+      "zona": "San Juan / La Rioja",
+      "lat": -30.16, "lon": -67.85,
+      "dur": "escapada", "dias": [4, 6], "prio": 5, "certeza": "clima",
+      "temporada": { "ini": "04-01", "fin": "06-15", "peak": [{ "ini": "04-15", "fin": "05-31" }], "nota": "Segunda ventana: septiembre-noviembre. Evitar el verano: el Valle de la Luna supera facil los 40 C." },
+      "porque": "Patrimonio de la Humanidad UNESCO por su valor paleontologico. La secuencia triasica continua del Ischigualasto es una de las pocas del mundo que registra el ascenso de los dinosaurios: aqui salieron el Eoraptor y el Herrerasaurus, entre los mas antiguos conocidos. Talampaya suma canones de arenisca permo-triasica de 150 m. Es un afloramiento que se lee como un libro de estratigrafia a escala 1:1.",
+      "logistica": "Vuelo a San Juan o La Rioja, o manejando por paso Cristo Redentor / Agua Negra. Ischigualasto ofrece recorridos con luna llena, que son la mejor visita del ano: consultar fechas en la administracion del parque, se agotan. Las noches de luna llena 2027 caen aproximadamente el 22-ene, 20-feb, 22-mar, 20-abr, 20-may, 18-jun, 18-jul, 17-ago, 15-sep, 15-oct, 13-nov y 13-dic: verificar con el parque, no todas se habilitan.",
+      "fuentes": []
+    },
+
+    {
+      "id": "quebrada-humahuaca",
+      "nombre": "Quebrada de Humahuaca, Hornocal y Salinas Grandes",
+      "cat": "geo",
+      "pais": "Argentina",
+      "zona": "Jujuy",
+      "lat": -23.20, "lon": -65.35,
+      "dur": "escapada", "dias": [5, 7], "prio": 4, "certeza": "clima",
+      "temporada": { "ini": "04-01", "fin": "06-15", "peak": [{ "ini": "04-15", "fin": "05-31" }], "nota": "Segunda ventana: septiembre-noviembre. Enero-marzo es temporada de lluvias en la quebrada." },
+      "porque": "Patrimonio de la Humanidad. El Cerro de los Siete Colores en Purmamarca y sobre todo el Hornocal (Serrania de Hornocal, 14 colores) son secciones estratigraficas expuestas donde cada banda es una unidad distinta — el color no es decorativo, es litologia y oxidacion. Salinas Grandes agrega la costra evaporitica y el contexto del triangulo del litio. Culturalmente la quebrada esta viva: carnaval de Tilcara y Humahuaca en febrero, con el desentierro del diablo.",
+      "logistica": "Vuelo a Salta o Jujuy, auto arrendado. El Hornocal exige 4x4 o excursion y se ve mejor de tarde. Base sugerida: Tilcara o Purmamarca. Se encadena con la Puna catamarquena si tienes 12+ dias.",
+      "combo": ["campo-piedra-pomez"],
+      "fuentes": []
+    },
+
+    {
+      "id": "uyuni-espejo",
+      "nombre": "Salar de Uyuni en espejo",
+      "cat": "geo",
+      "pais": "Bolivia",
+      "zona": "Potosi — Salar de Uyuni y Sud Lipez",
+      "lat": -20.13, "lon": -67.49,
+      "dur": "escapada", "dias": [4, 7], "prio": 4, "certeza": "clima",
+      "temporada": { "ini": "01-05", "fin": "03-31", "peak": [{ "ini": "01-20", "fin": "03-10" }], "nota": "El efecto espejo necesita una lamina de agua de pocos centimetros sobre la costra: solo ocurre durante y despues del invierno boliviano. Demasiada agua y cierran los accesos; muy poca y no refleja." },
+      "porque": "10.582 km2 de costra de halita sobre salmuera de litio, el mayor salar del mundo y la mayor reserva de litio conocida. En temporada de espejo el horizonte desaparece. Fuera de temporada (junio-agosto) el salar seco da los poligonos de desecacion y los mejores cielos nocturnos del altiplano.",
+      "logistica": "Se combina con el Carnaval de Oruro sin costo adicional de viaje (mismo altiplano, febrero). Tours de 3 dias Uyuni → Sud Lipez → Laguna Colorada / Laguna Verde → Sol de Manana, con salida opcional a San Pedro de Atacama.",
+      "combo": ["carnaval-oruro"],
+      "fuentes": []
+    },
+
+    {
+      "id": "altiplano-lauca",
+      "nombre": "Altiplano de Parinacota: Lauca, Chungara y Surire",
+      "cat": "paisaje",
+      "pais": "Chile",
+      "zona": "Arica y Parinacota",
+      "lat": -18.20, "lon": -69.15,
+      "dur": "escapada", "dias": [4, 6], "prio": 4, "certeza": "clima",
+      "temporada": { "ini": "04-01", "fin": "06-15", "peak": [{ "ini": "04-15", "fin": "05-31" }], "nota": "Abril-mayo es la mejor ventana: el invierno boliviano (enero-marzo) ya lleno bofedales y lagunas, pero las lluvias pararon y los caminos estan transitables. Septiembre-noviembre es la segunda opcion, mas seca." },
+      "porque": "Payachatas (Parinacota y Pomerape), lago Chungara a 4.517 m, el Salar de Surire con sus flamencos y las vegas de Caquena. Es el altiplano volcanico chileno en su expresion mas limpia, y esta a un vuelo de distancia. La Region de Arica suma su propio fin de semana largo el lunes 7 de junio (Asalto y Toma del Morro), feriado regional.",
+      "logistica": "Arica → Putre por Ruta 11 (subir con calma, se pasa de 0 a 3.500 m en 150 km). Dormir en Putre antes de subir a Chungara. Auto alto o 4x4 para Surire.",
+      "combo": ["carnaval-arica"],
+      "fuentes": []
+    },
+
+    {
+      "id": "torres-del-paine",
+      "nombre": "Torres del Paine",
+      "cat": "paisaje",
+      "pais": "Chile",
+      "zona": "Magallanes — Ultima Esperanza",
+      "lat": -50.94, "lon": -73.40,
+      "dur": "grande", "dias": [7, 12], "prio": 4, "certeza": "clima",
+      "temporada": { "ini": "10-15", "fin": "04-15", "peak": [{ "ini": "10-20", "fin": "11-30" }, { "ini": "03-10", "fin": "04-10" }], "nota": "Los peaks marcados son los hombros de temporada: menos viento y menos gente que en enero-febrero. Abril entrega ademas las lengas en color." },
+      "porque": "El macizo del Paine es un laccolito-plutonicos granitico del Mioceno intruido en pizarras y areniscas cretacicas: las Torres son granito, la corona oscura del Cuerno es la roca de caja sedimentaria. Esa relacion se ve a simple vista desde el mirador base, y es una de las secciones intrusivo-encajante mas fotogenicas del planeta.",
+      "logistica": "Vuelo a Punta Arenas o Puerto Natales. Refugios y campings del circuito W/O se reservan con 6-10 meses de anticipacion, y en temporada alta se agotan el mismo dia que abren. Si vas por el dia, base en Natales.",
+      "fuentes": []
+    },
+
+    {
+      "id": "chalten-perito-moreno",
+      "nombre": "El Chalten, Fitz Roy y Perito Moreno",
+      "cat": "paisaje",
+      "pais": "Argentina",
+      "zona": "Santa Cruz",
+      "lat": -49.33, "lon": -72.89,
+      "dur": "grande", "dias": [7, 12], "prio": 4, "certeza": "clima",
+      "temporada": { "ini": "11-01", "fin": "03-31", "peak": [{ "ini": "11-05", "fin": "12-15" }, { "ini": "03-01", "fin": "03-31" }] },
+      "porque": "Fitz Roy y Cerro Torre son otro plutum granitico miocenico, hermano del Paine, y el Perito Moreno es de los pocos glaciares del mundo en balance de masa aproximadamente estable, con desprendimientos frontales diarios y el ciclo de ruptura del puente de hielo. Se combina con el Paine en un solo viaje cruzando por Cerro Castillo.",
+      "logistica": "El Calafate por avion, o Ruta 40 en auto. El Chalten es caminata pura (Laguna de los Tres, Laguna Torre) y no requiere reserva de refugio.",
+      "combo": ["torres-del-paine"],
+      "fuentes": []
+    },
+
+    {
+      "id": "capillas-marmol",
+      "nombre": "Capillas de Marmol, lago General Carrera",
+      "cat": "geo",
+      "pais": "Chile",
+      "zona": "Aysen — Puerto Rio Tranquilo",
+      "lat": -46.63, "lon": -72.67,
+      "dur": "escapada", "dias": [3, 5], "prio": 3, "certeza": "clima",
+      "temporada": { "ini": "09-15", "fin": "04-15", "peak": [{ "ini": "09-20", "fin": "11-15" }], "nota": "En primavera temprana el lago tiene menos harina glaciar en suspension y el turquesa es mas nitido; ademas hay mucha menos gente que en enero." },
+      "porque": "Cavidades de disolucion y abrasion labradas por el oleaje en un cuerpo de marmol (caliza metamorfizada) del basamento. Es karst litoral en agua dulce, algo poco comun, y el color turquesa del lago viene de la harina glaciar en suspension — dos procesos distintos produciendo un solo efecto visual.",
+      "logistica": "Sobre la Carretera Austral, en Puerto Rio Tranquilo. Se navega en bote o kayak. Encaja dentro del road trip de la Ruta 7 sin desvio.",
+      "combo": ["carretera-austral"],
+      "fuentes": []
+    },
+
+    {
+      "id": "peninsula-valdes",
+      "nombre": "Peninsula Valdes: ballena franca austral",
+      "cat": "fauna",
+      "pais": "Argentina",
+      "zona": "Chubut — Puerto Madryn",
+      "lat": -42.50, "lon": -64.00,
+      "dur": "escapada", "dias": [4, 6], "prio": 4, "certeza": "clima",
+      "temporada": { "ini": "06-15", "fin": "12-15", "peak": [{ "ini": "09-01", "fin": "10-31" }], "nota": "El peak de septiembre-octubre concentra madres con crias. En Punta Norte, las orcas varando intencionalmente para cazar lobos marinos ocurren sobre todo en marzo-abril, otra ventana distinta." },
+      "porque": "Patrimonio de la Humanidad. La franca austral usa los golfos Nuevo y San Jose como area de cria; en el peak se ven desde la costa sin embarcarse. Es el avistamiento de cetaceos mas confiable de Sudamerica.",
+      "logistica": "Vuelo a Trelew, base en Puerto Madryn o Puerto Piramides. Se encadena con Punta Tombo (pinguinos de Magallanes, septiembre-marzo) y con el Bosque Petrificado.",
+      "fuentes": []
+    },
+
+    {
+      "id": "ojos-del-salado",
+      "nombre": "Ojos del Salado",
+      "cat": "geo",
+      "pais": "Chile",
+      "zona": "Atacama — frontera con Argentina",
+      "lat": -27.11, "lon": -68.54,
+      "dur": "escapada", "dias": [7, 12], "prio": 3, "certeza": "clima",
+      "temporada": { "ini": "11-15", "fin": "03-15", "peak": [{ "ini": "12-01", "fin": "02-28" }], "nota": "Requiere permiso DIFROL y logistica de aclimatacion de al menos una semana." },
+      "porque": "6.893 m: el volcan mas alto de la Tierra y el segundo pico mas alto de America. Alberga ademas el lago permanente mas alto del mundo en su crater. Es una expedicion, no un paseo, pero es alcanzable sin escalada tecnica salvo el ultimo tramo.",
+      "logistica": "Base en Copiapo. Permiso de frontera DIFROL con anticipacion. Aclimatacion progresiva en Laguna Santa Rosa → Laguna Verde → refugios Atacama y Tejos. Guia recomendada.",
+      "fuentes": []
+    },
+
+    {
+      "id": "atacama-astro",
+      "nombre": "Cielo de Atacama: Via Lactea y observatorios",
+      "cat": "astro",
+      "pais": "Chile",
+      "zona": "Antofagasta / Coquimbo — San Pedro, ALMA, Paranal, Elqui",
+      "lat": -22.91, "lon": -68.20,
+      "dur": "escapada", "dias": [4, 6], "prio": 4, "certeza": "clima",
+      "temporada": { "ini": "04-01", "fin": "09-30", "peak": [{ "ini": "05-15", "fin": "07-31" }], "nota": "El centro galactico esta alto y visible toda la noche en el invierno austral. Programar en luna nueva o cuarto menguante." },
+      "porque": "El mejor cielo del planeta y el mas cercano a casa. ALMA hace visitas publicas guiadas los fines de semana (con inscripcion previa y cupo limitado) y Paranal y La Silla tambien tienen visitas de sabado. Se combina con el Tatio, el Salar de Atacama, Piedras Rojas y Lascar.",
+      "logistica": "Vuelo a Calama. Las visitas a ALMA y Paranal se solicitan online con semanas o meses de anticipacion y son gratuitas. Verificar disponibilidad en los sitios de ESO y ALMA.",
+      "fuentes": []
+    },
+
+    {
+      "id": "geminidas",
+      "nombre": "Lluvia de meteoros Geminidas",
+      "cat": "astro",
+      "pais": "Chile",
+      "zona": "Cualquier cielo oscuro; ideal Atacama o cordillera de La Araucania",
+      "lat": -38.7, "lon": -71.5,
+      "dur": "finde", "dias": [2, 3], "prio": 3, "certeza": "fija",
+      "temporada": { "ini": "12-04", "fin": "12-17", "peak": [{ "ini": "12-13", "fin": "12-15" }], "nota": "El peak es del 13 al 14 de diciembre. La calidad del ano depende de la fase lunar: revisar antes de decidir." },
+      "porque": "La lluvia mas densa y confiable del ano (hasta ~120 meteoros/hora en cielo oscuro), y ademas la unica cuyo cuerpo progenitor no es un cometa sino el asteroide 3200 Phaethon. Cae en diciembre, con noches templadas en el hemisferio sur.",
+      "logistica": "No requiere viaje: basta salir de Temuco hacia cordillera (Conguillio, Malalcahuello, Villarrica) y alejarse de las luces. Version premium: Atacama o Elqui.",
+      "fuentes": []
+    },
+
+    {
+      "id": "eta-acuaridas",
+      "nombre": "Lluvia de meteoros Eta Acuaridas (cometa Halley)",
+      "cat": "astro",
+      "pais": "Chile",
+      "zona": "Cielo oscuro, mejor observadas desde el hemisferio sur",
+      "lat": -38.7, "lon": -71.5,
+      "dur": "finde", "dias": [1, 2], "prio": 2, "certeza": "fija",
+      "temporada": { "ini": "04-19", "fin": "05-28", "peak": [{ "ini": "05-05", "fin": "05-07" }] },
+      "porque": "Son restos del cometa 1P/Halley, y el hemisferio sur es el mejor lugar del mundo para verlas: el radiante en Acuario sube alto antes del amanecer. Meteoros rapidos con estelas persistentes.",
+      "logistica": "Madrugada, entre las 3 y el amanecer. Se hace desde la cordillera de La Araucania sin costo.",
+      "fuentes": []
+    },
+
+    {
+      "id": "eclipse-total-2027-egipto",
+      "nombre": "Eclipse total del 2-ago-2027 (el mas largo del siglo en tierra)",
+      "cat": "astro",
+      "pais": "Egipto / Libia / Espana",
+      "zona": "Luxor, Sur de Espana, Norte de Africa",
+      "lat": 25.69, "lon": 32.64,
+      "dur": "grande", "dias": [10, 15], "prio": 3, "certeza": "fija",
+      "fechas": [{ "ini": "2027-08-02", "fin": "2027-08-02", "tag": "Totalidad de hasta ~6 min 23 s cerca de Luxor" }],
+      "porque": "La totalidad mas larga sobre tierra firme de todo el siglo XXI, con probabilidad de cielo despejado altisima en el Alto Egipto en agosto. Si alguna vez vas a viajar al otro hemisferio por un eclipse, este es el evento.",
+      "logistica": "Requiere presupuesto y planificacion de un ano. Compite directamente con el eclipse chileno de febrero del mismo ano: hacer los dos en 2027 es caro.",
+      "fuentes": [
+        { "t": "Proximos eclipses solares 2027-2028", "u": "https://noticiasambientales.com/ciencia/proximos-eclipses-solares-fechas-clave-en-2027-y-2028-para-observacion/" }
+      ]
+    },
+
+    {
+      "id": "eclipse-parcial-2029",
+      "nombre": "Eclipse parcial del 5-dic-2029 (extremo austral)",
+      "cat": "astro",
+      "pais": "Chile / Argentina",
+      "zona": "Magallanes, Tierra del Fuego, Antartica",
+      "lat": -53.16, "lon": -70.91,
+      "dur": "escapada", "dias": [4, 6], "prio": 2, "certeza": "fija",
+      "fechas": [{ "ini": "2029-12-05", "fin": "2029-12-05", "tag": "Parcial visible desde el extremo sur" }],
+      "porque": "Es el siguiente evento solar chileno despues del anular de 2027, y es solo parcial. Sirve para dimensionar: si te pierdes febrero de 2027, la espera es larga.",
+      "logistica": "Punta Arenas o Ushuaia. Diciembre en Magallanes tiene dias muy largos y viento fuerte.",
+      "fuentes": [
+        { "t": "Wikipedia — Solar eclipse of December 5, 2029", "u": "https://en.wikipedia.org/wiki/Solar_eclipse_of_December_5,_2029" }
+      ]
+    },
+
+    {
+      "id": "la-tirana",
+      "nombre": "Fiesta de La Tirana",
+      "cat": "cultural",
+      "pais": "Chile",
+      "zona": "Tarapaca — pampa del Tamarugal",
+      "lat": -20.26, "lon": -69.64,
+      "dur": "escapada", "dias": [3, 5], "prio": 4, "certeza": "fija",
+      "temporada": { "ini": "07-12", "fin": "07-18", "peak": [{ "ini": "07-15", "fin": "07-16" }], "nota": "El dia central es el 16 de julio, Virgen del Carmen, que ademas es feriado nacional." },
+      "porque": "La fiesta religiosa popular mas grande de Chile: ~200 bailes religiosos y cientos de miles de peregrinos en un pueblo de menos de mil habitantes, en plena pampa salitrera. Misma raiz cultural que Oruro — diablada, morenada, sincretismo andino-minero — pero en territorio chileno y con el 16 de julio como feriado nacional a favor.",
+      "logistica": "Vuelo a Iquique + 70 km al interior. Alojamiento en Iquique o Pozo Almonte; en La Tirana no hay. Se encadena con Humberstone y Santa Laura (oficinas salitreras, Patrimonio UNESCO) y los geoglifos de Pintados.",
+      "fuentes": []
+    },
+
+    {
+      "id": "andacollo",
+      "nombre": "Fiesta Grande de Andacollo",
+      "cat": "cultural",
+      "pais": "Chile",
+      "zona": "Coquimbo",
+      "lat": -30.23, "lon": -71.09,
+      "dur": "finde", "dias": [2, 4], "prio": 3, "certeza": "fija",
+      "temporada": { "ini": "12-23", "fin": "12-27", "peak": [{ "ini": "12-25", "fin": "12-26" }] },
+      "porque": "Otra fiesta minera: Andacollo es un pueblo de oro y cobre, y la devocion a la Virgen del Rosario esta amarrada a la mineria desde la colonia. Los bailes chinos, con su flauta de caña y su paso saltado, son Patrimonio Inmaterial de la Humanidad y son especificamente chilenos, no andinos.",
+      "logistica": "Vuelo a La Serena + 55 km. Cae en Navidad, lo que puede ser a favor o en contra segun tus planes familiares.",
+      "fuentes": []
+    },
+
+    {
+      "id": "inti-raymi",
+      "nombre": "Inti Raymi",
+      "cat": "cultural",
+      "pais": "Peru",
+      "zona": "Cusco — Sacsayhuaman",
+      "lat": -13.51, "lon": -71.98,
+      "dur": "grande", "dias": [8, 12], "prio": 3, "certeza": "fija",
+      "temporada": { "ini": "06-24", "fin": "06-24", "nota": "Siempre el 24 de junio; las actividades cubren toda la semana previa." },
+      "porque": "La fiesta del sol en el solsticio de invierno austral, sobre los muros ciclopeos de Sacsayhuaman. Cae dentro del mismo bloque que el feriado chileno del 21 de junio (Dia Nacional de los Pueblos Indigenas), que tambien sigue el solsticio.",
+      "logistica": "Vuelo a Cusco. Se combina con Machu Picchu y el Valle Sagrado. Junio es plena temporada seca en la sierra peruana: el mejor clima del ano y tambien el mas caro.",
+      "fuentes": []
+    },
+
+    {
+      "id": "cuasimodo",
+      "nombre": "Cuasimodo (corrida de Cristo)",
+      "cat": "cultural",
+      "pais": "Chile",
+      "zona": "Zona central: Colina, Til Til, Renca, Melipilla, Colchagua",
+      "lat": -33.20, "lon": -70.68,
+      "dur": "finde", "dias": [1, 2], "prio": 2, "certeza": "movil",
+      "fechas": [
+        { "ini": "2027-04-04", "fin": "2027-04-04", "tag": "Domingo siguiente a Pascua (Pascua: 28-mar-2027)" },
+        { "ini": "2028-04-23", "fin": "2028-04-23", "tag": "Calculado (Pascua: 16-abr-2028)" },
+        { "ini": "2029-04-08", "fin": "2029-04-08", "tag": "Calculado (Pascua: 1-abr-2029)" }
+      ],
+      "porque": "Huasos a caballo escoltando al sacerdote que lleva la comunion a los enfermos, con esclavina y panuelo blanco en la cabeza. Es una tradicion chilena de campo que casi no se promociona turisticamente, exactamente el tipo de cosa que no aparece en las listas y que despues te dicen que era buenisima.",
+      "logistica": "Se hace en un dia desde Santiago. Cae siempre el domingo despues de Pascua de Resurreccion.",
+      "fuentes": []
+    },
+
+    {
+      "id": "costumbristas-chiloe",
+      "nombre": "Fiestas costumbristas de Chiloe",
+      "cat": "gastro",
+      "pais": "Chile",
+      "zona": "Archipielago de Chiloe (Dalcahue, Castro, Ancud, Quellon, Chonchi)",
+      "lat": -42.48, "lon": -73.77,
+      "dur": "escapada", "dias": [3, 5], "prio": 4, "certeza": "estimada",
+      "temporada": { "ini": "01-05", "fin": "02-28", "peak": [{ "ini": "01-15", "fin": "02-15" }], "nota": "Cada comuna tiene su propia fecha y se publican recien en diciembre. Hay decenas repartidas por todo el archipielago durante enero y febrero." },
+      "porque": "Curanto en hoyo, milcao, chapalele, minga y tiradura de casa. Es el circuito costumbrista mas denso de Chile y esta a 6 horas de Temuco. Ademas Chiloe tiene sus 16 iglesias de madera Patrimonio UNESCO, un arte de carpinteria de ribera que se explica por la geografia insular.",
+      "logistica": "Ruta 5 + transbordador en Chacao (o el nuevo puente, segun estado de la obra). Conviene revisar el calendario de fiestas costumbristas de cada municipalidad en diciembre y armar el recorrido en torno a 2-3 de ellas.",
+      "combo": ["eclipse-anular-2027"],
+      "fuentes": []
+    },
+
+    {
+      "id": "semanas-musicales-frutillar",
+      "nombre": "Semanas Musicales de Frutillar",
+      "cat": "cultural",
+      "pais": "Chile",
+      "zona": "Los Lagos — Teatro del Lago, Frutillar",
+      "lat": -41.13, "lon": -73.06,
+      "dur": "finde", "dias": [2, 3], "prio": 3, "certeza": "estimada",
+      "temporada": { "ini": "01-25", "fin": "02-10", "nota": "Se realizan tipicamente entre fines de enero y comienzos de febrero; el programa se publica en el ultimo trimestre del ano anterior." },
+      "porque": "Musica de camara y sinfonica de nivel internacional en el Teatro del Lago, con el Osorno y el Calbuco de telon de fondo. Contraste total con las fiestas de calle, y a 4 horas de Temuco.",
+      "logistica": "Ruta 5 Sur. Entradas se venden con anticipacion. Frutillar en temporada alta esta lleno: reservar alojamiento.",
+      "fuentes": []
+    },
+
+    {
+      "id": "vendimias-centro",
+      "nombre": "Vendimias del valle central (Colchagua y Curico)",
+      "cat": "gastro",
+      "pais": "Chile",
+      "zona": "O'Higgins y Maule — Santa Cruz, Curico, Lolol",
+      "lat": -34.64, "lon": -71.36,
+      "dur": "finde", "dias": [2, 4], "prio": 3, "certeza": "estimada",
+      "temporada": { "ini": "03-05", "fin": "04-15", "peak": [{ "ini": "03-10", "fin": "03-31" }], "nota": "Cada valle fija su fiesta segun como venga la cosecha; las fechas se anuncian en enero-febrero." },
+      "porque": "La cosecha del valle central es un fenomeno tan climatico como agricola: la fecha se mueve segun las temperaturas del verano. Fiesta de la Vendimia de Curico en la plaza de armas, y la de Colchagua en Santa Cruz, con pisada de uva y catas.",
+      "logistica": "Ruta 5 Norte, ~5-6 h desde Temuco. Combinable con la Ruta del Vino de Colchagua y el Museo de Colchagua.",
+      "fuentes": []
+    },
+
+    {
+      "id": "vendimia-mendoza",
+      "nombre": "Fiesta Nacional de la Vendimia",
+      "cat": "gastro",
+      "pais": "Argentina",
+      "zona": "Mendoza",
+      "lat": -32.89, "lon": -68.85,
+      "dur": "escapada", "dias": [3, 5], "prio": 3, "certeza": "estimada",
+      "temporada": { "ini": "03-01", "fin": "03-10", "nota": "Tradicionalmente el primer fin de semana largo de marzo, con el Acto Central el sabado en el Teatro Griego Frank Romero Day. Confirmar la fecha exacta de cada edicion." },
+      "porque": "La fiesta popular mas grande de Argentina, con carruajes, via blanca de las reinas y un acto central de miles de personas en un anfiteatro al pie del cerro. Alrededor: bodegas de Lujan de Cuyo y el Valle de Uco, el Aconcagua y el Puente del Inca.",
+      "logistica": "Desde Temuco: paso Pino Hachado o Mamuil Malal hasta Neuquen y Ruta 40 norte, o Santiago → paso Cristo Redentor (~7 h). El cruce de Cristo Redentor es en si mismo un recorrido geologico por el frente de corrimiento andino.",
+      "fuentes": []
+    },
+
+    {
+      "id": "carnaval-humahuaca",
+      "nombre": "Carnaval de la Quebrada (Tilcara y Humahuaca)",
+      "cat": "cultural",
+      "pais": "Argentina",
+      "zona": "Jujuy",
+      "lat": -23.58, "lon": -65.39,
+      "dur": "escapada", "dias": [4, 6], "prio": 3, "certeza": "movil",
+      "fechas": [
+        { "ini": "2027-02-06", "fin": "2027-02-09", "tag": "Desentierro del diablo el sabado previo al Miercoles de Ceniza" },
+        { "ini": "2028-02-26", "fin": "2028-02-29", "tag": "Calculado" },
+        { "ini": "2029-02-10", "fin": "2029-02-13", "tag": "Calculado" }
+      ],
+      "porque": "El desentierro del diablo en los mojones de piedra, la harina, la albahaca y las comparsas bajando por la quebrada. Es el carnaval andino en su version argentina, mucho menos turistico que Oruro y mas participativo: no eres publico, te meten en la comparsa.",
+      "logistica": "Base en Tilcara. Se puede encadenar con la quebrada, el Hornocal y Salinas Grandes, pero febrero es temporada de lluvias en la zona.",
+      "combo": ["quebrada-humahuaca"],
+      "fuentes": []
+    },
+
+    {
+      "id": "volcanes-araucania",
+      "nombre": "Ascensiones a volcanes de La Araucania (Villarrica, Llaima, Lonquimay)",
+      "cat": "geo",
+      "pais": "Chile",
+      "zona": "La Araucania — patio de casa",
+      "lat": -39.42, "lon": -71.94,
+      "dur": "finde", "dias": [1, 2], "prio": 4, "certeza": "clima",
+      "temporada": { "ini": "09-15", "fin": "03-31", "peak": [{ "ini": "10-01", "fin": "12-15" }], "nota": "Primavera es la mejor ventana: nieve firme para subir con crampones, menos rimayas abiertas y dias largos. En pleno verano la nieve se va y queda escoria suelta." },
+      "porque": "Estan a menos de dos horas y son literalmente tu objeto de estudio. El Villarrica es uno de los pocos volcanes del mundo con lago de lava persistente y el Llaima y el Lonquimay tienen registros historicos que conoces de memoria. Vale la pena tratarlos como panorama y no solo como trabajo.",
+      "logistica": "Villarrica exige guia habilitada y esta sujeto al estado de alerta tecnica del propio OVDAS. Lonquimay y Llaima son mas libres. Todo se hace en un fin de semana sin gastar vacaciones.",
+      "fuentes": []
+    },
+
+    {
+      "id": "conguillio-araucarias-otono",
+      "nombre": "Otono en Conguillio y la Araucania andina",
+      "cat": "paisaje",
+      "pais": "Chile",
+      "zona": "La Araucania — Conguillio, Malalcahuello, Nahuelbuta",
+      "lat": -38.68, "lon": -71.66,
+      "dur": "finde", "dias": [2, 3], "prio": 4, "certeza": "clima",
+      "temporada": { "ini": "04-15", "fin": "05-31", "peak": [{ "ini": "04-25", "fin": "05-15" }], "nota": "El color de las lengas y nirres dura unas tres semanas y cambia de fecha cada ano segun cuando llegue la primera helada." },
+      "porque": "Es el panorama de mayor calidad por peso de kilometro que tienes disponible: araucarias milenarias sobre coladas historicas del Llaima, con las lengas en rojo. Cuesta casi nada y la ventana es corta, asi que se pierde por no agendarla.",
+      "logistica": "1,5 h desde Temuco. Ideal para el fin de semana largo del 21 de mayo si el otono viene tardio.",
+      "fuentes": []
+    },
+
+    {
+      "id": "cabo-hornos-navarino",
+      "nombre": "Isla Navarino, Dientes de Navarino y Cabo de Hornos",
+      "cat": "paisaje",
+      "pais": "Chile",
+      "zona": "Magallanes — Puerto Williams",
+      "lat": -54.93, "lon": -67.62,
+      "dur": "grande", "dias": [8, 12], "prio": 3, "certeza": "clima",
+      "temporada": { "ini": "12-01", "fin": "03-01", "peak": [{ "ini": "12-15", "fin": "02-15" }] },
+      "porque": "El trekking mas austral del mundo, en la ciudad mas austral del mundo, sobre el batolito patagonico y la Reserva de Biosfera Cabo de Hornos. Es el tipo de lugar donde el paisaje grande no tiene competencia humana en kilometros.",
+      "logistica": "Vuelo Punta Arenas → Puerto Williams (avioneta, cupos limitados) o barcaza desde Punta Arenas (~32 h). El circuito Dientes es autonomo, sin refugios: 4-5 dias con carpa y clima severo.",
+      "fuentes": []
+    },
+
+    {
+      "id": "iguazu-ibera",
+      "nombre": "Cataratas del Iguazu y Esteros del Ibera",
+      "cat": "paisaje",
+      "pais": "Argentina",
+      "zona": "Misiones y Corrientes",
+      "lat": -25.69, "lon": -54.44,
+      "dur": "escapada", "dias": [5, 8], "prio": 3, "certeza": "clima",
+      "temporada": { "ini": "04-01", "fin": "09-30", "peak": [{ "ini": "04-15", "fin": "06-15" }, { "ini": "08-15", "fin": "09-30" }], "nota": "Evitar diciembre-febrero: calor y humedad extremos. En invierno el caudal es menor pero el clima es manejable; despues de lluvias fuertes el caudal es espectacular pero cierran pasarelas." },
+      "porque": "Las cataratas caen sobre el basalto de la Formacion Serra Geral, una de las mayores provincias igneas continentales del planeta (los derrames del Parana-Etendeka, ligados a la apertura del Atlantico Sur). La Garganta del Diablo es un knickpoint retrocediendo sobre coladas de lava: el salto existe porque el basalto resiste distinto que las capas entre coladas.",
+      "logistica": "Vuelo a Puerto Iguazu. El Ibera (Colonia Carlos Pellegrini) queda a unas 8 h en auto y es humedal puro con fauna reintroducida (yaguarete, oso hormiguero, guacamayo).",
+      "fuentes": []
+    },
+
+    {
+      "id": "bosque-petrificado-patagonia",
+      "nombre": "Bosques petrificados y Pali Aike",
+      "cat": "geo",
+      "pais": "Argentina / Chile",
+      "zona": "Santa Cruz (Jaramillo, Sarmiento) y Magallanes (Pali Aike)",
+      "lat": -47.70, "lon": -68.00,
+      "dur": "escapada", "dias": [3, 5], "prio": 3, "certeza": "clima",
+      "temporada": { "ini": "10-01", "fin": "04-15", "peak": [{ "ini": "11-01", "fin": "12-15" }, { "ini": "03-01", "fin": "04-10" }] },
+      "porque": "Troncos de araucaria jurasicos de hasta 35 m silicificados in situ, enterrados por las cenizas del volcanismo que acompano la fragmentacion de Gondwana. Pali Aike suma un campo volcanico monogenetico cuaternario con conos de escoria, maares y tubos de lava, ademas de sitios arqueologicos tempranos. Los dos son geologia de manual al alcance de un auto.",
+      "logistica": "Se cruzan de paso en cualquier road trip por Ruta 3 o Ruta 40. Pali Aike esta a ~200 km de Punta Arenas.",
+      "fuentes": []
+    },
+
+    {
+      "id": "ruta40-norte",
+      "nombre": "Road trip Ruta 40 Norte: Salta, Cachi, Cafayate",
+      "cat": "roadtrip",
+      "pais": "Argentina",
+      "zona": "Salta, Catamarca, Tucuman",
+      "lat": -25.13, "lon": -66.16,
+      "dur": "grande", "dias": [10, 15], "prio": 4, "certeza": "clima",
+      "temporada": { "ini": "04-01", "fin": "06-15", "peak": [{ "ini": "04-15", "fin": "05-31" }], "nota": "Segunda ventana: septiembre-noviembre. El verano trae lluvias de monzon sudamericano y cortes de ruta." },
+      "porque": "Cuesta del Obispo, Los Cardones, la Quebrada de las Flechas (estratos verticalizados por el frente de corrimiento andino), la Quebrada de las Conchas en Cafayate y las bodegas de altura de Torrontes. Es el tramo de la Ruta 40 donde la tectonica esta mas expuesta y donde ademas se come y se toma bien.",
+      "logistica": "Vuelo a Salta y auto arrendado, o manejando desde Temuco por Paso Pino Hachado y Ruta 40 (varios dias). Se encadena con la Puna catamarquena y con la Quebrada de Humahuaca en un solo circuito de 2 semanas.",
+      "combo": ["campo-piedra-pomez", "quebrada-humahuaca"],
+      "fuentes": []
+    },
+
+    {
+      "id": "antartica",
+      "nombre": "Antartica (Peninsula, base Frei o crucero)",
+      "cat": "paisaje",
+      "pais": "Antartica",
+      "zona": "Peninsula Antartica / Islas Shetland del Sur",
+      "lat": -62.19, "lon": -58.96,
+      "dur": "grande", "dias": [8, 14], "prio": 2, "certeza": "clima",
+      "temporada": { "ini": "11-15", "fin": "03-01", "peak": [{ "ini": "12-01", "fin": "02-15" }] },
+      "porque": "El paisaje grande definitivo, y hay una via institucional que un cruceros no tiene: SERNAGEOMIN y el INACH tienen programas y campanas de terreno antarticas. Vale mas la pena averiguar el camino profesional que el turistico.",
+      "logistica": "Turistico: crucero desde Ushuaia (10-12 dias) o vuelo Punta Arenas → Isla Rey Jorge. Profesional: convocatorias del INACH, que se abren tipicamente a mitad de ano para la campana del verano siguiente. Averiguar plazos internos.",
+      "fuentes": []
+    },
+
+    {
+      "id": "we-tripantu",
+      "nombre": "We Tripantu / Ano Nuevo mapuche",
+      "cat": "cultural",
+      "pais": "Chile",
+      "zona": "La Araucania — en casa",
+      "lat": -38.74, "lon": -72.59,
+      "dur": "finde", "dias": [1, 3], "prio": 3, "certeza": "movil",
+      "temporada": { "ini": "06-20", "fin": "06-24", "nota": "Alrededor del solsticio de invierno. El feriado nacional (Dia Nacional de los Pueblos Indigenas) sigue la fecha del solsticio: 20 o 21 de junio segun el ano." },
+      "porque": "El ano nuevo mapuche es el mismo solsticio que celebra el Inti Raymi en Cusco: dos culturas distintas leyendo el mismo evento astronomico. Lo tienes en la puerta de la casa y es feriado nacional, asi que no cuesta nada. Muchas comunidades y municipios de La Araucania abren celebraciones publicas.",
+      "logistica": "Se hace en la region sin viajar. Averiguar con municipalidades y comunidades de Padre Las Casas, Nueva Imperial o Curarrehue.",
+      "combo": ["inti-raymi"],
+      "fuentes": []
+    }
+  ],
+
+  "planes": [
+    {
+      "ano": 2026,
+      "titulo": "Lo que queda del ano: una sola cosa importa",
+      "ancla": "desierto-florido-2026",
+      "texto": "Quedan cuatro meses y hay exactamente una ventana irrepetible: el Desierto Florido, que este ano se anuncia de gran magnitud por las lluvias anomalas de agosto. Peak proyectado: primera quincena de octubre. Lo demas del ano es relleno de fines de semana.",
+      "items": [
+        { "id": "desierto-florido-2026", "cuando": "Octubre, 4-6 dias", "nota": "Comprar pasajes ahora; decidir el sector exacto 7-10 dias antes segun reportes." },
+        { "id": "volcanes-araucania", "cuando": "Octubre-diciembre, findes", "nota": "Mejor nieve del ano para subir." },
+        { "id": "geminidas", "cuando": "13-14 de diciembre", "nota": "Sale de Temuco a cordillera, costo cero." },
+        { "id": "andacollo", "cuando": "25-26 de diciembre", "nota": "Solo si no chocas con familia." }
+      ]
+    },
+    {
+      "ano": 2027,
+      "titulo": "El ano del eclipse: un viaje grande que resuelve tres pendientes",
+      "ancla": "eclipse-anular-2027",
+      "texto": "Febrero de 2027 concentra cuatro eventos de primer nivel el mismo fin de semana: el eclipse anular en Palena-Futaleufu, el Carnaval de Oruro, el Carnaval de Rio y la Tapati Rapa Nui. Tres de ellos se repiten todos los anos. El eclipse no: despues del 6 de febrero de 2027, lo proximo para Chile es un parcial en el extremo austral en diciembre de 2029. La jugada eficiente es armar el viaje grande del ano en torno al eclipse y encadenar Chiloe y la Carretera Austral, que ya estan en temporada.",
+      "items": [
+        { "id": "eclipse-anular-2027", "cuando": "6 de febrero", "nota": "Reservar alojamiento en Futaleufu/Palena AHORA. Es el cuello de botella." },
+        { "id": "costumbristas-chiloe", "cuando": "Fines de enero / principios de febrero", "nota": "Camino al eclipse, sin desvio." },
+        { "id": "carretera-austral", "cuando": "Febrero, despues del eclipse", "nota": "El eclipse te deja parado en la puerta de la Ruta 7. Aprovecha." },
+        { "id": "quebrada-humahuaca", "cuando": "Semana Santa, 26-28 de marzo", "nota": "Ventana de otono, sin lluvias." },
+        { "id": "la-tirana", "cuando": "16 de julio (feriado)", "nota": "Feriado nacional, escapada de 3-4 dias." },
+        { "id": "longaniza-chillan", "cuando": "Agosto", "nota": "La edicion que te perdiste este ano." },
+        { "id": "atacama-astro", "cuando": "Mayo-julio, luna nueva", "nota": "Visitas a ALMA y Paranal, con inscripcion previa." }
+      ]
+    },
+    {
+      "ano": 2028,
+      "titulo": "El ano de Argentina: Puna y carnaval sin competencia",
+      "ancla": "campo-piedra-pomez",
+      "texto": "Sin eclipse compitiendo, 2028 queda libre para el road trip que mas te calza como geologo: la Puna catamarquena, el Campo de Piedra Pomez y la caldera del Galan, encadenados con Ruta 40 Norte, la Quebrada de Humahuaca e Ischigualasto. Ventana optima: abril-mayo. Y el Carnaval de Oruro cae el 26-29 de febrero, sin choque con nada.",
+      "items": [
+        { "id": "carnaval-oruro", "cuando": "26-29 de febrero", "nota": "Encadenar con Uyuni en espejo, misma zona y misma temporada." },
+        { "id": "uyuni-espejo", "cuando": "Marzo", "nota": "Continuacion natural de Oruro." },
+        { "id": "campo-piedra-pomez", "cuando": "Abril-mayo, 12-14 dias", "nota": "El viaje ancla del ano." },
+        { "id": "ischigualasto-talampaya", "cuando": "Abril-mayo", "nota": "Dentro del mismo circuito, o aparte con luna llena." },
+        { "id": "peninsula-valdes", "cuando": "Septiembre-octubre", "nota": "Peak de ballenas con crias." }
+      ]
+    },
+    {
+      "ano": 2029,
+      "titulo": "El ano de Brasil y la Patagonia austral",
+      "ancla": "carnaval-brasil",
+      "texto": "El Carnaval de Brasil cae el 10-13 de febrero de 2029, temprano y sin competencia. Si el objetivo es carnaval brasileno, este es el ano. La otra opcion es la Patagonia austral completa (Paine + Chalten + Navarino), que sigue pendiente y solo se agranda con el tiempo.",
+      "items": [
+        { "id": "carnaval-brasil", "cuando": "10-13 de febrero", "nota": "Salvador u Olinda si prefieres calle sobre sambodromo." },
+        { "id": "torres-del-paine", "cuando": "Octubre-noviembre o marzo", "nota": "Hombros de temporada: menos viento y menos gente." },
+        { "id": "chalten-perito-moreno", "cuando": "En el mismo viaje", "nota": "Cruce por Cerro Castillo." },
+        { "id": "eclipse-parcial-2029", "cuando": "5 de diciembre", "nota": "Solo parcial. Vale como excusa para bajar a Magallanes." }
+      ]
+    }
+  ]
+}

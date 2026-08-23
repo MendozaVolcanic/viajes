@@ -1,0 +1,66 @@
+{
+  "_meta": {
+    "fuente": "https://somosparques.cl/ (guia y comunidad de parques nacionales de Chile, reconocida por Marca Chile)",
+    "consultado": "2026-08-23",
+    "reservas": "Las entradas y reservas oficiales del SNASPE se compran en Pases Parques (https://www.pasesparques.cl/). Somos Parques es guia informativa; la informacion oficial de cada unidad es de CONAF.",
+    "snaspe": "El SNASPE, administrado por CONAF, tiene 41 Parques Nacionales, 26 Reservas Nacionales, 20 Reservas Forestales y 18 Monumentos Naturales. Esta lista cubre los parques nacionales publicados por Somos Parques.",
+    "nota_regiones": "La region de cada parque no viene en somosparques.cl; se asigno aqui. Los parques que cruzan limites regionales estan marcados con /.",
+    "nota_temporada": "La temporada indicada es una banda gruesa orientativa. Antes de viajar, confirmar acceso, horarios y cupos en Pases Parques y CONAF: varios parques cierran sectores por nieve, crecidas o riesgo volcanico."
+  },
+  "distancias": {
+    "cerca": "Menos de 3 h desde Temuco: fin de semana sin pedir dias",
+    "medio": "3 a 8 h en auto: escapada de 3-5 dias",
+    "lejos": "Mas de 8 h o requiere vuelo: viaje grande"
+  },
+  "parques": [
+    { "n": "Desierto Florido",        "z": "Norte",     "reg": "Atacama",                  "d": "lejos", "temp": "ago-nov (floracion)", "nota": "Creado para proteger el fenomeno del desierto florido." },
+    { "n": "Llanos de Challe",        "z": "Norte",     "reg": "Atacama",                  "d": "lejos", "temp": "ago-nov (floracion)", "nota": "Nucleo clasico del desierto florido, con la garra de leon." },
+    { "n": "Pan de Azucar",           "z": "Norte",     "reg": "Atacama / Antofagasta",    "d": "lejos", "temp": "todo el ano",         "nota": "Costa desertica, camanchaca y colonia de pinguinos de Humboldt." },
+    { "n": "Nevado de Tres Cruces",   "z": "Norte",     "reg": "Atacama",                  "d": "lejos", "temp": "nov-mar",             "nota": "Laguna Santa Rosa, Laguna del Negro Francisco y camino al Ojos del Salado. Servicios por concesion: confirmar antes." },
+    { "n": "Llullaillaco",            "z": "Norte",     "reg": "Antofagasta",              "d": "lejos", "temp": "nov-mar",             "nota": "Volcan de 6.739 m, altiplano extremo, acceso muy remoto." },
+    { "n": "Morro Moreno",            "z": "Norte",     "reg": "Antofagasta",              "d": "lejos", "temp": "todo el ano",         "nota": "Cordillera de la Costa sobre el Pacifico, cerca de Antofagasta." },
+    { "n": "Salar del Huasco",        "z": "Norte",     "reg": "Tarapaca",                 "d": "lejos", "temp": "abr-nov",             "nota": "Salar altiplanico con flamencos, sitio Ramsar." },
+    { "n": "Volcan Isluga",           "z": "Norte",     "reg": "Tarapaca",                 "d": "lejos", "temp": "abr-nov",             "nota": "Volcan activo, bofedales y pueblos de altiplano (Isluga, Enquelga)." },
+    { "n": "Lauca",                   "z": "Norte",     "reg": "Arica y Parinacota",       "d": "lejos", "temp": "abr-nov",             "nota": "Chungara, Payachatas, Reserva de la Biosfera. Evitar enero-marzo por invierno boliviano." },
+    { "n": "Fray Jorge",              "z": "Norte",     "reg": "Coquimbo",                 "d": "lejos", "temp": "todo el ano",         "nota": "Bosque relicto valdiviano sostenido solo por la camanchaca. Reserva de la Biosfera." },
+
+    { "n": "Rapa Nui",                "z": "Centro",    "reg": "Valparaiso (Isla de Pascua)", "d": "lejos", "temp": "todo el ano",      "nota": "Toda la isla es un edificio volcanico: Rano Kau, Rano Raraku, Puna Pau. Combina con la Tapati." },
+    { "n": "Archipielago Juan Fernandez", "z": "Centro","reg": "Valparaiso",               "d": "lejos", "temp": "oct-mar",             "nota": "Endemismos extremos, Reserva de la Biosfera. Acceso por avioneta o barco." },
+    { "n": "Glaciares de Santiago",   "z": "Centro",    "reg": "Metropolitana",            "d": "lejos", "temp": "dic-mar",             "nota": "Parque nuevo en la alta cordillera de Santiago." },
+    { "n": "La Campana",              "z": "Centro",    "reg": "Valparaiso",               "d": "lejos", "temp": "sep-nov, mar-may",    "nota": "El cerro que subio Darwin en 1834. Palmas chilenas. Reserva de la Biosfera." },
+    { "n": "Rio Clarillo",            "z": "Centro",    "reg": "Metropolitana",            "d": "lejos", "temp": "sep-may",             "nota": "Bosque esclerofilo a una hora de Santiago." },
+    { "n": "Las Palmas de Cocalan",   "z": "Centro",    "reg": "O'Higgins",                "d": "lejos", "temp": "sep-nov, mar-may",    "nota": "El palmar de palma chilena mas grande del pais." },
+    { "n": "Radal Siete Tazas",       "z": "Centro",    "reg": "Maule",                    "d": "medio", "temp": "oct-abr",             "nota": "Marmitas y saltos labrados en ignimbrita por el rio Claro. Geologia visible desde el sendero." },
+    { "n": "Laguna del Laja",         "z": "Centro",    "reg": "Biobio",                   "d": "medio", "temp": "nov-abr",             "nota": "Volcan Antuco y coladas historicas que represaron la laguna. Muy buen destino geologico cercano." },
+    { "n": "Nonguen",                 "z": "Centro",    "reg": "Biobio",                   "d": "medio", "temp": "todo el ano",         "nota": "Bosque nativo urbano junto a Concepcion." },
+    { "n": "Nahuelbuta",              "z": "Centro",    "reg": "Araucania / Biobio",       "d": "cerca", "temp": "nov-abr",             "nota": "Araucarias sobre el basamento metamorfico de la Cordillera de la Costa, no sobre volcanes. Vista de mar y Andes el mismo dia." },
+
+    { "n": "Conguillio",              "z": "Sur",       "reg": "Araucania",                "d": "cerca", "temp": "nov-abr (color en abr-may)", "nota": "Coladas historicas del Llaima, araucarias milenarias, Sierra Nevada. El mejor panorama por kilometro que tienes." },
+    { "n": "Tolhuaca",                "z": "Sur",       "reg": "Araucania",                "d": "cerca", "temp": "nov-abr",             "nota": "Salto Malleco y termas. Menos concurrido que Conguillio." },
+    { "n": "Huerquehue",              "z": "Sur",       "reg": "Araucania",                "d": "cerca", "temp": "oct-abr",             "nota": "Lagos colgados y araucarias sobre Caburgua." },
+    { "n": "Villarrica",              "z": "Sur",       "reg": "Araucania",                "d": "cerca", "temp": "todo el ano",         "nota": "Ascenso al crater sujeto a guia habilitada y a la alerta tecnica del OVDAS." },
+    { "n": "Alerce Costero",          "z": "Sur",       "reg": "Los Rios",                 "d": "medio", "temp": "oct-abr",             "nota": "Alerce milenario en la Cordillera de la Costa." },
+    { "n": "Puyehue",                 "z": "Sur",       "reg": "Los Lagos",                "d": "medio", "temp": "nov-abr",             "nota": "Complejo Puyehue-Cordon Caulle, erupcion 2011. Campo geotermal y coladas recientes." },
+    { "n": "Vicente Perez Rosales",   "z": "Sur",       "reg": "Los Lagos",                "d": "medio", "temp": "todo el ano",         "nota": "El parque nacional mas antiguo de Chile. Osorno, Saltos del Petrohue sobre lava andesitica, Todos los Santos." },
+    { "n": "Alerce Andino",           "z": "Sur",       "reg": "Los Lagos",                "d": "medio", "temp": "nov-abr",             "nota": "Alerzales de la cordillera de Puerto Montt." },
+    { "n": "Hornopiren",              "z": "Sur",       "reg": "Los Lagos",                "d": "medio", "temp": "dic-mar",             "nota": "Puerta de entrada a la Carretera Austral; transbordador clave en verano." },
+    { "n": "Chiloe",                  "z": "Sur",       "reg": "Los Lagos",                "d": "medio", "temp": "nov-mar",             "nota": "Bosque valdiviano costero y dunas de Cucao. Combina con fiestas costumbristas y con el eclipse 2027." },
+    { "n": "Pumalin Douglas Tompkins","z": "Sur",       "reg": "Los Lagos",                "d": "medio", "temp": "dic-mar",             "nota": "El volcan Chaiten y su domo riolitico de 2008 estan aqui: la unica erupcion riolitica del mundo observada en tiempo real." },
+    { "n": "Corcovado",               "z": "Sur",       "reg": "Los Lagos",                "d": "lejos", "temp": "dic-mar",             "nota": "Muy remoto, acceso por mar o aire." },
+
+    { "n": "Melimoyu",                "z": "Patagonia", "reg": "Aysen",                    "d": "lejos", "temp": "dic-mar",             "nota": "Estratovolcan con casquete de hielo, acceso muy limitado." },
+    { "n": "Queulat",                 "z": "Patagonia", "reg": "Aysen",                    "d": "lejos", "temp": "nov-mar",             "nota": "Ventisquero Colgante sobre la Carretera Austral. Parada obligada de la Ruta 7." },
+    { "n": "Isla Guamblin",           "z": "Patagonia", "reg": "Aysen",                    "d": "lejos", "temp": "dic-feb",             "nota": "Isla oceanica expuesta, sin infraestructura." },
+    { "n": "Isla Magdalena",          "z": "Patagonia", "reg": "Aysen",                    "d": "lejos", "temp": "dic-mar",             "nota": "No confundir con el Monumento Natural Los Pinguinos de Magallanes." },
+    { "n": "Laguna San Rafael",       "z": "Patagonia", "reg": "Aysen",                    "d": "lejos", "temp": "nov-mar",             "nota": "Campo de Hielo Norte y el San Valentin. Navegacion hasta el frente glaciar." },
+    { "n": "Cerro Castillo",          "z": "Patagonia", "reg": "Aysen",                    "d": "lejos", "temp": "dic-mar",             "nota": "Trekking de 4 dias, la alternativa patagonica menos saturada que el Paine." },
+    { "n": "Patagonia",               "z": "Patagonia", "reg": "Aysen",                    "d": "lejos", "temp": "nov-mar",             "nota": "Valle Chacabuco, ex estancia. Huemules y guanacos. Sobre la Carretera Austral." },
+    { "n": "Bernardo O'Higgins",      "z": "Patagonia", "reg": "Magallanes / Aysen",       "d": "lejos", "temp": "nov-mar",             "nota": "El parque mas grande de Chile. Campo de Hielo Sur, glaciar Pio XI." },
+    { "n": "Torres del Paine",        "z": "Patagonia", "reg": "Magallanes",               "d": "lejos", "temp": "oct-abr",             "nota": "Reservar refugios del W/O con 6-10 meses. Mejores hombros: oct-nov y marzo." },
+    { "n": "Pali Aike",               "z": "Patagonia", "reg": "Magallanes",               "d": "lejos", "temp": "oct-abr",             "nota": "Campo volcanico monogenetico cuaternario: conos de escoria, maares y tubos de lava, mas sitios arqueologicos tempranos." },
+    { "n": "Kawesqar",                "z": "Patagonia", "reg": "Magallanes",               "d": "lejos", "temp": "dic-mar",             "nota": "Fiordos y canales, acceso mayormente nautico." },
+    { "n": "Alberto de Agostini",     "z": "Patagonia", "reg": "Magallanes",               "d": "lejos", "temp": "dic-feb",             "nota": "Cordillera Darwin y glaciares que llegan al mar en el canal Beagle." },
+    { "n": "Yendegaia",               "z": "Patagonia", "reg": "Magallanes",               "d": "lejos", "temp": "dic-feb",             "nota": "Tierra del Fuego, conecta el Beagle con el Karukinka." },
+    { "n": "Cabo de Hornos",          "z": "Patagonia", "reg": "Magallanes",               "d": "lejos", "temp": "dic-feb",             "nota": "Reserva de la Biosfera. Dientes de Navarino, el trekking mas austral del mundo." }
+  ]
+}

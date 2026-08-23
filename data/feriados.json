@@ -1,0 +1,63 @@
+{
+  "_meta": {
+    "fuente_2026_2027": "https://api.boostr.cl/holidays/{year}.json (feriados legales de Chile)",
+    "consultado": "2026-08-23",
+    "nota_2028": "El calendario 2028 aun no esta publicado por la API. Los feriados 2028 de este archivo son CALCULADOS: fijos por ley + Pascua (16-abr-2028). Los feriados trasladables (29-jun, 12-oct, 31-oct) pueden correrse de dia. Verificar antes de comprar pasajes.",
+    "nota_pueblos_indigenas": "El feriado del Dia Nacional de los Pueblos Indigenas sigue el solsticio de invierno: puede caer 20 o 21 de junio segun el ano."
+  },
+  "2026": [
+    { "d": "2026-01-01", "n": "Ano Nuevo", "irr": true },
+    { "d": "2026-04-03", "n": "Viernes Santo", "irr": false },
+    { "d": "2026-04-04", "n": "Sabado Santo", "irr": false },
+    { "d": "2026-05-01", "n": "Dia del Trabajo", "irr": true },
+    { "d": "2026-05-21", "n": "Glorias Navales", "irr": false },
+    { "d": "2026-06-21", "n": "Pueblos Indigenas", "irr": false },
+    { "d": "2026-06-29", "n": "San Pedro y San Pablo", "irr": false },
+    { "d": "2026-07-16", "n": "Virgen del Carmen", "irr": false },
+    { "d": "2026-08-15", "n": "Asuncion de la Virgen", "irr": false },
+    { "d": "2026-09-18", "n": "Independencia Nacional", "irr": true },
+    { "d": "2026-09-19", "n": "Glorias del Ejercito", "irr": true },
+    { "d": "2026-10-12", "n": "Encuentro de Dos Mundos", "irr": false },
+    { "d": "2026-10-31", "n": "Iglesias Evangelicas", "irr": false },
+    { "d": "2026-11-01", "n": "Todos los Santos", "irr": false },
+    { "d": "2026-12-08", "n": "Inmaculada Concepcion", "irr": false },
+    { "d": "2026-12-25", "n": "Navidad", "irr": true }
+  ],
+  "2027": [
+    { "d": "2027-01-01", "n": "Ano Nuevo", "irr": true },
+    { "d": "2027-03-26", "n": "Viernes Santo", "irr": false },
+    { "d": "2027-03-27", "n": "Sabado Santo", "irr": false },
+    { "d": "2027-05-01", "n": "Dia del Trabajo", "irr": true },
+    { "d": "2027-05-21", "n": "Glorias Navales", "irr": false },
+    { "d": "2027-06-21", "n": "Pueblos Indigenas", "irr": false },
+    { "d": "2027-06-28", "n": "San Pedro y San Pablo", "irr": false },
+    { "d": "2027-07-16", "n": "Virgen del Carmen", "irr": false },
+    { "d": "2027-08-15", "n": "Asuncion de la Virgen", "irr": false },
+    { "d": "2027-09-17", "n": "Feriado Adicional Fiestas Patrias", "irr": false },
+    { "d": "2027-09-18", "n": "Independencia Nacional", "irr": true },
+    { "d": "2027-09-19", "n": "Glorias del Ejercito", "irr": true },
+    { "d": "2027-10-11", "n": "Encuentro de Dos Mundos", "irr": false },
+    { "d": "2027-10-31", "n": "Iglesias Evangelicas", "irr": false },
+    { "d": "2027-11-01", "n": "Todos los Santos", "irr": false },
+    { "d": "2027-12-08", "n": "Inmaculada Concepcion", "irr": false },
+    { "d": "2027-12-25", "n": "Navidad", "irr": true }
+  ],
+  "2028": [
+    { "d": "2028-01-01", "n": "Ano Nuevo", "irr": true, "est": true },
+    { "d": "2028-04-14", "n": "Viernes Santo", "irr": false, "est": true },
+    { "d": "2028-04-15", "n": "Sabado Santo", "irr": false, "est": true },
+    { "d": "2028-05-01", "n": "Dia del Trabajo", "irr": true, "est": true },
+    { "d": "2028-05-21", "n": "Glorias Navales", "irr": false, "est": true },
+    { "d": "2028-06-21", "n": "Pueblos Indigenas", "irr": false, "est": true },
+    { "d": "2028-06-29", "n": "San Pedro y San Pablo (trasladable)", "irr": false, "est": true },
+    { "d": "2028-07-16", "n": "Virgen del Carmen", "irr": false, "est": true },
+    { "d": "2028-08-15", "n": "Asuncion de la Virgen", "irr": false, "est": true },
+    { "d": "2028-09-18", "n": "Independencia Nacional", "irr": true, "est": true },
+    { "d": "2028-09-19", "n": "Glorias del Ejercito", "irr": true, "est": true },
+    { "d": "2028-10-12", "n": "Encuentro de Dos Mundos (trasladable)", "irr": false, "est": true },
+    { "d": "2028-10-31", "n": "Iglesias Evangelicas", "irr": false, "est": true },
+    { "d": "2028-11-01", "n": "Todos los Santos", "irr": false, "est": true },
+    { "d": "2028-12-08", "n": "Inmaculada Concepcion", "irr": false, "est": true },
+    { "d": "2028-12-25", "n": "Navidad", "irr": true, "est": true }
+  ]
+}
