@@ -6,7 +6,7 @@ const TL_INI = '2026-08-01', TL_FIN = '2030-06-30';
 const PXD = 2.15;                         // pixeles por dia en la linea de tiempo
 
 const S = { ev: [], cat: {}, planes: [], parques: [], fer: {}, meta: {},
-            wins: [], filt: { cat: new Set(), dur: new Set(), pais: new Set(), prio: 0, q: '', fer: false },
+            wins: [], filt: { cat: new Set(), dur: new Set(), pais: new Set(), prio: 0, q: '', fer: false, mapa: false },
             calY: 2027 };
 
 const d  = s => new Date(s + 'T12:00:00');
@@ -36,6 +36,7 @@ async function boot() {
     `Feriados de Chile 2026 y 2027 desde <code>${esc(S.ferMeta.fuente_2026_2027)}</code>, consultados el ${S.ferMeta.consultado}. ` +
     `${esc(S.ferMeta.nota_2028)} Parques nacionales desde <a href="https://somosparques.cl/" target="_blank" rel="noopener">Somos Parques</a>. ` +
     `Cada ficha lleva sus propias fuentes cuando las tiene. Datos actualizados al ${S.meta.actualizado}.`;
+  drawMapa();
   buildFilters(); buildTabs(); render(); scrollHoy();
 }
 
@@ -85,6 +86,7 @@ function pasa(e) {
     if (!h.includes(f.q.toLowerCase())) return false;
   }
   if (f.fer && !tocaFeriado(e)) return false;
+  if (f.mapa && !e.mapa) return false;
   return true;
 }
 const evsFiltrados = () => S.ev.filter(pasa);
@@ -109,13 +111,14 @@ function buildFilters() {
       `<span class="chip" data-f="pais" data-v="${esc(p)}" style="--c:#94a3b8">${esc(p)}</span>`).join('')}</div>
     <div class="grp"><label>Prioridad ≥</label>
       <select id="fprio"><option value="0">todas</option><option value="3">3</option><option value="4">4</option><option value="5">5 (imperdibles)</option></select></div>
-    <div class="grp"><span class="chip" data-f="fer" data-v="1" style="--c:#eab308">Cae en feriado</span></div>
+    <div class="grp"><span class="chip" data-f="fer" data-v="1" style="--c:#eab308">Cae en feriado</span>
+      <span class="chip" data-f="mapa" data-v="1" style="--c:#38bdf8">De tu mapa</span></div>
     <div class="grp"><input type="search" id="fq" placeholder="Buscar: volcán, carnaval, glaciar…"></div>
     <div class="spacer"></div><div class="count" id="fcount"></div>`;
 
   box.querySelectorAll('.chip').forEach(ch => ch.onclick = () => {
     const f = ch.dataset.f, v = ch.dataset.v;
-    if (f === 'fer') { S.filt.fer = !S.filt.fer; ch.classList.toggle('on', S.filt.fer); }
+    if (f === 'fer' || f === 'mapa') { S.filt[f] = !S.filt[f]; ch.classList.toggle('on', S.filt[f]); }
     else { const set = S.filt[f]; set.has(v) ? set.delete(v) : set.add(v); ch.classList.toggle('on', set.has(v)); }
     ch.style.background = ch.classList.contains('on') ? ch.style.getPropertyValue('--c') : '';
     render();
@@ -188,7 +191,7 @@ function drawTL(evs) {
     return `<div class="tl-row">
       <div class="tl-lbl"><span class="bar" style="background:${col}"></span>
         <span><span class="nm" data-id="${e.id}">${esc(e.nombre)}</span>
-        <span class="meta">${'★'.repeat(e.prio)} · ${e.pais}</span></span></div>
+        <span class="meta">${e.mapa ? '<b style="color:#38bdf8">⚑</b> ' : ''}${'★'.repeat(e.prio)} · ${e.pais}</span></span></div>
       <div class="tl-track" style="width:${W}px">${grid}${hoyEl}${bars}</div></div>`;
   }).join('');
 
@@ -254,6 +257,8 @@ function drawCards(evs) {
   });
 }
 
+const mapaTag = e => e.mapa ? `<span class="tag mapa" title="${esc(e.mapa)}">⚑ De tu mapa</span>` : '';
+
 const DUR = { finde: 'Fin de semana', escapada: 'Escapada 3-6 d', grande: 'Viaje grande' };
 const CERT = { fija: 'Fecha fija', movil: 'Fecha calculada', estimada: 'Fecha por confirmar', clima: 'Depende del clima' };
 
@@ -266,7 +271,7 @@ function cardHTML(e) {
   return `<article class="card" data-id="${e.id}"><div class="cbar" style="background:${col}"></div><div class="cin">
     <div class="tags"><span class="tag k" style="background:${col}">${S.cat[e.cat].n}</span>
       <span class="tag">${DUR[e.dur]}</span><span class="tag prio">${'★'.repeat(e.prio)}</span>
-      <span class="tag">${CERT[e.certeza]}</span></div>
+      <span class="tag">${CERT[e.certeza]}</span>${mapaTag(e)}</div>
     <h3>${esc(e.nombre)}</h3>
     <div class="tag" style="align-self:flex-start">${esc(e.pais)} · ${esc(e.zona)}</div>
     ${cuando}
@@ -363,7 +368,7 @@ function openModal(id) {
     <div class="mh"><div><h2 style="font-size:19px">${esc(e.nombre)}</h2>
       <div class="tags" style="margin-top:8px"><span class="tag k" style="background:${col}">${S.cat[e.cat].n}</span>
         <span class="tag">${esc(e.pais)} · ${esc(e.zona)}</span><span class="tag">${DUR[e.dur]} (${e.dias[0]}-${e.dias[1]} días)</span>
-        <span class="tag prio">${'★'.repeat(e.prio)}</span><span class="tag">${CERT[e.certeza]}</span></div></div>
+        <span class="tag prio">${'★'.repeat(e.prio)}</span><span class="tag">${CERT[e.certeza]}</span>${mapaTag(e)}</div></div>
       <button class="x" onclick="cerrar()">×</button></div>
     <div class="mb">
       <p class="p"><b>Por qué vale la pena:</b> ${esc(e.porque)}</p>
@@ -402,3 +407,18 @@ document.addEventListener('keydown', e => e.key === 'Escape' && cerrar());
 document.getElementById('mask').onclick = e => { if (e.target.id === 'mask') cerrar(); };
 
 boot();
+
+/* ---------------- pines del mapa del usuario ---------------- */
+function drawMapa() {
+  const m = S.meta.mapa_usuario; if (!m) return;
+  document.getElementById('mapa-user').innerHTML = `
+    <h2 style="font-size:16px">Tu lista de Google Maps</h2>
+    <p class="p">De <b>${esc(m.lista)}</b> se leyeron <b>${m.leidos} de ${m.total_declarado}</b> sitios el ${m.leido}.
+      ${esc(m.nota)}</p>
+    <p class="p"><b>Pines leídos:</b> ${m.pines_leidos.map(esc).join(' · ')}</p>
+    <h3 style="font-size:13.5px;margin-top:6px">Pines que no se pudieron ubicar con certeza</h3>
+    <p class="note" style="margin:0 0 8px">Estos no se agendaron: sin ubicación confirmada no hay temporada que asignar.</p>
+    ${m.pines_ambiguos.map(a => `<div class="plan-i"><span class="when" style="min-width:230px">${esc(a.pin)}</span>
+      <span class="what"><span class="nt" style="margin:0">${esc(a.duda)}</span></span></div>`).join('')}
+    <p class="p" style="margin-top:12px"><a href="${esc(m.url)}" target="_blank" rel="noopener">Abrir la lista en Google Maps ↗</a></p>`;
+}

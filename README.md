@@ -23,6 +23,7 @@ superpuestos, y marca dónde dos cosas buenas se pisan.
 | **Fichas** | Detalle: por qué vale la pena, logística, ventanas y fuentes. |
 | **Choques de fecha** | Ventanas de prioridad alta que se solapan y obligan a elegir. |
 | **Parques nacionales** | Los 46 parques publicados por Somos Parques, con región, temporada y distancia desde Temuco. |
+| **Tu mapa** | Qué se leyó de la lista «Planes de viajes» de Google Maps, y qué pines quedaron sin ubicar. |
 
 ## Estructura
 
@@ -59,6 +60,7 @@ Todo se edita en `data/eventos.json`. Campos mínimos:
 
   "alerta": "Advertencia destacada en rojo (opcional)",
   "combo":  ["otro-id"],                                    // se encadena bien con
+  "mapa":   "Planes de viajes (Google Maps)",               // muestra la insignia «De tu mapa»
   "fuentes":[{ "t": "Título", "u": "https://…" }]
 }
 ```
@@ -80,6 +82,7 @@ No todas las fechas merecen la misma confianza, y el visor lo dice explícitamen
 
 - Feriados legales de Chile 2026–2027: `api.boostr.cl/holidays/{año}.json`. **Los de 2028 son calculados**, no oficiales.
 - Parques nacionales: [Somos Parques](https://somosparques.cl/). Entradas y reservas oficiales del SNASPE en [Pases Parques](https://www.pasesparques.cl/).
+- Pines del usuario: lista «Planes de viajes» de Google Maps, leída el 2026-08-23. **Solo 20 de los 45 sitios**: Maps no carga el resto en la vista de lista compartida. Detalle en la vista «Tu mapa» y en `_meta.mapa_usuario` de `data/eventos.json`.
 - Cada ficha lleva sus propias fuentes cuando las tiene.
 
 ## Desarrollo local
