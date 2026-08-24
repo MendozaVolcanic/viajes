@@ -386,6 +386,7 @@ function openModal(id) {
       <div><b style="font-size:12px;color:var(--tx3);text-transform:uppercase;letter-spacing:.06em">Ventanas</b>
         ${ws.map(w => `<div class="win"><b>${fmtR(w.ini, w.fin)}</b><span>${esc(w.tag || '')}</span></div>`).join('')}</div>
       ${e.temporada?.nota ? `<p class="p" style="color:var(--tx3)"><b>Nota de temporada:</b> ${esc(e.temporada.nota)}</p>` : ''}
+      ${e.pronostico ? `<div class="alerta" style="background:rgba(139,92,246,.1);border-left-color:var(--astro);color:#c4b5fd"><b>Lo que dice la evidencia:</b> ${esc(e.pronostico)}</div>` : ''}
       ${e.verificado ? `<p class="p" style="color:var(--tx3)"><b>Verificación:</b> ${esc(e.verificado)}</p>` : ''}
       ${combos.length ? `<p class="p"><b>Se encadena bien con:</b> ${combos.map(c => `<a data-id="${c.id}">${esc(c.nombre)}</a>`).join(' · ')}</p>` : ''}
       ${e.lat ? `<a href="https://www.google.com/maps/@${e.lat},${e.lon},9z" target="_blank" rel="noopener">Abrir en Google Maps ↗</a>` : ''}
