@@ -110,3 +110,65 @@ El método de Chávez et al. — anomalía positiva de NDVI contra la fenología
 ## ⚠️ Fuente descartada
 
 [Ladera Sur — "Habrá Desierto Florido: las lluvias superaron el umbral necesario"](https://laderasur.com/articulo/habra-desierto-florido-las-lluvias-superaron-el-umbral-necesario-y-se-espera-floracion-desde-septiembre/) es del **11 de agosto de 2025**, no de 2026. Sus cifras (Vallenar 168,1 mm, 86 % de estaciones de Huasco con récord) corresponden a la temporada anterior y **no deben citarse para 2026**. Aparece alto en las búsquedas porque el título no lleva año.
+
+
+---
+
+## El desfase lluvia → floración (la pregunta que decide la fecha)
+
+### Mecanismo
+
+No basta con que llueva. Rosa Scherson y Nicolás García (Facultad de Ciencias Forestales y de la Conservación de la Naturaleza, U. de Chile) lo resumen así: hacen falta **entre 15 y 30 mm caídos entre junio y julio** *más* **suficientes horas frío acumuladas** para que semillas y bulbos rompan la dormancia. La lluvia habilita; el frío desbloquea; la primavera dispara.
+
+Por eso el timing de 2026 es de manual: el sistema frontal descargó **entre el 18 y el 22 de julio de 2026**, en plena ventana útil.
+
+### Lo que cayó en 2026, y cuándo
+
+| Fecha | Evento |
+|---|---|
+| **18–22 de julio de 2026** | Sistema frontal. Vallenar ~180 mm (las fuentes dan entre 177,2 y 186,9 mm según fecha de corte); Huasco Bajo ~166,6 mm; San Félix y El Corral sobre 200 mm; Copiapó 24,2 mm |
+| **Mediados de agosto de 2026** | Primeras floraciones observadas: añañucas, huillis y suspiros. Brotes en llanos y quebradas entre Vallenar y Copiapó |
+
+**Desfase observado pulso → primeras flores: ~4 semanas.**
+
+### El calibrador: la temporada 2025
+
+2025 es el análogo más cercano y con resultado ya observado.
+
+| | 2025 | 2026 |
+|---|---|---|
+| Pulso de lluvia | **Agosto** (costa de Huasco) | **18–22 de julio** |
+| Primeras flores | **Tercera semana de septiembre** | **Mediados de agosto** |
+| Desfase lluvia → primeras flores | ~6 semanas | ~4 semanas |
+| Peak observado / proyectado | **Principios a mediados de octubre** | ? |
+| Fin | Primera quincena de noviembre | ? |
+
+**2026 va corrido entre tres y cuatro semanas adelante de 2025.** Llovió un mes antes y las primeras flores salieron un mes antes. Trasladando el desfase de 2025, el equivalente al "peak de principios-mediados de octubre" de 2025 cae en 2026 **entre mediados de septiembre y principios de octubre**.
+
+### Por qué CONAF dice mediados de octubre y no es contradicción
+
+CONAF proyecta el peak de **máxima diversidad y abundancia**, que no es lo mismo que la máxima cobertura. La secuencia fenológica está escalonada por familias: **florecen primero las Brasicáceas y Liliáceas** —los bulbos: añañucas, huillis, que ya están afuera— y **florecen últimas las Onagráceas y Asteráceas**. La máxima diversidad de especies simultáneas llega cuando entran las tardías, en octubre. El manto más denso ocurre antes.
+
+**Son dos peaks distintos, de dos cosas distintas.** Para paisaje —cobertura, mantos de color— conviene el primero. Para botánica —número de especies distintas— conviene el segundo.
+
+### Palanca de corrección: el gradiente costa–interior
+
+El fenómeno no ocurre simultáneamente en toda la región. La franja costera, enfriada y humedecida por la camanchaca, **se atrasa y se sostiene más** que los llanos interiores; Moreira-Muñoz (PUCV) señala que la camanchaca puede "retrasar o inducir una floración más profusa". Eso da una palanca:
+
+- Si vas **temprano** (septiembre): apuntar al **interior**, entre Vallenar y Copiapó.
+- Si vas **tarde** (mediados de octubre en adelante): apuntar a la **costa** de Huasco y Freirina, y al PN Llanos de Challe.
+
+### Conclusión operativa
+
+| Ventana | Qué se espera |
+|---|---|
+| 15 sep – 10 oct | **Manto denso** — la ventana más probable |
+| **25 sep – 4 oct** | **Centro de la ventana** |
+| 5 – 25 oct | Máxima **diversidad**: entran las tardías (proyección CONAF) |
+| 25 oct – 15 nov | Cola, sostenida sobre todo en la costa |
+
+### Rareza, para dimensionar
+"Desde 2022 no se registraba esta floración en la Región de Atacama" — es decir, 2025 rompió una sequía de tres años del fenómeno, y 2026 casi duplica la lluvia de 2025 en Vallenar.
+
+### No conseguido
+El capítulo 15 de Squeo et al., *El Desierto Florido en la Región de Atacama* (`biouls.cl/lrojo/lrojo03/public_html/libro/15.pdf`), que tendría la fenología por especie con meses exactos: **el servidor rechaza la conexión** (ECONNREFUSED y descarga de 0 bytes, verificado 2026-08-24). Si aparece un espejo, ahí debería estar el detalle de qué especie florece en qué mes.

@@ -208,61 +208,79 @@
       "certeza": "clima",
       "fechas": [
         {
-          "ini": "2026-08-15",
-          "fin": "2026-09-04",
-          "tag": "Primeras floraciones — YA EN CURSO"
+          "ini": "2026-07-18",
+          "fin": "2026-07-22",
+          "tag": "El pulso de lluvia: sistema frontal, ~180 mm en Vallenar"
         },
         {
-          "ini": "2026-09-05",
-          "fin": "2026-11-15",
-          "tag": "Temporada: mayor extension desde septiembre"
+          "ini": "2026-08-15",
+          "fin": "2026-09-10",
+          "tag": "Primeras floraciones (ananucas, huillis, suspiros) — EN CURSO"
+        },
+        {
+          "ini": "2026-09-15",
+          "fin": "2026-10-10",
+          "tag": "MANTO DENSO: la ventana mas probable"
+        },
+        {
+          "ini": "2026-09-25",
+          "fin": "2026-10-04",
+          "tag": "LA FECHA: centro de la ventana"
         },
         {
           "ini": "2026-10-05",
-          "fin": "2026-10-20",
-          "tag": "PEAK: maxima diversidad y abundancia"
+          "fin": "2026-10-25",
+          "tag": "Maxima DIVERSIDAD (entran las tardias) — proyeccion CONAF"
         },
         {
-          "ini": "2026-10-09",
-          "fin": "2026-10-13",
-          "tag": "LA FECHA: finde largo del 12-oct dentro del peak"
+          "ini": "2026-10-25",
+          "fin": "2026-11-15",
+          "tag": "Cola: se sostiene mejor en la franja costera"
         }
       ],
       "porque": "El invierno de 2026 dejo en Vallenar 186,9 mm contra una normal anual de 40,2 mm: 4,6 veces lo normal, y el ano mas lluvioso desde 2004, por encima de 2015 (115,6 mm) y 2017 (100,1 mm), que fueron los dos desiertos floridos previos. Alto del Carmen llego a 210,8 mm. El umbral de germinacion es del orden de 15 mm, o sea que se supero doce veces. La Comision Regional proyecta una de las temporadas mas extensas de los ultimos anos, con mas de doscientas variedades endemicas entre Caldera y Freirina, y al 21 de agosto ya hay sectores con pasto y ananucas visibles. Dicho de otro modo: el evento ya no depende de un pronostico, la lluvia ya esta en el banco.",
-      "logistica": "LA FECHA: viernes 9 a martes 13 de octubre. El lunes 12 de octubre de 2026 es feriado (Encuentro de Dos Mundos) y cae dentro del peak proyectado, asi que pidiendo el viernes 9 y el martes 13 quedan cinco dias corridos. Es la unica coincidencia peak-feriado del ano en todo el visor. DONDE: de los cinco puntos habilitados por la Comision Regional — costa de Freirina, costa de Huasco, PN Llanos de Challe, PN Desierto Florido y sector Travesia en Copiapo — los tres primeros son la apuesta fuerte, porque es ahi donde cayo la lluvia. Travesia es la apuesta debil: Copiapo recibio 24,2 mm. La franja costera ademas conserva mejor la humedad por la camanchaca. COMO: vuelo Santiago a Copiapo (CPO) y auto arrendado, o Ruta 5 en auto. Vallenar y Huasco son mejores bases que Copiapo para esta temporada en particular. COMO AFINAR EL SECTOR: no existe un producto satelital publico y operacional para el desierto florido. El monitoreo fenologico satelital de CONAF (MODIS, cada 16 dias) solo cubre La Campana, Rio Clarillo, Nahuelbuta y Pumalin: no sirve para Atacama. La alternativa esta en tu propio workspace: el metodo de Chavez et al. es anomalia positiva de NDVI contra la fenologia esperada, que es justo lo que hace el pipeline de Copernicus-v1, pero con Sentinel-2 a 10 m en vez de GIMMS a ~8 km y con revisita de 5 dias. Apuntarlo a Llanos de Challe, costa de Huasco, costa de Freirina y Travesia durante septiembre y octubre daria la serie propia para decidir el sector con 7 a 10 dias, en vez de depender de notas de prensa. NORMAS: no salirse de los senderos habilitados, no cortar flores, no ingresar mascotas a las zonas de floracion.",
-      "alerta": "El peak coincide con el fin de semana largo del 12 de octubre: es tu mejor ventana del ano y por lo mismo va a estar lleno. Alojamiento en Vallenar o Huasco hay que reservarlo ahora. Ojo con el sesgo de Copiapo: la mayoria de las notas dicen 'entre Copiapo y Vallenar', pero los pluviometros dicen que la lluvia cayo en la provincia de Huasco.",
+      "logistica": "TRES FECHAS POSIBLES, de mejor a peor apuesta. (A) LA OPTIMA — sabado 26 de septiembre a domingo 4 de octubre. Centro de la ventana de manto denso segun el desfase medido. Cuesta 3 a 5 dias de vacaciones porque no hay feriado, pero es la fecha con mayor probabilidad de pillar la cobertura maxima, y cae fuera del pico de precios de Fiestas Patrias. (B) LA BARATA — viernes 18 a domingo 20 de septiembre. El viernes 18 y el sabado 19 son feriados, asi que son tres dias sin pedir ninguno. Queda en el borde temprano de la ventana y es la peor semana del ano en precios y ocupacion en todo Chile. (C) LA DE RESPALDO — viernes 9 a martes 13 de octubre, con el feriado del lunes 12. Cinco dias corridos pidiendo solo dos. Queda en el borde tardio: capturaria la maxima diversidad y las especies tardias, con el manto ya decayendo en los sectores mas adelantados. Si eliges esta, apunta a la costa, que va mas atrasada. DONDE: de los cinco puntos habilitados por la Comision Regional — costa de Freirina, costa de Huasco, PN Llanos de Challe, PN Desierto Florido y sector Travesia en Copiapo — los tres primeros son la apuesta fuerte, porque la lluvia cayo en la provincia de Huasco: Alto del Carmen 210,8 mm y Vallenar ~180 mm contra Copiapo 24,2 mm. COMO: vuelo Santiago a Copiapo (CPO) y auto arrendado, o Ruta 5. Base en Vallenar o Huasco antes que Copiapo. COMO AFINAR: no hay producto satelital publico para esto. El monitoreo fenologico de CONAF (MODIS, 16 dias) solo cubre La Campana, Rio Clarillo, Nahuelbuta y Pumalin. La via propia es el pipeline de Copernicus-v1 apuntado a Llanos de Challe, costa de Huasco, costa de Freirina y Travesia: es el mismo metodo de anomalia NDVI del paper de Chavez, pero con Sentinel-2 a 10 m y revisita de 5 dias en vez de GIMMS a ~8 km. Con dos pasadas de septiembre sabrias si el manto va adelantado o atrasado respecto de este pronostico. NORMAS: no salirse de los senderos, no cortar flores, no ingresar mascotas.",
+      "alerta": "Mi recomendacion anterior del fin de semana largo del 12 de octubre queda como plan B, no como plan A. Al mirar CUANDO cayo la lluvia — 18 al 22 de julio, un mes antes que en 2025 — la ventana del manto denso se corre a fines de septiembre. El 12 de octubre sigue sirviendo, pero es el borde tardio.",
       "fuentes": [
         {
           "t": "Chavez et al. 2019 — GIMMS NDVI y los desiertos floridos del Atacama (paper seminal, DOI)",
           "u": "https://doi.org/10.1016/j.jag.2018.11.013"
         },
         {
-          "t": "NOAA CPC — tabla oficial del indice ONI (ERSST v6)",
-          "u": "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso/oni/v6/"
+          "t": "U. de Chile — especialistas explican el rol de las horas frio y la dormancia",
+          "u": "https://uchile.cl/noticias/218298/es-o-no-es-especialistas-explican-si-habra-desierto-florido"
         },
         {
-          "t": "Radio Atacama (8-ago-2026) — acumulados de lluvia por localidad, datos INIA Intihuasi y DGA",
+          "t": "Radio Maray (18-jul-2026) — el sistema frontal que descargo sobre Atacama",
+          "u": "https://www.maray.cl/atacama/18/07/2026/reporte-lluvias-superan-los-80-milimetros-en-sectores-de-atacama-por-intenso-sistema-frontal/"
+        },
+        {
+          "t": "Radio Atacama (8-ago-2026) — acumulados por localidad, datos INIA Intihuasi y DGA",
           "u": "https://www.radioatacama.cl/regional/provincia-huasco-concentro-mayores-precipitaciones-regionales"
         },
         {
-          "t": "Atacama Noticias (21-ago-2026) — Comision Regional, cinco puntos de avistamiento y normas",
+          "t": "El Mostrador (19-sep-2025) — inicio observado de la temporada 2025, el analogo mas cercano",
+          "u": "https://www.elmostrador.cl/revista-jengibre/viajes/2025/09/19/desierto-florido-2025-comenzo-el-espectaculo-natural-que-transforma-el-norte-de-chile/"
+        },
+        {
+          "t": "CONAF — Desierto Florido 2025",
+          "u": "https://www.conaf.cl/vive-la-magia-del-desierto-florido-2025/"
+        },
+        {
+          "t": "Atacama Noticias (21-ago-2026) — proyeccion CONAF y los cinco puntos de avistamiento",
           "u": "https://www.atacamanoticias.cl/2026/08/21/atacama-prepara-una-gran-temporada-del-desierto-florido-2026-con-coordinacion-regional-promocion-turistica-y-puntos-de-avistamiento/"
         },
         {
-          "t": "ExtraNoticias (22-ago-2026) — brotes desde fines de agosto, peak a mediados de octubre",
-          "u": "https://www.extranoticias.cl/desierto-florido-anticipa-una-temporada-historica-en-atacama-con-brotes-desde-finales-de-agosto/"
+          "t": "Moreira-Munoz (PUCV) — por que el fenomeno es dificil de predecir y el rol de la camanchaca",
+          "u": "https://www.pucv.cl/uuaa/geografia/noticias/columna-cuando-florece-el-desierto"
         },
         {
-          "t": "Megatiempo (21-ago-2026) — ananucas ya visibles y el rol de la camanchaca",
-          "u": "https://www.megatiempo.cl/pronostico/13811-desierto-florido-chile-donde-queda-2026-1ab.html"
-        },
-        {
-          "t": "CONAF — Sistema de Monitoreo Fenologico satelital del SNASPE (NO cubre Atacama)",
-          "u": "https://sites.google.com/conaf.cl/monitoreo-snaspe/"
+          "t": "NOAA CPC — tabla oficial del indice ONI (ERSST v6)",
+          "u": "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso/oni/v6/"
         }
       ],
-      "verificado": "2026-08-23. Precipitacion y ONI de fuentes primarias; calibracion del fenomeno desde Chavez et al. 2019 (abstract completo via Semantic Scholar; el PDF OA del repositorio U. de Chile devuelve HTML disfrazado, verificado tres veces). DESCARTADO: los articulos de Ladera Sur sobre desierto florido son de agosto de 2025 y sus cifras de lluvia no corresponden a esta temporada. Sintesis completa en bibliografia/BIBLIOGRAPHY_SYNTHESIS.md.",
-      "pronostico": "TRES CORRECCIONES AL RELATO DE PRENSA, a partir de Chavez et al. 2019, que es el unico trabajo que cuantifico el fenomeno con series NDVI. (1) EL PEAK ES ANCHO, NO PUNTUAL. Entre 1981 y 2015 hubo 13 desiertos floridos y solo 3 mayores; el mayor de todos, el de 2011, duro 180 dias entre julio y diciembre. Mediados de octubre es un centro de masa, no una ventana estrecha: errar por una o dos semanas no arruina el viaje. (2) LA CIFRA DE 15.000 km2 HAY QUE TOMARLA CON PINZAS. Excederia en un 35% el record del registro satelital, que son los 11.136 km2 de 2011. Es aspiracion promocional, no medicion. (3) EL NINO NO ES NI GARANTIA NI REQUISITO. Se repite que el desierto florido es un fenomeno de El Nino, pero el mayor evento del registro, el de 2011, ocurrio con ONI de -0,4 a -1,0, o sea en plena Nina. El disparador real, segun el propio paper, es la precipitacion acumulada en una ventana de 2 a 12 meses. En 2026 el ONI de mayo-julio es +1,4 y NOAA declaro El Nino el 11 de junio, asi que ayuda, pero el argumento fuerte sigue siendo la lluvia ya medida. DONDE APUNTAR: el gradiente de lluvia dentro de la region es de casi un orden de magnitud. Alto del Carmen 210,8 mm y Vallenar 186,9 mm contra Copiapo 24,2 mm. La floracion deberia ser marcadamente mas fuerte en el sur de la region que en el sector Travesia de Copiapo. Prioridad: PN Llanos de Challe, costa de Huasco y costa de Freirina."
+      "verificado": "2026-08-24. Fecha del pulso de lluvia, desfase con el ano 2025 y mecanismo de dormancia desde fuentes primarias y prensa fechada. Las cifras de Vallenar varian entre 177,2 y 186,9 mm segun la fuente y la fecha de corte; se usa 'del orden de 180 mm'. DESCARTADO: los articulos de Ladera Sur son de agosto de 2025. NO CONSEGUIDO: el capitulo 15 de Squeo et al. sobre el Desierto Florido (biouls.cl) — el servidor rechaza la conexion. Sintesis en bibliografia/BIBLIOGRAPHY_SYNTHESIS.md.",
+      "pronostico": "LA PREGUNTA CORRECTA NO ES EN QUE MES FLORECE SINO CUANTO DEMORA DESPUES DE LA LLUVIA. MECANISMO: no basta que llueva. Segun Rosa Scherson y Nicolas Garcia (Facultad de Ciencias Forestales, U. de Chile), hacen falta entre 15 y 30 mm caidos entre junio y julio MAS suficientes horas frio acumuladas para que semillas y bulbos rompan la dormancia. Por eso el timing de 2026 es de manual: el sistema frontal descargo entre el 18 y el 22 de julio, en plena ventana util, y dejo del orden de 180 mm en Vallenar contra una normal anual de 40,2 mm. EL DESFASE, MEDIDO CON EL ANO PASADO: en 2025 llovio en agosto sobre la costa de Huasco, las primeras flores aparecieron en la tercera semana de septiembre y el peak se observo entre principios y mediados de octubre. Eso da unas 6 semanas de lluvia a primeras flores y cerca de 2 meses de lluvia a peak. 2026 VA ADELANTADO ENTRE TRES Y CUATRO SEMANAS: llovio un mes antes que en 2025 y las primeras floraciones ya se estaban viendo a mediados de agosto, o sea a unas 4 semanas del pulso. Aplicando el mismo desfase, el manto denso deberia caer entre el 15 de septiembre y el 10 de octubre, con el centro a fines de septiembre. POR QUE CONAF DICE MEDIADOS DE OCTUBRE Y NO ES CONTRADICCION: CONAF proyecta el peak de MAXIMA DIVERSIDAD Y ABUNDANCIA, que no es lo mismo que la maxima cobertura. Las primeras en florecer son Brasicaceas y Liliaceas — los bulbos, ananucas y huillis, que ya estan afuera — y las tardias son Onagraceas y Asteraceas. La maxima diversidad de especies simultaneas se alcanza cuando entran las tardias, en octubre; el manto mas denso ocurre antes. Son dos peaks distintos de dos cosas distintas. PARA PAISAJE GRANDE CONVIENE EL MANTO, NO LA DIVERSIDAD, asi que la fecha optima se corre a fines de septiembre. PALANCA DE CORRECCION: el fenomeno no ocurre a la vez en toda la region. La franja costera, enfriada y humedecida por la camanchaca, se atrasa y se sostiene mas que los llanos interiores. Si vas temprano, apunta al interior entre Vallenar y Copiapo; si vas tarde, apunta a la costa de Huasco y Freirina y al PN Llanos de Challe."
     },
     {
       "id": "longaniza-chillan",
@@ -2645,12 +2663,12 @@
       "ano": 2026,
       "titulo": "Lo que queda del ano: una sola cosa importa",
       "ancla": "desierto-florido-2026",
-      "texto": "Quedan cuatro meses y hay exactamente una ventana irrepetible: el Desierto Florido, que este ano se anuncia como uno de los mas extensos de los ultimos anos. Y hay una coincidencia que resuelve la planificacion sola: el peak proyectado es a mediados de octubre y el lunes 12 de octubre es feriado. Pidiendo el viernes 9 y el martes 13 quedan cinco dias corridos en el mejor momento del fenomeno.",
+      "texto": "Quedan cuatro meses y hay exactamente una ventana irrepetible: el Desierto Florido, que este ano se anuncia como uno de los mas extensos de los ultimos anos. La lluvia cayo concentrada entre el 18 y el 22 de julio, un mes antes que en 2025, y las primeras flores ya salieron a mediados de agosto. Aplicando el desfase observado el ano pasado, el manto mas denso deberia caer a fines de septiembre, no a mediados de octubre.",
       "items": [
         {
           "id": "desierto-florido-2026",
-          "cuando": "Viernes 9 a martes 13 de octubre",
-          "nota": "Finde largo del 12-oct dentro del peak. Base en Vallenar o Huasco, no en Copiapo: la lluvia cayo en la provincia de Huasco. Reservar ahora."
+          "cuando": "26 de septiembre a 4 de octubre",
+          "nota": "Centro de la ventana de manto denso. Plan B: finde largo del 12 de octubre, que es mas barato pero queda en el borde tardio. Base en Vallenar o Huasco, no en Copiapo."
         },
         {
           "id": "volcanes-araucania",
