@@ -19,38 +19,75 @@
       "url": "https://maps.app.goo.gl/36cdZUX5ayaUomtc9",
       "leido": "2026-08-23",
       "total_declarado": 45,
-      "leidos": 20,
-      "nota": "Google Maps solo renderiza los primeros 20 sitios en la vista de lista compartida; el cargador de los 25 restantes nunca resuelve, ni con scroll real, ni forzando el contenedor, ni recargando. Los 20 leidos estan integrados y marcados con la insignia 'De tu mapa'. Faltan 25 por incorporar.",
-      "pines_leidos": [
-        "Huellas de Dinosaurio de Cal Orcko",
-        "Formaciones rocosas de Man-Pupu-Nyor",
-        "Coihue de los Columpios",
-        "Pin colocado cerca de Refugios La Escondia, Chaiten",
-        "Semuc Champey",
-        "Machu Picchu",
-        "Stone Forest",
-        "cerro colores palcoyo checacupe",
-        "Vinicunca",
-        "Hualfin (Catamarca)",
-        "Parque Nacional Amboro",
-        "Cascada del Arcoiris",
-        "Isla del Sol",
-        "Parque Nacional Madidi",
-        "Valle de la Luna",
-        "Laguna Colorada",
-        "Puerta Del Diablo",
-        "Mirador Alaxpacha final Valle de las Animas",
-        "Andes Discovery",
-        "Parque Provincial Ischigualasto"
+      "leidos": 45,
+      "nota": "Lista completa leida. En el primer intento Google Maps solo entrego 20 sitios; al reabrir la pestana cargo los 45. Los racimos que forman: Puna y noroeste argentino unos 15 pines, Bolivia 9, Peru 7, Patagonia 3, resto disperso.",
+      "racimos": [
+        {
+          "n": "Puna y noroeste argentino",
+          "c": 15,
+          "detalle": "Campo de Piedra Pomez, Los Bolillos, Las Angosturas, Cuevas de Acsibi, Los Castillos de Villa Vil, Cerro de Colores, Hualfin, Cono de Arita, La Yesera, Garganta del Diablo, Valle Encantado, Serrania de Hornocal, Talampaya, Ischigualasto, Piramide La Troya, Cerro Alcazar"
+        },
+        {
+          "n": "Bolivia",
+          "c": 9,
+          "detalle": "Cal Orcko, Valle de la Luna, Valle de las Animas y Mirador Alaxpacha, Isla del Sol, Laguna Colorada, PN Amboro, PN Madidi, Puerta del Diablo"
+        },
+        {
+          "n": "Peru",
+          "c": 7,
+          "detalle": "Machu Picchu, Vinicunca, Palccoyo, Canon del Colca, Ruta del Sillar, Catarata de Pillones, Choqolaqa bosque de piedras"
+        },
+        {
+          "n": "Patagonia y sur de Chile",
+          "c": 4,
+          "detalle": "Pin sin nombre en Chaiten (dentro de la franja del eclipse 2027), Bosques Petrificados de Jaramillo, Laguna del Caminante, Coihue de los Columpios"
+        },
+        {
+          "n": "Fuera del Cono Sur",
+          "c": 4,
+          "detalle": "Semuc Champey e Isla de Flores en Guatemala, Man-Pupu-Nyor en los Urales, Stone Forest sin ubicar"
+        }
       ],
       "pines_ambiguos": [
         {
+          "pin": "Cerro Bayo",
+          "duda": "Hay uno en Villa La Angostura (Neuquen, centro de esqui) y otro en la Puna catamarquena, cerca de Antofalla. Por el resto de la lista lo mas probable es el catamarqueno, pero no esta confirmado."
+        },
+        {
+          "pin": "Laguna del Caminante",
+          "duda": "Suena a Tierra del Fuego, en el circuito del Paso de la Oveja desde Ushuaia, pero hay lagunas homonimas. Confirmar antes de asignarle temporada."
+        },
+        {
+          "pin": "Cascada Santa Ana",
+          "duda": "Existen varias con ese nombre en Sudamerica, incluida una en Misiones. Sin coordenadas no se puede ubicar."
+        },
+        {
+          "pin": "PUERTO VIEJO",
+          "duda": "Puede ser Puerto Viejo en Chanaral (Atacama, Chile) o Puerto Viejo en Costa Rica. Dos hemisferios de diferencia."
+        },
+        {
+          "pin": "Isla de Flores",
+          "duda": "Probablemente Flores, en el Peten guatemalteco, que es la puerta de entrada a Tikal y calza con Semuc Champey. Tambien existe la Isla de Flores uruguaya."
+        },
+        {
+          "pin": "Choqolaqa bosque de piedras",
+          "duda": "Bosque de piedras en Peru. Suele asociarse al circuito de Palccoyo en Cusco, pero tambien hay bosques de piedras en Arequipa (Imata). Confirmar cual."
+        },
+        {
+          "pin": "Catarata de Pillones - Pauza",
+          "duda": "La catarata de Pillones esta en Arequipa, camino al Colca, pero Pauza queda en Ayacucho. El pin mezcla dos referencias."
+        },
+        {
+          "pin": "AREA PROTEGIDA MUNICIPAL / CUEVAS DE ACSIBI",
+          "duda": "Casi con seguridad en Antofagasta de la Sierra, Catamarca, pero conviene confirmar el acceso y si requiere guia."
+        },
+        {
           "pin": "Coihue de los Columpios",
-          "duda": "Arbol y atraccion turistica en Chile, pero la lista no entrega la comuna. Confirmar en el pin antes de agendarlo."
+          "duda": "Arbol y atraccion turistica en Chile, pero la lista no entrega la comuna."
         },
         {
           "pin": "Stone Forest",
-          "duda": "Google marca el sitio como inexistente. Puede ser el bosque de piedra de Shilin (China) o los tsingy de Madagascar: dos viajes completamente distintos."
+          "duda": "Google marca el sitio como inexistente. Puede ser Shilin en China o los tsingy de Madagascar: dos viajes completamente distintos."
         },
         {
           "pin": "Cascada del Arcoiris",
@@ -58,7 +95,7 @@
         },
         {
           "pin": "Puerta Del Diablo",
-          "duda": "Existe una muy conocida en El Salvador y otra en Bolivia. Por el resto de la lista lo mas probable es la boliviana, pero no esta confirmado."
+          "duda": "Existe una muy conocida en El Salvador y otra en Bolivia. Por el resto de la lista lo mas probable es la boliviana."
         },
         {
           "pin": "Andes Discovery",
@@ -69,6 +106,11 @@
           "duda": "Sin nombre. Cae junto a los refugios La Escondia en Chaiten, dentro de la franja del eclipse anular de 2027."
         }
       ]
+    },
+    "sugerencias": {
+      "que_es": "Sitios que no estan en tu mapa pero que responden al mismo proceso geologico que los que si marcaste. La busqueda se hizo por mecanismo, no por nombre: badlands, meteorizacion diferencial en pilares, icnitas sobre estratos basculados, campos volcanicos monogeneticos, canones por incision y lagunas altiplanicas de color.",
+      "cobertura": "Chile, Argentina, Peru y Bolivia.",
+      "como_verlos": "Filtra por 'Sugeridos' en cualquiera de las vistas. Cada ficha dice a que pin tuyo se parece y por que."
     }
   },
   "categorias": {
@@ -540,7 +582,8 @@
       "combo": [
         "campo-piedra-pomez"
       ],
-      "fuentes": []
+      "fuentes": [],
+      "mapa": "Planes de viajes (Google Maps)"
     },
     {
       "id": "uyuni-espejo",
@@ -1346,7 +1389,8 @@
       },
       "porque": "Troncos de araucaria jurasicos de hasta 35 m silicificados in situ, enterrados por las cenizas del volcanismo que acompano la fragmentacion de Gondwana. Pali Aike suma un campo volcanico monogenetico cuaternario con conos de escoria, maares y tubos de lava, ademas de sitios arqueologicos tempranos. Los dos son geologia de manual al alcance de un auto.",
       "logistica": "Se cruzan de paso en cualquier road trip por Ruta 3 o Ruta 40. Pali Aike esta a ~200 km de Punta Arenas.",
-      "fuentes": []
+      "fuentes": [],
+      "mapa": "Planes de viajes (Google Maps)"
     },
     {
       "id": "ruta40-norte",
@@ -1380,7 +1424,8 @@
         "campo-piedra-pomez",
         "quebrada-humahuaca"
       ],
-      "fuentes": []
+      "fuentes": [],
+      "mapa": "Planes de viajes (Google Maps)"
     },
     {
       "id": "antartica",
@@ -1712,6 +1757,854 @@
       "porque": "Siete pilares de esquisto de entre 30 y 42 m, ultimos restos de una montana entera desmantelada por meteorizacion diferencial durante decenas de millones de anos: la roca blanda se fue y quedo lo resistente. Es el mismo proceso que produce los hoodoos, pero en un macizo antiguo y a otra escala.",
       "logistica": "Es el pin mas remoto de tu lista con diferencia. Reserva natural de Pechoro-Ilych, sin caminos: se llega en helicoptero o con una expedicion a pie de varios dias, y requiere permiso de la reserva. Sumado a la situacion geopolitica actual, tratalo como aspiracional a largo plazo, no como un viaje planificable hoy.",
       "fuentes": []
+    },
+    {
+      "id": "cono-de-arita",
+      "nombre": "Cono de Arita y Salar de Arizaro",
+      "cat": "geo",
+      "pais": "Argentina",
+      "zona": "Salta (Tolar Grande, Puna de Atacama)",
+      "lat": -24.6,
+      "lon": -67.77,
+      "dur": "escapada",
+      "dias": [
+        4,
+        6
+      ],
+      "prio": 5,
+      "certeza": "clima",
+      "mapa": "Planes de viajes (Google Maps)",
+      "temporada": {
+        "ini": "09-01",
+        "fin": "11-30",
+        "peak": [
+          {
+            "ini": "09-15",
+            "fin": "11-15"
+          }
+        ],
+        "nota": "Segunda ventana: marzo a mayo. Evitar enero-febrero por las lluvias del monzon sudamericano, que cortan las huellas, y pleno invierno por el viento blanco."
+      },
+      "porque": "Un cono de casi 200 m de altura y laderas notablemente regulares, plantado solo sobre la costra del Arizaro, el tercer salar mas grande del mundo. No es un volcan comun: se interpreta como un cuerpo intrusivo o un centro eruptivo abortado que quedo expuesto por erosion, y esa discusion sigue abierta. Alrededor: Tolar Grande, el Desierto del Diablo, los Ojos del Mar y las minas de la Puna saltena.",
+      "logistica": "Desde Salta por San Antonio de los Cobres y Tolar Grande, o desde Antofagasta de la Sierra por la traza de la Puna. 4x4 imprescindible, combustible escaso y tramos largos sin senal. Se encadena con el Campo de Piedra Pomez en el mismo circuito.",
+      "combo": [
+        "campo-piedra-pomez",
+        "antofagasta-de-la-sierra"
+      ],
+      "fuentes": []
+    },
+    {
+      "id": "antofagasta-de-la-sierra",
+      "nombre": "Alrededores de Antofagasta de la Sierra: Los Bolillos, Las Angosturas y Villa Vil",
+      "cat": "geo",
+      "pais": "Argentina",
+      "zona": "Catamarca (Antofagasta de la Sierra, Belen)",
+      "lat": -26.09,
+      "lon": -67.41,
+      "dur": "escapada",
+      "dias": [
+        5,
+        8
+      ],
+      "prio": 5,
+      "certeza": "clima",
+      "mapa": "Planes de viajes (Google Maps)",
+      "temporada": {
+        "ini": "04-01",
+        "fin": "06-15",
+        "peak": [
+          {
+            "ini": "04-15",
+            "fin": "05-31"
+          }
+        ],
+        "nota": "Segunda ventana: septiembre a noviembre. Cinco pines distintos de tu lista caen dentro de este radio, asi que conviene tratarlo como una base y no como una parada."
+      },
+      "porque": "Es el radio donde se concentra la mayor densidad de pines de tu mapa. Los Bolillos son hoodoos de material piroclastico blanco esculpidos por el viento; la Quebrada Las Angosturas suma un estrechamiento con arte rupestre; Los Castillos de Villa Vil y el Cerro de Colores agregan erosion en areniscas y secuencias policromas. Todo eso orbita el Campo de Piedra Pomez y la caldera del Galan, en el mismo dia de manejo.",
+      "logistica": "Base en Antofagasta de la Sierra, a 3.400 m. Acceso por Belen y El Penon, o desde Salta por la Ruta 40. Varios sectores exigen guia habilitada y 4x4. Cargar combustible en cada oportunidad.",
+      "combo": [
+        "campo-piedra-pomez",
+        "cono-de-arita",
+        "ruta40-norte"
+      ],
+      "fuentes": []
+    },
+    {
+      "id": "cafayate-conchas",
+      "nombre": "Quebrada de las Conchas: La Yesera, Garganta del Diablo y Valle Encantado",
+      "cat": "geo",
+      "pais": "Argentina",
+      "zona": "Salta (Cafayate, Cachi)",
+      "lat": -25.9,
+      "lon": -65.79,
+      "dur": "escapada",
+      "dias": [
+        3,
+        5
+      ],
+      "prio": 4,
+      "certeza": "clima",
+      "mapa": "Planes de viajes (Google Maps)",
+      "temporada": {
+        "ini": "04-01",
+        "fin": "06-15",
+        "peak": [
+          {
+            "ini": "04-15",
+            "fin": "05-31"
+          }
+        ],
+        "nota": "Segunda ventana: septiembre a noviembre. En verano hay crecidas repentinas en la quebrada."
+      },
+      "porque": "La Quebrada de las Conchas es un corte continuo por la secuencia sedimentaria del rift cretacico del Grupo Salta: areniscas rojas, yesos y conglomerados, cada formacion con su color. La Yesera expone justamente los niveles evaporiticos, y la Garganta del Diablo y el Anfiteatro son cortes por fracturas ensanchadas por el agua. Es de los pocos lugares donde se maneja adentro de una columna estratigrafica.",
+      "logistica": "Ruta 68 entre Salta y Cafayate; se hace en auto normal y con paradas cortas. El Valle Encantado, camino a Cachi por la Cuesta del Obispo y Los Cardones, es otro dia. Cafayate agrega las bodegas de Torrontes de altura.",
+      "combo": [
+        "ruta40-norte",
+        "antofagasta-de-la-sierra"
+      ],
+      "fuentes": []
+    },
+    {
+      "id": "alcazar-la-troya",
+      "nombre": "Cerro Alcazar y Piramide de La Troya",
+      "cat": "geo",
+      "pais": "Argentina",
+      "zona": "San Juan (Calingasta) y La Rioja (Quebrada de La Troya)",
+      "lat": -31.35,
+      "lon": -69.35,
+      "dur": "escapada",
+      "dias": [
+        4,
+        6
+      ],
+      "prio": 4,
+      "certeza": "clima",
+      "mapa": "Planes de viajes (Google Maps)",
+      "temporada": {
+        "ini": "04-01",
+        "fin": "06-15",
+        "peak": [
+          {
+            "ini": "04-15",
+            "fin": "05-31"
+          }
+        ],
+        "nota": "Segunda ventana: septiembre a noviembre. El verano en Cuyo pasa los 40 grados y el invierno cierra pasos de altura."
+      },
+      "porque": "Los dos son erosion diferencial en areniscas continentales rojas, el mismo motivo que Ischigualasto y Talampaya pero a escala de un afloramiento que se recorre caminando. Estan lo bastante cerca de esos dos parques como para armar un solo circuito de Cuyo y La Rioja, y esa combinacion cubre cuatro pines de tu mapa.",
+      "logistica": "Cerro Alcazar queda cerca de Calingasta, San Juan, sobre la Ruta 149. La Quebrada de La Troya esta en La Rioja, camino a Villa Union y Talampaya. El circuito natural es San Juan, Ischigualasto, Talampaya, La Troya, con salida por Villa Union.",
+      "combo": [
+        "ischigualasto-talampaya"
+      ],
+      "fuentes": []
+    },
+    {
+      "id": "canon-del-colca",
+      "nombre": "Canon del Colca",
+      "cat": "paisaje",
+      "pais": "Peru",
+      "zona": "Arequipa (Chivay, Cabanaconde)",
+      "lat": -15.61,
+      "lon": -71.99,
+      "dur": "escapada",
+      "dias": [
+        4,
+        6
+      ],
+      "prio": 4,
+      "certeza": "clima",
+      "mapa": "Planes de viajes (Google Maps)",
+      "temporada": {
+        "ini": "04-15",
+        "fin": "11-30",
+        "peak": [
+          {
+            "ini": "05-01",
+            "fin": "09-30"
+          }
+        ],
+        "nota": "Temporada seca. Los condores se ven mejor en la manana temprano, entre las 8 y las 10, cuando arrancan las termicas."
+      },
+      "porque": "Mas del doble de profundidad que el Gran Canon: cerca de 3.270 m entre el filo y el rio. Se excavo por incision del rio Colca mientras el altiplano se levantaba, en un contexto de volcanismo activo (Sabancaya, Ampato, Hualca Hualca a la vista). La Cruz del Condor es de los mejores puntos del mundo para ver condor andino desde arriba, no desde abajo.",
+      "logistica": "Desde Arequipa, cruzando la reserva de Salinas y Aguada Blanca a 4.900 m: aclimatar antes. Base en Chivay o Cabanaconde. Se encadena con la Ruta del Sillar y las cataratas de Pillones en el mismo viaje a Arequipa.",
+      "combo": [
+        "ruta-del-sillar"
+      ],
+      "fuentes": []
+    },
+    {
+      "id": "ruta-del-sillar",
+      "nombre": "Ruta del Sillar, Arequipa",
+      "cat": "geo",
+      "pais": "Peru",
+      "zona": "Arequipa (Ananshuayco, Culebrillas)",
+      "lat": -16.34,
+      "lon": -71.59,
+      "dur": "finde",
+      "dias": [
+        1,
+        3
+      ],
+      "prio": 5,
+      "certeza": "clima",
+      "mapa": "Planes de viajes (Google Maps)",
+      "temporada": {
+        "ini": "04-15",
+        "fin": "11-30",
+        "peak": [
+          {
+            "ini": "05-01",
+            "fin": "09-30"
+          }
+        ],
+        "nota": "Temporada seca. En lluvias las quebradas de las canteras pueden bajar con agua."
+      },
+      "porque": "Es geologia y urbanismo en la misma visita. El sillar es la ignimbrita blanca depositada por erupciones del complejo Chachani y del Ampato: una toba soldada tan liviana y tan facil de cortar que Arequipa entera se construyo con ella, de ahi lo de Ciudad Blanca. En las quebradas de Ananshuayco y Culebrillas se ven los frentes de cantera cortados a mano, con los bloques todavia marcados. Pocas veces se puede senalar la erupcion que explica el aspecto de una ciudad.",
+      "logistica": "A media hora del centro de Arequipa, se hace en medio dia. Ideal como primer panorama mientras aclimatas antes de subir al Colca.",
+      "combo": [
+        "canon-del-colca"
+      ],
+      "fuentes": []
+    },
+    {
+      "id": "banado-la-estrella",
+      "nombre": "Banado La Estrella",
+      "cat": "fauna",
+      "pais": "Argentina",
+      "zona": "Formosa (Ruta 28, Las Lomitas)",
+      "lat": -24.1,
+      "lon": -60.6,
+      "dur": "escapada",
+      "dias": [
+        4,
+        6
+      ],
+      "prio": 3,
+      "certeza": "clima",
+      "mapa": "Planes de viajes (Google Maps)",
+      "temporada": {
+        "ini": "05-01",
+        "fin": "09-30",
+        "peak": [
+          {
+            "ini": "06-01",
+            "fin": "08-31"
+          }
+        ],
+        "nota": "La extension del banado depende del pulso de crecida del rio Pilcomayo, que llega con meses de retraso: hay anos secos. Consultar el estado antes de viajar, y evitar el verano por calor extremo y caminos de tierra intransitables."
+      },
+      "porque": "El tercer humedal mas grande de Argentina, y una rareza hidrologica: el Pilcomayo pierde su cauce definido por exceso de sedimento y se derrama en abanico sobre la llanura chaquena. Los arboles muertos cubiertos de plantas epifitas, los champales, son la postal. Fauna de Chaco humedo: yacares, carpinchos, aves acuaticas en cantidad.",
+      "logistica": "Formosa profunda, sobre la Ruta Provincial 28 desde Las Lomitas. Muy lejos de todo lo demas de tu lista: es un viaje aparte, no una escala.",
+      "fuentes": []
+    },
+    {
+      "id": "valle-arcoiris-tara",
+      "nombre": "Valle del Arcoiris y Monjes de la Pacana",
+      "cat": "geo",
+      "pais": "Chile",
+      "zona": "Antofagasta (Rio Grande y sector Tara, San Pedro de Atacama)",
+      "lat": -22.83,
+      "lon": -68.13,
+      "dur": "escapada",
+      "dias": [
+        3,
+        5
+      ],
+      "prio": 4,
+      "certeza": "clima",
+      "similar_a": "Vinicunca y Serrania de Hornocal (color por litologia) + Los Bolillos (pilares de ignimbrita)",
+      "temporada": {
+        "ini": "03-15",
+        "fin": "11-30",
+        "peak": [
+          {
+            "ini": "04-01",
+            "fin": "05-31"
+          },
+          {
+            "ini": "09-01",
+            "fin": "11-15"
+          }
+        ],
+        "nota": "Evitar enero y febrero por el invierno boliviano, que corta caminos de ripio en el altiplano."
+      },
+      "porque": "La montana de colores que tienes marcada en Peru existe en Chile y casi nadie la nombra. En el Valle del Arcoiris, cerca de Rio Grande, las bandas verdes, rojas, blancas y moradas son unidades del Grupo Purilactis oxidadas en condiciones distintas: exactamente el mismo mecanismo que Vinicunca y el Hornocal, pero a tres horas de San Pedro. Y en el sector Tara, los Monjes de la Pacana son pilares de la Ignimbrita Atana labrados por el viento, o sea el equivalente chileno de Los Bolillos catamarquenos. Los dos juntos cubren dos de tus pines sin salir del pais.",
+      "logistica": "Desde San Pedro de Atacama. El Valle del Arcoiris se hace en medio dia; Tara y Monjes de la Pacana exigen 4x4, dia completo y 4.400 m de altura. Yerbas Buenas, con petroglifos, queda de camino.",
+      "combo": [
+        "atacama-astro",
+        "cordillera-de-la-sal"
+      ],
+      "fuentes": []
+    },
+    {
+      "id": "cordillera-de-la-sal",
+      "nombre": "Cordillera de la Sal: Valle de la Luna y Valle de la Muerte",
+      "cat": "geo",
+      "pais": "Chile",
+      "zona": "Antofagasta (San Pedro de Atacama)",
+      "lat": -22.93,
+      "lon": -68.28,
+      "dur": "finde",
+      "dias": [
+        1,
+        3
+      ],
+      "prio": 4,
+      "certeza": "clima",
+      "similar_a": "Valle de la Luna y Valle de las Animas de La Paz (badlands)",
+      "temporada": {
+        "ini": "03-15",
+        "fin": "11-30",
+        "peak": [
+          {
+            "ini": "04-01",
+            "fin": "05-31"
+          },
+          {
+            "ini": "09-01",
+            "fin": "11-15"
+          }
+        ],
+        "nota": "El anfiteatro y las Tres Marias se ven mejor al atardecer. Acceso regulado por horario."
+      },
+      "porque": "Tu pin del Valle de la Luna pacena tiene gemelo chileno, y con una vuelta de tuerca: aca los badlands no estan labrados en sedimentos sueltos sino en un diapiro de sal, un anticlinal de halita y yeso empujado hacia arriba por su propia flotabilidad. Se oyen crujir los cristales cuando cambia la temperatura. Es el mismo paisaje, con otra fisica detras.",
+      "logistica": "A 15 minutos de San Pedro. Se hace en bicicleta o auto. Entrada por CONAF y la comunidad atacamena; horarios acotados al atardecer.",
+      "combo": [
+        "valle-arcoiris-tara",
+        "atacama-astro"
+      ],
+      "fuentes": []
+    },
+    {
+      "id": "pichasca",
+      "nombre": "Monumento Natural Pichasca",
+      "cat": "geo",
+      "pais": "Chile",
+      "zona": "Coquimbo (Rio Hurtado, cerca de Ovalle)",
+      "lat": -30.4,
+      "lon": -70.87,
+      "dur": "finde",
+      "dias": [
+        2,
+        3
+      ],
+      "prio": 4,
+      "certeza": "clima",
+      "similar_a": "Cal Orcko y Bosques Petrificados de Jaramillo (paleontologia in situ)",
+      "temporada": {
+        "ini": "03-01",
+        "fin": "11-30",
+        "peak": [
+          {
+            "ini": "09-01",
+            "fin": "11-15"
+          },
+          {
+            "ini": "03-15",
+            "fin": "05-15"
+          }
+        ],
+        "nota": "Evitar el verano por calor. Se combina con el Desierto Florido si el ano viene con lluvia."
+      },
+      "porque": "Es el Jaramillo del norte chico, y casi nadie lo visita: troncos petrificados del Cretacico in situ, restos de dinosaurios y un aleron de ignimbrita con un alero habitado por cazadores recolectores. Tres registros distintos, del Cretacico al Holoceno, en una misma quebrada. Si te gusto la idea de Jaramillo, este esta a un dia de manejo y no a tres.",
+      "logistica": "Desde Ovalle por el valle del Rio Hurtado, camino de ripio en buen estado. Se encadena con el Valle del Encanto y sus petroglifos, y con el Observatorio del Elqui si sigues hacia el sur.",
+      "combo": [
+        "desierto-florido-2026",
+        "atacama-astro"
+      ],
+      "fuentes": []
+    },
+    {
+      "id": "termas-del-flaco",
+      "nombre": "Huellas de dinosaurio de Termas del Flaco",
+      "cat": "geo",
+      "pais": "Chile",
+      "zona": "O'Higgins (San Fernando, cajon del rio Tinguiririca)",
+      "lat": -34.95,
+      "lon": -70.4,
+      "dur": "finde",
+      "dias": [
+        2,
+        3
+      ],
+      "prio": 4,
+      "certeza": "clima",
+      "similar_a": "Cal Orcko (icnitas en estratos basculados)",
+      "temporada": {
+        "ini": "12-01",
+        "fin": "03-31",
+        "peak": [
+          {
+            "ini": "12-15",
+            "fin": "03-15"
+          }
+        ],
+        "nota": "El camino a Termas del Flaco es de cornisa, sin pavimento y con transito regulado por horario en un solo sentido. Cierra en invierno."
+      },
+      "porque": "Chile tiene su propio Cal Orcko y esta a cinco horas de Santiago: una losa de la Formacion Banos del Flaco con icnitas de dinosaurio del Jurassico superior, sobre estratos marinos basculados por el mismo acortamiento andino que enderezo la pared boliviana. Es Monumento Natural. Mucho mas chico que Cal Orcko, pero permite ver el fenomeno sin cruzar dos fronteras.",
+      "logistica": "San Fernando y despues el cajon del Tinguiririca, con horario de subida y bajada controlado. Solo verano: el camino se cierra con nieve. Confirmar el estado del camino con vialidad antes de salir.",
+      "fuentes": []
+    },
+    {
+      "id": "piedras-rojas-talar",
+      "nombre": "Piedras Rojas, Salar de Talar y lagunas altiplanicas",
+      "cat": "paisaje",
+      "pais": "Chile",
+      "zona": "Antofagasta (Socaire, Salar de Talar, Miscanti y Minique)",
+      "lat": -23.85,
+      "lon": -67.72,
+      "dur": "escapada",
+      "dias": [
+        3,
+        5
+      ],
+      "prio": 4,
+      "certeza": "clima",
+      "similar_a": "Laguna Colorada y Sud Lipez (lagunas altiplanicas de color)",
+      "temporada": {
+        "ini": "03-15",
+        "fin": "11-30",
+        "peak": [
+          {
+            "ini": "04-01",
+            "fin": "05-31"
+          },
+          {
+            "ini": "09-01",
+            "fin": "11-15"
+          }
+        ],
+        "nota": "Sobre 4.000 m: aclimatar en San Pedro antes. Enero y febrero traen lluvia altiplanica."
+      },
+      "porque": "Si te atrajo la Laguna Colorada, esta es la version chilena y con mejor acceso: el rojo de Piedras Rojas viene de la oxidacion del hierro en la roca volcanica del borde del Salar de Talar, contra el turquesa de la salmuera. Miscanti y Minique agregan dos lagunas de origen tectonico represadas por lavas del Miniques. Todo en el mismo dia desde Socaire.",
+      "logistica": "Desde San Pedro de Atacama por Socaire. Los accesos estan administrados por comunidades atacamenas con horario y cobro; conviene salir temprano.",
+      "combo": [
+        "atacama-astro",
+        "valle-arcoiris-tara"
+      ],
+      "fuentes": []
+    },
+    {
+      "id": "la-payunia",
+      "nombre": "La Payunia: Payun Matru y el mar de conos",
+      "cat": "geo",
+      "pais": "Argentina",
+      "zona": "Mendoza (Malargue)",
+      "lat": -36.42,
+      "lon": -69.25,
+      "dur": "escapada",
+      "dias": [
+        4,
+        6
+      ],
+      "prio": 5,
+      "certeza": "clima",
+      "similar_a": "Pali Aike, pero a otra escala (campo volcanico monogenetico)",
+      "temporada": {
+        "ini": "10-01",
+        "fin": "04-15",
+        "peak": [
+          {
+            "ini": "11-01",
+            "fin": "12-20"
+          },
+          {
+            "ini": "03-01",
+            "fin": "04-10"
+          }
+        ],
+        "nota": "En invierno nieva y los caminos internos de la reserva se cierran. En pleno verano hace calor y viento fuerte."
+      },
+      "porque": "Es el sitio que mas deberia interesarte de esta lista y el que menos suena. La reserva de La Payunia concentra una de las mayores densidades de conos volcanicos monogeneticos del planeta, del orden de 800 en unos pocos miles de km2, con el escudo del Payun Matru en el centro y coladas basalticas holocenas todavia sin vegetacion. El Campo de Bombas y las Pampas Negras son campos de piroclastos que se caminan. Si Pali Aike te parecio interesante, esto es lo mismo multiplicado por cien, y Argentina lo postulo a Patrimonio Mundial por eso.",
+      "logistica": "Base en Malargue, Mendoza. El ingreso a la reserva es con guia habilitada y vehiculo alto; hay circuitos de dia completo. Se encadena con la Caverna de las Brujas, el Pozo de las Animas y los Castillos de Pincheira. Desde Temuco se llega por el paso Pehuenche, que es de los cruces mas directos.",
+      "fuentes": []
+    },
+    {
+      "id": "sierra-de-las-quijadas",
+      "nombre": "Parque Nacional Sierra de las Quijadas",
+      "cat": "geo",
+      "pais": "Argentina",
+      "zona": "San Luis (Hualtaran)",
+      "lat": -32.49,
+      "lon": -67.03,
+      "dur": "finde",
+      "dias": [
+        2,
+        4
+      ],
+      "prio": 3,
+      "certeza": "clima",
+      "similar_a": "Ischigualasto y Talampaya (badlands rojos con paleontologia)",
+      "temporada": {
+        "ini": "04-01",
+        "fin": "06-15",
+        "peak": [
+          {
+            "ini": "04-15",
+            "fin": "05-31"
+          },
+          {
+            "ini": "09-01",
+            "fin": "10-31"
+          }
+        ],
+        "nota": "Segunda ventana: septiembre a octubre. El verano supera los 45 grados en el Potrero de la Aguada."
+      },
+      "porque": "El tercer vertice del triangulo que ya tienes con Ischigualasto y Talampaya, y el menos visitado de los tres. El Potrero de la Aguada es un anfiteatro de erosion de varios kilometros abierto en areniscas cretacicas rojas, y de ahi salio el Pterodaustro, un pterosaurio filtrador con cientos de dientes en forma de cerda. Mismo tipo de afloramiento, otra fauna.",
+      "logistica": "Sobre la Ruta 147 al norte de San Luis. Se hace en el dia desde San Luis o de paso hacia La Rioja. Los senderos al fondo del potrero requieren guia.",
+      "combo": [
+        "ischigualasto-talampaya",
+        "alcazar-la-troya"
+      ],
+      "fuentes": []
+    },
+    {
+      "id": "chocon-barreales",
+      "nombre": "Villa El Chocon y Lago Barreales: la ruta de los dinosaurios",
+      "cat": "geo",
+      "pais": "Argentina",
+      "zona": "Neuquen (Villa El Chocon, Anelo)",
+      "lat": -39.26,
+      "lon": -68.78,
+      "dur": "escapada",
+      "dias": [
+        3,
+        5
+      ],
+      "prio": 4,
+      "certeza": "clima",
+      "similar_a": "Cal Orcko (icnitas y paleontologia de campo)",
+      "temporada": {
+        "ini": "09-15",
+        "fin": "04-30",
+        "peak": [
+          {
+            "ini": "10-01",
+            "fin": "11-30"
+          },
+          {
+            "ini": "03-01",
+            "fin": "04-15"
+          }
+        ],
+        "nota": "Evitar pleno verano por calor y viento. En invierno cierra parte de la actividad de campo."
+      },
+      "porque": "Es el pin de Cal Orcko con pasaporte argentino y a un dia de manejo desde Temuco por Pino Hachado. En Villa El Chocon hay huellas de dinosaurio a la orilla del embalse y el museo con el Giganotosaurus carolinii, el terapodo mas grande conocido, encontrado ahi mismo. En el Lago Barreales funciona un yacimiento paleontologico a cielo abierto donde se puede ver excavacion en curso, no vitrinas.",
+      "logistica": "Desde Temuco por paso Pino Hachado a Zapala y Neuquen: es el destino paleontologico mas cercano que tienes fuera de Chile. El centro del Lago Barreales tiene temporada de campana; confirmar antes si se quiere ver excavacion activa.",
+      "fuentes": []
+    },
+    {
+      "id": "piedra-parada",
+      "nombre": "Piedra Parada y Canadon de la Buitrera",
+      "cat": "geo",
+      "pais": "Argentina",
+      "zona": "Chubut (Gualjaina, valle del rio Chubut)",
+      "lat": -42.65,
+      "lon": -70.15,
+      "dur": "finde",
+      "dias": [
+        2,
+        4
+      ],
+      "prio": 4,
+      "certeza": "clima",
+      "similar_a": "Cono de Arita (cuerpo volcanico exhumado por erosion)",
+      "temporada": {
+        "ini": "11-01",
+        "fin": "04-15",
+        "peak": [
+          {
+            "ini": "11-15",
+            "fin": "03-31"
+          }
+        ],
+        "nota": "Verano y otono. En invierno el valle se pone duro y el canadon puede crecer."
+      },
+      "porque": "Un cuello volcanico de unos 240 m parado solo en medio del valle del Chubut: el conducto solidificado de un volcan del que la erosion se llevo todo lo demas, que es exactamente la discusion que rodea a tu pin del Cono de Arita. Al lado, el Canadon de la Buitrera corta la caldera y es hoy uno de los mejores sectores de escalada en roca de Sudamerica. Y lo mejor para ti: queda en el camino entre Esquel y Futaleufu, o sea sobre la ruta del eclipse de 2027.",
+      "logistica": "Desde Esquel por Gualjaina, camino de ripio. Se puede acampar en el area protegida provincial. Encaja como parada de dos dias dentro del viaje del eclipse, sin desviarse.",
+      "combo": [
+        "eclipse-anular-2027"
+      ],
+      "fuentes": []
+    },
+    {
+      "id": "valle-volcanes-andagua",
+      "nombre": "Valle de los Volcanes de Andagua",
+      "cat": "geo",
+      "pais": "Peru",
+      "zona": "Arequipa (Andagua, provincia de Castilla)",
+      "lat": -15.5,
+      "lon": -72.35,
+      "dur": "escapada",
+      "dias": [
+        3,
+        5
+      ],
+      "prio": 5,
+      "certeza": "clima",
+      "similar_a": "La Payunia y Pali Aike (conos monogeneticos holocenos)",
+      "temporada": {
+        "ini": "04-15",
+        "fin": "11-30",
+        "peak": [
+          {
+            "ini": "05-01",
+            "fin": "09-30"
+          }
+        ],
+        "nota": "Temporada seca. El acceso desde el Colca es de ripio de montana y toma varias horas."
+      },
+      "porque": "Unos ochenta conos de escoria holocenos alineados en el fondo de un valle, con coladas tan recientes que la vegetacion todavia no las cubre, y todo eso encajado dentro de un canon. Es el equivalente peruano de La Payunia y esta a un costado del Colca, que ya tienes marcado. Muy poca gente lo visita, lo que en la practica significa que se camina solo entre volcanes.",
+      "logistica": "Desde Arequipa via Chivay y el Colca, o por Aplao. Camino largo de ripio; conviene 4x4 o transporte contratado. Se encadena con el Colca y con la Ruta del Sillar en el mismo viaje a Arequipa.",
+      "combo": [
+        "canon-del-colca",
+        "ruta-del-sillar"
+      ],
+      "fuentes": []
+    },
+    {
+      "id": "cotahuasi",
+      "nombre": "Canon de Cotahuasi",
+      "cat": "paisaje",
+      "pais": "Peru",
+      "zona": "Arequipa (La Union, Cotahuasi)",
+      "lat": -15.2,
+      "lon": -72.9,
+      "dur": "escapada",
+      "dias": [
+        4,
+        7
+      ],
+      "prio": 3,
+      "certeza": "clima",
+      "similar_a": "Canon del Colca, pero mas profundo y sin turismo masivo",
+      "temporada": {
+        "ini": "04-15",
+        "fin": "11-30",
+        "peak": [
+          {
+            "ini": "05-01",
+            "fin": "09-30"
+          }
+        ],
+        "nota": "Temporada seca. El acceso por carretera desde Arequipa toma entre 10 y 12 horas."
+      },
+      "porque": "Se cita entre los canones mas profundos del mundo, del orden de 3.500 m, es decir todavia mas que el Colca que ya tienes marcado, y con una fraccion de los visitantes. Suma las cataratas de Sipia, terrazas preincaicas y el bosque de piedras de Huito. La contrapartida es el acceso: es un viaje aparte, no una excursion desde Arequipa.",
+      "logistica": "Bus o vehiculo desde Arequipa, entre 10 y 12 horas de camino de montana. Conviene destinarle al menos cuatro dias completos.",
+      "combo": [
+        "canon-del-colca"
+      ],
+      "fuentes": []
+    },
+    {
+      "id": "querulpa",
+      "nombre": "Huellas de dinosaurio de Querulpa",
+      "cat": "geo",
+      "pais": "Peru",
+      "zona": "Arequipa (Aplao, valle de Majes)",
+      "lat": -16.09,
+      "lon": -72.49,
+      "dur": "finde",
+      "dias": [
+        1,
+        2
+      ],
+      "prio": 3,
+      "certeza": "clima",
+      "similar_a": "Cal Orcko (icnitas cretacicas)",
+      "temporada": {
+        "ini": "04-15",
+        "fin": "11-30",
+        "peak": [
+          {
+            "ini": "05-01",
+            "fin": "09-30"
+          }
+        ],
+        "nota": "Confirmar estado del sitio y del museo local antes de ir: la senalizacion y los horarios cambian."
+      },
+      "porque": "El equivalente peruano de Cal Orcko: icnitas de dinosaurio del Cretacico en el valle de Majes, sobre la ruta entre Arequipa y el Colca. No tiene la escala boliviana, pero completa el patron y queda de paso.",
+      "logistica": "En el valle de Majes, cerca de Aplao, camino a Andagua o al Colca por la ruta baja. Media jornada.",
+      "combo": [
+        "valle-volcanes-andagua",
+        "canon-del-colca"
+      ],
+      "fuentes": []
+    },
+    {
+      "id": "torotoro",
+      "nombre": "Parque Nacional Torotoro",
+      "cat": "geo",
+      "pais": "Bolivia",
+      "zona": "Potosi (Torotoro, a 4 h de Cochabamba)",
+      "lat": -18.13,
+      "lon": -65.76,
+      "dur": "escapada",
+      "dias": [
+        3,
+        5
+      ],
+      "prio": 5,
+      "certeza": "clima",
+      "similar_a": "Cal Orcko (icnitas) + Semuc Champey (karst y cavernas), en el mismo parque",
+      "temporada": {
+        "ini": "04-15",
+        "fin": "10-31",
+        "peak": [
+          {
+            "ini": "05-01",
+            "fin": "09-30"
+          }
+        ],
+        "nota": "Temporada seca. En lluvias el canon crece y varios sectores se cierran."
+      },
+      "porque": "Es el sitio que mas se parece a la suma de tus pines y no lo tienes marcado. En un solo parque hay: cientos de huellas de dinosaurio cretacicas sobre estratos inclinados, igual que en Cal Orcko; el Canon de Torotoro con 250 m de corte y la cascada del Vergel al fondo; la Caverna de Umajalanta, la mas profunda de Bolivia, con peces ciegos; y todo montado sobre un sinclinal espectacularmente expuesto que se lee entero desde el mirador. Es Cal Orcko y Semuc Champey en la misma entrada.",
+      "logistica": "Desde Cochabamba, entre 4 y 6 horas por camino de montana ya mayormente asfaltado. Todos los circuitos exigen guia local del sindicato, que se contrata en el pueblo. Encaja como desvio dentro del circuito boliviano, entre La Paz y Sucre.",
+      "combo": [
+        "bolivia-altiplano-circuito",
+        "cal-orcko"
+      ],
+      "fuentes": []
+    },
+    {
+      "id": "sajama",
+      "nombre": "Parque Nacional Sajama",
+      "cat": "paisaje",
+      "pais": "Bolivia",
+      "zona": "Oruro (frontera con Lauca, Chile)",
+      "lat": -18.11,
+      "lon": -68.98,
+      "dur": "escapada",
+      "dias": [
+        3,
+        5
+      ],
+      "prio": 4,
+      "certeza": "clima",
+      "similar_a": "Lauca y los Payachatas, del otro lado de la frontera",
+      "temporada": {
+        "ini": "04-15",
+        "fin": "11-30",
+        "peak": [
+          {
+            "ini": "05-01",
+            "fin": "10-15"
+          }
+        ],
+        "nota": "Evitar enero a marzo por el invierno boliviano. Sobre 4.200 m: aclimatar antes."
+      },
+      "porque": "Es literalmente la continuacion del Lauca al otro lado del limite, y el parque nacional mas antiguo de Bolivia. El Sajama, de 6.542 m, es el punto mas alto del pais, y a sus pies crece el bosque de queniuas que suele citarse como el bosque de arboles mas alto del mundo, por encima de los 4.800 m. Suma los geiseres y aguas termales de Junthuma y los chullpares funerarios. Se entra por el mismo paso que usarias para el Lauca.",
+      "logistica": "Paso fronterizo Tambo Quemado, el mismo que conecta Arica y Putre con La Paz. Se puede armar como continuacion natural de un viaje al altiplano de Parinacota, cruzando la frontera.",
+      "combo": [
+        "altiplano-lauca",
+        "bolivia-altiplano-circuito"
+      ],
+      "fuentes": []
+    },
+    {
+      "id": "tupiza-palala",
+      "nombre": "Tupiza: Quebrada de Palala, El Sillar y Canon del Duende",
+      "cat": "geo",
+      "pais": "Bolivia",
+      "zona": "Potosi (Tupiza, sur boliviano)",
+      "lat": -21.44,
+      "lon": -65.72,
+      "dur": "finde",
+      "dias": [
+        2,
+        4
+      ],
+      "prio": 4,
+      "certeza": "clima",
+      "similar_a": "Quebrada de las Conchas y La Yesera (areniscas rojas erosionadas)",
+      "temporada": {
+        "ini": "04-15",
+        "fin": "10-31",
+        "peak": [
+          {
+            "ini": "05-01",
+            "fin": "09-30"
+          }
+        ],
+        "nota": "Temporada seca. En lluvias las quebradas se cortan."
+      },
+      "porque": "Areniscas y conglomerados rojos erosionados en agujas y anfiteatros, el mismo motivo que La Yesera y la Garganta del Diablo de Cafayate que ya tienes marcadas, pero en el sur boliviano y con menos gente. El Sillar es un desfiladero de aristas afiladas; el Canon del Inca y el del Duende se recorren caminando o a caballo.",
+      "logistica": "Tupiza esta sobre la ruta terrestre entre Villazon (frontera con La Quiaca, Argentina) y Uyuni. Es la escala natural si conectas el noroeste argentino con Bolivia por tierra, en vez de volar.",
+      "combo": [
+        "bolivia-altiplano-circuito",
+        "cafayate-conchas",
+        "uyuni-espejo"
+      ],
+      "fuentes": []
+    },
+    {
+      "id": "valle-de-las-rocas",
+      "nombre": "Valle de las Rocas y Villa Alota",
+      "cat": "geo",
+      "pais": "Bolivia",
+      "zona": "Potosi (Sud Lipez, camino Uyuni-Laguna Colorada)",
+      "lat": -21.35,
+      "lon": -67.42,
+      "dur": "finde",
+      "dias": [
+        1,
+        2
+      ],
+      "prio": 3,
+      "certeza": "clima",
+      "similar_a": "Los Bolillos y Man-Pupu-Nyor (pilares por meteorizacion diferencial)",
+      "temporada": {
+        "ini": "04-15",
+        "fin": "11-30",
+        "peak": [
+          {
+            "ini": "05-01",
+            "fin": "10-15"
+          }
+        ],
+        "nota": "Va dentro del tour de Sud Lipez, asi que su ventana es la del circuito de Uyuni."
+      },
+      "porque": "Bloques y pilares de lava e ignimbrita labrados por el viento y el hielo, incluida la roca del arbol de piedra. Es el mismo proceso de meteorizacion diferencial que produce Los Bolillos catamarquenos y los gigantes de los Urales que tienes marcados, y lo mejor es que cae justo sobre la ruta entre Uyuni y la Laguna Colorada: lo ves sin agregar un solo dia.",
+      "logistica": "Incluido en practicamente todos los circuitos de tres dias por Sud Lipez desde Uyuni. Solo hay que pedir que paren.",
+      "combo": [
+        "uyuni-espejo",
+        "bolivia-altiplano-circuito"
+      ],
+      "fuentes": []
+    },
+    {
+      "id": "noel-kempff",
+      "nombre": "Parque Nacional Noel Kempff Mercado",
+      "cat": "paisaje",
+      "pais": "Bolivia",
+      "zona": "Santa Cruz (Meseta de Caparu, frontera con Brasil)",
+      "lat": -14.0,
+      "lon": -60.9,
+      "dur": "grande",
+      "dias": [
+        7,
+        10
+      ],
+      "prio": 2,
+      "certeza": "clima",
+      "similar_a": "Semuc Champey y PN Amboro; posible identidad de tu pin 'Cascada del Arcoiris'",
+      "temporada": {
+        "ini": "05-01",
+        "fin": "10-15",
+        "peak": [
+          {
+            "ini": "06-01",
+            "fin": "09-15"
+          }
+        ],
+        "nota": "Temporada seca. El acceso depende de avioneta o de un viaje terrestre muy largo; hay que armarlo con operador."
+      },
+      "porque": "Patrimonio Mundial y uno de los parques mas intactos de la Amazonia. La Meseta de Caparu es una mesa de arenisca precambrica de 500 m de alto, del mismo tipo de relieve que los tepuyes venezolanos, y de su borde caen las cataratas Arcoiris y El Encanto. Vale la pena chequear si tu pin 'Cascada del Arcoiris' es justamente esta: cuadraria con el resto de tus pines bolivianos.",
+      "logistica": "Muy remoto: avioneta desde Santa Cruz de la Sierra a Florida o Piso Firme, o un viaje terrestre de dos dias. Requiere operador y permisos. No es una escala del circuito altiplanico: es un viaje propio.",
+      "combo": [
+        "madidi-amboro"
+      ],
+      "fuentes": []
     }
   ],
   "planes": [
@@ -1747,7 +2640,7 @@
       "ano": 2027,
       "titulo": "El ano del eclipse: un viaje grande que resuelve tres pendientes",
       "ancla": "eclipse-anular-2027",
-      "texto": "Febrero de 2027 concentra cuatro eventos de primer nivel el mismo fin de semana: el eclipse anular en Palena-Futaleufu, el Carnaval de Oruro, el Carnaval de Rio y la Tapati Rapa Nui. Tres de ellos se repiten todos los anos. El eclipse no: despues del 6 de febrero de 2027, lo proximo para Chile es un parcial en el extremo austral en diciembre de 2029. Ademas ya tienes un pin guardado en Chaiten, justo dentro de la franja: el viaje ya estaba a medio pensar.",
+      "texto": "Febrero de 2027 concentra cuatro eventos de primer nivel el mismo fin de semana: el eclipse anular en Palena-Futaleufu, el Carnaval de Oruro, el Carnaval de Rio y la Tapati Rapa Nui. Tres de ellos se repiten todos los anos. El eclipse no: despues del 6 de febrero de 2027, lo proximo para Chile es un parcial en el extremo austral en diciembre de 2029. Ademas tienes un pin guardado sin nombre en Chaiten, justo dentro de la franja: el viaje ya estaba a medio pensar.",
       "items": [
         {
           "id": "eclipse-anular-2027",
@@ -1763,11 +2656,6 @@
           "id": "carretera-austral",
           "cuando": "Febrero, despues del eclipse",
           "nota": "El eclipse te deja parado en la puerta de la Ruta 7, y tu pin de Chaiten esta sobre ella."
-        },
-        {
-          "id": "quebrada-humahuaca",
-          "cuando": "Semana Santa, 26-28 de marzo",
-          "nota": "Ventana de otono, sin lluvias."
         },
         {
           "id": "la-tirana",
@@ -1788,19 +2676,57 @@
     },
     {
       "ano": 2028,
-      "titulo": "El ano de Bolivia: nueve pines de tu mapa en un solo viaje",
+      "titulo": "El ano de la Puna: tu racimo mas grande, quince pines",
+      "ancla": "antofagasta-de-la-sierra",
+      "texto": "Un tercio de tu mapa esta en la Puna y el noroeste argentino: quince pines entre Catamarca, Salta, Jujuy, La Rioja y San Juan. Es, con diferencia, lo que mas quieres ver, y ademas es lo que mejor te calza como geologo. No cabe en un viaje: hay que partirlo. El nucleo duro es el circuito Salta - Cafayate - Cachi - Ruta 40 - Antofagasta de la Sierra, que solo en el radio de Antofagasta cubre cinco pines. La ventana es abril-mayo, con septiembre-noviembre como alternativa; enero y febrero quedan descartados por el monzon.",
+      "items": [
+        {
+          "id": "cafayate-conchas",
+          "cuando": "Abril-mayo, entrada del circuito",
+          "nota": "La Yesera, Garganta del Diablo y Valle Encantado: tres pines tuyos en dos dias."
+        },
+        {
+          "id": "ruta40-norte",
+          "cuando": "En el mismo circuito",
+          "nota": "Cuesta del Obispo, Los Cardones y Quebrada de las Flechas."
+        },
+        {
+          "id": "antofagasta-de-la-sierra",
+          "cuando": "Abril-mayo, 5-8 dias de base",
+          "nota": "Los Bolillos, Las Angosturas, Acsibi, Villa Vil y Cerro de Colores orbitan aqui."
+        },
+        {
+          "id": "campo-piedra-pomez",
+          "cuando": "Desde la misma base",
+          "nota": "El ancla geologica: ignimbrita eolizada y la caldera del Galan al lado."
+        },
+        {
+          "id": "cono-de-arita",
+          "cuando": "Extension por Tolar Grande",
+          "nota": "Exige 4x4 y planificar combustible. Septiembre-noviembre es su mejor ventana."
+        },
+        {
+          "id": "quebrada-humahuaca",
+          "cuando": "Remate por Jujuy",
+          "nota": "El Hornocal es pin tuyo."
+        }
+      ]
+    },
+    {
+      "ano": 2029,
+      "titulo": "El ano de Bolivia: nueve pines y el carnaval sin competencia",
       "ancla": "bolivia-altiplano-circuito",
-      "texto": "De los veinte sitios que pude leer de tu lista de Google Maps, nueve estan en Bolivia y forman un circuito continuo: La Paz con sus badlands, el Titicaca y la Isla del Sol, Sucre con las huellas de Cal Orcko, y Uyuni con la Laguna Colorada. Encima, el Carnaval de Oruro 2028 cae el 26-29 de febrero, sin chocar con nada. Hay dos maneras de armarlo y son excluyentes: febrero da carnaval y espejo de Uyuni, pero con lluvia y rutas cortadas; abril-mayo da caminos secos, altiplano verde y lagunas llenas, pero sin carnaval ni espejo. Si el objetivo es el carnaval, febrero; si es el paisaje, abril-mayo.",
+      "texto": "Nueve pines de tu lista estan en Bolivia y forman un circuito continuo: La Paz con sus badlands, el Titicaca y la Isla del Sol, Sucre con las huellas de Cal Orcko, y Uyuni con la Laguna Colorada. El Carnaval de Oruro 2029 cae el 10-13 de febrero, temprano y sin chocar con nada. Hay dos maneras de armarlo y son excluyentes: febrero da carnaval y espejo de Uyuni, pero con lluvia y rutas cortadas; abril-mayo da caminos secos, altiplano verde y lagunas llenas, pero sin carnaval ni espejo.",
       "items": [
         {
           "id": "carnaval-oruro",
-          "cuando": "26-29 de febrero",
+          "cuando": "10-13 de febrero",
           "nota": "Opcion A: el circuito arranca en el carnaval y sigue a Uyuni en espejo."
         },
         {
           "id": "uyuni-espejo",
-          "cuando": "Marzo",
-          "nota": "Continuacion natural de Oruro. La Laguna Colorada esta en el mismo tour de Sud Lipez."
+          "cuando": "Febrero-marzo",
+          "nota": "La Laguna Colorada, pin tuyo, esta en el mismo tour de Sud Lipez."
         },
         {
           "id": "bolivia-altiplano-circuito",
@@ -1818,51 +2744,28 @@
           "nota": "Se hace en el dia desde La Paz y sirve de aclimatacion."
         },
         {
-          "id": "peninsula-valdes",
-          "cuando": "Septiembre-octubre",
-          "nota": "Peak de ballenas con crias, escapada aparte."
-        }
-      ]
-    },
-    {
-      "ano": 2029,
-      "titulo": "El ano de Argentina: la Puna y la Ruta 40 Norte",
-      "ancla": "campo-piedra-pomez",
-      "texto": "Con Bolivia hecha, queda el road trip que mas te calza como geologo y que tu mapa ya insinua con dos pines: Hualfin, en plena ruta hacia la Puna catamarquena, e Ischigualasto. El circuito Salta - Cachi - Ruta 40 - Antofagasta de la Sierra - Campo de Piedra Pomez - Fiambala se hace en abril-mayo y se puede estirar hasta Ischigualasto y Talampaya. Ademas el Carnaval de Brasil 2029 cae temprano, el 10-13 de febrero, si quieres esa pata.",
-      "items": [
-        {
-          "id": "carnaval-brasil",
-          "cuando": "10-13 de febrero",
-          "nota": "Salvador u Olinda si prefieres calle sobre sambodromo."
-        },
-        {
-          "id": "campo-piedra-pomez",
-          "cuando": "Abril-mayo, 12-14 dias",
-          "nota": "El viaje ancla: caldera del Galan, ignimbritas y Salar del Hombre Muerto."
-        },
-        {
-          "id": "ruta40-norte",
-          "cuando": "En el mismo circuito",
-          "nota": "Quebrada de las Flechas y Cafayate de entrada."
-        },
-        {
-          "id": "ischigualasto-talampaya",
-          "cuando": "Cierre del circuito",
-          "nota": "Pin tuyo. Consultar los recorridos de luna llena."
-        },
-        {
-          "id": "eclipse-parcial-2029",
-          "cuando": "5 de diciembre",
-          "nota": "Solo parcial. Vale como excusa para bajar a Magallanes."
+          "id": "alcazar-la-troya",
+          "cuando": "Septiembre-noviembre, escapada aparte",
+          "nota": "Cierra el flanco Cuyo-La Rioja: Cerro Alcazar, La Troya, Ischigualasto y Talampaya."
         }
       ]
     },
     {
       "ano": 2030,
-      "titulo": "El ano de Peru, o el de la Patagonia austral",
+      "titulo": "El ano de Peru: Cusco y Arequipa son dos viajes, no uno",
       "ancla": "vinicunca-palccoyo",
-      "texto": "Tu mapa tiene un tercer racimo claro en Cusco: Vinicunca, Palccoyo y Machu Picchu. Los tres viven en la misma ventana seca de mayo a septiembre, y el 24 de junio cae el Inti Raymi, que ademas coincide con el solsticio y con el feriado chileno del Dia Nacional de los Pueblos Indigenas. Es un viaje que se arma solo. La alternativa, si prefieres paisaje sobre cultura, es la Patagonia austral completa: Paine, Chalten y Navarino, que sigue pendiente y solo se pone mas cara con los anos.",
+      "texto": "Tus siete pines peruanos estan repartidos en dos zonas que no se recorren juntas con comodidad: Cusco (Machu Picchu, Vinicunca, Palccoyo) y Arequipa (Colca, Ruta del Sillar, Pillones). Comparten la misma ventana seca de mayo a septiembre, asi que se pueden hilar en un viaje largo, pero conviene entrar por Arequipa: el sillar y el Colca sirven de aclimatacion progresiva antes de los 5.200 m de Vinicunca. El 24 de junio cae el Inti Raymi, que ademas coincide con el solsticio y con el feriado chileno del Dia Nacional de los Pueblos Indigenas.",
       "items": [
+        {
+          "id": "ruta-del-sillar",
+          "cuando": "Primeros dias, en Arequipa",
+          "nota": "Medio dia, y explica por que Arequipa es blanca. Sirve de aclimatacion."
+        },
+        {
+          "id": "canon-del-colca",
+          "cuando": "A continuacion, 4-6 dias",
+          "nota": "Condores en la manana temprano desde la Cruz del Condor."
+        },
         {
           "id": "vinicunca-palccoyo",
           "cuando": "Mayo a septiembre",
@@ -1880,13 +2783,8 @@
         },
         {
           "id": "torres-del-paine",
-          "cuando": "Alternativa: octubre-noviembre o marzo",
-          "nota": "Hombros de temporada: menos viento y menos gente."
-        },
-        {
-          "id": "chalten-perito-moreno",
-          "cuando": "En el mismo viaje austral",
-          "nota": "Cruce por Cerro Castillo."
+          "cuando": "Alternativa austral: octubre-noviembre o marzo",
+          "nota": "Si prefieres paisaje sobre cultura."
         }
       ]
     }

@@ -23,7 +23,7 @@ superpuestos, y marca dónde dos cosas buenas se pisan.
 | **Fichas** | Detalle: por qué vale la pena, logística, ventanas y fuentes. |
 | **Choques de fecha** | Ventanas de prioridad alta que se solapan y obligan a elegir. |
 | **Parques nacionales** | Los 46 parques publicados por Somos Parques, con región, temporada y distancia desde Temuco. |
-| **Tu mapa** | Qué se leyó de la lista «Planes de viajes» de Google Maps, y qué pines quedaron sin ubicar. |
+| **Tu mapa** | Los 45 pines de la lista «Planes de viajes» agrupados por racimo, los que quedaron sin ubicar, y los **sitios análogos** sugeridos. |
 
 ## Estructura
 
@@ -60,7 +60,8 @@ Todo se edita en `data/eventos.json`. Campos mínimos:
 
   "alerta": "Advertencia destacada en rojo (opcional)",
   "combo":  ["otro-id"],                                    // se encadena bien con
-  "mapa":   "Planes de viajes (Google Maps)",               // muestra la insignia «De tu mapa»
+  "mapa":   "Planes de viajes (Google Maps)",               // insignia «De tu mapa» (pin del usuario)
+  "similar_a": "Cal Orcko (icnitas cretácicas)",            // insignia «Sugerido» + línea «Se parece a:»
   "fuentes":[{ "t": "Título", "u": "https://…" }]
 }
 ```
@@ -82,7 +83,8 @@ No todas las fechas merecen la misma confianza, y el visor lo dice explícitamen
 
 - Feriados legales de Chile 2026–2027: `api.boostr.cl/holidays/{año}.json`. **Los de 2028 son calculados**, no oficiales.
 - Parques nacionales: [Somos Parques](https://somosparques.cl/). Entradas y reservas oficiales del SNASPE en [Pases Parques](https://www.pasesparques.cl/).
-- Pines del usuario: lista «Planes de viajes» de Google Maps, leída el 2026-08-23. **Solo 20 de los 45 sitios**: Maps no carga el resto en la vista de lista compartida. Detalle en la vista «Tu mapa» y en `_meta.mapa_usuario` de `data/eventos.json`.
+- Pines del usuario: lista «Planes de viajes» de Google Maps, **45 de 45** leídos el 2026-08-23. Racimos y pines ambiguos en `_meta.mapa_usuario`; la vista «Tu mapa» los muestra.
+- Sitios análogos (`similar_a`): investigación propia, buscando por **proceso geológico** y no por nombre — badlands, meteorización diferencial en pilares, icnitas sobre estratos basculados, campos volcánicos monogenéticos, cañones por incisión y lagunas altiplánicas de color. Criterio en `_meta.sugerencias`.
 - Cada ficha lleva sus propias fuentes cuando las tiene.
 
 ## Desarrollo local
