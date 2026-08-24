@@ -196,7 +196,7 @@
       "nombre": "Desierto Florido 2026",
       "cat": "paisaje",
       "pais": "Chile",
-      "zona": "Atacama (Chanaral, Caldera, Copiapo, Vallenar, Huasco, Freirina)",
+      "zona": "Atacama: de Caldera (norte) a Freirina (sur); nucleo entre Copiapo y Vallenar",
       "lat": -28.47,
       "lon": -70.98,
       "dur": "escapada",
@@ -208,34 +208,48 @@
       "certeza": "clima",
       "fechas": [
         {
-          "ini": "2026-08-20",
-          "fin": "2026-09-05",
-          "tag": "Primeras floraciones"
+          "ini": "2026-08-15",
+          "fin": "2026-09-04",
+          "tag": "Primeras floraciones — YA EN CURSO"
         },
         {
           "ini": "2026-09-05",
-          "fin": "2026-11-10",
-          "tag": "Temporada"
+          "fin": "2026-11-15",
+          "tag": "Temporada: mayor extension desde septiembre"
         },
         {
-          "ini": "2026-10-01",
-          "fin": "2026-10-25",
+          "ini": "2026-10-05",
+          "fin": "2026-10-20",
           "tag": "PEAK: maxima diversidad y abundancia"
+        },
+        {
+          "ini": "2026-10-09",
+          "fin": "2026-10-13",
+          "tag": "LA FECHA: finde largo del 12-oct dentro del peak"
         }
       ],
-      "porque": "Las lluvias inusuales de agosto de 2026 en la Region de Atacama hacen prever un evento de gran magnitud, con hasta ~15.000 km2 de superficie florida. Un desierto florido de esta escala no es anual: responde a anomalias de precipitacion, historicamente asociadas a fases calidas de ENSO. Si la proyeccion se cumple, esta es la mejor ventana de los proximos anos y esta a 6 semanas.",
-      "logistica": "Vuelo Temuco/Santiago → Copiapo (Desierto de Atacama, CPO) y auto arrendado, o Ruta 5 en auto. Nucleos: PN Llanos de Challe (costa de Huasco/Freirina), PN Desierto Florido, sector Travesia (Copiapo), costa de Caldera. Regla de oro: la floracion se mueve semana a semana, asi que decidir el destino exacto 7-10 dias antes con los reportes regionales, no meses antes. Los pasajes si conviene comprarlos ya; el itinerario fino, no.",
-      "alerta": "Es la unica ventana del 2026 que no se puede postergar. Si esperas a 2027 puede que no haya lluvia.",
+      "porque": "Las precipitaciones extraordinarias del invierno de 2026 superaron con holgura el umbral de unos 15 mm que la germinacion necesita, y la Comision Regional del Desierto Florido proyecta una de las temporadas mas extensas de los ultimos anos, con mas de doscientas variedades vegetales endemicas emergiendo entre Caldera y Freirina. Un desierto florido de esta escala no es anual: responde a anomalias de precipitacion, historicamente asociadas a fases calidas de ENSO. Al 21 de agosto ya hay sectores con pasto y las ananucas se dejan ver, o sea que el fenomeno ya arranco.",
+      "logistica": "LA FECHA: viernes 9 a martes 13 de octubre. El lunes 12 de octubre de 2026 es feriado (Encuentro de Dos Mundos) y cae justo dentro del peak proyectado de mediados de octubre, asi que pidiendo solo el viernes 9 y el martes 13 quedan cinco dias corridos en el mejor momento del fenomeno. Es la unica coincidencia peak-feriado del ano. DONDE: la Comision Regional habilito cinco puntos de avistamiento — costa de Freirina, costa de Huasco, PN Llanos de Challe, PN Desierto Florido y sector Travesia en Copiapo. El nucleo con mas probabilidad esta entre Copiapo y Vallenar, desde la Ruta 5 hacia la costa: ese sector conserva mejor la humedad gracias a la camanchaca, mientras que tierra adentro la lluvia fue mas dispareja. COMO: vuelo Santiago a Copiapo (CPO) y auto arrendado, o Ruta 5 en auto. REGLA DE ORO: comprar los pasajes ya, pero decidir el sector exacto 7 a 10 dias antes con los reportes de CONAF, porque la floracion se mueve semana a semana. NORMAS: no salirse de los senderos habilitados, no cortar flores, no ingresar mascotas a las zonas de floracion y estacionar solo en lugares seguros.",
+      "alerta": "El peak de mediados de octubre coincide con el fin de semana largo del 12 de octubre. Eso significa dos cosas: es tu mejor ventana del ano, y va a estar lleno. Alojamiento en Vallenar, Huasco o Copiapo hay que reservarlo ahora.",
       "fuentes": [
         {
-          "t": "Atacama prepara la temporada 2026 (coordinacion regional)",
+          "t": "Atacama Noticias (21-ago-2026) — Comision Regional, proyeccion y los 5 puntos de avistamiento",
           "u": "https://www.atacamanoticias.cl/2026/08/21/atacama-prepara-una-gran-temporada-del-desierto-florido-2026-con-coordinacion-regional-promocion-turistica-y-puntos-de-avistamiento/"
         },
         {
-          "t": "Chile es Tuyo — donde y cuando",
+          "t": "ExtraNoticias (22-ago-2026) — brotes desde fines de agosto, peak a mediados de octubre",
+          "u": "https://www.extranoticias.cl/desierto-florido-anticipa-una-temporada-historica-en-atacama-con-brotes-desde-finales-de-agosto/"
+        },
+        {
+          "t": "Megatiempo (21-ago-2026) — ananucas ya visibles y por que el nucleo esta entre Copiapo y Vallenar",
+          "u": "https://www.megatiempo.cl/pronostico/13811-desierto-florido-chile-donde-queda-2026-1ab.html"
+        },
+        {
+          "t": "Chile es Tuyo — donde y cuando ver el fenomeno",
           "u": "https://chileestuyo.cl/desierto-florido-en-chile-donde-ver-el-fenomeno-natural/"
         }
-      ]
+      ],
+      "verificado": "2026-08-23. Ojo: circulan articulos de Ladera Sur de agosto de 2025 con cifras de lluvia (Vallenar 168,1 mm) que NO corresponden a esta temporada. Las cifras de aca salen solo de fuentes fechadas en agosto de 2026."
     },
     {
       "id": "longaniza-chillan",
@@ -2618,12 +2632,12 @@
       "ano": 2026,
       "titulo": "Lo que queda del ano: una sola cosa importa",
       "ancla": "desierto-florido-2026",
-      "texto": "Quedan cuatro meses y hay exactamente una ventana irrepetible: el Desierto Florido, que este ano se anuncia de gran magnitud por las lluvias anomalas de agosto. Peak proyectado: primera quincena de octubre. Lo demas del ano es relleno de fines de semana.",
+      "texto": "Quedan cuatro meses y hay exactamente una ventana irrepetible: el Desierto Florido, que este ano se anuncia como uno de los mas extensos de los ultimos anos. Y hay una coincidencia que resuelve la planificacion sola: el peak proyectado es a mediados de octubre y el lunes 12 de octubre es feriado. Pidiendo el viernes 9 y el martes 13 quedan cinco dias corridos en el mejor momento del fenomeno.",
       "items": [
         {
           "id": "desierto-florido-2026",
-          "cuando": "Octubre, 4-6 dias",
-          "nota": "Comprar pasajes ahora; decidir el sector exacto 7 a 10 dias antes segun reportes."
+          "cuando": "Viernes 9 a martes 13 de octubre",
+          "nota": "Finde largo del 12-oct dentro del peak. Comprar pasajes y alojamiento AHORA; el sector exacto se decide 7 a 10 dias antes segun los reportes de CONAF."
         },
         {
           "id": "volcanes-araucania",

@@ -23,10 +23,12 @@ const HOY = iso(new Date());
 
 /* ---------------- carga ---------------- */
 async function boot() {
+  // cache-buster por minuto: sin esto el navegador sirve el JSON viejo despues de editarlo
+  const v = '?t=' + Math.floor(Date.now() / 60000);
   const [ev, pk, fe] = await Promise.all([
-    fetch('data/eventos.json').then(r => r.json()),
-    fetch('data/parques.json').then(r => r.json()),
-    fetch('data/feriados.json').then(r => r.json()),
+    fetch('data/eventos.json' + v).then(r => r.json()),
+    fetch('data/parques.json' + v).then(r => r.json()),
+    fetch('data/feriados.json' + v).then(r => r.json()),
   ]);
   S.ev = ev.eventos; S.cat = ev.categorias; S.planes = ev.planes; S.meta = ev._meta;
   S.parques = pk.parques; S.pkMeta = pk._meta;
@@ -286,6 +288,7 @@ function cardHTML(e) {
       <p class="p">${esc(e.logistica || '')}</p>
       <div>${ws.map(w => `<div class="win"><b>${fmtR(w.ini, w.fin)}</b><span>${esc(w.tag || '')}</span></div>`).join('')}</div>
       ${e.temporada?.nota ? `<p class="p" style="color:var(--tx3)"><b>Nota de temporada:</b> ${esc(e.temporada.nota)}</p>` : ''}
+      ${e.verificado ? `<p class="p" style="color:var(--tx3)"><b>Verificación:</b> ${esc(e.verificado)}</p>` : ''}
       ${e.lat ? `<a href="https://www.google.com/maps/@${e.lat},${e.lon},9z" target="_blank" rel="noopener">Ver ubicación en Google Maps ↗</a>` : ''}
       ${e.fuentes?.length ? `<div class="srcs">${e.fuentes.map(f => `<a href="${esc(f.u)}" target="_blank" rel="noopener">${esc(f.t)} ↗</a>`).join('')}</div>` : ''}
     </div></details></div></article>`;
@@ -383,6 +386,7 @@ function openModal(id) {
       <div><b style="font-size:12px;color:var(--tx3);text-transform:uppercase;letter-spacing:.06em">Ventanas</b>
         ${ws.map(w => `<div class="win"><b>${fmtR(w.ini, w.fin)}</b><span>${esc(w.tag || '')}</span></div>`).join('')}</div>
       ${e.temporada?.nota ? `<p class="p" style="color:var(--tx3)"><b>Nota de temporada:</b> ${esc(e.temporada.nota)}</p>` : ''}
+      ${e.verificado ? `<p class="p" style="color:var(--tx3)"><b>Verificación:</b> ${esc(e.verificado)}</p>` : ''}
       ${combos.length ? `<p class="p"><b>Se encadena bien con:</b> ${combos.map(c => `<a data-id="${c.id}">${esc(c.nombre)}</a>`).join(' · ')}</p>` : ''}
       ${e.lat ? `<a href="https://www.google.com/maps/@${e.lat},${e.lon},9z" target="_blank" rel="noopener">Abrir en Google Maps ↗</a>` : ''}
       ${e.fuentes?.length ? `<div class="srcs"><b style="font-size:12px;color:var(--tx3)">Fuentes</b>
