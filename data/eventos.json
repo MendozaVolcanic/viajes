@@ -100,10 +100,16 @@
         {
           "pin": "Andes Discovery",
           "duda": "Figura como mirador, pero el nombre parece de operador turistico mas que de un lugar."
-        },
+        }
+      ],
+      "pines_resueltos": [
         {
-          "pin": "Pin colocado (Chaiten)",
-          "duda": "Sin nombre. Cae junto a los refugios La Escondia en Chaiten, dentro de la franja del eclipse anular de 2027."
+          "pin": "Pin colocado (sin nombre)",
+          "coordenadas": "-42.9126121, -72.7114771",
+          "ubicacion": "Chaiten, Region de Los Lagos. A 0,7 km del centro de Chaiten, junto a los refugios La Escondia sobre la continuacion de Arturo Prat.",
+          "distancias": "75 km de Futaleufu, 77 km de Quellon, 108 km de Palena, 162 km de Puerto Montt, 465 km de Temuco en linea recta.",
+          "relevancia": "Chaiten figura entre las localidades citadas dentro de la franja de anularidad del eclipse del 6 de febrero de 2027. El pin queda dentro de esa franja, pero no se puede afirmar cuantos minutos de anillo tendria: la duracion depende de la distancia a la linea central, y el dato publicado de 7 min 29 s corresponde a Futaleufu, no a Chaiten. Verificar el punto exacto en una carta de la franja antes de decidir donde pararse.",
+          "verificado": "2026-08-23, abriendo el pin en Google Maps"
         }
       ]
     },
@@ -167,7 +173,7 @@
         }
       ],
       "porque": "Es el unico evento solar de primera magnitud que toca suelo chileno en el horizonte de este visor. La franja de anularidad tiene ~130 km de ancho: entra por el Pacifico, cruza el sur de Los Lagos y el norte de Aysen, y sigue por El Bolson, Esquel y Trevelin hasta Buenos Aires. Futaleufu queda entre los mejores puntos, con hasta 7 min 29 s de anillo. Fuera de esa franja se ve solo un parcial. Despues de este, lo proximo para el pais es un parcial en el extremo austral el 5-dic-2029.",
-      "logistica": "Dos accesos desde Temuco. (A) Futaleufu por Argentina: paso Mamuil Malal o Cardenal Samore hasta Esquel y cruce en Futaleufu; ~2 dias de manejo. (B) Chiloe sur / Quellon por Ruta 5 + Chacao; mas simple pero costero. Criterio meteorologico: en febrero la costa de Chiloe y Melinka tienen mucha probabilidad de nubosidad marina; los valles interiores a sotavento (Futaleufu, Palena, Trevelin) estan en sombra de precipitacion y ofrecen mejor probabilidad de cielo abierto. Alojamiento: reservar con >12 meses. Plan B movil: tener auto y un punto alternativo dentro de la franja a <2 h.",
+      "logistica": "Dos accesos desde Temuco. (A) Futaleufu por Argentina: paso Mamuil Malal o Cardenal Samore hasta Esquel y cruce en Futaleufu; ~2 dias de manejo. (B) Chiloe sur / Quellon por Ruta 5 + Chacao; mas simple pero costero. Criterio meteorologico: en febrero la costa de Chiloe y Melinka tienen mucha probabilidad de nubosidad marina; los valles interiores a sotavento (Futaleufu, Palena, Trevelin) estan en sombra de precipitacion y ofrecen mejor probabilidad de cielo abierto. Alojamiento: reservar con >12 meses. Plan B movil: tener auto y un punto alternativo dentro de la franja a <2 h. Tu pin sin nombre de la lista cae en -42,9126 / -72,7115, es decir en Chaiten mismo, dentro de la franja: a 75 km de Futaleufu y 77 km de Quellon, o sea entre las dos alternativas de observacion.",
       "alerta": "Choca de frente con el Carnaval de Oruro, el Carnaval de Rio y la Tapati Rapa Nui. Los tres se repiten todos los anos; el eclipse no.",
       "fuentes": [
         {

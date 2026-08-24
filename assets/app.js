@@ -424,6 +424,11 @@ function drawMapa() {
     <div>${(m.racimos || []).map(r => `<div class="plan-i">
       <span class="when" style="min-width:230px">${esc(r.n)} · ${r.c} pines</span>
       <span class="what"><span class="nt" style="margin:0">${esc(r.detalle)}</span></span></div>`).join('')}</div>
+    ${(m.pines_resueltos || []).map(r => `<div class="alerta" style="background:rgba(34,197,94,.1);border-left-color:var(--ok);color:#86efac">
+      <b>${esc(r.pin)} → ${esc(r.coordenadas)}</b><br>${esc(r.ubicacion)}<br>
+      <span style="color:var(--tx2)">${esc(r.distancias)}</span><br>
+      <span style="color:var(--tx2)">${esc(r.relevancia)}</span><br>
+      <span style="color:var(--tx3);font-size:11px">Verificado ${esc(r.verificado)}</span></div>`).join('')}
     <h3 style="font-size:13.5px;margin-top:6px">Pines que no se pudieron ubicar con certeza</h3>
     <p class="note" style="margin:0 0 8px">Estos no se agendaron: sin ubicación confirmada no hay temporada que asignar.</p>
     ${m.pines_ambiguos.map(a => `<div class="plan-i"><span class="when" style="min-width:230px">${esc(a.pin)}</span>
