@@ -238,9 +238,14 @@
           "tag": "MAXIMO canonico: diversidad y densidad"
         },
         {
-          "ini": "2026-09-25",
+          "ini": "2026-10-01",
           "fin": "2026-10-04",
-          "tag": "LA FECHA: borde adelantado del maximo"
+          "tag": "Alternativa una semana antes, mismos 2 dias pedidos"
+        },
+        {
+          "ini": "2026-10-08",
+          "fin": "2026-10-12",
+          "tag": "TU FECHA: jue 8 a lun 12, solo 2 dias pedidos"
         },
         {
           "ini": "2026-10-19",
@@ -254,8 +259,8 @@
         }
       ],
       "porque": "El invierno de 2026 dejo en Vallenar 186,9 mm contra una normal anual de 40,2 mm: 4,6 veces lo normal, y el ano mas lluvioso desde 2004, por encima de 2015 (115,6 mm) y 2017 (100,1 mm), que fueron los dos desiertos floridos previos. Alto del Carmen llego a 210,8 mm. El umbral de germinacion es del orden de 15 mm, o sea que se supero doce veces. La Comision Regional proyecta una de las temporadas mas extensas de los ultimos anos, con mas de doscientas variedades endemicas entre Caldera y Freirina, y al 21 de agosto ya hay sectores con pasto y ananucas visibles. Dicho de otro modo: el evento ya no depende de un pronostico, la lluvia ya esta en el banco.",
-      "logistica": "TRES FECHAS POSIBLES, de mejor a peor apuesta. (A) LA OPTIMA — sabado 26 de septiembre a domingo 4 de octubre. Centro de la ventana de manto denso segun el desfase medido. Cuesta 3 a 5 dias de vacaciones porque no hay feriado, pero es la fecha con mayor probabilidad de pillar la cobertura maxima, y cae fuera del pico de precios de Fiestas Patrias. (B) LA BARATA — viernes 18 a domingo 20 de septiembre. El viernes 18 y el sabado 19 son feriados, asi que son tres dias sin pedir ninguno. Queda en el borde temprano de la ventana y es la peor semana del ano en precios y ocupacion en todo Chile. (C) LA DE RESPALDO — viernes 9 a martes 13 de octubre, con el feriado del lunes 12. Cinco dias corridos pidiendo solo dos. Queda en el borde tardio: capturaria la maxima diversidad y las especies tardias, con el manto ya decayendo en los sectores mas adelantados. Si eliges esta, apunta a la costa, que va mas atrasada. DONDE: de los cinco puntos habilitados por la Comision Regional — costa de Freirina, costa de Huasco, PN Llanos de Challe, PN Desierto Florido y sector Travesia en Copiapo — los tres primeros son la apuesta fuerte, porque la lluvia cayo en la provincia de Huasco: Alto del Carmen 210,8 mm y Vallenar ~180 mm contra Copiapo 24,2 mm. COMO: vuelo Santiago a Copiapo (CPO) y auto arrendado, o Ruta 5. Base en Vallenar o Huasco antes que Copiapo. COMO AFINAR: no hay producto satelital publico para esto. El monitoreo fenologico de CONAF (MODIS, 16 dias) solo cubre La Campana, Rio Clarillo, Nahuelbuta y Pumalin. La via propia es el pipeline de Copernicus-v1 apuntado a Llanos de Challe, costa de Huasco, costa de Freirina y Travesia: es el mismo metodo de anomalia NDVI del paper de Chavez, pero con Sentinel-2 a 10 m y revisita de 5 dias en vez de GIMMS a ~8 km. Con dos pasadas de septiembre sabrias si el manto va adelantado o atrasado respecto de este pronostico. NORMAS: no salirse de los senderos, no cortar flores, no ingresar mascotas.",
-      "alerta": "El verde que se ve ahora es germinacion y bulbos tempranos, no el manto. Adelanta la curva una o dos semanas, no un mes: el fotoperiodo no se adelanta. Y como hubo tres recargas de lluvia y no una, no hay razon para esperar un final anticipado. Plan A sigue siendo fines de septiembre; el finde largo del 12 de octubre es plan B razonable.",
+      "logistica": "TU FECHA: jueves 8 a lunes 12 de octubre. Cinco dias por dos pedidos (jueves 8 y viernes 9); el lunes 12 es feriado. Es la mejor relacion dias/vacaciones de todas las opciones y cae dentro del maximo canonico, que va de la ultima semana de septiembre a la tercera de octubre. POR ESPECIES PUEDE SER MEJOR QUE SEPTIEMBRE: a esa altura ya deberian estar las de semilla, sobre todo la pata de guanaco, que es la que hace los mantos rosados clasicos, mas las tardias. Fines de septiembre entrega mas bulbos y menos manto. LA CONDICION: como la temporada va corrida una o dos semanas y tu fecha esta en la mitad tardia del maximo, hay que apuntar a la COSTA y no al interior. La franja costera, enfriada y humedecida por la camanchaca, se atrasa y se sostiene mas que los llanos interiores. BASE: Vallenar. Desde ahi, Freirina 32 km, Huasco 47 km y PN Llanos de Challe 58 km en linea recta: los tres sectores fuertes a menos de una hora, y es donde cayo la lluvia (186,9 mm). VUELOS: Copiapo (CPO) queda a 141 km de Vallenar y La Serena (LSC) a 155 km. Practicamente lo mismo, asi que conviene comparar precios entre los dos y no asumir que Copiapo es la unica puerta. RESERVAR AHORA: finde largo del 12 de octubre en ano de desierto florido grande es la peor combinacion posible para buscar alojamiento a ultima hora. PLAN DE AJUSTE SIN COSTO: si a fines de septiembre los reportes muestran que el manto se adelanto mas de lo previsto, correr a jueves 1 - domingo 4 de octubre, que tambien son dos dias pedidos. Conviene pasaje con cambio flexible si la diferencia de precio es baja. LUZ: el horario de verano ya rige desde el primer sabado de septiembre, asi que los atardeceres son tardios y la hora dorada es larga. NORMAS: no salirse de los senderos, no cortar flores, no ingresar mascotas.",
+      "alerta": "FECHA ELEGIDA: jueves 8 a lunes 12 de octubre. Cae dentro del maximo canonico y es la opcion mas eficiente del ano: cinco dias pidiendo solo el jueves 8 y el viernes 9, porque el lunes 12 es feriado. Queda en la mitad tardia del maximo, asi que la condicion es apuntar a la COSTA, que va mas atrasada y se sostiene mas: Freirina a 32 km de Vallenar, Huasco a 47 y Llanos de Challe a 58. Reservar YA: es finde largo en ano de desierto florido grande.",
       "fuentes": [
         {
           "t": "Chavez et al. 2019 — GIMMS NDVI y los desiertos floridos del Atacama (paper seminal, DOI)",
@@ -2686,8 +2691,8 @@
       "items": [
         {
           "id": "desierto-florido-2026",
-          "cuando": "26 de septiembre a 4 de octubre",
-          "nota": "Centro de la ventana de manto denso. Plan B: finde largo del 12 de octubre, que es mas barato pero queda en el borde tardio. Base en Vallenar o Huasco, no en Copiapo."
+          "cuando": "Jueves 8 a lunes 12 de octubre",
+          "nota": "Cinco dias pidiendo dos. Apuntar a la costa (Freirina, Huasco, Llanos de Challe), base en Vallenar. Reservar ya."
         },
         {
           "id": "volcanes-araucania",
