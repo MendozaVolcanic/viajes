@@ -210,37 +210,52 @@
         {
           "ini": "2026-07-18",
           "fin": "2026-07-22",
-          "tag": "El pulso de lluvia: sistema frontal, ~180 mm en Vallenar"
+          "tag": "Pulso 1: el grande — 4 anos de lluvia en pocos dias"
+        },
+        {
+          "ini": "2026-07-29",
+          "fin": "2026-07-31",
+          "tag": "Pulso 2: segundo sistema frontal"
+        },
+        {
+          "ini": "2026-08-10",
+          "fin": "2026-08-12",
+          "tag": "Pulso 3: recarga sobre plantulas ya establecidas"
         },
         {
           "ini": "2026-08-15",
           "fin": "2026-09-10",
-          "tag": "Primeras floraciones (ananucas, huillis, suspiros) — EN CURSO"
+          "tag": "Bulbos: ananucas, huillis y suspiros — EN CURSO"
         },
         {
-          "ini": "2026-09-15",
-          "fin": "2026-10-10",
-          "tag": "MANTO DENSO: la ventana mas probable"
+          "ini": "2026-09-01",
+          "fin": "2026-09-20",
+          "tag": "Inicio de la floracion masiva, cobertura heterogenea"
+        },
+        {
+          "ini": "2026-09-21",
+          "fin": "2026-10-18",
+          "tag": "MAXIMO canonico: diversidad y densidad"
         },
         {
           "ini": "2026-09-25",
           "fin": "2026-10-04",
-          "tag": "LA FECHA: centro de la ventana"
+          "tag": "LA FECHA: borde adelantado del maximo"
         },
         {
-          "ini": "2026-10-05",
-          "fin": "2026-10-25",
-          "tag": "Maxima DIVERSIDAD (entran las tardias) — proyeccion CONAF"
+          "ini": "2026-10-19",
+          "fin": "2026-11-08",
+          "tag": "Declive gradual"
         },
         {
-          "ini": "2026-10-25",
-          "fin": "2026-11-15",
-          "tag": "Cola: se sostiene mejor en la franja costera"
+          "ini": "2026-11-09",
+          "fin": "2026-12-05",
+          "tag": "Fin"
         }
       ],
       "porque": "El invierno de 2026 dejo en Vallenar 186,9 mm contra una normal anual de 40,2 mm: 4,6 veces lo normal, y el ano mas lluvioso desde 2004, por encima de 2015 (115,6 mm) y 2017 (100,1 mm), que fueron los dos desiertos floridos previos. Alto del Carmen llego a 210,8 mm. El umbral de germinacion es del orden de 15 mm, o sea que se supero doce veces. La Comision Regional proyecta una de las temporadas mas extensas de los ultimos anos, con mas de doscientas variedades endemicas entre Caldera y Freirina, y al 21 de agosto ya hay sectores con pasto y ananucas visibles. Dicho de otro modo: el evento ya no depende de un pronostico, la lluvia ya esta en el banco.",
       "logistica": "TRES FECHAS POSIBLES, de mejor a peor apuesta. (A) LA OPTIMA — sabado 26 de septiembre a domingo 4 de octubre. Centro de la ventana de manto denso segun el desfase medido. Cuesta 3 a 5 dias de vacaciones porque no hay feriado, pero es la fecha con mayor probabilidad de pillar la cobertura maxima, y cae fuera del pico de precios de Fiestas Patrias. (B) LA BARATA — viernes 18 a domingo 20 de septiembre. El viernes 18 y el sabado 19 son feriados, asi que son tres dias sin pedir ninguno. Queda en el borde temprano de la ventana y es la peor semana del ano en precios y ocupacion en todo Chile. (C) LA DE RESPALDO — viernes 9 a martes 13 de octubre, con el feriado del lunes 12. Cinco dias corridos pidiendo solo dos. Queda en el borde tardio: capturaria la maxima diversidad y las especies tardias, con el manto ya decayendo en los sectores mas adelantados. Si eliges esta, apunta a la costa, que va mas atrasada. DONDE: de los cinco puntos habilitados por la Comision Regional — costa de Freirina, costa de Huasco, PN Llanos de Challe, PN Desierto Florido y sector Travesia en Copiapo — los tres primeros son la apuesta fuerte, porque la lluvia cayo en la provincia de Huasco: Alto del Carmen 210,8 mm y Vallenar ~180 mm contra Copiapo 24,2 mm. COMO: vuelo Santiago a Copiapo (CPO) y auto arrendado, o Ruta 5. Base en Vallenar o Huasco antes que Copiapo. COMO AFINAR: no hay producto satelital publico para esto. El monitoreo fenologico de CONAF (MODIS, 16 dias) solo cubre La Campana, Rio Clarillo, Nahuelbuta y Pumalin. La via propia es el pipeline de Copernicus-v1 apuntado a Llanos de Challe, costa de Huasco, costa de Freirina y Travesia: es el mismo metodo de anomalia NDVI del paper de Chavez, pero con Sentinel-2 a 10 m y revisita de 5 dias en vez de GIMMS a ~8 km. Con dos pasadas de septiembre sabrias si el manto va adelantado o atrasado respecto de este pronostico. NORMAS: no salirse de los senderos, no cortar flores, no ingresar mascotas.",
-      "alerta": "Mi recomendacion anterior del fin de semana largo del 12 de octubre queda como plan B, no como plan A. Al mirar CUANDO cayo la lluvia — 18 al 22 de julio, un mes antes que en 2025 — la ventana del manto denso se corre a fines de septiembre. El 12 de octubre sigue sirviendo, pero es el borde tardio.",
+      "alerta": "El verde que se ve ahora es germinacion y bulbos tempranos, no el manto. Adelanta la curva una o dos semanas, no un mes: el fotoperiodo no se adelanta. Y como hubo tres recargas de lluvia y no una, no hay razon para esperar un final anticipado. Plan A sigue siendo fines de septiembre; el finde largo del 12 de octubre es plan B razonable.",
       "fuentes": [
         {
           "t": "Chavez et al. 2019 — GIMMS NDVI y los desiertos floridos del Atacama (paper seminal, DOI)",
@@ -253,6 +268,10 @@
         {
           "t": "Radio Maray (18-jul-2026) — el sistema frontal que descargo sobre Atacama",
           "u": "https://www.maray.cl/atacama/18/07/2026/reporte-lluvias-superan-los-80-milimetros-en-sectores-de-atacama-por-intenso-sistema-frontal/"
+        },
+        {
+          "t": "INIA (7-ago-2026) — 'Cuatro anos de lluvia en pocos dias': el monitoreo del evento",
+          "u": "https://www.inia.cl/2026/08/07/cuatro-anos-de-lluvia-en-pocos-dias-el-monitoreo-que-permitio-seguir-uno-de-los-eventos-climaticos-mas-intensos-en-atacama/"
         },
         {
           "t": "Radio Atacama (8-ago-2026) — acumulados por localidad, datos INIA Intihuasi y DGA",
@@ -279,8 +298,8 @@
           "u": "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso/oni/v6/"
         }
       ],
-      "verificado": "2026-08-24. Fecha del pulso de lluvia, desfase con el ano 2025 y mecanismo de dormancia desde fuentes primarias y prensa fechada. Las cifras de Vallenar varian entre 177,2 y 186,9 mm segun la fuente y la fecha de corte; se usa 'del orden de 180 mm'. DESCARTADO: los articulos de Ladera Sur son de agosto de 2025. NO CONSEGUIDO: el capitulo 15 de Squeo et al. sobre el Desierto Florido (biouls.cl) — el servidor rechaza la conexion. Sintesis en bibliografia/BIBLIOGRAPHY_SYNTHESIS.md.",
-      "pronostico": "LA PREGUNTA CORRECTA NO ES EN QUE MES FLORECE SINO CUANTO DEMORA DESPUES DE LA LLUVIA. MECANISMO: no basta que llueva. Segun Rosa Scherson y Nicolas Garcia (Facultad de Ciencias Forestales, U. de Chile), hacen falta entre 15 y 30 mm caidos entre junio y julio MAS suficientes horas frio acumuladas para que semillas y bulbos rompan la dormancia. Por eso el timing de 2026 es de manual: el sistema frontal descargo entre el 18 y el 22 de julio, en plena ventana util, y dejo del orden de 180 mm en Vallenar contra una normal anual de 40,2 mm. EL DESFASE, MEDIDO CON EL ANO PASADO: en 2025 llovio en agosto sobre la costa de Huasco, las primeras flores aparecieron en la tercera semana de septiembre y el peak se observo entre principios y mediados de octubre. Eso da unas 6 semanas de lluvia a primeras flores y cerca de 2 meses de lluvia a peak. 2026 VA ADELANTADO ENTRE TRES Y CUATRO SEMANAS: llovio un mes antes que en 2025 y las primeras floraciones ya se estaban viendo a mediados de agosto, o sea a unas 4 semanas del pulso. Aplicando el mismo desfase, el manto denso deberia caer entre el 15 de septiembre y el 10 de octubre, con el centro a fines de septiembre. POR QUE CONAF DICE MEDIADOS DE OCTUBRE Y NO ES CONTRADICCION: CONAF proyecta el peak de MAXIMA DIVERSIDAD Y ABUNDANCIA, que no es lo mismo que la maxima cobertura. Las primeras en florecer son Brasicaceas y Liliaceas — los bulbos, ananucas y huillis, que ya estan afuera — y las tardias son Onagraceas y Asteraceas. La maxima diversidad de especies simultaneas se alcanza cuando entran las tardias, en octubre; el manto mas denso ocurre antes. Son dos peaks distintos de dos cosas distintas. PARA PAISAJE GRANDE CONVIENE EL MANTO, NO LA DIVERSIDAD, asi que la fecha optima se corre a fines de septiembre. PALANCA DE CORRECCION: el fenomeno no ocurre a la vez en toda la region. La franja costera, enfriada y humedecida por la camanchaca, se atrasa y se sostiene mas que los llanos interiores. Si vas temprano, apunta al interior entre Vallenar y Copiapo; si vas tarde, apunta a la costa de Huasco y Freirina y al PN Llanos de Challe."
+      "verificado": "2026-08-25. Secuencia de tres pulsos de lluvia (18-22 jul, fin de julio, 10-12 ago) y montos por estacion desde el reporte de INIA Intihuasi del 7-ago-2026 y prensa regional fechada; curva fenologica canonica desde guias especializadas; mecanismo de dormancia desde U. de Chile. NO PUBLICADO EN NINGUNA FUENTE: humedad de suelo y profundidad de infiltracion, que es el dato que decidiria la duracion. DESCARTADO: articulos de Ladera Sur, son de agosto de 2025. Sintesis en bibliografia/BIBLIOGRAPHY_SYNTHESIS.md.",
+      "pronostico": "PREGUNTA: si ya esta verde, floreceria todo antes y se marchitaria antes? Respuesta corta: se adelanta, si, pero menos de lo que parece; y no hay razon para que termine antes. PRIMERO, VERDE NO ES FLOR. Lo que se ve ahora es germinacion y crecimiento vegetativo, mas las primeras geofitas: ananucas, huillis y suspiros. Los bulbos son siempre los primeros de la fila. Eso es el arranque de la curva, no el maximo. SEGUNDO, HAY DOS RELOJES Y SOLO UNO SE ADELANTO. El reloj hidrico parte con la lluvia y este ano arranco un mes antes que en 2025. El reloj estacional — fotoperiodo y temperatura — esta clavado al calendario y no se mueve. La floracion masiva necesita los dos. La prueba: en 2025 llovio en agosto y la floracion partio la tercera semana de septiembre; este ano llovio un mes antes y el arranque cae en la primera quincena de septiembre. Un mes de diferencia en la lluvia se tradujo en una o dos semanas de diferencia en la floracion. El reloj estacional amortigua. TERCERO, POR QUE NO DEBERIA MARCHITARSE ANTES. (a) El final no lo manda el inicio sino el agotamiento de la humedad del perfil de suelo junto con el alza de la demanda evaporativa de primavera: es un proceso distinto del que dispara la floracion. (b) No hubo un pulso sino tres: el grande del 18 al 22 de julio, otro a fines de julio y un tercero entre el 10 y el 12 de agosto que dejo del orden de 18 a 25 mm mas. Ese ultimo llego cuando las plantulas ya estaban establecidas, que es la recarga que mas rinde, porque riega un cultivo en pie en vez de mojar suelo desnudo. (c) Los eventos grandes duran mas, no menos: el mayor del registro satelital, el de 2011, se extendio 180 dias entre julio y diciembre. El volumen de agua compra duracion. CUARTO, LA SUCESION AMORTIGUA EL FINAL. No se marchita todo junto: primero los bulbos, despues las de semilla como la pata de guanaco, y al final las tardias, Onagraceas y Asteraceas. Lo que se adelanto fue el relevo temprano; las tardias siguen atadas a su propio disparador. CONCLUSION: la curva es ASIMETRICA. La subida se adelanto; la bajada, con este volumen de agua, no tiene por que. Ir a fines de septiembre sigue siendo el plan A porque entras al maximo por el borde adelantado, pero el fin de semana largo del 12 de octubre quedo menos arriesgado de lo que parecia: sigue dentro del maximo canonico, que llega hasta la tercera semana de octubre. Lo que si conviene descartar es noviembre. LO QUE NO SE PUEDE SABER TODAVIA: nadie publico datos de humedad de suelo ni de profundidad de infiltracion. Lo busque en el reporte de INIA que monitoreo el evento y no esta: publican milimetros y una intensidad maxima de 15 mm/h, pero nada del perfil. Sin eso, la duracion es una inferencia y no una medicion. EL ARGUMENTO EN CONTRA, para no venderlo de un solo lado: hubo olas de calor en agosto. Un final de invierno calido acelera el desarrollo y sube la evapotranspiracion, y eso empuja justo en la direccion opuesta."
     },
     {
       "id": "longaniza-chillan",

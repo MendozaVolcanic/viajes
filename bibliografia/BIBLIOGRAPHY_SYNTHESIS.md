@@ -172,3 +172,57 @@ El fenómeno no ocurre simultáneamente en toda la región. La franja costera, e
 
 ### No conseguido
 El capítulo 15 de Squeo et al., *El Desierto Florido en la Región de Atacama* (`biouls.cl/lrojo/lrojo03/public_html/libro/15.pdf`), que tendría la fenología por especie con meses exactos: **el servidor rechaza la conexión** (ECONNREFUSED y descarga de 0 bytes, verificado 2026-08-24). Si aparece un espejo, ahí debería estar el detalle de qué especie florece en qué mes.
+
+
+---
+
+## ¿El verde temprano adelanta y acorta la temporada? (actualización 2026-08-25)
+
+### No llovió una vez: llovió tres
+
+| Pulso | Fecha | Registro |
+|---|---|---|
+| **1 — el grande** | **18–22 de julio** | Vallenar 186,9 mm · Alto del Carmen 210,8 mm · Amolanas 109 mm · Copiapó 24,2 mm. Intensidad máxima **15 mm/h**. INIA lo tituló "cuatro años de lluvia en pocos días" |
+| **2** | ~29–31 de julio | Segundo sistema frontal |
+| **3** | **10–12 de agosto** | Del orden de 18–25 mm más (Vallenar ~18, Copiapó y Tierra Amarilla ~17, Alto del Carmen ~25) |
+
+El tercero es el más interesante para la duración: llegó cuando **las plántulas ya estaban establecidas**. Es la recarga que más rinde, porque riega un cultivo en pie en vez de mojar suelo desnudo.
+
+### Los dos relojes
+
+El adelanto es real pero **amortiguado**, porque la floración masiva necesita dos condiciones que corren en relojes distintos:
+
+- **Reloj hídrico** — parte con la lluvia. Este año arrancó ~1 mes antes que en 2025.
+- **Reloj estacional** — fotoperiodo y temperatura. Clavado al calendario, no se adelanta.
+
+**Prueba empírica**: 2025 llovió en agosto y la floración partió la tercera semana de septiembre. 2026 llovió un mes antes y el arranque canónico cae en la primera quincena de septiembre. **Un mes de diferencia en la lluvia produjo una o dos semanas de diferencia en la floración.**
+
+### Por qué no debería marchitarse antes
+
+1. **El final no lo manda el inicio.** La floración termina cuando se agota la humedad del perfil y sube la demanda evaporativa de primavera — un proceso distinto del que la dispara.
+2. **Tres recargas, no una** (tabla arriba).
+3. **Los eventos grandes duran más, no menos**: el mayor del registro satelital, 2011, se extendió **180 días**, de julio a diciembre (Chávez et al. 2019).
+4. **La sucesión de especies amortigua el final**: primero los bulbos (añañuca, huilli), después las de semilla (pata de guanaco, suspiros), al final las tardías (Onagráceas, Asteráceas). Lo que se adelantó fue el relevo temprano.
+
+### Curva fenológica canónica
+
+| Fase | Semanas |
+|---|---|
+| Inicio, cobertura heterogénea | Primera quincena de septiembre |
+| **Máximo de diversidad y densidad** | **Última semana de septiembre → tercera semana de octubre** |
+| Declive gradual | Última semana de octubre → segunda de noviembre |
+| Fin | Segunda semana de noviembre → primera de diciembre |
+
+El máximo dura ~4 semanas: **no es un pico agudo**.
+
+### Conclusión: la curva es asimétrica
+
+La subida se adelantó; la bajada, con este volumen de agua, no tiene por qué. Fines de septiembre sigue siendo el plan A —se entra al máximo por el borde adelantado—, pero **el fin de semana largo del 12 de octubre quedó menos arriesgado de lo que parecía**: sigue dentro del máximo canónico. Lo que sí conviene descartar es noviembre.
+
+### El dato que falta, y que nadie publica
+
+**Humedad de suelo y profundidad de infiltración.** Se buscó en el reporte de INIA Intihuasi del 7-ago-2026, que es quien monitoreó el evento con red agrometeorológica actualizada cada dos horas: publican milímetros e intensidad máxima, pero **nada del perfil de suelo**. Sin ese dato la duración es una inferencia, no una medición. La única vía para tenerlo propio es la serie NDVI: si la curva de reverdecimiento se aplana antes de fines de septiembre, el reservorio se está agotando; si sigue subiendo, la temporada se estira.
+
+### El argumento en contra
+
+Hubo **olas de calor en agosto**. Un final de invierno cálido acelera el desarrollo y sube la evapotranspiración: empuja justo en la dirección opuesta a todo lo anterior. Es la razón principal para no descartar del todo un final adelantado.
