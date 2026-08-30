@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Panoramas — calendario de viajes</title>
 <meta name="description" content="Calendario y línea de tiempo de las mejores ventanas para viajes, fiestas y fenómenos naturales en Chile y el Cono Sur.">
-<link rel="stylesheet" href="assets/styles.css?v=c9c5cf30">
+<link rel="stylesheet" href="assets/styles.css?v=78213cd1">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌋</text></svg>">
 </head>
 <body>
@@ -21,6 +21,7 @@
       <button data-v="tl" class="on">Línea de tiempo</button>
       <button data-v="cal">Calendario</button>
       <button data-v="fichas">Fichas</button>
+      <button data-v="dias">Días de vacaciones</button>
       <button data-v="conf">Choques de fecha</button>
       <button data-v="parques">Parques nacionales</button>
       <button data-v="mapa">Tu mapa</button>
@@ -59,6 +60,13 @@
     <div class="cards" id="cards"></div>
   </section>
 
+  <section class="view" id="v-dias">
+    <h2 style="margin-bottom:6px;font-size:16px">Cuánto cuesta cada panorama en días de vacaciones</h2>
+    <p class="note" style="margin:0 0 16px">Los días hábiles son la moneda real. Un panorama que cae pegado a un feriado
+      o a un fin de semana se alarga gratis: el <b>rendimiento</b> es cuántos días corridos de viaje obtienes por cada día
+      de vacaciones que gastas. Sobre 1,8× el panorama prácticamente se paga solo.</p>
+    <div id="dias"></div>
+  </section>
   <section class="view" id="v-conf">
     <h2 style="margin-bottom:6px;font-size:16px">Fechas que se pisan</h2>
     <p class="note" style="margin:0 0 16px">Ventanas de prioridad 4 o 5 que se solapan y que duran menos de 40 días,
@@ -104,6 +112,6 @@
 </main>
 
 <div class="mask" id="mask"><div class="modal" id="modal"></div></div>
-<script src="assets/app.js?v=d184acbf"></script>
+<script src="assets/app.js?v=3ff75472"></script>
 </body>
 </html>

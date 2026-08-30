@@ -147,7 +147,7 @@ function render() {
   const evs = evsFiltrados();
   document.getElementById('fcount').textContent = `${evs.length} de ${S.ev.length} panoramas`;
   drawTL(evs); drawCal(evs); drawCards(evs);
-  drawPlan(); drawConf(); drawParques();
+  drawPlan(); drawConf(); drawParques(); drawDias();
 }
 
 /* ---------------- linea de tiempo ---------------- */
@@ -457,4 +457,72 @@ function sugPanel() {
         <span class="when" style="min-width:230px"><a data-id="${e.id}">${esc(e.nombre)}</a></span>
         <span class="what"><span class="nt" style="margin:0">Se parece a: ${esc(e.similar_a)}</span></span></div>`).join('')}
     </div>`).join('')}`;
+}
+
+/* ---------------- dias de vacaciones ----------------
+   El visor decia cuando y por que, pero no cuanto cuesta. Esta vista
+   traduce cada ventana a dias habiles, que es la moneda real: los
+   feriados y fines de semana pegados a una ventana la alargan gratis. */
+
+const SALDO = {
+  hoy: 5,
+  desde: '2027-09-09',
+  nuevos: 15,
+  nota: 'Quedan 5 acumulados tras gastar 10 legales y 2 administrativos en el viaje al norte. El 9 de septiembre de 2027 entran 15 mas: 20 en total.'
+};
+
+const esLibre = dt => dt.getDay() === 0 || dt.getDay() === 6 || todosFer().some(f => f.d === iso(dt));
+
+function habilesEntre(a, b) {
+  let n = 0, x = new Date(a);
+  while (x <= b) { if (!esLibre(x)) n++; x = addD(x, 1); }
+  return n;
+}
+
+/* Extiende la ventana hacia los lados mientras el dia vecino sea libre:
+   esos dias alargan el viaje sin costar vacaciones. */
+function bloqueOptimo(ini, fin) {
+  let a = d(ini), b = d(fin);
+  while (esLibre(addD(a, -1))) a = addD(a, -1);
+  while (esLibre(addD(b, 1))) b = addD(b, 1);
+  const hab = habilesEntre(a, b), cor = days(iso(a), iso(b)) + 1;
+  return { a: iso(a), b: iso(b), hab, cor, rend: hab ? cor / hab : cor };
+}
+
+function drawDias() {
+  const futuras = S.wins
+    .filter(w => w.fin >= HOY && w.ev.prio >= 3 && days(w.ini, w.fin) <= 45)
+    .map(w => ({ w, b: bloqueOptimo(w.ini, w.fin) }))
+    .filter(x => x.b.hab > 0)
+    .sort((x, y) => y.b.rend - x.b.rend || (x.b.a < y.b.a ? -1 : 1));
+
+  const vistos = new Set();
+  const filas = futuras.filter(x => {
+    const k = x.w.ev.id + x.b.a.slice(0, 4);
+    if (vistos.has(k)) return false; vistos.add(k); return true;
+  }).slice(0, 28);
+
+  const barra = r => {
+    const pct = Math.min(100, (r - 1) / 1.2 * 100);
+    const col = r >= 1.8 ? 'var(--ok)' : r >= 1.4 ? '#eab308' : 'var(--mut)';
+    return `<span class="rend"><span style="width:${pct}%;background:${col}"></span></span>`;
+  };
+
+  document.getElementById('dias').innerHTML = `
+    <div class="saldo">
+      <div><b>${SALDO.hoy}</b><span>días acumulados hoy</span></div>
+      <div><b>+${SALDO.nuevos}</b><span>el 9 de septiembre de 2027</span></div>
+      <div><b>${SALDO.hoy + SALDO.nuevos}</b><span>para el viaje grande</span></div>
+    </div>
+    <p class="note" style="margin:0 0 18px">${SALDO.nota}</p>
+    <div class="tw"><table>
+      <thead><tr><th>Panorama</th><th>Bloque aprovechando feriados</th><th class="n">Cuesta</th><th class="n">Obtienes</th><th>Rendimiento</th></tr></thead>
+      <tbody>${filas.map(({ w, b }) => `<tr>
+        <td><a data-id="${w.ev.id}">${esc(w.ev.nombre)}</a><br><span class="nt" style="margin:0">${w.ev.pais} · ${'★'.repeat(w.ev.prio)}</span></td>
+        <td>${fmtR(b.a, b.b)}</td>
+        <td class="n"><b>${b.hab}</b> hábiles</td>
+        <td class="n">${b.cor} corridos</td>
+        <td>${barra(b.rend)} <b>${b.rend.toFixed(2)}×</b></td></tr>`).join('')}
+      </tbody></table></div>`;
+  document.querySelectorAll('#dias [data-id]').forEach(a => a.onclick = () => openModal(a.dataset.id));
 }

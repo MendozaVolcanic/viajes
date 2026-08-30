@@ -201,3 +201,11 @@ table.pk td.nt{color:var(--tx2);max-width:52ch}
   .cards{grid-template-columns:1fr}
   main{padding:14px}
 }
+
+/* dias de vacaciones */
+.saldo{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 12px}
+.saldo>div{flex:1;min-width:150px;background:var(--pan);border:1px solid var(--bor);border-radius:10px;padding:12px 14px}
+.saldo b{display:block;font-size:26px;line-height:1.1;color:var(--ok)}
+.saldo span{font-size:12px;color:var(--mut)}
+.rend{display:inline-block;width:62px;height:7px;border-radius:4px;background:var(--bor);overflow:hidden;vertical-align:middle;margin-right:6px}
+.rend>span{display:block;height:100%;border-radius:4px}
