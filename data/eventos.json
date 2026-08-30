@@ -3218,37 +3218,45 @@
       "ano": 2027,
       "titulo": "El ano del eclipse: un viaje grande que resuelve tres pendientes",
       "ancla": "eclipse-anular-2027",
-      "texto": "Febrero de 2027 concentra cuatro eventos de primer nivel el mismo fin de semana: el eclipse anular en Palena-Futaleufu, el Carnaval de Oruro, el Carnaval de Rio y la Tapati Rapa Nui. Tres de ellos se repiten todos los anos. El eclipse no: despues del 6 de febrero de 2027, lo proximo para Chile es un parcial en el extremo austral en diciembre de 2029. Ademas tienes un pin guardado sin nombre en Chaiten, justo dentro de la franja: el viaje ya estaba a medio pensar.",
+      "texto": "Tienes 5 dias legales acumulados y te entregan 15 mas el 9 de septiembre. Eso parte el ano en dos bloques y cada uno calza con una ventana distinta. Los 5 acumulados van al eclipse: el 6 de febrero de 2027 cae SABADO, asi que tomando lunes 1 a viernes 5 quedan nueve dias corridos, del sabado 30 de enero al domingo 7 de febrero, con el eclipse adentro. Los 20 que quedan desde septiembre van a Asia: saliendo el sabado 9 de octubre y volviendo el martes 9 de noviembre son 32 dias corridos por 20 habiles, gracias a los feriados del 12 de octubre y del 1 de noviembre. Y esa ventana es exactamente la buena: China desde que termina la Semana Dorada y Japon entrando en momiji.",
       "items": [
         {
+          "cuando": "Sab 30 ene a dom 7 feb — 5 habiles",
           "id": "eclipse-anular-2027",
-          "cuando": "6 de febrero",
-          "nota": "Reservar alojamiento en Futaleufu o Palena AHORA. Es el cuello de botella."
+          "nota": "El eclipse cae sabado, asi que 5 dias compran 9 corridos. Es el unico evento del ano que no se puede mover."
         },
         {
-          "id": "costumbristas-chiloe",
-          "cuando": "Fines de enero o principios de febrero",
-          "nota": "Camino al eclipse, sin desvio."
+          "cuando": "Sab 9 oct a mar 9 nov — 20 habiles",
+          "id": "japon-china-combinado",
+          "nota": "32 dias corridos. China del 9 al 24 de octubre, Japon del 25 de octubre al 9 de noviembre."
         },
         {
-          "id": "carretera-austral",
-          "cuando": "Febrero, despues del eclipse",
-          "nota": "El eclipse te deja parado en la puerta de la Ruta 7, y tu pin de Chaiten esta sobre ella."
+          "cuando": "Dentro del tramo japones",
+          "id": "japon-momiji",
+          "nota": "Noviembre es el peak del color en Kansai y ademas queda fuera de la temporada de tifones."
         },
         {
-          "id": "la-tirana",
+          "cuando": "Dentro del tramo japones",
+          "id": "japon-volcanes",
+          "nota": "Aso y Sakurajima en Kyushu, Hakone y Fuji desde Tokio. Sin ascenso al Fuji: esa ventana es julio-agosto."
+        },
+        {
+          "cuando": "Primera mitad del viaje",
+          "id": "china-danxia-zhangjiajie",
+          "nota": "Entrar despues del 8 de octubre, cuando termina la Semana Dorada."
+        },
+        {
+          "cuando": "7 y 8 de septiembre",
+          "id": "ayquina-guadalupe",
+          "nota": "Cae justo antes de que te entreguen los dias nuevos. Finde, sin gastar vacaciones."
+        },
+        {
           "cuando": "16 de julio (feriado)",
-          "nota": "Feriado nacional, escapada de 3 a 4 dias."
+          "id": "la-tirana"
         },
         {
-          "id": "longaniza-chillan",
-          "cuando": "Agosto",
-          "nota": "La edicion que te perdiste este ano."
-        },
-        {
-          "id": "atacama-astro",
           "cuando": "Mayo a julio, luna nueva",
-          "nota": "Visitas a ALMA y Paranal, con inscripcion previa."
+          "id": "atacama-astro"
         }
       ]
     },
