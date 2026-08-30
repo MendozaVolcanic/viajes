@@ -2680,6 +2680,434 @@
         "madidi-amboro"
       ],
       "fuentes": []
+    },
+    {
+      "id": "ayquina-guadalupe",
+      "nombre": "Fiesta de Guadalupe de Ayquina",
+      "cat": "cultural",
+      "pais": "Chile",
+      "zona": "Ayquina, Alto Loa (3.000 m), 74 km de Calama",
+      "lat": -22.28,
+      "lon": -68.32,
+      "dur": "finde",
+      "dias": [
+        3,
+        5
+      ],
+      "prio": 4,
+      "certeza": "fija",
+      "fechas": [
+        {
+          "ini": "2027-09-01",
+          "fin": "2027-09-10",
+          "tag": "Dias grandes: 7 y 8 de septiembre"
+        },
+        {
+          "ini": "2028-09-01",
+          "fin": "2028-09-10",
+          "tag": "Dias grandes: 7 y 8 de septiembre"
+        },
+        {
+          "ini": "2029-09-01",
+          "fin": "2029-09-10",
+          "tag": "Dias grandes: 7 y 8 de septiembre"
+        },
+        {
+          "ini": "2030-09-01",
+          "fin": "2030-09-10",
+          "tag": "Dias grandes: 7 y 8 de septiembre"
+        }
+      ],
+      "porque": "La celebracion religiosa mas grande de la Region de Antofagasta: mas de 70 mil personas en un pueblo de altiplano a 3.000 m. Bailan Tinkus, Diabladas, Tobas y Torero Devoto, con la misma matriz andina que el Carnaval de Oruro, y muchos peregrinos hacen a pie los 74 km desde Calama, caminata que puede tomar 20 horas. Es la version chilena de la devocion minera del altiplano: la misma cultura que ya vas a ver en Oruro, pero de este lado de la frontera.",
+      "logistica": "Vuelo a Calama y auto: Ayquina esta a 74 km por la ruta del Alto Loa, la misma que lleva a Chiu-Chiu y Lasana. Se puede combinar en un solo viaje. Alojamiento en Calama, no en el pueblo. Altura 3.000 m: llegar el dia antes.",
+      "alerta": "Los dias 7 y 8 concentran a 70 mil personas en un pueblo diminuto. El alojamiento en Calama se agota y la ruta se congestiona. Si el objetivo es el pueblo y el paisaje sin multitud, cualquier otra fecha del ano.",
+      "fuentes": [
+        {
+          "t": "Chile es Tuyo — Fiesta de la Virgen de Guadalupe en Ayquina",
+          "u": "https://chileestuyo.cl/eventos/fiesta-de-la-virgen-de-guadalupe-en-ayquina/"
+        },
+        {
+          "t": "Diocesis de Calama — programacion del santuario",
+          "u": "https://iglesiadecalama.cl/"
+        }
+      ]
+    },
+    {
+      "id": "candelaria-copiapo",
+      "nombre": "Fiesta Grande de La Candelaria",
+      "cat": "cultural",
+      "pais": "Chile",
+      "zona": "Copiapo, Region de Atacama",
+      "lat": -27.37,
+      "lon": -70.33,
+      "dur": "finde",
+      "dias": [
+        2,
+        4
+      ],
+      "prio": 3,
+      "certeza": "fija",
+      "fechas": [
+        {
+          "ini": "2027-01-30",
+          "fin": "2027-02-04",
+          "tag": "Fiesta Grande: 2 de febrero"
+        },
+        {
+          "ini": "2028-01-30",
+          "fin": "2028-02-04",
+          "tag": "Fiesta Grande: 2 de febrero"
+        },
+        {
+          "ini": "2029-01-30",
+          "fin": "2029-02-04",
+          "tag": "Fiesta Grande: 2 de febrero"
+        },
+        {
+          "ini": "2030-01-30",
+          "fin": "2030-02-04",
+          "tag": "Fiesta Grande: 2 de febrero"
+        },
+        {
+          "ini": "2027-08-13",
+          "fin": "2027-08-17",
+          "tag": "Fiesta Chica: 15 de agosto"
+        },
+        {
+          "ini": "2028-08-13",
+          "fin": "2028-08-17",
+          "tag": "Fiesta Chica: 15 de agosto"
+        },
+        {
+          "ini": "2029-08-13",
+          "fin": "2029-08-17",
+          "tag": "Fiesta Chica: 15 de agosto"
+        },
+        {
+          "ini": "2030-08-13",
+          "fin": "2030-08-17",
+          "tag": "Fiesta Chica: 15 de agosto"
+        }
+      ],
+      "porque": "Nace de un hallazgo minero: la imagen la encontraron arrieros en el despoblado de Atacama en 1780, camino a las minas. De ahi salen los bailes chinos, cofradias de danzantes con flauta de caña cuyo canto y paso vienen del mundo minero colonial. Los bailes chinos son Patrimonio Inmaterial de la Humanidad desde 2014. Es la fiesta que explica por que Atacama es como es.",
+      "logistica": "Vuelo a Copiapo (CPO) o Ruta 5. El santuario esta en Copiapo mismo. La Fiesta Chica de agosto es mucho mas tranquila y permite ver los mismos bailes sin la multitud del 2 de febrero.",
+      "alerta": "Febrero en Copiapo son 30 grados y sol pleno. La Fiesta Chica del 15 de agosto tiene clima mucho mejor.",
+      "fuentes": [
+        {
+          "t": "Memoria Chilena — La Candelaria",
+          "u": "https://www.memoriachilena.gob.cl/602/w3-article-97385.html"
+        },
+        {
+          "t": "Descubre Atacama — Fiesta y Bailes Chinos",
+          "u": "https://descubreatacama.cl/fiesta-y-bailes-chinos/"
+        }
+      ]
+    },
+    {
+      "id": "candelaria-puno",
+      "nombre": "Virgen de la Candelaria de Puno",
+      "cat": "cultural",
+      "pais": "Peru",
+      "zona": "Puno, orilla del lago Titicaca (3.800 m)",
+      "lat": -15.84,
+      "lon": -70.03,
+      "dur": "escapada",
+      "dias": [
+        4,
+        7
+      ],
+      "prio": 4,
+      "certeza": "fija",
+      "fechas": [
+        {
+          "ini": "2027-01-21",
+          "fin": "2027-02-17",
+          "tag": "Nucleo: 2 de febrero y la octava"
+        },
+        {
+          "ini": "2028-01-21",
+          "fin": "2028-02-17",
+          "tag": "Nucleo: 2 de febrero y la octava"
+        },
+        {
+          "ini": "2029-01-21",
+          "fin": "2029-02-17",
+          "tag": "Nucleo: 2 de febrero y la octava"
+        },
+        {
+          "ini": "2030-01-21",
+          "fin": "2030-02-17",
+          "tag": "Nucleo: 2 de febrero y la octava"
+        }
+      ],
+      "porque": "Patrimonio Cultural Inmaterial de la Humanidad (UNESCO, 2014) y la mayor fiesta del altiplano peruano: mas de 200 conjuntos y decenas de miles de danzantes fusionando tradicion quechua, aimara y mestiza. Es la hermana mayor de Oruro, en el mismo altiplano y con la misma Virgen, pero del lado peruano. Verlas las dos en un mismo febrero es entender el altiplano completo.",
+      "logistica": "Vuelo a Juliaca (JUL) y 45 min a Puno, o bus desde Cusco (~7 h). Altura 3.800 m: aclimatarse antes. Combina con Titicaca, Uros y Taquile. La fiesta se extiende del 21 de enero al 17 de febrero, pero el nucleo son los dias en torno al 2 de febrero.",
+      "alerta": "Cae en la misma ventana que el Carnaval de Oruro y que el eclipse anular de febrero de 2027. Los tres compiten por el mismo febrero.",
+      "fuentes": [
+        {
+          "t": "UNESCO — La fiesta de la Virgen de la Candelaria en Puno",
+          "u": "https://ich.unesco.org/es/RL/la-fiesta-de-la-virgen-de-la-candelaria-en-puno-00956"
+        }
+      ]
+    },
+    {
+      "id": "dia-muertos-patzcuaro",
+      "nombre": "Dia de Muertos en Patzcuaro y Janitzio",
+      "cat": "cultural",
+      "pais": "Mexico",
+      "zona": "Lago de Patzcuaro, Michoacan",
+      "lat": -19.51,
+      "lon": -101.61,
+      "dur": "grande",
+      "dias": [
+        7,
+        12
+      ],
+      "prio": 4,
+      "certeza": "fija",
+      "fechas": [
+        {
+          "ini": "2027-10-28",
+          "fin": "2027-11-02",
+          "tag": "Noche de animas: 1 al 2 de noviembre"
+        },
+        {
+          "ini": "2028-10-28",
+          "fin": "2028-11-02",
+          "tag": "Noche de animas: 1 al 2 de noviembre"
+        },
+        {
+          "ini": "2029-10-28",
+          "fin": "2029-11-02",
+          "tag": "Noche de animas: 1 al 2 de noviembre"
+        },
+        {
+          "ini": "2030-10-28",
+          "fin": "2030-11-02",
+          "tag": "Noche de animas: 1 al 2 de noviembre"
+        }
+      ],
+      "porque": "Patrimonio Oral e Inmaterial de la Humanidad desde 2003. En la isla de Janitzio las familias purepecha velan las tumbas toda la noche del 1 al 2 de noviembre a la luz de miles de velas, y el lago se cruza en canoas iluminadas. Es el nucleo original de la tradicion, no la version de desfile de Ciudad de Mexico.",
+      "logistica": "Vuelo a Morelia (MLM) y 1 h a Patzcuaro, o desde Ciudad de Mexico ~4 h en bus. Desde el 28 de octubre los pueblos del lago ya estan decorados con cempasuchil. Alojamiento en Patzcuaro con meses de anticipacion.",
+      "alerta": "Es una vigilia funeraria real, no un espectaculo. Hay tension documentada entre la tradicion y el turismo masivo en Janitzio. Los pueblos menores del lago ofrecen la misma noche con mucho mas respeto y menos gente.",
+      "fuentes": [
+        {
+          "t": "UNESCO — Las fiestas indigenas dedicadas a los muertos",
+          "u": "https://ich.unesco.org/es/RL/las-fiestas-indigenas-dedicadas-a-los-muertos-00054"
+        }
+      ]
+    },
+    {
+      "id": "japon-momiji",
+      "nombre": "Japon en momiji: el otono rojo",
+      "cat": "paisaje",
+      "pais": "Japon",
+      "zona": "Kioto, Nikko, Alpes japoneses y Tohoku",
+      "lat": 35.01,
+      "lon": 135.77,
+      "dur": "grande",
+      "dias": [
+        14,
+        21
+      ],
+      "prio": 5,
+      "certeza": "clima",
+      "fechas": [
+        {
+          "ini": "2027-10-20",
+          "fin": "2027-11-30",
+          "tag": "Frente de color baja de norte a sur"
+        },
+        {
+          "ini": "2028-10-20",
+          "fin": "2028-11-30",
+          "tag": "Frente de color baja de norte a sur"
+        },
+        {
+          "ini": "2029-10-20",
+          "fin": "2029-11-30",
+          "tag": "Frente de color baja de norte a sur"
+        },
+        {
+          "ini": "2030-10-20",
+          "fin": "2030-11-30",
+          "tag": "Frente de color baja de norte a sur"
+        }
+      ],
+      "porque": "Es la mejor ventana del ano en Japon y casi nadie lo sabe: mejor clima que en primavera (templado y seco), los arces en rojo pleno, y precios y multitudes bastante mas bajos que en la temporada de sakura. El frente de color baja de norte a sur como una ola, desde Hokkaido en octubre hasta Kioto a fines de noviembre, asi que la fecha se elige segun donde quieras estar.",
+      "logistica": "Chilenos entran sin visa hasta 90 dias; el pasaporte debe tener 6 meses de vigencia. Vuelo Santiago-Tokio con una escala. Japan Rail Pass si el itinerario cruza el pais; si te quedas en la region de Kansai, pases regionales salen mucho mas baratos. Es un viaje largo: 14 a 21 dias para que rinda.",
+      "alerta": "El momiji es un fenomeno climatico, no una fecha: la ola de color se adelanta o atrasa una o dos semanas segun el ano. Se sigue con los pronosticos de koyo que publican los medios japoneses desde septiembre.",
+      "fuentes": [
+        {
+          "t": "Embajada de Japon en Chile — exencion de visa",
+          "u": "https://www.cl.emb-japan.go.jp/itpr_ja/exencion.html"
+        }
+      ]
+    },
+    {
+      "id": "japon-sakura",
+      "nombre": "Japon en sakura: los cerezos",
+      "cat": "paisaje",
+      "pais": "Japon",
+      "zona": "De Kyushu a Tohoku, segun latitud",
+      "lat": 35.01,
+      "lon": 135.77,
+      "dur": "grande",
+      "dias": [
+        14,
+        21
+      ],
+      "prio": 4,
+      "certeza": "clima",
+      "fechas": [
+        {
+          "ini": "2027-03-20",
+          "fin": "2027-04-15",
+          "tag": "Frente de floracion sube de sur a norte"
+        },
+        {
+          "ini": "2028-03-20",
+          "fin": "2028-04-15",
+          "tag": "Frente de floracion sube de sur a norte"
+        },
+        {
+          "ini": "2029-03-20",
+          "fin": "2029-04-15",
+          "tag": "Frente de floracion sube de sur a norte"
+        },
+        {
+          "ini": "2030-03-20",
+          "fin": "2030-04-15",
+          "tag": "Frente de floracion sube de sur a norte"
+        }
+      ],
+      "porque": "El clasico absoluto, y por buenas razones: la floracion dura poco mas de una semana en cada lugar y el pais entero se reorganiza en torno a ella. El frente sube de sur a norte, de Kyushu a fines de marzo hasta Tohoku y Hokkaido en mayo.",
+      "logistica": "Mismo marco que el momiji: sin visa hasta 90 dias. Pero aca todo se reserva con mucha mas anticipacion y sale mas caro.",
+      "alerta": "Es la temporada mas cara y mas llena del ano, y ademas empalma con la Golden Week de fines de abril, cuando el Shinkansen se agota con meses y los hoteles pueden triplicar precio. Si la prioridad es paisaje y no el rito de la sakura, el momiji de noviembre entrega mas por menos.",
+      "fuentes": [
+        {
+          "t": "Embajada de Japon en Chile — exencion de visa",
+          "u": "https://www.cl.emb-japan.go.jp/itpr_ja/exencion.html"
+        }
+      ]
+    },
+    {
+      "id": "china-danxia-zhangjiajie",
+      "nombre": "China geologica: Danxia, Zhangjiajie y el karst de Guilin",
+      "cat": "geo",
+      "pais": "China",
+      "zona": "Gansu (Zhangye), Hunan (Zhangjiajie) y Guangxi (Guilin)",
+      "lat": 38.92,
+      "lon": 100.13,
+      "dur": "grande",
+      "dias": [
+        14,
+        21
+      ],
+      "prio": 5,
+      "certeza": "clima",
+      "fechas": [
+        {
+          "ini": "2027-09-08",
+          "fin": "2027-10-20",
+          "tag": "Otono: despues de la Semana Dorada"
+        },
+        {
+          "ini": "2028-09-08",
+          "fin": "2028-10-20",
+          "tag": "Otono: despues de la Semana Dorada"
+        },
+        {
+          "ini": "2029-09-08",
+          "fin": "2029-10-20",
+          "tag": "Otono: despues de la Semana Dorada"
+        },
+        {
+          "ini": "2030-09-08",
+          "fin": "2030-10-20",
+          "tag": "Otono: despues de la Semana Dorada"
+        },
+        {
+          "ini": "2027-03-25",
+          "fin": "2027-05-20",
+          "tag": "Primavera"
+        },
+        {
+          "ini": "2028-03-25",
+          "fin": "2028-05-20",
+          "tag": "Primavera"
+        },
+        {
+          "ini": "2029-03-25",
+          "fin": "2029-05-20",
+          "tag": "Primavera"
+        },
+        {
+          "ini": "2030-03-25",
+          "fin": "2030-05-20",
+          "tag": "Primavera"
+        }
+      ],
+      "porque": "Tres paisajes de manual en un solo pais. El Danxia de Zhangye son areniscas y conglomerados continentales del Cretacico, plegados y erosionados hasta dejar bandas de color a escala de cerro: la misma logica de Vinicunca pero en decenas de kilometros. Zhangjiajie son pilares de cuarzoarenisca de mas de 300 m separados por fracturacion y erosion diferencial, el paisaje que inspiro Avatar. Y Guilin y Yangshuo son el karst de torres mejor desarrollado del planeta.",
+      "logistica": "Chilenos entran sin visa hasta 30 dias, pero la exencion esta prorrogada solo hasta el 31 de diciembre de 2026: si viajas despues hay que confirmar si sigue vigente. Los tres destinos estan lejos entre si; se conectan con tren de alta velocidad y vuelos internos. Traducir todo y llevar la app de mapas descargada.",
+      "alerta": "Evitar la Semana Dorada del 1 al 7 de octubre, el Ano Nuevo chino de enero o febrero y el 1 al 3 de mayo: son los tres momentos en que se mueve el pais entero. La mejor ventana es desde el 8 de octubre en adelante, justo cuando termina la Semana Dorada.",
+      "fuentes": [
+        {
+          "t": "La Tercera — chilenos sin visa para China",
+          "u": "https://www.latercera.com/nacional/noticia/chilenos-podran-viajar-a-china-sin-necesidad-de-visa-desde-el-1-de-junio/"
+        }
+      ]
+    },
+    {
+      "id": "japon-china-combinado",
+      "nombre": "Japon y China en un viaje: la ventana comun",
+      "cat": "roadtrip",
+      "pais": "Japon / China",
+      "zona": "Asia oriental",
+      "lat": 31.0,
+      "lon": 121.5,
+      "dur": "grande",
+      "dias": [
+        21,
+        30
+      ],
+      "prio": 5,
+      "certeza": "clima",
+      "fechas": [
+        {
+          "ini": "2027-10-08",
+          "fin": "2027-11-25",
+          "tag": "China primero, Japon despues"
+        },
+        {
+          "ini": "2028-10-08",
+          "fin": "2028-11-25",
+          "tag": "China primero, Japon despues"
+        },
+        {
+          "ini": "2029-10-08",
+          "fin": "2029-11-25",
+          "tag": "China primero, Japon despues"
+        },
+        {
+          "ini": "2030-10-08",
+          "fin": "2030-11-25",
+          "tag": "China primero, Japon despues"
+        }
+      ],
+      "porque": "Las dos mejores temporadas casi no se solapan, pero se encadenan. China rinde de septiembre a mediados de octubre y Japon entra en momiji desde fines de octubre. Empezando en China el 8 de octubre, apenas termina la Semana Dorada, y cruzando a Japon a fines de mes, agarras la mejor ventana de cada pais en un solo viaje.",
+      "logistica": "Volar a China primero y salir por Japon, o al reves, comprando multidestino en vez de dos ida y vuelta. Son 21 a 30 dias para que valga el pasaje transpacifico. Es un canje ideal de millas: los tramos largos son donde el canje rinde mas por milla.",
+      "alerta": "Dos condiciones de entrada distintas: Japon da 90 dias sin visa y China 30, y la exencion china esta confirmada solo hasta el 31 de diciembre de 2026. Verificar ambas antes de comprar.",
+      "fuentes": [
+        {
+          "t": "Embajada de Japon en Chile",
+          "u": "https://www.cl.emb-japan.go.jp/itpr_ja/exencion.html"
+        },
+        {
+          "t": "La Tercera — exencion de visa china para Chile",
+          "u": "https://www.latercera.com/nacional/noticia/chilenos-podran-viajar-a-china-sin-necesidad-de-visa-desde-el-1-de-junio/"
+        }
+      ]
     }
   ],
   "planes": [
