@@ -2935,12 +2935,20 @@
         }
       ],
       "porque": "Es la mejor ventana del ano en Japon y casi nadie lo sabe: mejor clima que en primavera (templado y seco), los arces en rojo pleno, y precios y multitudes bastante mas bajos que en la temporada de sakura. El frente de color baja de norte a sur como una ola, desde Hokkaido en octubre hasta Kioto a fines de noviembre, asi que la fecha se elige segun donde quieras estar.",
-      "logistica": "Chilenos entran sin visa hasta 90 dias; el pasaporte debe tener 6 meses de vigencia. Vuelo Santiago-Tokio con una escala. Japan Rail Pass si el itinerario cruza el pais; si te quedas en la region de Kansai, pases regionales salen mucho mas baratos. Es un viaje largo: 14 a 21 dias para que rinda.",
-      "alerta": "El momiji es un fenomeno climatico, no una fecha: la ola de color se adelanta o atrasa una o dos semanas segun el ano. Se sigue con los pronosticos de koyo que publican los medios japoneses desde septiembre.",
+      "logistica": "Chilenos entran sin visa hasta 90 dias; pasaporte con 6 meses de vigencia. PASAJE: Santiago-Tokio ida y vuelta parte en torno a $1.300.000 y el mejor encontrado fue $1.549.222 con LATAM y Qantas. Febrero es el mes mas barato de la ruta y agosto el mas caro. Es el canje de millas ideal: en tramos largos la milla rinde mucho mas. TRENES: el Japan Rail Pass ya no conviene para la mayoria. Tras el alza del 70% de 2023 cuesta ¥50.000 los 7 dias, ¥80.000 los 14 y ¥100.000 los 21, y sube a ¥53.000, ¥84.000 y ¥105.000 desde el 1 de octubre de 2026. Para la Ruta Dorada los boletos sueltos salen mas baratos. Los pases regionales ganan: el JR West Kansai Area Pass va de ¥2.400 por un dia a ¥5.600 por cuatro, y el Kansai Wide Area Pass son ¥12.000 por cinco dias. Un Kansai Wide mas boletos sueltos de Tokio sale ¥25.000 a ¥30.000 contra los ¥50.000 del pase nacional. Correr la calculadora del itinerario antes de comprar. Duracion: 14 a 21 dias para que rinda el pasaje transpacifico.",
+      "alerta": "El momiji es un fenomeno climatico, no una fecha: la ola de color se adelanta o atrasa una o dos semanas segun el ano. Se sigue con los pronosticos de koyo que publican los medios japoneses desde septiembre. Y hay una razon extra para noviembre: la temporada de tifones va de mayo a octubre con peak en agosto y septiembre, y las fechas mas seguras del ano son justamente fines de octubre a noviembre.",
       "fuentes": [
         {
           "t": "Embajada de Japon en Chile — exencion de visa",
           "u": "https://www.cl.emb-japan.go.jp/itpr_ja/exencion.html"
+        },
+        {
+          "t": "Comparativa JR Pass vs pases regionales 2026",
+          "u": "https://www.railpassguide.com/en/compare/jr-pass-vs-regional-passes"
+        },
+        {
+          "t": "Japonismo — tifones en Japon",
+          "u": "https://japonismo.com/blog/tifones-en-japon"
         }
       ]
     },
@@ -2983,7 +2991,7 @@
       ],
       "porque": "El clasico absoluto, y por buenas razones: la floracion dura poco mas de una semana en cada lugar y el pais entero se reorganiza en torno a ella. El frente sube de sur a norte, de Kyushu a fines de marzo hasta Tohoku y Hokkaido en mayo.",
       "logistica": "Mismo marco que el momiji: sin visa hasta 90 dias. Pero aca todo se reserva con mucha mas anticipacion y sale mas caro.",
-      "alerta": "Es la temporada mas cara y mas llena del ano, y ademas empalma con la Golden Week de fines de abril, cuando el Shinkansen se agota con meses y los hoteles pueden triplicar precio. Si la prioridad es paisaje y no el rito de la sakura, el momiji de noviembre entrega mas por menos.",
+      "alerta": "Es la temporada mas cara y mas llena del ano, y ademas empalma con la Golden Week de fines de abril, cuando el Shinkansen se agota con meses y los hoteles pueden triplicar precio. Si la prioridad es paisaje y no el rito de la sakura, el momiji de noviembre entrega mas por menos. Ojo tambien con el JR Pass: subio 70% en 2023 y desde el 1 de octubre de 2026 sube otra vez, asi que ya casi nunca conviene frente a boletos sueltos o pases regionales.",
       "fuentes": [
         {
           "t": "Embajada de Japon en Chile — exencion de visa",
@@ -3095,7 +3103,7 @@
           "tag": "China primero, Japon despues"
         }
       ],
-      "porque": "Las dos mejores temporadas casi no se solapan, pero se encadenan. China rinde de septiembre a mediados de octubre y Japon entra en momiji desde fines de octubre. Empezando en China el 8 de octubre, apenas termina la Semana Dorada, y cruzando a Japon a fines de mes, agarras la mejor ventana de cada pais en un solo viaje.",
+      "porque": "Las dos mejores temporadas casi no se solapan, pero se encadenan. China rinde de septiembre a mediados de octubre y Japon entra en momiji desde fines de octubre. Empezando en China el 8 de octubre, apenas termina la Semana Dorada, y cruzando a Japon a fines de mes, agarras la mejor ventana de cada pais en un solo viaje. Y hay un tercer motivo para ese orden: la temporada de tifones en Japon va de mayo a octubre con peak en agosto y septiembre, asi que llegar en noviembre esquiva tambien ese riesgo.",
       "logistica": "Volar a China primero y salir por Japon, o al reves, comprando multidestino en vez de dos ida y vuelta. Son 21 a 30 dias para que valga el pasaje transpacifico. Es un canje ideal de millas: los tramos largos son donde el canje rinde mas por milla.",
       "alerta": "Dos condiciones de entrada distintas: Japon da 90 dias sin visa y China 30, y la exencion china esta confirmada solo hasta el 31 de diciembre de 2026. Verificar ambas antes de comprar.",
       "fuentes": [
@@ -3106,6 +3114,73 @@
         {
           "t": "La Tercera — exencion de visa china para Chile",
           "u": "https://www.latercera.com/nacional/noticia/chilenos-podran-viajar-a-china-sin-necesidad-de-visa-desde-el-1-de-junio/"
+        }
+      ]
+    },
+    {
+      "id": "japon-volcanes",
+      "nombre": "Arco volcanico japones: Fuji, Aso y Sakurajima",
+      "cat": "geo",
+      "pais": "Japon",
+      "zona": "Honshu (Fuji, Hakone), Kyushu (Aso, Sakurajima)",
+      "lat": 35.36,
+      "lon": 138.73,
+      "dur": "grande",
+      "dias": [
+        10,
+        16
+      ],
+      "prio": 5,
+      "certeza": "clima",
+      "fechas": [
+        {
+          "ini": "2027-10-20",
+          "fin": "2027-11-30",
+          "tag": "Otono: sin tifones y con color"
+        },
+        {
+          "ini": "2028-10-20",
+          "fin": "2028-11-30",
+          "tag": "Otono: sin tifones y con color"
+        },
+        {
+          "ini": "2029-10-20",
+          "fin": "2029-11-30",
+          "tag": "Otono: sin tifones y con color"
+        },
+        {
+          "ini": "2030-10-20",
+          "fin": "2030-11-30",
+          "tag": "Otono: sin tifones y con color"
+        },
+        {
+          "ini": "2027-07-01",
+          "fin": "2027-09-10",
+          "tag": "Unica ventana para subir el Fuji"
+        },
+        {
+          "ini": "2028-07-01",
+          "fin": "2028-09-10",
+          "tag": "Unica ventana para subir el Fuji"
+        },
+        {
+          "ini": "2029-07-01",
+          "fin": "2029-09-10",
+          "tag": "Unica ventana para subir el Fuji"
+        },
+        {
+          "ini": "2030-07-01",
+          "fin": "2030-09-10",
+          "tag": "Unica ventana para subir el Fuji"
+        }
+      ],
+      "porque": "Japon es el mismo tipo de margen convergente que la Zona Volcanica Sur, pero con cuatro placas en juego en vez de dos. El Aso tiene una de las calderas mas grandes del mundo con 120 km de perimetro y cinco picos, con el Nakadake todavia activo. El Sakurajima erupciona de forma casi continua frente a una ciudad de 600 mil habitantes, un caso de convivencia con el riesgo que no existe en Chile. Y Owakudani, en Hakone, es un campo de fumarolas donde cuecen huevos en el vapor volcanico. La cultura del onsen es geotermia aplicada: todo el pais esta construido sobre el mismo sistema.",
+      "logistica": "Fuji y Hakone son excursion desde Tokio. Aso y Sakurajima estan en Kyushu, al sur: tren de alta velocidad hasta Kumamoto o Kagoshima. El ascenso al Fuji solo esta habilitado de principios de julio a principios de septiembre, cuando funcionan los refugios; el resto del ano se ve pero no se sube. Para verlo desde abajo, el otono da mucho mejor visibilidad.",
+      "alerta": "Las dos ventanas son incompatibles: subir el Fuji obliga a julio o agosto, que es plena temporada de tifones y de calor humedo. Si el objetivo es el paisaje volcanico y no la cumbre, el otono gana por lejos.",
+      "fuentes": [
+        {
+          "t": "Nippon.com — los paisajes volcanicos de Owakudani",
+          "u": "https://www.nippon.com/es/guide-to-japan/gu900158/"
         }
       ]
     }
