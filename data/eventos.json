@@ -2965,33 +2965,28 @@
         14,
         21
       ],
-      "prio": 4,
+      "prio": 5,
       "certeza": "clima",
       "fechas": [
         {
-          "ini": "2027-03-20",
-          "fin": "2027-04-15",
-          "tag": "Frente de floracion sube de sur a norte"
+          "ini": "2028-03-18",
+          "fin": "2028-04-17",
+          "tag": "Bloque: 20 habiles compran 31 corridos, Semana Santa adentro"
         },
         {
-          "ini": "2028-03-20",
-          "fin": "2028-04-15",
-          "tag": "Frente de floracion sube de sur a norte"
+          "ini": "2029-03-17",
+          "fin": "2029-04-16",
+          "tag": "Equivalente 2029"
         },
         {
-          "ini": "2029-03-20",
-          "fin": "2029-04-15",
-          "tag": "Frente de floracion sube de sur a norte"
-        },
-        {
-          "ini": "2030-03-20",
+          "ini": "2030-03-16",
           "fin": "2030-04-15",
-          "tag": "Frente de floracion sube de sur a norte"
+          "tag": "Equivalente 2030"
         }
       ],
-      "porque": "El clasico absoluto, y por buenas razones: la floracion dura poco mas de una semana en cada lugar y el pais entero se reorganiza en torno a ella. El frente sube de sur a norte, de Kyushu a fines de marzo hasta Tohoku y Hokkaido en mayo.",
+      "porque": "El clasico absoluto: la floracion dura poco mas de una semana en cada lugar y el pais entero se reorganiza en torno a ella. El frente sube de sur a norte, de Kyushu a fines de marzo hasta Tohoku y Hokkaido en mayo, asi que un bloque largo permite seguirlo. No cabe en 2027: la sakura de ese ano cae en marzo-abril, ANTES de que te entreguen los 15 dias el 9 de septiembre, y los 5 acumulados ya estan comprometidos con el eclipse. En 2028 si: los 20 dias siguen disponibles y Semana Santa cae el 14 y 15 de abril, dentro de la ventana.",
       "logistica": "Mismo marco que el momiji: sin visa hasta 90 dias. Pero aca todo se reserva con mucha mas anticipacion y sale mas caro.",
-      "alerta": "Es la temporada mas cara y mas llena del ano, y ademas empalma con la Golden Week de fines de abril, cuando el Shinkansen se agota con meses y los hoteles pueden triplicar precio. Si la prioridad es paisaje y no el rito de la sakura, el momiji de noviembre entrega mas por menos. Ojo tambien con el JR Pass: subio 70% en 2023 y desde el 1 de octubre de 2026 sube otra vez, asi que ya casi nunca conviene frente a boletos sueltos o pases regionales.",
+      "alerta": "Es la temporada mas cara y llena del ano. Y ojo con el borde: saliendo el 1 de abril el bloque llega hasta el 2 de mayo y se come la Golden Week, cuando el Shinkansen se agota con meses y los hoteles triplican precio. Saliendo en marzo se evita. Frente al momiji pierdes clima, precio y tranquilidad; ganas el rito. Ambas opciones gastan el mismo banco de 20 dias, asi que son excluyentes.",
       "fuentes": [
         {
           "t": "Embajada de Japon en Chile — exencion de visa",
@@ -3266,8 +3261,13 @@
       "ano": 2028,
       "titulo": "El ano de la Puna: tu racimo mas grande, quince pines",
       "ancla": "antofagasta-de-la-sierra",
-      "texto": "Un tercio de tu mapa esta en la Puna y el noroeste argentino: quince pines entre Catamarca, Salta, Jujuy, La Rioja y San Juan. Es, con diferencia, lo que mas quieres ver, y ademas es lo que mejor te calza como geologo. No cabe en un viaje: hay que partirlo. El nucleo duro es el circuito Salta - Cafayate - Cachi - Ruta 40 - Antofagasta de la Sierra, que solo en el radio de Antofagasta cubre cinco pines. La ventana es abril-mayo, con septiembre-noviembre como alternativa; enero y febrero quedan descartados por el monzon.",
+      "texto": "DECISION DE FONDO: la sakura de 2028 y el momiji de octubre de 2027 gastan el mismo banco de 20 dias. Son excluyentes. La sakura llega 5 meses despues, con dos ventajas concretas: acumulas ~172.000 millas en vez de ~157.000, y Semana Santa cae dentro del bloque. Pierdes clima, precio y tranquilidad. Si eliges el momiji, la Puna sigue siendo el plan de este ano. Un tercio de tu mapa esta en la Puna y el noroeste argentino: quince pines entre Catamarca, Salta, Jujuy, La Rioja y San Juan. Es, con diferencia, lo que mas quieres ver, y ademas es lo que mejor te calza como geologo. No cabe en un viaje: hay que partirlo. El nucleo duro es el circuito Salta - Cafayate - Cachi - Ruta 40 - Antofagasta de la Sierra, que solo en el radio de Antofagasta cubre cinco pines. La ventana es abril-mayo, con septiembre-noviembre como alternativa; enero y febrero quedan descartados por el monzon.",
       "items": [
+        {
+          "cuando": "Sab 18 mar a lun 17 abr — 20 habiles",
+          "id": "japon-sakura",
+          "que": "Alternativa al momiji de 2027: gastan el mismo banco de dias"
+        },
         {
           "id": "cafayate-conchas",
           "cuando": "Abril-mayo, entrada del circuito",
