@@ -3010,7 +3010,7 @@
       "dur": "grande",
       "dias": [
         14,
-        21
+        18
       ],
       "prio": 5,
       "certeza": "clima",
@@ -3057,7 +3057,7 @@
         }
       ],
       "porque": "Tres paisajes de manual en un solo pais. El Danxia de Zhangye son areniscas y conglomerados continentales del Cretacico, plegados y erosionados hasta dejar bandas de color a escala de cerro: la misma logica de Vinicunca pero en decenas de kilometros. Zhangjiajie son pilares de cuarzoarenisca de mas de 300 m separados por fracturacion y erosion diferencial, el paisaje que inspiro Avatar. Y Guilin y Yangshuo son el karst de torres mejor desarrollado del planeta.",
-      "logistica": "Chilenos entran sin visa hasta 30 dias, pero la exencion esta prorrogada solo hasta el 31 de diciembre de 2026: si viajas despues hay que confirmar si sigue vigente. Los tres destinos estan lejos entre si; se conectan con tren de alta velocidad y vuelos internos. Traducir todo y llevar la app de mapas descargada.",
+      "logistica": "Chilenos entran sin visa hasta 30 dias, pero la exencion esta prorrogada solo hasta el 31 de diciembre de 2026: si viajas despues hay que confirmar si sigue vigente. Los tres destinos estan lejos entre si; se conectan con tren de alta velocidad y vuelos internos. Traducir todo y llevar la app de mapas descargada. Merece viaje propio: entre Zhangye, Zhangjiajie y Guilin hay unos 2.000 km, y encajarlos como mitad de un viaje a Japon obliga a recortar los tres.",
       "alerta": "Evitar la Semana Dorada del 1 al 7 de octubre, el Ano Nuevo chino de enero o febrero y el 1 al 3 de mayo: son los tres momentos en que se mueve el pais entero. La mejor ventana es desde el 8 de octubre en adelante, justo cuando termina la Semana Dorada.",
       "fuentes": [
         {
@@ -3068,7 +3068,7 @@
     },
     {
       "id": "japon-china-combinado",
-      "nombre": "Japon y China en un viaje: la ventana comun",
+      "nombre": "Japon y China: conviene separarlos, salvo por millas",
       "cat": "roadtrip",
       "pais": "Japon / China",
       "zona": "Asia oriental",
@@ -3079,7 +3079,7 @@
         21,
         30
       ],
-      "prio": 5,
+      "prio": 3,
       "certeza": "clima",
       "fechas": [
         {
@@ -3103,9 +3103,9 @@
           "tag": "China primero, Japon despues"
         }
       ],
-      "porque": "Las dos mejores temporadas casi no se solapan, pero se encadenan. China rinde de septiembre a mediados de octubre y Japon entra en momiji desde fines de octubre. Empezando en China el 8 de octubre, apenas termina la Semana Dorada, y cruzando a Japon a fines de mes, agarras la mejor ventana de cada pais en un solo viaje. Y hay un tercer motivo para ese orden: la temporada de tifones en Japon va de mayo a octubre con peak en agosto y septiembre, asi que llegar en noviembre esquiva tambien ese riesgo.",
-      "logistica": "Volar a China primero y salir por Japon, o al reves, comprando multidestino en vez de dos ida y vuelta. Son 21 a 30 dias para que valga el pasaje transpacifico. Es un canje ideal de millas: los tramos largos son donde el canje rinde mas por milla.",
-      "alerta": "Dos condiciones de entrada distintas: Japon da 90 dias sin visa y China 30, y la exencion china esta confirmada solo hasta el 31 de diciembre de 2026. Verificar ambas antes de comprar.",
+      "porque": "Las dos ventanas se encadenan —China hasta mediados de octubre, Japon en momiji desde fines— y por eso parecia obvio juntarlas. Mirado en detalle, conviene separarlas. Los tres sitios chinos cruzan el pais entero: Zhangye esta en Gansu, Zhangjiajie en Hunan y Guilin en Guangxi, unos 2.000 km de punta a punta, y eso solo ya es un viaje de dos semanas. Japon con 32 dias corridos alcanza para Tokio, los Alpes, Kansai y bajar a Kyushu por el Aso y el Sakurajima sin apuro; partirlo por la mitad es hacer los dos a medias.",
+      "logistica": "Si se separan: Japon se lleva 2027, porque los 20 dias desde el 9 de septiembre calzan exactamente con el momiji. China va despues y tiene su propia ventana buena en abril-mayo o en septiembre, asi que no compite. Si se combinan por millas: volar a China primero y salir por Japon, comprando multidestino en vez de dos ida y vuelta.",
+      "alerta": "Hay un caso en que combinarlos si gana: si el pasaje sale por canje de millas. Lo caro es el cruce del Pacifico, asi que el costo marginal de agregar el segundo pais cae mucho. Comprando en efectivo, un multidestino no cuesta la mitad de dos viajes: el ahorro real es un tramo, no medio viaje. Ademas las condiciones de entrada son distintas y una es incierta: Japon da 90 dias, China 30, y la exencion china esta confirmada solo hasta el 31 de diciembre de 2026. Amarrar 32 dias a una exencion que puede no renovarse es riesgo evitable.",
       "fuentes": [
         {
           "t": "Embajada de Japon en Chile",
@@ -3218,7 +3218,7 @@
       "ano": 2027,
       "titulo": "El ano del eclipse: un viaje grande que resuelve tres pendientes",
       "ancla": "eclipse-anular-2027",
-      "texto": "El ano se parte en dos por tus dias de vacaciones. Con los 5 acumulados: el eclipse anular cae SABADO 6 de febrero, asi que 5 dias habiles (lunes 1 a viernes 5) compran 9 dias corridos, del sabado 30 de enero al domingo 7 de febrero, con el eclipse adentro. Es el mejor rendimiento posible y no se repite. El costo es renunciar a Oruro y a la Candelaria de Puno, que caen en la misma ventana. Con los 20 que tienes desde el 9 de septiembre: Asia. Veinte dias habiles compran 32 dias corridos, del sabado 9 de octubre al martes 9 de noviembre, porque el 12 de octubre y el 1 de noviembre son feriados que caen adentro. Esa ventana es exactamente la buena: China desde que termina la Semana Dorada y Japon entrando en momiji, fuera de temporada de tifones.",
+      "texto": "El ano se parte en dos por tus dias de vacaciones. Con los 5 acumulados: el eclipse anular cae SABADO 6 de febrero, asi que 5 dias habiles (lunes 1 a viernes 5) compran 9 dias corridos, del sabado 30 de enero al domingo 7 de febrero, con el eclipse adentro. Es el mejor rendimiento posible y no se repite. El costo es renunciar a Oruro y a la Candelaria de Puno, que caen en la misma ventana. Con los 20 que tienes desde el 9 de septiembre: Asia. Veinte dias habiles compran 32 dias corridos, del sabado 9 de octubre al martes 9 de noviembre, porque el 12 de octubre y el 1 de noviembre son feriados que caen adentro. Esa ventana es exactamente la buena para JAPON: momiji en su punto y fuera de la temporada de tifones. China conviene dejarla para viaje propio: sus tres sitios cruzan el pais entero y como media mitad quedarian recortados.",
       "items": [
         {
           "cuando": "Sab 30 ene a dom 7 feb — 5 habiles",
@@ -3226,9 +3226,10 @@
           "nota": "El eclipse cae sabado, asi que 5 dias compran 9 corridos. Es el unico evento del ano que no se puede mover."
         },
         {
-          "cuando": "Sab 9 oct a mar 9 nov — 20 habiles",
+          "cuando": "Sab 9 oct a mar 9 nov",
           "id": "japon-china-combinado",
-          "nota": "32 dias corridos. China del 9 al 24 de octubre, Japon del 25 de octubre al 9 de noviembre."
+          "nota": "32 dias corridos. China del 9 al 24 de octubre, Japon del 25 de octubre al 9 de noviembre.",
+          "que": "Japon solo: 20 dias habiles compran 32 corridos"
         },
         {
           "cuando": "Dentro del tramo japones",
@@ -3241,9 +3242,10 @@
           "nota": "Aso y Sakurajima en Kyushu, Hakone y Fuji desde Tokio. Sin ascenso al Fuji: esa ventana es julio-agosto."
         },
         {
-          "cuando": "Primera mitad del viaje",
+          "cuando": "No este ano",
           "id": "china-danxia-zhangjiajie",
-          "nota": "Entrar despues del 8 de octubre, cuando termina la Semana Dorada."
+          "nota": "Entrar despues del 8 de octubre, cuando termina la Semana Dorada.",
+          "que": "China queda para viaje propio (abril-mayo o septiembre)"
         },
         {
           "cuando": "7 y 8 de septiembre",
