@@ -2,6 +2,27 @@
 
 Este archivo lo lee `/retomar` al abrir sesion en este proyecto. Un traspaso nuevo se agrega arriba de este; el anterior baja a "Historico" al final, nunca se borra.
 
+## Visor: revision de metodo y tres busquedas nuevas (13-sep-2026, tarde)
+
+Nicolas pregunto por tulipanes del sur y pingüinos de Maiquillahue, y pidio revisar que le faltaba al metodo de busqueda de la sesion anterior. Hallazgo: **Maiquillahue no habria aparecido con busquedas genericas** ("kayak humedal Chile", "pingueras Chile"), porque no tiene pagina CONAF ni Ramsar; solo salio porque el pregunto por el nombre exacto. Eso reveló tres sesgos: busqueda sesgada a sitios grandes indexados, sesgada a la categoria "humedal + kayak" sin cubrir flores ni ballenas, y sin chequear primero si un lugar es realmente visitable antes de armar la ficha (casi paso con los tulipanes).
+
+**Tulipanes de Puyehue/Osorno: quedan fuera del visor.** Es cultivo comercial de exportacion de Southern Tulips (Ruta 215, Osorno-Puyehue), sin entrada ni horario: se ve desde la berma del camino, y un articulo de Ladera Sur (2015) dice que molesta a los duenos. Las fuentes ademas se contradicen sobre el mes (sep-oct vs dic-ene). A punto de confundirlo con los tulipanes de Trevelin, Argentina (7-oct a 7-nov 2026, con entrada real): son cosas distintas, ojo si se retoma el tema.
+
+**7 fichas nuevas de tres busquedas paralelas**, ademas de Maiquillahue (ya cargada antes):
+- Cerro Nielol (copihue silvestre a pie, dentro de Temuco mismo, CONAF)
+- Casa Pupuya (lavanda familiar, O'Higgins, con visita guiada real)
+- Lupinos silvestres de la Carretera Austral y Ruta 9 (publico, sin operador, distinto de los tulipanes porque es flora de borde de camino, no cultivo privado)
+- Golfo de Corcovado (ballena azul y delfines, Queilen, Chiloe)
+- Parque Marino Francisco Coloane (ballena jorobada, Punta Arenas)
+- Melinka (ballena azul con pescadores de Guaitecas, fuente de 2019, alerta de reconfirmar)
+- Delfines residentes agregados a la ficha de Isla Damas (Refugio Humboldt)
+
+**Descartado por falta de operador o vigencia dudosa**, para no repetir la busqueda: notro (sin sitio especifico), Parque Lavanda Frutillar (posible cierre), almendros en flor del Norte Chico (no existe nada parecido a una ruta del almendro), Pichidangui, Puerto Gaviota, Proyecto Travesia Valdivia-Corral, Mejillones y el Canal de Chacao (todos sin operador contactable u oferta formal).
+
+**Publicado: commits `b136813` (Maiquillahue) y `9a40999` (los 6 restantes), push verificado contra el remoto.** El visor pasa de 103 a 110 eventos.
+
+**Leccion de metodo para la proxima busqueda de este estilo:** buscar por nombre propio de caleta/comunidad, no solo por categoria generica; probar variantes como "muelle de los [animal]" o cooperativa de pescadores + turismo; y chequear "es esto visitable de verdad" antes de investigar temporada.
+
 ## Visor: panoramas de agua y pingueras (13-sep-2026)
 
 Nicolas pidio mas panoramas como el humedal Monkul (kayak guiado, aves, comunidad local) y despues pingueras que no estuvieran en el visor. Se cargaron **22 fichas nuevas** en `data/eventos.json` (de 81 a 103), todas con fuentes y con el ano de cada precio.
