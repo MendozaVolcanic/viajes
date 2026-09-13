@@ -14,7 +14,9 @@ Nicolas pidio mas panoramas como el humedal Monkul (kayak guiado, aves, comunida
 
 Verificado en el servidor local: las 22 cargan, todas generan ventanas, cero combos rotos, sin errores de consola, y el peak que cruza el ano (Pinguino Rey, dic-ene) se dibuja bien.
 
-**Sin publicar.** Los cambios no estan commiteados: subirlos publica el visor en GitHub Pages. Decision de Nicolas.
+**Publicado el 13-sep-2026** (commit 55b3941, push verificado contra el remoto). El visor en GitHub Pages ya muestra los 103 panoramas.
+
+**Se agrego ademas una pestana "Mapa"**: vista geografica con Leaflet y tiles de OpenStreetMap, con los mismos filtros de categoria/duracion/pais que el resto del visor. Cada pin muestra la distancia en linea recta (no de ruta) desde Temuco y un enlace a la ficha completa. Verificado en el servidor local: los 103 eventos con coordenadas cargan como pines, sin errores de consola.
 
 **Dejadas fuera a proposito, por falta de oferta verificada:** Queule, El Yali, Laguna Torca, Itata, Laguna Avendano, Tubul-Raqui (humedal lafkenche, vigilar @humedal_tubulraqui), Puerto Cisnes, Navegacion Ancestral de Neltume (sin rastro despues de 2020), Islotes Tuckers (solo en crucero, desde USD 1.955). Isla Chanaral y Parque Ahuenco quedaron como dato dentro de las fichas de Isla Damas y Chepu.
 
