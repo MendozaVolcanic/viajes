@@ -3962,7 +3962,7 @@
       },
       "alerta": "Estuvo cerrada por el temporal de julio de 2026 y CONAF la reabrio el 10 de septiembre. La ficha de CONAF advierte un brote activo de influenza aviar, sin cierre anunciado; en enero de 2023 ya se cerro por un caso. Revisar antes de viajar.",
       "porque": "La unica isla de la Reserva Nacional Pinguino de Humboldt donde se puede bajar a caminar: una hora por un sendero de 1.800 m. Desde el bote se ven ademas delfines nariz de botella, chungungos y lobos marinos, e Isla Choros se rodea sin desembarcar. Se encadena con el Desierto Florido en anos de lluvia.",
-      "logistica": "Botes desde la caleta Punta de Choros, paseo de unas 3 h desde unos $15.000 por persona (2025). Entrada CONAF segun un articulo de 2023: adulto chileno $3.700. La entrada se compra en pasesparques.cl o en la oficina de CONAF. Punta Lodge, en la caleta (+56 9 9699 1923), ofrece kayak sin precio publicado; cruzar en kayak a las islas grandes es mar abierto. Mas al norte, Isla Chanaral se rodea en bote con pescadores de Chanaral de Aceituno, pero no hay precio verificado.",
+      "logistica": "Botes desde la caleta Punta de Choros, paseo de unas 3 h desde unos $15.000 por persona (2025). Entrada CONAF segun un articulo de 2023: adulto chileno $3.700. La entrada se compra en pasesparques.cl o en la oficina de CONAF. Punta Lodge, en la caleta (+56 9 9699 1923), ofrece kayak sin precio publicado; cruzar en kayak a las islas grandes es mar abierto. Mas al norte, Isla Chanaral se rodea en bote con pescadores de Chanaral de Aceituno, pero no hay precio verificado. Ademas, Refugio Humboldt (+56 9 5619 1404, info@refugiohumboldt.cl) ofrece avistamiento de una colonia residente de unos 25 delfines nariz de botella en el mismo sector; sin precio ni temporada exacta publicados.",
       "combo": [
         "desierto-florido-2026",
         "andacollo"
@@ -3983,6 +3983,10 @@
         {
           "t": "El Dia, cierre de Isla Damas por influenza aviar (2023)",
           "u": "https://www.diarioeldia.cl/region/2023/1/8/cierran-isla-damas-por-caso-de-influenza-aviar-autoridades-buscan-que-medida-no-afecte-el-turismo-98426.html"
+        },
+        {
+          "t": "Refugio Humboldt, avistamiento de cetaceos",
+          "u": "https://www.refugiohumboldt.cl/cetaceos/"
         }
       ]
     },
@@ -4145,6 +4149,239 @@
         {
           "t": "UATV, la isla de Maiquillahue en Mehuin (2019)",
           "u": "https://uatv.cl/2019/12/12/la-isla-de-maiquillahue-en-mehuin-el-hermoso-lugar-que-durante-7-meses-es-poblado-por-2-colonias-de-pinguinos/"
+        }
+      ]
+    },
+    {
+      "id": "cerro-nielol-copihue",
+      "nombre": "Cerro Ñielol: copihue silvestre a pie, dentro de Temuco",
+      "cat": "paisaje",
+      "pais": "Chile",
+      "zona": "La Araucania (Temuco, Monumento Natural Cerro Nielol)",
+      "lat": -38.7233,
+      "lon": -72.6072,
+      "dur": "finde",
+      "dias": [
+        1,
+        1
+      ],
+      "prio": 3,
+      "certeza": "clima",
+      "temporada": {
+        "ini": "03-15",
+        "fin": "07-15",
+        "peak": [
+          {
+            "ini": "04-01",
+            "fin": "05-31"
+          }
+        ],
+        "nota": "CONAF marca el sendero Los Copihues; la floracion va de marzo a julio con el maximo entre abril y mayo."
+      },
+      "porque": "El copihue es la flor nacional y este es uno de los pocos lugares con acceso publico, pagado y administrado (no jardin botanico ni vivero) donde se ve silvestre, trepando sobre bosque nativo real. Y es el panorama mas cercano de todo el visor: queda dentro de la propia Temuco, sin necesidad de auto ni de pedir dia.",
+      "logistica": "Monumento Natural Cerro Nielol, administrado por CONAF, sendero senalizado Los Copihues. Entrada: temporada alta (nov-mar) $1.000 adulto nacional y $2.000 extranjero; temporada baja (abr-oct) $500 y $1.000; ninos chilenos menores de 6 anos gratis (2025). Ticket anticipado en pasesparques.cl.",
+      "fuentes": [
+        {
+          "t": "CONAF, Monumento Natural Cerro Nielol",
+          "u": "https://www.conaf.cl/parque_nacionales/monumento-natural-cerro-nielol/"
+        },
+        {
+          "t": "Pases Parques, entrada Cerro Nielol",
+          "u": "https://www.pasesparques.cl/en/undefined-undefined/monumento-natural-cerro-nielol-3428"
+        },
+        {
+          "t": "Ladera Sur, el copihue: secretos de la flor nacional",
+          "u": "https://laderasur.com/articulo/el-copihue-descubriendo-los-secretos-de-la-flor-nacional-de-chile/"
+        }
+      ]
+    },
+    {
+      "id": "casa-pupuya-lavanda",
+      "nombre": "Casa Pupuya: campo de lavanda familiar cerca de Matanzas",
+      "cat": "paisaje",
+      "pais": "Chile",
+      "zona": "O'Higgins (Navidad, sector Pupuya, cerca de Matanzas)",
+      "lat": -34.05,
+      "lon": -71.88,
+      "dur": "finde",
+      "dias": [
+        1,
+        2
+      ],
+      "prio": 2,
+      "certeza": "clima",
+      "temporada": {
+        "ini": "09-01",
+        "fin": "12-31",
+        "nota": "Segun el propio operador, la lavanda florece en los ultimos cuatro meses del ano."
+      },
+      "porque": "A diferencia de los campos de tulipanes de Puyehue, que son cultivo comercial cerrado al publico, este es un campo de lavanda chico y familiar con visita guiada real: cinco variedades, tienda de esencias, jabones y miel. La alternativa chilena mas concreta a un campo de lavanda europeo.",
+      "logistica": "Casa Pupuya (Instagram @casapupuyachile), reserva previa de un dia por WhatsApp o Instagram. Entrada gratuita; recorridos y actividades desde $5.000 (2025). A unas 2,5 h de Santiago.",
+      "combo": [
+        "cahuil-kayak-aves"
+      ],
+      "fuentes": [
+        {
+          "t": "Megatiempo, campo de lavandas Pupuya",
+          "u": "https://www.megatiempo.cl/noticias/9012-campo-de-lavandas-pupuya-ohiggins-matanza-1ab.html"
+        },
+        {
+          "t": "Descubre Matanzas, recorrido por un campo de lavandas",
+          "u": "https://matanzasexplorer.cl/actividad/1727/"
+        }
+      ]
+    },
+    {
+      "id": "lupinos-patagonia-ruta",
+      "nombre": "Lupinos silvestres al borde de la Carretera Austral",
+      "cat": "paisaje",
+      "pais": "Chile",
+      "zona": "Aysen y Magallanes (Carretera Austral y Ruta 9 Norte)",
+      "lat": -46.0,
+      "lon": -72.5,
+      "dur": "escapada",
+      "dias": [
+        4,
+        8
+      ],
+      "prio": 2,
+      "certeza": "clima",
+      "temporada": {
+        "ini": "12-01",
+        "fin": "02-15",
+        "nota": "Diciembre a mediados de febrero, segun las fuentes consultadas."
+      },
+      "alerta": "El lupino no es nativo, es una especie invasora que desplaza flora patagonica. Es hermoso y de acceso publico real, a diferencia de los tulipanes de Puyehue que son un cultivo privado: aca se ve gratis desde la misma ruta, sin molestar a nadie ni pisar terreno ajeno.",
+      "porque": "Franjas moradas y rosadas kilometricas a los costados del camino, sin entrada ni operador porque no hace falta: se ve manejando la Carretera Austral o la Ruta 9 hacia Puerto Natales en la ventana correcta. No es un destino en si, es lo que se encuentra en el camino a Puyuhuapi, Raul Marin Balmaceda, Tortel o el Parque Nacional Torres del Paine.",
+      "logistica": "Sin operador ni ticket: se ve conduciendo por la Carretera Austral (Aysen) o la Ruta 9 Norte hacia Puerto Natales (Magallanes) entre diciembre y mediados de febrero.",
+      "combo": [
+        "carretera-austral",
+        "torres-del-paine"
+      ],
+      "fuentes": [
+        {
+          "t": "Megatiempo, lupino en Chile: la doble realidad en la Patagonia",
+          "u": "https://www.megatiempo.cl/noticias/4180-lupinos-patagonia-aysen-magallanes-chile-1ab.html"
+        },
+        {
+          "t": "Radio Polar, hermosos pero invasivos: los chochos de Magallanes",
+          "u": "https://www.radiopolar.com/hermosos-invasivos-chochos-florecen-magallanes-autoctonos"
+        }
+      ]
+    },
+    {
+      "id": "golfo-corcovado-ballenas",
+      "nombre": "Golfo de Corcovado: ballena azul y delfines desde Queilen",
+      "cat": "fauna",
+      "pais": "Chile",
+      "zona": "Los Lagos (Chiloe, Queilen)",
+      "lat": -43.15,
+      "lon": -73.47,
+      "dur": "escapada",
+      "dias": [
+        3,
+        4
+      ],
+      "prio": 4,
+      "certeza": "clima",
+      "temporada": {
+        "ini": "04-01",
+        "fin": "09-30",
+        "peak": [
+          {
+            "ini": "04-01",
+            "fin": "06-30"
+          }
+        ],
+        "nota": "Quilun opera ballenas de abril a junio (salidas 9:00 am) y delfines australes y chilenos de abril a septiembre, con el mismo operador."
+      },
+      "porque": "El golfo de Corcovado, frente a Chiloe, concentra segun el operador cerca del 10% de la poblacion mundial de ballena azul: es zona de alimentacion reconocida, no un simple paso migratorio. El mismo operador ofrece ademas delfin austral y delfin chileno (tonina) en una ventana mas larga.",
+      "logistica": "Quilun Ecoturismo Marino, Av. Presidente Alessandri, Queilen (+56 9 9691 8379, quiluntur@gmail.com): tour de ballenas $85.000 por persona (2026); tour de delfines $24.000 adulto y $16.000 nino.",
+      "combo": [
+        "chepu-bosque-hundido",
+        "cucao-huillinco",
+        "punihuil-pinguinos"
+      ],
+      "fuentes": [
+        {
+          "t": "Quilun, tour avistamiento de ballenas",
+          "u": "https://quilun.cl/tour-avistamiento-de-ballenas/"
+        },
+        {
+          "t": "Quilun, tours maritimos en Chiloe",
+          "u": "https://quilun.cl/tours-maritimos-en-chiloe/"
+        }
+      ]
+    },
+    {
+      "id": "parque-marino-coloane-ballenas",
+      "nombre": "Parque Marino Francisco Coloane: ballena jorobada en el Estrecho",
+      "cat": "fauna",
+      "pais": "Chile",
+      "zona": "Magallanes (Punta Arenas, Estrecho de Magallanes)",
+      "lat": -54.03,
+      "lon": -71.15,
+      "dur": "escapada",
+      "dias": [
+        4,
+        5
+      ],
+      "prio": 3,
+      "certeza": "clima",
+      "temporada": {
+        "ini": "12-01",
+        "fin": "03-31",
+        "nota": "Diciembre a marzo segun el operador."
+      },
+      "alerta": "El precio (USD 370 adulto) no trae ano en la pagina consultada: confirmar antes de reservar.",
+      "porque": "Zona de alimentacion reconocida de ballena jorobada en pleno Estrecho de Magallanes, con avistamiento ocasional de orca. Es un tour de un dia completo (12 a 14 h) con base en Punta Arenas, no un crucero de expedicion de varios dias como Australis.",
+      "logistica": "Solo Expediciones, Jose Nogueira 1255, Punta Arenas (+56 9 7553 2170, canales@soloexpediciones.com): salida por via terrestre a Punta Carrera o Rio Verde, USD 370 adulto (13+), USD 185 nino (4-12), infantes gratis.",
+      "combo": [
+        "torres-del-paine",
+        "isla-magdalena-pinguinos",
+        "pinguino-rey-bahia-inutil"
+      ],
+      "fuentes": [
+        {
+          "t": "Solo Expediciones, ballenas y glaciares",
+          "u": "https://www.soloexpediciones.com/ballenas"
+        },
+        {
+          "t": "Tours Punta Arenas, avistamiento de ballenas",
+          "u": "https://tourspuntaarenas.com/producto/avistamiento-de-ballenas-disponible-desde-diciembre/"
+        }
+      ]
+    },
+    {
+      "id": "melinka-ballenas",
+      "nombre": "Melinka: ballena azul con pescadores de las Guaitecas",
+      "cat": "fauna",
+      "pais": "Chile",
+      "zona": "Aysen (Guaitecas, Puerto Melinka)",
+      "lat": -43.9,
+      "lon": -73.75,
+      "dur": "escapada",
+      "dias": [
+        4,
+        6
+      ],
+      "prio": 2,
+      "certeza": "clima",
+      "temporada": {
+        "ini": "12-01",
+        "fin": "04-30",
+        "nota": "Diciembre a abril segun la fuente, que es de 2019: reconfirmar vigente antes de planear el viaje."
+      },
+      "alerta": "Fuente principal de 2019. No hay confirmacion de que el proyecto siga operando ni de precio actual: llamar antes de armar el viaje.",
+      "porque": "Un proyecto nacido de la propia Federacion de Pescadores Artesanales de Guaitecas (financiado por Corfo) para reconvertirse hacia turismo y conservacion, no una agencia. Ballena azul, delfin austral y chileno, lobos marinos, pinguinos y aves marinas en una isla remota a la que solo se llega en ferry o avion pequeno.",
+      "logistica": "Victor Ruiz Oyarzo, pescador de FEPAG, embarcaciones Paty III y Gladimar (+56 9 6210 1686, victorruizoyarzo@yahoo.es). Precio conversable, sin monto fijo publicado.",
+      "combo": [
+        "carretera-austral"
+      ],
+      "fuentes": [
+        {
+          "t": "Municipalidad de Guaitecas, ballena azul",
+          "u": "https://muniguaitecas.cl/tag/ballena-azul/"
         }
       ]
     }
