@@ -4103,6 +4103,50 @@
           "u": "https://chiletourfun.com/isla-pinguinos-cachagua-zapallar/"
         }
       ]
+    },
+    {
+      "id": "maiquillahue-pinguinos",
+      "nombre": "Isla Maiquillahue: pinguino de Humboldt y de Magallanes junto al mar",
+      "cat": "fauna",
+      "pais": "Chile",
+      "zona": "Los Rios (San Jose de la Mariquina, sector Mehuin-Mississippi)",
+      "lat": -39.45,
+      "lon": -73.22,
+      "dur": "finde",
+      "dias": [
+        2,
+        3
+      ],
+      "prio": 3,
+      "certeza": "clima",
+      "temporada": {
+        "ini": "09-01",
+        "fin": "03-31",
+        "nota": "La fuente dice que las dos colonias pueblan la isla unos 7 meses al ano y marca diciembre a febrero como la apuesta mas segura, sin dar el mes exacto de inicio y fin. La ventana marcada (septiembre a marzo, 7 meses) es una inferencia mia por analogia con Punihuil, que a la misma latitud aproximada opera confirmado de septiembre a marzo: no esta confirmada para Maiquillahue.",
+        "peak": [
+          {
+            "ini": "12-01",
+            "fin": "02-28"
+          }
+        ]
+      },
+      "alerta": "Ventana inferida, no confirmada: la fuente da 7 meses pero no dice cuales. Confirmar con el operador antes de ir. El ultimo tramo de acceso es de ripio, con curvas y pendientes pronunciadas.",
+      "similar_a": "Punihuil (misma pareja de especies, Humboldt y Magallanes, compartiendo colonia)",
+      "porque": "Una de las pocas islas de Chile, junto con Punihuil, donde conviven en la misma colonia el pinguino de Humboldt y el de Magallanes. A diferencia de Punihuil, que es Monumento Natural con CONAF de por medio, esta la administra directamente una comunidad local sin parque nacional detras: mismo espiritu que Monkul. Tambien hay cormoranes y pelicanos.",
+      "logistica": "Se llega a Mehuin y de ahi al sector Mississippi, subiendo unos 6 km hasta el mirador Muelle de los Pinguinos, en la ruta T-250; el ultimo tramo es de ripio. Los paseos en bote salen del muelle, unos 30 a 40 minutos, operados por Muelle de los Pinguinos, registrado en SERNATUR (+56 9 9555 9648). Precios historicos, sin confirmar vigencia: unos $3.000 de acceso o estacionamiento mas unos $5.000 la navegacion.",
+      "combo": [
+        "rio-cruces-valdivia-kayak"
+      ],
+      "fuentes": [
+        {
+          "t": "La Cabana Chilena, Isla Maiquillahue: donde ver pinguinos en Los Rios",
+          "u": "https://lacabanachilena.com/isla-maiquillahue-donde-ver-pinguinos-en-la-region-de-los-rios/"
+        },
+        {
+          "t": "UATV, la isla de Maiquillahue en Mehuin (2019)",
+          "u": "https://uatv.cl/2019/12/12/la-isla-de-maiquillahue-en-mehuin-el-hermoso-lugar-que-durante-7-meses-es-poblado-por-2-colonias-de-pinguinos/"
+        }
+      ]
     }
   ],
   "planes": [
