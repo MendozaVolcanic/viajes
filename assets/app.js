@@ -20,6 +20,17 @@ const fmtR = (a, b) => a === b ? fmt(a) : (d(a).getFullYear() === d(b).getFullYe
   ? `${d(a).getDate()} ${MES[d(a).getMonth()]} – ${fmt(b)}` : `${fmt(a)} – ${fmt(b)}`);
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;' }[c]));
 const HOY = iso(new Date());
+const TEMUCO = [-38.7359, -72.5904];
+
+let geoMap = null, geoLayer = null;
+
+// distancia en linea recta (haversine), no distancia por ruta
+function kmDesdeTemuco(lat, lon) {
+  const R = 6371, rad = x => x * Math.PI / 180;
+  const dLat = rad(lat - TEMUCO[0]), dLon = rad(lon - TEMUCO[1]);
+  const a = Math.sin(dLat / 2) ** 2 + Math.cos(rad(TEMUCO[0])) * Math.cos(rad(lat)) * Math.sin(dLon / 2) ** 2;
+  return Math.round(R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a)));
+}
 
 /* ---------------- carga ---------------- */
 async function boot() {
@@ -138,8 +149,12 @@ function buildTabs() {
     document.querySelectorAll('section.view').forEach(x => x.classList.remove('on'));
     b.classList.add('on');
     document.getElementById('v-' + b.dataset.v).classList.add('on');
-    document.getElementById('filters').style.display = ['tl','cal','fichas'].includes(b.dataset.v) ? '' : 'none';
+    document.getElementById('filters').style.display = ['tl','cal','fichas','geo'].includes(b.dataset.v) ? '' : 'none';
     if (b.dataset.v === 'tl') scrollHoy();
+    if (b.dataset.v === 'geo') {
+      ensureGeoMap();
+      requestAnimationFrame(() => { geoMap.invalidateSize(); drawGeoMap(evsFiltrados()); });
+    }
   });
 }
 
@@ -148,6 +163,7 @@ function render() {
   document.getElementById('fcount').textContent = `${evs.length} de ${S.ev.length} panoramas`;
   drawTL(evs); drawCal(evs); drawCards(evs);
   drawPlan(); drawConf(); drawParques(); drawDias();
+  if (geoMap) drawGeoMap(evs);
 }
 
 /* ---------------- linea de tiempo ---------------- */
@@ -418,6 +434,40 @@ document.addEventListener('keydown', e => e.key === 'Escape' && cerrar());
 document.getElementById('mask').onclick = e => { if (e.target.id === 'mask') cerrar(); };
 
 boot();
+
+/* ---------------- mapa geografico de eventos ---------------- */
+function ensureGeoMap() {
+  if (geoMap) return;
+  geoMap = L.map('geomap', { scrollWheelZoom: true }).setView(TEMUCO, 5);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 18, attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+  }).addTo(geoMap);
+  geoLayer = L.layerGroup().addTo(geoMap);
+  L.marker(TEMUCO, { title: 'Temuco (base)' }).addTo(geoMap)
+    .bindPopup('<b>Temuco</b><br>Base del visor');
+  document.getElementById('geo-legend').innerHTML = Object.entries(S.cat)
+    .map(([k, c]) => `<span><i style="background:${c.c}"></i>${esc(c.n)}</span>`).join('');
+}
+
+function drawGeoMap(evs) {
+  if (!geoMap) return;
+  geoLayer.clearLayers();
+  const conUbic = evs.filter(e => typeof e.lat === 'number' && typeof e.lon === 'number');
+  for (const e of conUbic) {
+    const col = (S.cat[e.cat] || {}).c || '#999';
+    const km = kmDesdeTemuco(e.lat, e.lon);
+    const marker = L.circleMarker([e.lat, e.lon], {
+      radius: 7, color: col, fillColor: col, fillOpacity: .85, weight: 1.5,
+    }).addTo(geoLayer);
+    marker.bindPopup(`<b>${esc(e.nombre)}</b><br>${esc(e.pais)} · ${esc(e.zona)}<br>
+      <span style="color:#888">${DUR[e.dur]} · ~${km} km en línea recta desde Temuco</span><br>
+      <a href="#" data-id="${esc(e.id)}" style="display:inline-block;margin-top:4px">Ver ficha completa →</a>`);
+    marker.on('popupopen', () => {
+      const a = document.querySelector(`#geomap [data-id="${e.id}"]`);
+      if (a) a.onclick = ev => { ev.preventDefault(); openModal(e.id); };
+    });
+  }
+}
 
 /* ---------------- pines del mapa del usuario ---------------- */
 function drawMapa() {

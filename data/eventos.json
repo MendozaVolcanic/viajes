@@ -1,7 +1,7 @@
 {
   "_meta": {
     "version": "1.0",
-    "actualizado": "2026-08-23",
+    "actualizado": "2026-09-13",
     "base": "Temuco (OVDAS)",
     "certeza": {
       "fija": "Fecha confirmada por fuente oficial o efemeride astronomica. No se mueve.",
@@ -3176,6 +3176,931 @@
         {
           "t": "Nippon.com — los paisajes volcanicos de Owakudani",
           "u": "https://www.nippon.com/es/guide-to-japan/gu900158/"
+        }
+      ]
+    },
+    {
+      "id": "humedal-monkul",
+      "nombre": "Humedal Monkul: kayak lafkenche en el primer sitio Ramsar de La Araucania",
+      "cat": "fauna",
+      "pais": "Chile",
+      "zona": "La Araucania (Carahue, desembocadura del rio Imperial)",
+      "lat": -38.74,
+      "lon": -73.38,
+      "dur": "finde",
+      "dias": [
+        1,
+        2
+      ],
+      "prio": 4,
+      "certeza": "clima",
+      "temporada": {
+        "ini": "01-01",
+        "fin": "12-31",
+        "nota": "Ninguna fuente publica temporada: ni Ekos del Monkul, ni la declaracion Ramsar del Ministerio del Medio Ambiente, ni la prensa. Se marca todo el ano y hay que confirmarlo por WhatsApp al reservar. Visitas solo coordinadas y en grupos chicos."
+      },
+      "porque": "Estuario del rio Imperial de 1.380 ha, formado por lagunas, marismas y pajonales. Fue declarado sitio Ramsar en julio de 2020, el primero de La Araucania, con 80 especies de aves registradas (13 migratorias), chungungo y rana grande chilena. Lo administra la comunidad lafkenche Mateo Nahuelpan, veinte familias. Desde junio de 2026 tiene la pasarela Monkul Kay-Kay: 705 m elevados con tres miradores de 6 m, para recorrer el humedal sin pisar las zonas sensibles.",
+      "logistica": "A 74 km de Temuco. Ekos del Monkul (WhatsApp +56 9 7136 4307, minimo 2 personas, precios de su pagina en 2026): kayak Circuito O de 2,5 km en 2 h a $20.000; Circuito Mawida de 7 km a $30.000; Ruta S de 4 h con almuerzo en ruka y traslado a $45.000; cabalgata a Playa Los Obispos a $50.000. Es parte de la Ruta Carahue Navegable: alojamiento en Lodge Puerto Koupo, en la entrada al humedal (+56 9 6723 8951), y cocina lafkenche en Monkul Newen Ko (+56 9 9237 8827), contactos de un articulo de 2021. Para la travesia larga en kayak, Peuco Expediciones (peucoxp.cl) hace Puyangue a Rampa Monkul a $80.000.",
+      "combo": [
+        "lago-budi-kayak"
+      ],
+      "fuentes": [
+        {
+          "t": "Ekos del Monkul, actividades",
+          "u": "https://ekosdelmonkul.cl/actividades/"
+        },
+        {
+          "t": "MMA, Monkul primer sitio Ramsar de La Araucania (2020)",
+          "u": "https://mma.gob.cl/humedal-de-monkul-en-carahue-es-reconocido-como-primer-sitio-ramsar-en-la-region-de-la-araucania/"
+        },
+        {
+          "t": "Diario Financiero, pasarela Monkul Kay-Kay (jun 2026)",
+          "u": "https://www.df.cl/monkul-kay-kay-la-pasarela-que-abre-un-humedal-lafkenche-al-turismo-de"
+        },
+        {
+          "t": "Araucania Sin Fronteras, Ruta Carahue Navegable (2021)",
+          "u": "https://araucaniasinfronteras.cl/diez-panoramas-imperdibles-de-la-ruta-carahue-navegable/"
+        },
+        {
+          "t": "Peuco Expediciones, actividades",
+          "u": "https://peucoxp.cl/actividades/"
+        }
+      ]
+    },
+    {
+      "id": "lago-budi-kayak",
+      "nombre": "Lago Budi: kayak y comunidad lafkenche de Llaguepulli",
+      "cat": "fauna",
+      "pais": "Chile",
+      "zona": "La Araucania (Teodoro Schmidt y Puerto Saavedra)",
+      "lat": -38.9,
+      "lon": -73.27,
+      "dur": "finde",
+      "dias": [
+        2,
+        3
+      ],
+      "prio": 4,
+      "certeza": "clima",
+      "similar_a": "Humedal Monkul (kayak guiado por comunidad lafkenche)",
+      "temporada": {
+        "ini": "01-01",
+        "fin": "12-31",
+        "nota": "Llaguepulli declara que la excursion en kayak se realiza todo el ano. No publican precio: consultar al reservar."
+      },
+      "porque": "Es lo mas parecido a Monkul, pero en grande y con noche incluida. El Budi es un lago salado conectado al mar, uno de los pocos del mundo, y uno de los territorios con mayor poblacion mapuche del pais. La excursion sale de Llaguepulli, en el sur del lago, y bordea la ribera suroriental hasta las bahias abrigadas donde se refugian cisnes de cuello negro, garzas y patos. La organiza una agrupacion de veinte familias lafkenche que ademas ofrece alojamiento, cocina y medicina tradicional.",
+      "logistica": "Llaguepulli Travel (lagobudi.cl, +56 9 9808 1559): excursion en kayak de dos dias y una noche, con guia local y equipo completo (kayak simple o doble, faldon, salvavidas, bolsas secas). Alternativa por el dia con Peuco Expediciones (peucoxp.cl, +56 9 4266 8731): Puerto Dominguez $50.000, El Temo a la desembocadura $70.000, Isla Conejo $78.000 (precios de su pagina, 2026).",
+      "combo": [
+        "humedal-monkul"
+      ],
+      "fuentes": [
+        {
+          "t": "Llaguepulli Travel, paquetes",
+          "u": "https://lagobudi.cl/paquetes-turisticos/"
+        },
+        {
+          "t": "Vaolo, excursion en kayak Lago Budi",
+          "u": "https://vaolo.com/es/experiences/excursion-en-kayak-en-el-lago-budi-hosepdaje-lofpulli/"
+        },
+        {
+          "t": "Peuco Expediciones, actividades",
+          "u": "https://peucoxp.cl/actividades/"
+        }
+      ]
+    },
+    {
+      "id": "rio-cruces-valdivia-kayak",
+      "nombre": "Santuario del Rio Cruces: kayak entre cisnes de cuello negro",
+      "cat": "fauna",
+      "pais": "Chile",
+      "zona": "Los Rios (Valdivia, Punucapa)",
+      "lat": -39.75,
+      "lon": -73.27,
+      "dur": "finde",
+      "dias": [
+        2,
+        3
+      ],
+      "prio": 4,
+      "certeza": "clima",
+      "similar_a": "Humedal Monkul (humedal costero con aves, recorrido en kayak)",
+      "temporada": {
+        "ini": "01-01",
+        "fin": "12-31",
+        "peak": [
+          {
+            "ini": "09-21",
+            "fin": "12-20"
+          }
+        ],
+        "nota": "CONAF abre todos los dias, 8:30 a 17:30 con ultimo ingreso 16:30. El peak marcado es la primavera: Ladera Sur la destaca por los polluelos, sin dar meses exactos. La travesia a Colun y Lagunas Gemelas es solo de verano."
+      },
+      "porque": "El humedal nacio del terremoto de 1960: el hundimiento del terreno inundo campos y bosques, y hoy es un santuario de la naturaleza con bosques hundidos y una de las mayores concentraciones de cisne de cuello negro del pais. Tambien es un caso de estudio: CONAF indica que el cisne sigue en recuperacion poblacional despues del desastre ambiental de 2004. Frente a Monkul pierde la comunidad indigena y gana en oferta y en aves.",
+      "logistica": "Tres rutas de Sylvatica Outdoor segun Ladera Sur (2021, sin precios): Estero San Ramon desde El Potrero, medio dia y muy tranquila; Rio Santa Maria desde el muelle de Punucapa, dia completo por los bosques hundidos; Rio Colun hasta Lagunas Gemelas desde Chahuin, 12 km en dos dias con noche en la Reserva Costera Valdiviana, solo verano. Kayak 3 Rios hace el recorrido corto a Puente Cruces: $15.000 en 2020, seguro subio. Acceso terrestre por la ruta T-340 a Punucapa; la navegacion sale del muelle Schuster en la costanera. Otra opcion en Valdivia, en un santuario distinto: Rio Vivo (+56 9 3106 2205) rema por el humedal del rio Angachilla, 2 a 3 h, todo el ano; oferta de invierno 2025 a $40.000 por adulto.",
+      "fuentes": [
+        {
+          "t": "CONAF, Santuario Rio Cruces y Chorocamayo",
+          "u": "https://www.conaf.cl/parque_nacionales/santuario-de-la-naturaleza-rio-cruces-y-chorocamayo/"
+        },
+        {
+          "t": "Ladera Sur, tres rutas de kayak cerca de Valdivia",
+          "u": "https://laderasur.com/destino/tres-rutas-de-kayak-cerca-de-valdivia-recorridos-por-el-tiempo-en-compania-de-las-aves/"
+        },
+        {
+          "t": "La Tercera Finde, kayak en Valdivia (2020)",
+          "u": "https://finde.latercera.com/aire-libre/kayak-en-valdivia-verano-2020/"
+        },
+        {
+          "t": "Rio Vivo, kayak rios y humedales",
+          "u": "https://riovivo.cl/tours/kayak-rios-y-humedales/"
+        }
+      ]
+    },
+    {
+      "id": "lago-lleu-lleu",
+      "nombre": "Lago Lleu Lleu: agua transparente y comunidades lafkenche",
+      "cat": "paisaje",
+      "pais": "Chile",
+      "zona": "Biobio (Tirua y Contulmo, entre Canete y Tirua)",
+      "lat": -38.15,
+      "lon": -73.33,
+      "dur": "escapada",
+      "dias": [
+        3,
+        4
+      ],
+      "prio": 3,
+      "certeza": "clima",
+      "similar_a": "Humedal Monkul (turismo de comunidad lafkenche en el agua)",
+      "temporada": {
+        "ini": "09-21",
+        "fin": "03-20",
+        "peak": [
+          {
+            "ini": "12-21",
+            "fin": "02-28"
+          }
+        ],
+        "nota": "La unica fuente con temporada es VisitChile (2018): primavera y verano. El peak de verano es para banarse; confirmar con las comunidades."
+      },
+      "porque": "Un lago de 4.300 ha a 12 m sobre el mar, al pie de Nahuelbuta, que las autoridades han promocionado como el de aguas mas puras de Latinoamerica. A diferencia de los humedales, aca el panorama es el agua misma: se puede nadar. Lo rodean comunidades lafkenche que organizan kayak, bote, cabalgatas, talleres de artesania y camping, cada una con su propio portal.",
+      "logistica": "Portales de las comunidades: huillinco.cl, elmalo.cl, lleulleuchico.cl. Queda sobre la ruta Canete-Tirua, a 22 km de Contulmo. Los datos de servicios son de fuentes antiguas: coordinar directo antes de ir.",
+      "fuentes": [
+        {
+          "t": "VisitChile, Lanalhue y Lleu Lleu (2018)",
+          "u": "https://www.visitchile.com/blog/lago-lanalhue-y-lago-lleu-lleu-aguas-calidas-y-turismo-cultural/"
+        },
+        {
+          "t": "Portal Huillinco",
+          "u": "https://huillinco.cl/"
+        },
+        {
+          "t": "Portal El Malo",
+          "u": "https://elmalo.cl/"
+        },
+        {
+          "t": "Portal Lleulleuchico",
+          "u": "https://lleulleuchico.cl/"
+        }
+      ]
+    },
+    {
+      "id": "chepu-bosque-hundido",
+      "nombre": "Chepu: kayak al amanecer en el bosque hundido de 1960",
+      "cat": "geo",
+      "pais": "Chile",
+      "zona": "Chiloe (Ancud, rio Chepu)",
+      "lat": -42.05,
+      "lon": -73.98,
+      "dur": "escapada",
+      "dias": [
+        3,
+        4
+      ],
+      "prio": 4,
+      "certeza": "clima",
+      "similar_a": "Humedal Monkul (humedal protegido, kayak lento para aves, anfitriones rurales)",
+      "temporada": {
+        "ini": "01-01",
+        "fin": "12-31",
+        "nota": "Turismo Pangue opera todo el ano, sujeto a clima. Segun Chimango Caracara hay pinguinos en la zona de septiembre a febrero. Se recomienda remar al amanecer por la neblina y la luz."
+      },
+      "porque": "El mejor calce con Monkul de todo el sur, y con geologia adentro. El terremoto de 1960 hundio el terreno por subsidencia cosismica, el mar y el rio inundaron el bosque y los arboles murieron de pie: hoy se rema entre troncos muertos en un humedal de unas 2.900 ha, Santuario de la Naturaleza desde 2020. Hay cisne de cuello negro, garzas, martin pescador, coipo y huillin, y en la orilla chucao y huet huet.",
+      "logistica": "Turismo Pangue, desde Castro (+56 9 8502 0284): kayak en el rio Chepu a $55.000 por persona, minimo 2. Chimango Caracara, alojamiento en el mismo Chepu, km 16,4 de la ruta W250 (+56 9 5656 8207): unas 2 h de kayak. Chiloetnico hace dia completo con 3 h de kayak, caminata y almuerzo casero. Chiloe Natural (+56 9 6319 7388) ofrece noche en granja, kayak al amanecer y desayuno chilote. Los precios no traen ano; la vigencia se apoya en resenas de 2024 y 2025. Cerca de Chepu esta el Parque Ahuenco, area de conservacion privada donde se llega a pie a una pinguinera de Magallanes y Humboldt cruzando a un islote con marea baja; hay que contactar antes a la administracion (+56 9 9870 1280). Vigencia dudosa.",
+      "combo": [
+        "cucao-huillinco",
+        "costumbristas-chiloe",
+        "punihuil-pinguinos"
+      ],
+      "fuentes": [
+        {
+          "t": "Turismo Pangue, kayak en rio Chepu",
+          "u": "https://turismopangue.cl/producto/kayak-en-rio-chepu/"
+        },
+        {
+          "t": "Chimango Caracara, actividades en Chepu",
+          "u": "https://www.chimangocaracara.cl/actividades-chepu-chiloe/"
+        },
+        {
+          "t": "Chiloetnico, kayak en Chepu",
+          "u": "https://chiloetnico.cl/en/kayak-in-chepu-river-hiking-into-the-forest/"
+        },
+        {
+          "t": "Chiloe Natural, kayak al amanecer en Chepu (2024)",
+          "u": "https://www.chiloenatural.com/post/kayaking-at-dawn-in-the-sunken-forest-of-chepu"
+        },
+        {
+          "t": "Reservas Naturales Chile, Parque Ahuenco",
+          "u": "https://reservasnaturales.cl/parque-ahuenco/"
+        }
+      ]
+    },
+    {
+      "id": "maullin-bosque-hundido",
+      "nombre": "Rio Maullin: 16 km de kayak entre hualves",
+      "cat": "fauna",
+      "pais": "Chile",
+      "zona": "Los Lagos (Llanquihue, nacimiento del rio Maullin)",
+      "lat": -41.26,
+      "lon": -73.0,
+      "dur": "finde",
+      "dias": [
+        2,
+        3
+      ],
+      "prio": 4,
+      "certeza": "clima",
+      "similar_a": "Humedal Monkul (rio humedal protegido con mucha avifauna)",
+      "temporada": {
+        "ini": "01-01",
+        "fin": "12-31",
+        "nota": "Cahuil Adventure declara operacion todo el ano."
+      },
+      "porque": "El rio nace en la salida del lago Llanquihue y baja lento entre hualves, que son bosques inundados, marismas y turberas. Es Santuario de la Naturaleza, unas 8.100 ha, con 152 especies de aves registradas y 17 migratorias, entre ellas flamenco chileno y cisne de cuello negro. Frente a Monkul pierde lo cultural, porque lo operan pymes de Llanquihue, pero gana en aves.",
+      "logistica": "Cahuil Adventure (+56 9 8815 9694): Ruta Origen del Maullin, unos 16 km, $60.000 por persona en grupos de 2 a 3 y $50.000 desde 4 (2025). Rutenica (WhatsApp +56 9 4977 3485): $65.000 por persona, minimo 2, con cerveza artesanal y comida, salidas 10:00 y 15:00, unas 4 h (2026).",
+      "combo": [
+        "reloncavi-kayak",
+        "semanas-musicales-frutillar"
+      ],
+      "fuentes": [
+        {
+          "t": "Cahuil Adventure, kayak rio Maullin",
+          "u": "https://www.cahuiladventure.cl/excursion/kayak-rio-maullin-ruta-origen-del-maullin/"
+        },
+        {
+          "t": "Rutenica, kayak bosque hundido del Maullin",
+          "u": "https://www.rutenica.cl/products/kayak-bosque-hundido-del-maulln"
+        },
+        {
+          "t": "Consejo de Monumentos Nacionales, Humedales del Rio Maullin",
+          "u": "https://www.monumentos.gob.cl/monumentos/santuarios-de-la-naturaleza/humedales-del-rio-maullin"
+        }
+      ]
+    },
+    {
+      "id": "cucao-huillinco",
+      "nombre": "Lagos Cucao y Huillinco: agua salobre en territorio huilliche",
+      "cat": "paisaje",
+      "pais": "Chile",
+      "zona": "Chiloe (Chonchi, Cucao)",
+      "lat": -42.67,
+      "lon": -73.94,
+      "dur": "escapada",
+      "dias": [
+        3,
+        3
+      ],
+      "prio": 3,
+      "certeza": "clima",
+      "similar_a": "Humedal Monkul (santuario de agua tranquila con anfitriones locales)",
+      "temporada": {
+        "ini": "01-01",
+        "fin": "12-31",
+        "nota": "El programa de Chiloe Turismo Rural tiene cupos de septiembre 2026 a agosto 2027. El kayak del Palafito Cucao Lodge no publica temporada."
+      },
+      "porque": "Dos lagos salobres con influencia del Pacifico, unidos por el estrecho Contento, Santuario de la Naturaleza desde 2021 (unas 3.030 ha). Es territorio huilliche y la puerta del Parque Nacional Chiloe. Mas debil que Chepu en aves y en kayak, pero con la oferta comunitaria mas armada de la isla.",
+      "logistica": "Palafito Cucao Lodge: kayak guiado de 1 h en el lago Cucao a $20.000. Chiloe Turismo Rural, cooperativa de anfitriones locales (+56 9 2180 3711): programa Cucao Silvestre de 3 dias con camping y comida chilota a $303.330 por persona (2026); la navegacion de ese programa es en bote, no en kayak.",
+      "combo": [
+        "chepu-bosque-hundido"
+      ],
+      "fuentes": [
+        {
+          "t": "Palafito Cucao Lodge, actividades",
+          "u": "https://palafitocucaolodge.com/en/actividades/"
+        },
+        {
+          "t": "Chiloe Turismo Rural, Cucao Silvestre",
+          "u": "https://www.chiloeturismorural.cl/experience/cucao-silvestre-3-dias-de-lago-pn-chiloe-y-muelle-de-las-almas/"
+        },
+        {
+          "t": "Consejo de Monumentos Nacionales, Lagos Huillinco y Cucao",
+          "u": "https://www.monumentos.gob.cl/monumentos/santuarios-de-la-naturaleza/lagos-huillinco-y-cucao"
+        }
+      ]
+    },
+    {
+      "id": "reloncavi-kayak",
+      "nombre": "Estuario de Reloncavi: kayak de Ralun a Cochamo",
+      "cat": "paisaje",
+      "pais": "Chile",
+      "zona": "Los Lagos (Cochamo)",
+      "lat": -41.5,
+      "lon": -72.32,
+      "dur": "finde",
+      "dias": [
+        2,
+        3
+      ],
+      "prio": 3,
+      "certeza": "clima",
+      "temporada": {
+        "ini": "01-01",
+        "fin": "12-31",
+        "nota": "Hotel AWA la ofrece en verano e invierno."
+      },
+      "porque": "Un estuario de agua de mar calma, encajonado entre montanas con selva valdiviana, donde se ven lobos marinos y delfines. Es jornada completa de intensidad media, mas exigente que Monkul, pero con una comida casera en casa de una familia local a mitad de ruta.",
+      "logistica": "Hotel AWA, Puerto Varas (WhatsApp +56 9 5397 0740): unos 15 km desde la desembocadura del Petrohue, con almuerzo en casa de la senora Yolanda, 8 a 9 h con traslados. GoChile sale desde Puerto Varas con almuerzo en la peninsula Rollizo. Ninguno publica precio.",
+      "combo": [
+        "maullin-bosque-hundido"
+      ],
+      "fuentes": [
+        {
+          "t": "Hotel AWA, kayak estuario de Reloncavi",
+          "u": "https://hotelawa.cl/en/excursions/kayaking-excursion-reloncavi-estuary/"
+        },
+        {
+          "t": "GoChile, sea kayak Reloncavi",
+          "u": "https://www.gochile.cl/en/tours/sea-kayak-reloncavi-estuary.htm"
+        }
+      ]
+    },
+    {
+      "id": "raul-marin-palena",
+      "nombre": "Raul Marin Balmaceda: delta del Palena con delfines y pinguinos",
+      "cat": "fauna",
+      "pais": "Chile",
+      "zona": "Aysen (Cisnes, delta del rio Palena)",
+      "lat": -43.77,
+      "lon": -72.95,
+      "dur": "escapada",
+      "dias": [
+        3,
+        4
+      ],
+      "prio": 4,
+      "certeza": "clima",
+      "similar_a": "Humedal Monkul (delta con fauna, operado por una familia local)",
+      "temporada": {
+        "ini": "01-01",
+        "fin": "12-31",
+        "peak": [
+          {
+            "ini": "01-01",
+            "fin": "03-31"
+          }
+        ],
+        "nota": "La ficha del operador dice todo el ano. Ballenas de enero a marzo segun Bajo Palena."
+      },
+      "porque": "La mejor fauna del catastro en un solo lugar: lobos marinos, pinguino de Magallanes, chungungo, delfin austral y delfin chileno, y ballenas en verano. Es un pueblo en la desembocadura del Palena, un desvio de la Carretera Austral que casi nadie hace.",
+      "logistica": "Chungungo Expediciones, familia Bohle Vargas, en la costanera frente al muelle (@chungungoexpediciones): navegacion de fauna de 2,5 h a $40.000 adulto y $30.000 nino, privada $200.000; arriendo de kayak simple a $6.000 la hora, sin guia; cabanas de $60.000 a $70.000 (2026). Lo guiado es el bote, no el kayak.",
+      "combo": [
+        "carretera-austral"
+      ],
+      "fuentes": [
+        {
+          "t": "carretera-austral.cl, avistamiento de avifauna y cetaceos",
+          "u": "https://carretera-austral.cl/producto/avistamiento-de-avifauna-y-cetaceos/"
+        },
+        {
+          "t": "carretera-austral.cl, guia de Raul Marin Balmaceda (2026)",
+          "u": "https://carretera-austral.cl/visita-raul-marin-balmaceda/"
+        },
+        {
+          "t": "Bajo Palena",
+          "u": "https://bajopalena.cl/about/"
+        }
+      ]
+    },
+    {
+      "id": "puyuhuapi-kayak",
+      "nombre": "Fiordo Puyuhuapi: kayak con vista al Queulat",
+      "cat": "paisaje",
+      "pais": "Chile",
+      "zona": "Aysen (Puerto Puyuhuapi)",
+      "lat": -44.33,
+      "lon": -72.56,
+      "dur": "escapada",
+      "dias": [
+        3,
+        4
+      ],
+      "prio": 3,
+      "certeza": "clima",
+      "temporada": {
+        "ini": "01-01",
+        "fin": "12-31",
+        "nota": "Experiencia Austral opera todo el ano, sujeto a clima."
+      },
+      "porque": "Un fiordo interior abrigado con bosque lluvioso hasta la orilla. Se rema en grupo chico entre lobos marinos, delfines, cormoranes, garzas y martin pescador, y la variante larga mira el glaciar colgante del Parque Nacional Queulat.",
+      "logistica": "Experiencia Austral (WhatsApp +56 9 3732 9910): 2,5 a 3 h con caminata al Pozon Tronador, desde $50.000, de 2 a 8 personas (2026). La variante de dia completo con vista al glaciar Queulat se reserva por WildTrip desde $57.735 (2026).",
+      "combo": [
+        "carretera-austral",
+        "raul-marin-palena"
+      ],
+      "fuentes": [
+        {
+          "t": "Experiencia Austral, kayak fiordo Puyuhuapi",
+          "u": "https://experienciaustral.com/product/kayak-fiordo-puyuhuapi/"
+        },
+        {
+          "t": "WildTrip, kayak Puyuhuapi y glaciar Queulat",
+          "u": "https://wildtrip.cl/experiences/kayak-fiordo-puyuhuapi-y-glaciar-queulat"
+        }
+      ]
+    },
+    {
+      "id": "tortel-baker-kayak",
+      "nombre": "Caleta Tortel: kayak en el delta del Baker",
+      "cat": "paisaje",
+      "pais": "Chile",
+      "zona": "Aysen (Tortel)",
+      "lat": -47.8,
+      "lon": -73.53,
+      "dur": "escapada",
+      "dias": [
+        3,
+        4
+      ],
+      "prio": 2,
+      "certeza": "clima",
+      "temporada": {
+        "ini": "12-20",
+        "fin": "02-28",
+        "nota": "El operador no publica meses. La temporada alta de fines de diciembre a fines de febrero sale de un blog actualizado en julio de 2024."
+      },
+      "alerta": "Vigencia dudosa: el operador no publica precios ni temporada. Confirmar antes de ir.",
+      "porque": "El rio mas caudaloso de Chile desemboca en un delta frente al pueblo de pasarelas de cipres. Se rema por el delta y se puede navegar a la Isla de los Muertos. Las fuentes no documentan la fauna, por eso queda con prioridad baja.",
+      "logistica": "Kajef Expediciones, Luis Arratia y Javiera Zurita (957342993, kajef@gmail.com): kayak de dia completo por el Baker y travesias de varios dias de Cochrane a Tortel, salidas a medida.",
+      "combo": [
+        "carretera-austral"
+      ],
+      "fuentes": [
+        {
+          "t": "Municipalidad de Tortel, Kajef Expediciones",
+          "u": "https://www.tortel.cl/kajef-expediciones/"
+        },
+        {
+          "t": "carretera-austral.cl, guia de Caleta Tortel (2026)",
+          "u": "https://carretera-austral.cl/visita-caleta-tortel/"
+        }
+      ]
+    },
+    {
+      "id": "eberhard-kayak-aves",
+      "nombre": "Fiordo Eberhard: kayak de aves y te en casa de colonos",
+      "cat": "fauna",
+      "pais": "Chile",
+      "zona": "Magallanes (Puerto Natales, seno Ultima Esperanza)",
+      "lat": -51.55,
+      "lon": -72.62,
+      "dur": "escapada",
+      "dias": [
+        3,
+        4
+      ],
+      "prio": 3,
+      "certeza": "clima",
+      "similar_a": "Humedal Monkul (agua abrigada, aves de humedal y remate en casa de una familia local)",
+      "temporada": {
+        "ini": "09-01",
+        "fin": "05-31",
+        "nota": "Temporada de Tutravesia: septiembre 2024 a mayo 2025. La 2026-2027 no aparece publicada. Los flamencos llegan en verano."
+      },
+      "porque": "El calce con Monkul mas austral: remada suave en agua abrigada, con cisnes de cuello negro, coscorobas, taguas, patos y flamencos en verano, que termina en la casa de una familia descendiente de colonos que sirve te, sopaipillas y mermeladas. Pasa por la Isla de los Muertos y Puerto Consuelo.",
+      "logistica": "Onteaiken Patagonia (+56 9 6468 5637): unas 5 h en kayak doble, de 09:00 a 14:00, a 25-30 min de Puerto Natales. Tutravesia Sea Kayak: $170.000 en la temporada 2024-2025.",
+      "combo": [
+        "torres-del-paine"
+      ],
+      "fuentes": [
+        {
+          "t": "Onteaiken Patagonia, kayak fiordo Eberhard",
+          "u": "https://onteaikenpatagonia.cl/producto/kayak-fiordo-eberhard/"
+        },
+        {
+          "t": "Tutravesia, kayak Eberhard",
+          "u": "https://tutravesia.com/eberhard-kayak/"
+        }
+      ]
+    },
+    {
+      "id": "beagle-kayak-yagan",
+      "nombre": "Canal Beagle: kayak por la ruta de los canoeros yaganes",
+      "cat": "cultural",
+      "pais": "Chile",
+      "zona": "Magallanes (Puerto Williams, Isla Navarino)",
+      "lat": -54.93,
+      "lon": -67.61,
+      "dur": "grande",
+      "dias": [
+        7,
+        10
+      ],
+      "prio": 3,
+      "certeza": "clima",
+      "similar_a": "Humedal Monkul (operador local y relato de un pueblo originario ligado al agua)",
+      "temporada": {
+        "ini": "11-01",
+        "fin": "03-31",
+        "nota": "Explora Isla Navarino opera de noviembre a marzo."
+      },
+      "porque": "Remar donde los yaganes navegaron durante milenios en canoas de corteza, con vista a los Dientes de Navarino. El agua es mas abierta y fria que en Monkul, pero la dimension cultural es la mas fuerte del extremo sur.",
+      "logistica": "Explora Isla Navarino (+56 9 9185 0155), empresa local autorizada por la Armada: 4 h, de 10:00 a 14:00, $78.000 con traslado y picoteo con cerveza local (precio sin ano). Errante Ecolodge ofrece La ruta de los antiguos canoeros por USD 85.",
+      "combo": [
+        "cabo-hornos-navarino"
+      ],
+      "fuentes": [
+        {
+          "t": "Explora Isla Navarino, kayak Beagle",
+          "u": "https://www.exploraislanavarino.com/tour/kayak-beagle/"
+        },
+        {
+          "t": "Errante Ecolodge, ruta de los antiguos canoeros",
+          "u": "https://www.wetravel.com/trips/kayak-la-ruta-de-los-antiguos-canoeros-errante-ecolodge-34798583"
+        }
+      ]
+    },
+    {
+      "id": "bahia-inglesa-kayak",
+      "nombre": "Bahia Inglesa: kayak y SUP por Rocas Negras",
+      "cat": "paisaje",
+      "pais": "Chile",
+      "zona": "Atacama (Caldera)",
+      "lat": -27.11,
+      "lon": -70.86,
+      "dur": "escapada",
+      "dias": [
+        3,
+        4
+      ],
+      "prio": 2,
+      "certeza": "clima",
+      "temporada": {
+        "ini": "01-01",
+        "fin": "12-31",
+        "nota": "El operador no publica temporada; tiene salidas en su calendario 2026 y pide reservar con 3 dias habiles."
+      },
+      "porque": "Remo guiado y tranquilo, apto para principiantes, por la costa de Bahia Inglesa, con aves migratorias y mamiferos marinos. No es humedal ni comunitario: entra porque es la oferta de kayak mas solida y vigente del norte.",
+      "logistica": "Chango Adventure (@changoadventure), punto de encuentro en Av. El Morro 635: medio dia desde las 9:00 por Las Piscinas, El Chuncho, Playa Blanca y Punta Pescadores; $39.990 en kayak individual o SUP y $59.990 en doble, con neopreno, snack y guia (2026). Tambien ensenan canoa polinesica.",
+      "combo": [
+        "desierto-florido-2026"
+      ],
+      "fuentes": [
+        {
+          "t": "Chango Adventure",
+          "u": "https://changoadventure.com/"
+        },
+        {
+          "t": "PTI Seis Miles de Atacama, kayak",
+          "u": "https://seismilesdeatacama.cl/kayak/"
+        }
+      ]
+    },
+    {
+      "id": "arica-kayak-tortugas",
+      "nombre": "Arica: kayak con tortugas verdes en La Puntilla",
+      "cat": "fauna",
+      "pais": "Chile",
+      "zona": "Arica y Parinacota (bahia de Playa Chinchorro)",
+      "lat": -18.46,
+      "lon": -70.3,
+      "dur": "escapada",
+      "dias": [
+        3,
+        4
+      ],
+      "prio": 2,
+      "certeza": "clima",
+      "temporada": {
+        "ini": "01-01",
+        "fin": "12-31",
+        "nota": "Ninguna fuente publica temporada."
+      },
+      "alerta": "Vigencia dudosa: la pagina de precios no tiene fecha. Confirmar antes de ir.",
+      "porque": "Tortugas verdes a pocos metros del kayak, en plena ciudad, mas lobos marinos en las boyas. El humedal del Lluta, a unos 10 km, no tiene oferta de kayak.",
+      "logistica": "NorteOutdoor, Av. Chile 1591 (+56 9 8905 3468): unos 4 km para principiantes, $20.000, entre 2 y 3 h segun la fuente. El mismo operador hace una ruta de 6 h a Caleta Camarones, sitio Chinchorro, a $70.000.",
+      "combo": [
+        "carnaval-arica",
+        "altiplano-lauca"
+      ],
+      "fuentes": [
+        {
+          "t": "NorteOutdoor, kayak",
+          "u": "https://norteoutdoor.com/kayak/"
+        },
+        {
+          "t": "Chile es Tuyo, 4 dias en Arica",
+          "u": "https://chileestuyo.cl/itinerarios/vive-4-dias-magicos-en-arica/"
+        }
+      ]
+    },
+    {
+      "id": "cahuil-kayak-aves",
+      "nombre": "Laguna de Cahuil: kayak entre cisnes y salineros",
+      "cat": "fauna",
+      "pais": "Chile",
+      "zona": "O'Higgins (Pichilemu, desembocadura del estero Nilahue)",
+      "lat": -34.5,
+      "lon": -72.0,
+      "dur": "escapada",
+      "dias": [
+        3,
+        4
+      ],
+      "prio": 4,
+      "certeza": "clima",
+      "similar_a": "Humedal Monkul (humedal costero salobre con aves y una comunidad tradicional viva)",
+      "temporada": {
+        "ini": "01-01",
+        "fin": "12-31",
+        "nota": "Chile Inexplorado opera todo el ano, de lunes a domingo, con reserva previa."
+      },
+      "porque": "El mejor calce con Monkul de Chile central. Es una laguna costera salobre donde el estero Nilahue se mezcla con el mar, con cisne coscoroba, cisne de cuello negro, taguas, patos y garzas, y bosque nativo en la orilla del estero. Al lado viven unas 80 familias de salineros de Cahuil, declarados Tesoros Humanos Vivos en 2011. El kayak no lo opera esa comunidad, sino agencias pequenas.",
+      "logistica": "Chile Inexplorado Expediciones (+56 9 8901 5460): travesia de 3 a 4 h por la laguna y el estero, $30.000 por persona, minimo 2, con traslado desde Pichilemu (2026). Aventura Colchagua / GradoSur (+56 9 4407 0503): Kayaks y Aves a $40.000, con traslados y snacks (sin ano). Chiletur tiene una variante que rema por las salinas abandonadas de Barrancas.",
+      "combo": [
+        "vendimias-centro"
+      ],
+      "fuentes": [
+        {
+          "t": "Visita Pichilemu, travesia en kayak Cahuil",
+          "u": "https://visitapichilemu.cl/actividades/travesia-en-kayak-cahuil/"
+        },
+        {
+          "t": "Aventura Colchagua, Kayaks y Aves",
+          "u": "https://aventuracolchagua.cl/kayaks-aves/"
+        },
+        {
+          "t": "Chiletur, salinas abandonadas de Barrancas",
+          "u": "https://www.tur.com/en/pichilemu-230/explorando-las-salinas-abandonadas-de-barrancas-25370-1344"
+        },
+        {
+          "t": "Ladera Sur, salinas de Cahuil (2018)",
+          "u": "https://laderasur.com/destino/salinas-de-cahuil-tradicion-y-cultura-entre-piscinas-de-colores/"
+        }
+      ]
+    },
+    {
+      "id": "laguna-grande-san-pedro",
+      "nombre": "Laguna Grande de San Pedro: kayak sin motores entre cisnes",
+      "cat": "fauna",
+      "pais": "Chile",
+      "zona": "Biobio (San Pedro de la Paz, Gran Concepcion)",
+      "lat": -36.85,
+      "lon": -73.11,
+      "dur": "finde",
+      "dias": [
+        2,
+        2
+      ],
+      "prio": 2,
+      "certeza": "clima",
+      "temporada": {
+        "ini": "01-01",
+        "fin": "12-31",
+        "nota": "Ninguna fuente publica temporada."
+      },
+      "alerta": "Vigencia desconocida y sin precios publicados. Confirmar por Instagram antes de ir.",
+      "porque": "Una laguna de unas 155 ha en plena ciudad donde no se permiten motores, declarada Santuario de la Naturaleza en 2022 junto al Humedal Los Batros. Tiene 74 especies de aves y una poblacion reproductiva importante de cisne de cuello negro. Es la opcion mas urbana de la lista: sirve como parada en un viaje a Concepcion, no como destino.",
+      "logistica": "Kayak San Pedro de la Paz (kayaksanpedrodelapaz.cl, @kayaksanpedrodelapaz): arriendo y travesias guiadas con induccion de seguridad. Aventuras Nauticas (@aventurasnauticas.cl): kayak y SUP en la laguna.",
+      "fuentes": [
+        {
+          "t": "Kayak San Pedro de la Paz",
+          "u": "http://www.kayaksanpedrodelapaz.cl/"
+        },
+        {
+          "t": "TVU, Laguna Grande y Los Batros declarados santuarios (2022)",
+          "u": "https://www.tvu.cl/prensa/tvu-noticias/2022/02/17/san-pedro-de-la-paz-laguna-grande-y-humedal-los-batros-son-declarados-santuarios-de-la-naturaleza.html"
+        }
+      ]
+    },
+    {
+      "id": "punihuil-pinguinos",
+      "nombre": "Punihuil: pinguinos de Humboldt y de Magallanes en la misma roca",
+      "cat": "fauna",
+      "pais": "Chile",
+      "zona": "Chiloe (Ancud, bahia de Punihuil)",
+      "lat": -41.92,
+      "lon": -74.04,
+      "dur": "escapada",
+      "dias": [
+        3,
+        4
+      ],
+      "prio": 4,
+      "certeza": "clima",
+      "temporada": {
+        "ini": "09-01",
+        "fin": "03-31",
+        "peak": [
+          {
+            "ini": "12-01",
+            "fin": "02-28"
+          }
+        ],
+        "nota": "Navegaciones de septiembre a marzo segun la Municipalidad de Ancud; GoPatagonic (2026) dice hasta mediados de marzo. En verano hay mas salidas."
+      },
+      "porque": "El unico sitio conocido donde nidifican juntos el pinguino de Humboldt y el de Magallanes, dos especies que en el resto de Chile no comparten colonia. Tambien hay chungungos. Las navegaciones las opera la propia comunidad de Punihuil, con un tope municipal de salidas: es el mismo modelo de turismo comunitario que Monkul.",
+      "logistica": "Ecoturismo Punihuil (pinguineraschiloe.cl), asociacion de la comunidad: bote de 30 min que pasa a 100-700 m de los islotes, adulto $10.000 y nino $5.000, sin el traslado desde Ancud (2026). Maximo 35 navegaciones al dia, cada unos 15 min; salidas de 10:00 a 20:30 en verano. Llegando en auto no hace falta reservar; tambien se reserva en punihuil.tourpay.cl. No se desembarca y estan prohibidos drones y mascotas.",
+      "combo": [
+        "chepu-bosque-hundido",
+        "cucao-huillinco",
+        "costumbristas-chiloe"
+      ],
+      "fuentes": [
+        {
+          "t": "CONAF, Monumento Natural Islotes de Punihuil",
+          "u": "https://www.conaf.cl/parque_nacionales/monumento-natural-islotes-de-punihuil/"
+        },
+        {
+          "t": "Municipalidad de Ancud, pingüineras de Punihuil",
+          "u": "https://www.ancud.cl/punihuil/"
+        },
+        {
+          "t": "GoPatagonic, pingüinera de Punihuil (feb 2026)",
+          "u": "https://gopatagonic.com/visit-the-penguin-colony-of-punihuil/"
+        }
+      ]
+    },
+    {
+      "id": "isla-damas-pinguinos",
+      "nombre": "Isla Damas: pinguino de Humboldt con desembarco",
+      "cat": "fauna",
+      "pais": "Chile",
+      "zona": "Coquimbo (La Higuera, caleta Punta de Choros)",
+      "lat": -29.24,
+      "lon": -71.53,
+      "dur": "escapada",
+      "dias": [
+        3,
+        4
+      ],
+      "prio": 4,
+      "certeza": "clima",
+      "temporada": {
+        "ini": "01-01",
+        "fin": "12-31",
+        "peak": [
+          {
+            "ini": "01-01",
+            "fin": "04-30"
+          },
+          {
+            "ini": "10-01",
+            "fin": "12-31"
+          }
+        ],
+        "nota": "CONAF abre todo el ano: temporada alta de diciembre a marzo de martes a domingo, baja de abril a noviembre de jueves a domingo, 8:30 a 17:30 con ultimo ingreso 14:00 (ficha 2026). Los peaks marcan octubre a abril, que CONAF da como mejor epoca de fauna."
+      },
+      "alerta": "Estuvo cerrada por el temporal de julio de 2026 y CONAF la reabrio el 10 de septiembre. La ficha de CONAF advierte un brote activo de influenza aviar, sin cierre anunciado; en enero de 2023 ya se cerro por un caso. Revisar antes de viajar.",
+      "porque": "La unica isla de la Reserva Nacional Pinguino de Humboldt donde se puede bajar a caminar: una hora por un sendero de 1.800 m. Desde el bote se ven ademas delfines nariz de botella, chungungos y lobos marinos, e Isla Choros se rodea sin desembarcar. Se encadena con el Desierto Florido en anos de lluvia.",
+      "logistica": "Botes desde la caleta Punta de Choros, paseo de unas 3 h desde unos $15.000 por persona (2025). Entrada CONAF segun un articulo de 2023: adulto chileno $3.700. La entrada se compra en pasesparques.cl o en la oficina de CONAF. Punta Lodge, en la caleta (+56 9 9699 1923), ofrece kayak sin precio publicado; cruzar en kayak a las islas grandes es mar abierto. Mas al norte, Isla Chanaral se rodea en bote con pescadores de Chanaral de Aceituno, pero no hay precio verificado.",
+      "combo": [
+        "desierto-florido-2026",
+        "andacollo"
+      ],
+      "fuentes": [
+        {
+          "t": "CONAF, Reserva Nacional Pinguino de Humboldt",
+          "u": "https://www.conaf.cl/parque_nacionales/reserva-nacional-pinguino-de-humboldt/"
+        },
+        {
+          "t": "Chile Travel, refugio del pinguino de Humboldt para 2026 (dic 2025)",
+          "u": "https://chile.travel/blog/uno-de-los-ultimos-refugios-del-pinguino-de-humboldt-que-debes-visitar-el-2026/"
+        },
+        {
+          "t": "G5noticias, CONAF reabre areas protegidas tras el temporal (sep 2026)",
+          "u": "https://g5noticias.cl/2026/09/11/conaf-informa-reapertura-de-areas-silvestres-protegidas-tras-afectaciones-del-temporal-de-julio-en-la-region-de-coquimbo/"
+        },
+        {
+          "t": "El Dia, cierre de Isla Damas por influenza aviar (2023)",
+          "u": "https://www.diarioeldia.cl/region/2023/1/8/cierran-isla-damas-por-caso-de-influenza-aviar-autoridades-buscan-que-medida-no-afecte-el-turismo-98426.html"
+        }
+      ]
+    },
+    {
+      "id": "isla-magdalena-pinguinos",
+      "nombre": "Isla Magdalena: caminar entre miles de nidos de pinguino de Magallanes",
+      "cat": "fauna",
+      "pais": "Chile",
+      "zona": "Magallanes (Punta Arenas, estrecho de Magallanes)",
+      "lat": -52.92,
+      "lon": -70.58,
+      "dur": "escapada",
+      "dias": [
+        4,
+        5
+      ],
+      "prio": 4,
+      "certeza": "clima",
+      "temporada": {
+        "ini": "10-01",
+        "fin": "04-15",
+        "nota": "CONAF: de octubre a mediados de abril, desembarcos de 9:00 a 18:00; Solo Expediciones opera del 1 de octubre al 31 de marzo. Cerrado de abril a septiembre."
+      },
+      "alerta": "La ficha de CONAF advierte un brote de influenza aviar de alta patogenicidad, sin cierre adicional anunciado. Hay prensa de marzo de 2026 sobre una baja de pinguinos en la isla que no se pudo leer. Revisar antes de viajar.",
+      "porque": "Una de las colonias de pinguino de Magallanes mas grandes de Sudamerica, con decenas de miles de parejas, y aca no se mira desde un bote: se desembarca y se camina una hora por un sendero entre las madrigueras, hasta un faro de 1901. Isla Marta se rodea en bote por los lobos marinos.",
+      "logistica": "Solo Expediciones, desde bahia Laredo (reservas@soloexpediciones.com, +56 9 7553 2170): salida a las 6:30, USD 124 con entrada incluida (sin ano). Comapa sale en ferry desde Tres Puentes. Entrada CONAF segun ViajexChile, sin ano: adulto chileno $4.000. Permanencia maxima de 1 hora en la isla.",
+      "combo": [
+        "pinguino-rey-bahia-inutil",
+        "bosque-petrificado-patagonia"
+      ],
+      "fuentes": [
+        {
+          "t": "CONAF, Monumento Natural Los Pinguinos",
+          "u": "https://www.conaf.cl/parque_nacionales/monumento-natural-los-pinguinos/"
+        },
+        {
+          "t": "Solo Expediciones, Isla Magdalena",
+          "u": "https://www.soloexpediciones.com/isla-magdalena"
+        },
+        {
+          "t": "El Magallanico, regresan las navegaciones (oct 2024)",
+          "u": "https://elmagallanico.com/2024/10/regresan-los-pinguinos-magallanicos-y-las-navegaciones-a-isla-magdalena-y-marta"
+        }
+      ]
+    },
+    {
+      "id": "pinguino-rey-bahia-inutil",
+      "nombre": "Pinguino rey en Bahia Inutil, Tierra del Fuego",
+      "cat": "fauna",
+      "pais": "Chile",
+      "zona": "Magallanes (Porvenir, Tierra del Fuego)",
+      "lat": -53.46,
+      "lon": -69.31,
+      "dur": "escapada",
+      "dias": [
+        4,
+        5
+      ],
+      "prio": 4,
+      "certeza": "clima",
+      "temporada": {
+        "ini": "11-01",
+        "fin": "05-31",
+        "peak": [
+          {
+            "ini": "12-01",
+            "fin": "01-31"
+          }
+        ],
+        "nota": "Temporada 2025-2026: del 4 de noviembre al 29 de marzo de martes a domingo, y del 2 de abril al 31 de mayo de jueves a domingo, de 10:00 a 17:00. La colonia es permanente; el peak marca diciembre y enero, los mejores meses para ver crias."
+      },
+      "porque": "La unica colonia de pinguino rey de Sudamerica abierta al publico. El pinguino rey es el segundo mas grande del mundo y lo normal es verlo en Georgias del Sur o en las Malvinas; aca aparecio en 2010 y cria desde 2013. Se observa desde miradores con telescopio, a unos 20 m.",
+      "logistica": "Reserva Natural Pinguino Rey, privada (pinguinorey.com, +56 9 8527 4887): reserva previa obligatoria con aforo diario, que se llena en temporada alta; recorrido guiado de cerca de 1 h, $18.000 por persona pagado en el lugar (temporada 2025-2026). Queda a 112 km de Porvenir por ripio: se llega cruzando en ferry desde Punta Arenas.",
+      "combo": [
+        "isla-magdalena-pinguinos"
+      ],
+      "fuentes": [
+        {
+          "t": "Reserva Natural Pinguino Rey, sitio oficial",
+          "u": "https://www.pinguinorey.com/"
+        },
+        {
+          "t": "Postcards from the World, King Penguins in Tierra del Fuego (2026)",
+          "u": "https://postcardsfromtheworld.com/king-penguins-in-tierra-del-fuego/"
+        }
+      ]
+    },
+    {
+      "id": "isla-cachagua-pinguinos",
+      "nombre": "Isla Cachagua: la pinguinera mas cerca de Santiago",
+      "cat": "fauna",
+      "pais": "Chile",
+      "zona": "Valparaiso (Zapallar, frente a la playa de Cachagua)",
+      "lat": -32.59,
+      "lon": -71.45,
+      "dur": "finde",
+      "dias": [
+        2,
+        3
+      ],
+      "prio": 2,
+      "certeza": "clima",
+      "temporada": {
+        "ini": "01-01",
+        "fin": "12-31",
+        "nota": "CONAF describe dos temporadas de reproduccion al ano, en otono y en primavera. Los botes salen gran parte del ano segun el clima, mejor entre 10:00 y 14:00."
+      },
+      "alerta": "Vigencia dudosa: no hay operador con precio y horario confirmados. Coordinar en la caleta de Zapallar.",
+      "porque": "Unos 2.000 pinguinos de Humboldt reproductores, en una de las cinco colonias mas importantes del pais, a 100 m de una playa de la zona central. Solo se ve rodeando la isla en bote: no se desembarca.",
+      "logistica": "Botes desde la caleta de Zapallar. ChileTourFun (+56 32 371 2802) la vende como tour receptivo (2024), sin precio publicado. Prohibido desembarcar, usar drones y alimentar fauna.",
+      "fuentes": [
+        {
+          "t": "CONAF, Monumento Natural Isla Cachagua",
+          "u": "https://www.conaf.cl/parque_nacionales/monumento-natural-isla-cachagua/"
+        },
+        {
+          "t": "ChileTourFun, Isla Pinguinos Cachagua (2024)",
+          "u": "https://chiletourfun.com/isla-pinguinos-cachagua-zapallar/"
         }
       ]
     }
