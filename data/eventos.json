@@ -117,6 +117,81 @@
       "que_es": "Sitios que no estan en tu mapa pero que responden al mismo proceso geologico que los que si marcaste. La busqueda se hizo por mecanismo, no por nombre: badlands, meteorizacion diferencial en pilares, icnitas sobre estratos basculados, campos volcanicos monogeneticos, canones por incision y lagunas altiplanicas de color.",
       "cobertura": "Chile, Argentina, Peru y Bolivia.",
       "como_verlos": "Filtra por 'Sugeridos' en cualquiera de las vistas. Cada ficha dice a que pin tuyo se parece y por que."
+    },
+    "seguimiento": {
+      "que_es": "Pistas de panoramas encontradas pero sin operador contactable o con vigencia dudosa. No son eventos activos del visor: se revisan en cada busqueda nueva de la misma categoria, y se agregan como panorama recien cuando consiguen un operador verificable.",
+      "items": [
+        {
+          "lugar": "Cooperativa de pescadores de Pichidangui (Los Vilos, Coquimbo)",
+          "que_falta": "Catamaran con chungungos y aves marinas; sin contacto ni precio publicado",
+          "fuentes": [
+            {
+              "t": "DecoopChile, cooperativa de Pichidangui",
+              "u": "https://www.decoopchile.cl/la-cooperativa-de-pescadores-artesanales-pichidangui-impulsa-nuevos-negocios-de-servicios-turisticos-y-pesca-artesanal/"
+            }
+          ]
+        },
+        {
+          "lugar": "Puerto Gaviota (Cisnes, Aysen)",
+          "que_falta": "Colonia de cormoranes y lobo fino en caleta aislada; sin operador de turismo identificado",
+          "fuentes": [
+            {
+              "t": "La Ruta de los Parques, Puerto Gaviota",
+              "u": "https://www.rutadelosparques.org/en/puerto-gaviota/"
+            }
+          ]
+        },
+        {
+          "lugar": "Proyecto Travesia (Valdivia y Corral, Los Rios)",
+          "que_falta": "Red de turismo comunitario de sindicatos de pesca artesanal; sitio propio no verificable en esta sesion",
+          "fuentes": [
+            {
+              "t": "Bluscus, turismo comunitario con pescadores en el sur de Chile",
+              "u": "https://bluscus.es/turismo-comunitario-con-pescadores-locales-en-el-sur-de-chile-proyecto-travesia/"
+            }
+          ]
+        },
+        {
+          "lugar": "Turismo Buena Aventura Mejillones (Antofagasta)",
+          "que_falta": "El propio operador declara el avistamiento de cetaceos como posible, no garantizado; el foco real es loberas y aves",
+          "fuentes": [
+            {
+              "t": "Facebook, Turismo Buena Aventura Mejillones",
+              "u": "https://www.facebook.com/Turismobuenaaventuramejillones/videos/tour-azul-mejillones-recorrido-consiste-en-paseo-en-lancha-hasta-las-loberas-de-/1745434462507913/"
+            }
+          ]
+        },
+        {
+          "lugar": "Floracion de notro (Embothrium coccineum), sur de Chile",
+          "que_falta": "Especie dispersa en varios parques (Alerce Andino, Puyehue); no hay sendero ni sector especifico promocionado por su floracion",
+          "fuentes": [
+            {
+              "t": "Nuble Naturaleza, notro",
+              "u": "https://www.nublenaturaleza.cl/articulos/flora/arboles/notro"
+            }
+          ]
+        },
+        {
+          "lugar": "Parque Lavanda Frutillar (Los Lagos)",
+          "que_falta": "Fue el campo de lavanda turistico mas citado del sur; senales de posible cierre para la temporada 2025-2026, sin confirmar en fuente oficial",
+          "fuentes": [
+            {
+              "t": "Tripadvisor, Parque Lavanda Frutillar",
+              "u": "https://www.tripadvisor.cl/ShowUserReviews-g294293-d1645255-r254856225-Lavanda_Casa_de_Te-Frutillar_Los_Lagos_Region.html"
+            }
+          ]
+        },
+        {
+          "lugar": "Almendros en flor, Norte Chico (Ovalle, Combarbala, Monte Patria)",
+          "que_falta": "Existen huertos comerciales de exportacion, pero no se encontro ninguna ruta senalizada ni operador turistico, a diferencia de rutas equivalentes en Espana o Japon",
+          "fuentes": [
+            {
+              "t": "El Mercurio Campo, especial de almendros",
+              "u": "https://www.elmercurio.com/campo/especiales/EspAlmendros2019/02_Nuevas_zonas_de_plantacion.aspx"
+            }
+          ]
+        }
+      ]
     }
   },
   "categorias": {
@@ -4382,6 +4457,51 @@
         {
           "t": "Municipalidad de Guaitecas, ballena azul",
           "u": "https://muniguaitecas.cl/tag/ballena-azul/"
+        }
+      ]
+    },
+    {
+      "id": "isla-mocha-mar-en-llamas",
+      "nombre": "Isla Mocha: encender el mar, metano de una zona de subduccion",
+      "cat": "geo",
+      "pais": "Chile",
+      "zona": "Biobio (Isla Mocha, 34 km mar adentro de Tirua)",
+      "lat": -38.38,
+      "lon": -73.9,
+      "dur": "escapada",
+      "dias": [
+        3,
+        4
+      ],
+      "prio": 4,
+      "certeza": "clima",
+      "temporada": {
+        "ini": "01-01",
+        "fin": "12-31",
+        "nota": "No depende de la epoca del ano sino de la condicion del dia: marea baja y poco viento, para que el metano llegue concentrado a la superficie sin diluirse. Se puede intentar cualquier mes; hay que coordinarlo con la marea del dia."
+      },
+      "porque": "Frente a los roquerios de la isla hay pozos de gas natural que llevan filtrando metano desde el Cretacico: restos organicos enterrados bajo capas de sedimento que, por la presion y el calor de una zona de subduccion como la costa chilena, se transformaron en gas y encontraron grietas para subir. Con marea baja y poco viento, las burbujas llegan a la zona intermareal sin disolverse del todo y se pueden encender con una llama: es el fenomeno que los mochanos llaman encender el mar. ENAP lo detecto buscando petroleo en los anos 80, y en 2026 hay estudios de la Universidad de Concepcion sobre generar electricidad con ese mismo gas. Para un geologo es la version chilena, y visitable, de las emanaciones de metano que en otras costas de subduccion arden durante siglos.",
+      "logistica": "Se llega en avioneta (unos 15 minutos, considerada la via mas segura) o en embarcacion desde Tirua, 34 km al continente. El fenomeno se ve en la zona costera entre roquerios; coordinar con mochanos o con el Lodge Punta Norte, que ya lo ofrece como atractivo. La isla ademas tiene bosque nativo bien conservado (arrayan, olivillo, ulmo), el 70% de la poblacion mundial de fardela blanca nidificando ahi, y el sapito de Isla Mocha, especie endemica en peligro. No salirse de los senderos autorizados por CONAF.",
+      "fuentes": [
+        {
+          "t": "Meteored, el mar burbujea en esta isla de Chile",
+          "u": "https://www.meteored.cl/noticias/ciencia/el-mar-burbujea-en-esta-isla-de-chile-gas-natural-y-hasta-una-leyenda-ligada-a-moby-dick.html"
+        },
+        {
+          "t": "24horas, por que puede haber fuego sobre el mar en Isla Mocha",
+          "u": "https://www.24horas.cl/tendencias/redes-sociales/curiosidades-24-por-que-se-puede-encender-fuego-sobre-el-mar-en-isla-mocha"
+        },
+        {
+          "t": "Diario Concepcion, encender el mar: la fuente de gas que hoy genera electricidad (2026)",
+          "u": "https://www.diarioconcepcion.cl/economia/2026/05/06/encender-el-mar-la-inusual-fuente-de-gas-que-hoy-genera-electricidad-en-isla-mocha.html"
+        },
+        {
+          "t": "Ladera Sur, Isla Mocha: el asombroso lugar de las almas, bosques, mar en llamas y Mocha Dick",
+          "u": "https://laderasur.com/destino/isla-mocha-el-asombroso-lugar-de-las-almas-bosques-mar-en-llamas-y-mocha-dick-que-cautiva-en-el-biobio/"
+        },
+        {
+          "t": "Chile es Tuyo, descubre la magia de Isla Mocha",
+          "u": "https://chileestuyo.cl/itinerarios/descubre-la-magia-de-isla-mocha/"
         }
       ]
     }

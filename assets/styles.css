@@ -145,6 +145,10 @@ input[type=search]{min-width:200px}
 .det .body{padding-top:9px;display:flex;flex-direction:column;gap:9px}
 .win{font-size:11.5px;color:var(--tx2);display:flex;gap:8px;padding:3px 0;border-bottom:1px dashed rgba(42,51,63,.7)}
 .win b{color:var(--tx);min-width:135px;display:inline-block}
+.win.peak{background:rgba(255,255,255,.05);border-radius:4px;padding:4px 6px;border-bottom:none;margin:2px 0}
+.win.peak b{color:#fff}
+.win.peak span{color:var(--tx)}
+.win-help{font-size:11.5px;color:var(--tx3);margin:4px 0 6px;line-height:1.5}
 .srcs{display:flex;flex-direction:column;gap:3px;font-size:11.5px}
 
 /* ---------- plan ---------- */

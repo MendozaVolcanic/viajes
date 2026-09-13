@@ -1,4 +1,4 @@
-# Panoramas — calendario de viajes 2026–2030
+# Panoramas: calendario de viajes 2026-2030
 
 Visor estático de las **ventanas óptimas** para viajes, fiestas y fenómenos naturales en Chile y el Cono Sur,
 armado desde Temuco. Sin build, sin dependencias, sin backend: HTML + CSS + JS vanilla + tres JSON.
@@ -74,17 +74,17 @@ explícita en `fechas`, ese año no se dibuja además la ventana genérica.
 
 No todas las fechas merecen la misma confianza, y el visor lo dice explícitamente:
 
-- **fija** — efeméride astronómica o fecha oficial confirmada.
-- **movil** — calculable desde un ciclo (Pascua, solsticio). Calculada aquí, no publicada por el organizador.
-- **estimada** — se repite en la misma época todos los años, pero cada edición anuncia su fecha con pocos meses. **Verificar antes de comprar.**
-- **clima** — no hay fecha, hay probabilidad: floración, nieve, espejo de agua.
+- **fija**: efeméride astronómica o fecha oficial confirmada.
+- **movil**: calculable desde un ciclo (Pascua, solsticio). Calculada aquí, no publicada por el organizador.
+- **estimada**: se repite en la misma época todos los años, pero cada edición anuncia su fecha con pocos meses. **Verificar antes de comprar.**
+- **clima**: no hay fecha, hay probabilidad: floración, nieve, espejo de agua.
 
 ## Fuentes
 
-- Feriados legales de Chile 2026–2027: `api.boostr.cl/holidays/{año}.json`. **Los de 2028 son calculados**, no oficiales.
+- Feriados legales de Chile 2026-2027: `api.boostr.cl/holidays/{año}.json`. **Los de 2028 son calculados**, no oficiales.
 - Parques nacionales: [Somos Parques](https://somosparques.cl/). Entradas y reservas oficiales del SNASPE en [Pases Parques](https://www.pasesparques.cl/).
 - Pines del usuario: lista «Planes de viajes» de Google Maps, **45 de 45** leídos el 2026-08-23. Racimos y pines ambiguos en `_meta.mapa_usuario`; la vista «Tu mapa» los muestra.
-- Sitios análogos (`similar_a`): investigación propia, buscando por **proceso geológico** y no por nombre — badlands, meteorización diferencial en pilares, icnitas sobre estratos basculados, campos volcánicos monogenéticos, cañones por incisión y lagunas altiplánicas de color. Criterio en `_meta.sugerencias`.
+- Sitios análogos (`similar_a`): investigación propia, buscando por **proceso geológico** y no por nombre: badlands, meteorización diferencial en pilares, icnitas sobre estratos basculados, campos volcánicos monogenéticos, cañones por incisión y lagunas altiplánicas de color. Criterio en `_meta.sugerencias`.
 - Cada ficha lleva sus propias fuentes cuando las tiene.
 
 ## Desarrollo local

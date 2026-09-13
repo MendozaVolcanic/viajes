@@ -1,4 +1,4 @@
-/* Visor de viajes y panoramas — Nicolas Mendoza
+/* Visor de viajes y panoramas: Nicolas Mendoza
    Vanilla JS, sin dependencias. Los datos viven en data/*.json  */
 
 const Y0 = 2026, Y1 = 2030;              // rango de expansion de temporadas
@@ -17,7 +17,7 @@ const MES = ['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','
 const MESL = ['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
 const fmt = s => { const x = d(s); return `${x.getDate()} ${MES[x.getMonth()]} ${x.getFullYear()}`; };
 const fmtR = (a, b) => a === b ? fmt(a) : (d(a).getFullYear() === d(b).getFullYear()
-  ? `${d(a).getDate()} ${MES[d(a).getMonth()]} – ${fmt(b)}` : `${fmt(a)} – ${fmt(b)}`);
+  ? `${d(a).getDate()} ${MES[d(a).getMonth()]} al ${fmt(b)}` : `${fmt(a)} al ${fmt(b)}`);
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;' }[c]));
 const HOY = iso(new Date());
 const TEMUCO = [-38.7359, -72.5904];
@@ -50,7 +50,24 @@ async function boot() {
     `${esc(S.ferMeta.nota_2028)} Parques nacionales desde <a href="https://somosparques.cl/" target="_blank" rel="noopener">Somos Parques</a>. ` +
     `Cada ficha lleva sus propias fuentes cuando las tiene. Datos actualizados al ${S.meta.actualizado}.`;
   drawMapa();
+  drawSeguimiento();
   buildFilters(); buildTabs(); render(); scrollHoy();
+}
+
+/* ---------------- pendientes: pistas sin operador todavia ---------------- */
+function drawSeguimiento() {
+  const s = S.meta.seguimiento; const box = document.getElementById('seguimiento');
+  if (!s || !box) return;
+  box.innerHTML = `<hr style="border:0;border-top:1px solid var(--line);margin:20px 0 4px">
+    <h2 style="font-size:16px">En el radar, todavia sin agregar</h2>
+    <p class="p">${esc(s.que_es)}</p>
+    <div style="display:flex;flex-direction:column;gap:10px;margin-top:8px">
+      ${s.items.map(it => `<div class="plan-i">
+        <span class="when" style="min-width:230px">${esc(it.lugar)}</span>
+        <span class="what"><span class="nt" style="margin:0">${esc(it.que_falta)}</span>
+          ${it.fuentes?.length ? `<span class="srcs">${it.fuentes.map(f => `<a href="${esc(f.u)}" target="_blank" rel="noopener">${esc(f.t)} ↗</a>`).join('')}</span>` : ''}
+        </span></div>`).join('')}
+    </div>`;
 }
 
 /* Expande `temporada` (recurrente, con wrap de ano) y `fechas` (explicitas)
@@ -190,7 +207,7 @@ function drawTL(evs) {
         ${m.m === 0 || m.ini === TL_INI ? `<span class="mo-y">${m.y}</span>` : ''}
         <span class="mo-m">${MES[m.m]}</span></div>`).join('')}
       ${todosFer().filter(f => f.d >= TL_INI && f.d <= TL_FIN)
-        .map(f => `<div class="fer" style="left:${days(TL_INI, f.d) * PXD}px" title="${esc(f.n)} — ${fmt(f.d)}"></div>`).join('')}
+        .map(f => `<div class="fer" style="left:${days(TL_INI, f.d) * PXD}px" title="${esc(f.n)}: ${fmt(f.d)}"></div>`).join('')}
       ${hoyEl}</div></div>`;
 
   const orden = [...evs].sort((a, b) => {
@@ -206,7 +223,7 @@ function drawTL(evs) {
       const pt = wd < 9;
       return `<div class="evb ${w.peak ? 'peak' : ''} ${pt ? 'pt' : ''}" data-id="${e.id}"
         style="left:${x}px;width:${wd}px;background:${col};opacity:${w.peak ? 1 : .62}"
-        title="${esc(e.nombre)} — ${fmtR(w.ini, w.fin)}${w.tag ? ' · ' + esc(w.tag) : ''}">${!pt && wd > 60 ? esc(w.tag || '') : ''}</div>`;
+        title="${esc(e.nombre)}: ${fmtR(w.ini, w.fin)}${w.tag ? ' · ' + esc(w.tag) : ''}">${!pt && wd > 60 ? esc(w.tag || '') : ''}</div>`;
     }).join('');
     return `<div class="tl-row">
       <div class="tl-lbl"><span class="bar" style="background:${col}"></span>
@@ -284,6 +301,18 @@ const mapaTag = e => e.mapa ? `<span class="tag mapa" title="${esc(e.mapa)}">⚑
 const DUR = { finde: 'Fin de semana', escapada: 'Escapada 3-6 d', grande: 'Viaje grande' };
 const CERT = { fija: 'Fecha fija', movil: 'Fecha calculada', estimada: 'Fecha por confirmar', clima: 'Depende del clima' };
 
+// Fila de una ventana en la lista de "Ventanas" de una ficha.
+// "Temporada" = todo el tramo en que el panorama puede darse (probabilidad mas baja en los bordes).
+// "Peak" = el sub-tramo con mas probabilidad o mejor condicion dentro de esa temporada.
+function winRow(w) {
+  const label = w.tag === 'Temporada' ? 'Ventana completa'
+    : w.tag === 'Peak' ? '★ Mejor momento (peak)'
+    : (w.tag || '');
+  return `<div class="win${w.peak ? ' peak' : ''}"><b>${fmtR(w.ini, w.fin)}</b><span>${esc(label)}</span></div>`;
+}
+const WIN_HELP = `<p class="win-help">La <b>ventana completa</b> es todo el tramo en que el panorama puede darse; la probabilidad baja hacia los bordes.
+  El <b>peak</b> (si existe) es el tramo mas angosto adentro de esa ventana con mas probabilidad o mejor condicion. Sin peak marcado, toda la ventana vale por igual.</p>`;
+
 function cardHTML(e) {
   const col = S.cat[e.cat].c, p = proxima(e), ws = winsDe(e);
   const dias = p ? days(HOY, p.ini) : null;
@@ -302,7 +331,8 @@ function cardHTML(e) {
     ${e.alerta ? `<div class="alerta"><b>Ojo:</b> ${esc(e.alerta)}</div>` : ''}
     <details class="det"><summary>Logística, ventanas y fuentes</summary><div class="body">
       <p class="p">${esc(e.logistica || '')}</p>
-      <div>${ws.map(w => `<div class="win"><b>${fmtR(w.ini, w.fin)}</b><span>${esc(w.tag || '')}</span></div>`).join('')}</div>
+      ${ws.length > 1 ? WIN_HELP : ''}
+      <div>${ws.map(winRow).join('')}</div>
       ${e.temporada?.nota ? `<p class="p" style="color:var(--tx3)"><b>Nota de temporada:</b> ${esc(e.temporada.nota)}</p>` : ''}
       ${e.verificado ? `<p class="p" style="color:var(--tx3)"><b>Verificación:</b> ${esc(e.verificado)}</p>` : ''}
       ${e.lat ? `<a href="https://www.google.com/maps/@${e.lat},${e.lon},9z" target="_blank" rel="noopener">Ver ubicación en Google Maps ↗</a>` : ''}
@@ -340,7 +370,7 @@ function drawConf() {
     .sort((a, b) => a[0].ini < b[0].ini ? -1 : 1);
   document.getElementById('conf').innerHTML = cs.length ? cs.map(g => {
     const ini = g.map(x => x.ini).sort()[0], fin = g.map(x => x.fin).sort().pop();
-    return `<div class="conf"><h3>${fmtR(ini, fin)} — ${g.length} panoramas de prioridad alta se pisan</h3>
+    return `<div class="conf"><h3>${fmtR(ini, fin)}: ${g.length} panoramas de prioridad alta se pisan</h3>
       <ul>${g.map(w => `<li><a data-id="${w.ev.id}">${esc(w.ev.nombre)}</a> · ${fmtR(w.ini, w.fin)} · ${w.ev.pais} · ${'★'.repeat(w.ev.prio)}
         ${w.ev.certeza === 'fija' ? ' <b style="color:var(--bad)">(fecha inamovible)</b>' : ''}</li>`).join('')}</ul></div>`;
   }).join('') : '<p class="note">Sin choques entre panoramas de prioridad 4 o 5 en las ventanas cargadas.</p>';
@@ -398,9 +428,10 @@ function openModal(id) {
       ${sugLinea(e)}
       <p class="p"><b>Por qué vale la pena:</b> ${esc(e.porque)}</p>
       ${e.alerta ? `<div class="alerta"><b>Ojo:</b> ${esc(e.alerta)}</div>` : ''}
-      <p class="p"><b>Logística:</b> ${esc(e.logistica || '—')}</p>
+      <p class="p"><b>Logística:</b> ${esc(e.logistica || 'Sin datos de logistica todavia.')}</p>
       <div><b style="font-size:12px;color:var(--tx3);text-transform:uppercase;letter-spacing:.06em">Ventanas</b>
-        ${ws.map(w => `<div class="win"><b>${fmtR(w.ini, w.fin)}</b><span>${esc(w.tag || '')}</span></div>`).join('')}</div>
+        ${ws.length > 1 ? WIN_HELP : ''}
+        ${ws.map(winRow).join('')}</div>
       ${e.temporada?.nota ? `<p class="p" style="color:var(--tx3)"><b>Nota de temporada:</b> ${esc(e.temporada.nota)}</p>` : ''}
       ${e.pronostico ? `<div class="alerta" style="background:rgba(139,92,246,.1);border-left-color:var(--astro);color:#c4b5fd"><b>Lo que dice la evidencia:</b> ${esc(e.pronostico)}</div>` : ''}
       ${e.verificado ? `<p class="p" style="color:var(--tx3)"><b>Verificación:</b> ${esc(e.verificado)}</p>` : ''}
