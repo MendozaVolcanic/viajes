@@ -2,3 +2,5 @@
 Thumbs.db
 *.log
 .claude/settings.local.json
+# checklist personal del viaje (tarjeta, finanzas): el repo es publico, se respalda por OneDrive
+docs/GUIONES-Y-CHECKLIST.md
