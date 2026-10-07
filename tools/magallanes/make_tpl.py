@@ -35,7 +35,7 @@ body = f'''<title>Magallanes en diciembre</title>
     <thead><tr><th>Día</th><th>Qué</th><th class="n">Km</th><th class="n">Horas de manejo</th><th class="n">Termina</th></tr></thead>
     <tbody>%%SUM%%</tbody>
   </table></div>
-  <p class="hint">Por qué estas fechas: en 25 años de datos diarios (reanálisis ERA5), del 8 al 15 de diciembre hay unos 10 puntos menos de días con lluvia que del 16 al 23, y menos viento. El martes 8 es feriado. El jueves 10 cae dentro del horario del Museo Borgatello (martes a sábado).</p>
+  <p class="hint">Por qué estas fechas: en 25 años de datos diarios (reanálisis ERA5), la primera mitad de diciembre sale algo menos lluviosa y ventosa que la segunda; la diferencia es chica. Para tener la medida real: la estación de la Dirección Meteorológica en Punta Arenas registra en diciembre 7,5 días con lluvia de 1 mm o más y 232 horas de sol, unas 7,5 por día (1991-2020). Torres del Paine, junto a la cordillera, es más lluvioso y cambiante. El martes 8 es feriado. El jueves 10 cae dentro del horario del Museo Borgatello (martes a sábado).</p>
   <div class="bar" role="group" aria-label="Destacar un día en el mapa">
     <button type="button" class="all" id="btn-all">Todos los días</button>
     %%BTNS%%
