@@ -3,8 +3,8 @@ t = open('../tpl2.html', encoding='utf-8').read()
 style = t[t.index('<style>'):t.index('</style>') + 8]
 script = t[t.index('<script>'):t.index('</script>') + 9]
 fonts = t[t.index('<link rel="preconnect"'):t.index('<style>')]
-style = style.replace('--d1:#6E726D; --d2:#B03A78; --d3:#B86E0E; --d4:#2E6E8E;', '--d1:#6E726D; --d2:#B03A78; --d3:#B86E0E; --d4:#2E6E8E; --d5:#4F7A2E; --d6:#7A4FA0;')
-style = style.replace('--d1:#A3A8A2; --d2:#E07AB2; --d3:#E5A04A; --d4:#6FB2D3;', '--d1:#A3A8A2; --d2:#E07AB2; --d3:#E5A04A; --d4:#6FB2D3; --d5:#9BCB72; --d6:#C29BE5;')
+style = style.replace('--d1:#6E726D; --d2:#B03A78; --d3:#B86E0E; --d4:#2E6E8E;', '--d1:#6E726D; --d2:#B03A78; --d3:#B86E0E; --d4:#2E6E8E; --d5:#4F7A2E; --d6:#7A4FA0; --d7:#8A5A44;')
+style = style.replace('--d1:#A3A8A2; --d2:#E07AB2; --d3:#E5A04A; --d4:#6FB2D3;', '--d1:#A3A8A2; --d2:#E07AB2; --d3:#E5A04A; --d4:#6FB2D3; --d5:#9BCB72; --d6:#C29BE5; --d7:#D9A88F;')
 assert '--d5' in style
 style = style.replace('.sea-bg{fill:var(--sea)}', '.sea-bg{fill:var(--sea)} .land-bg{fill:var(--land)} .sea-fill{fill:var(--sea)} .lake{fill:var(--sea);stroke:var(--road5);stroke-width:.4;fill-rule:evenodd}\n.route.boat{stroke-dasharray:8 6;stroke-width:3.5}')
 script = script.replace("document.getElementById('ly-verde').addEventListener", "document.getElementById('ly-verde')?.addEventListener")
@@ -25,7 +25,7 @@ body = f'''<title>Magallanes en diciembre</title>
 {fonts}{style}
 <div class="wrap">
   <h1>Magallanes en diciembre</h1>
-  <p class="lede">Seis días entre el 8 y el 23 de diciembre de 2026 para tres personas, con auto arrendado en Punta Arenas. Pensado para <b>caminar poco</b> y no manejar más de unas 4 horas al día: casi todos los miradores están junto al auto. En diciembre hay luz de 5:10 a 22:00.</p>
+  <p class="lede">Siete días, del miércoles 9 al martes 15 de diciembre de 2026, para tres personas, con auto arrendado en Punta Arenas. Pensado para caminatas de no más de 45 minutos y no más de unas 4 horas de manejo al día, con un día de reserva por si el clima no acompaña en Torres del Paine. En diciembre hay luz de 5:10 a 22:00.</p>
   <ul class="facts">
     <li><b>Mayores de 60:</b> entran gratis a Torres del Paine y a la Cueva del Milodón</li>
     <li><b>Bencina:</b> no hay dentro del parque, se carga en Natales</li>
@@ -35,7 +35,7 @@ body = f'''<title>Magallanes en diciembre</title>
     <thead><tr><th>Día</th><th>Qué</th><th class="n">Km</th><th class="n">Horas de manejo</th><th class="n">Termina</th></tr></thead>
     <tbody>%%SUM%%</tbody>
   </table></div>
-  <p class="hint">Las fechas son de ejemplo: el día 2 tiene que caer de martes a sábado, que es cuando abre el Museo Borgatello. Una opción es del lunes 14 al sábado 19 de diciembre.</p>
+  <p class="hint">Por qué estas fechas: en 25 años de datos diarios (reanálisis ERA5), del 8 al 15 de diciembre hay unos 10 puntos menos de días con lluvia que del 16 al 23, y menos viento. El martes 8 es feriado. El jueves 10 cae dentro del horario del Museo Borgatello (martes a sábado).</p>
   <div class="bar" role="group" aria-label="Destacar un día en el mapa">
     <button type="button" class="all" id="btn-all">Todos los días</button>
     %%BTNS%%
@@ -65,7 +65,7 @@ body = f'''<title>Magallanes en diciembre</title>
       <li><b>Torres del Paine:</b> pases en pasesparques.cl; el hermano paga $9.400 por un día (adulto chileno, 2026) y los mayores de 60 entran liberados. El sitio del parque da horario de 8:00 a 19:00; Pases Parques da 7:00 a 21:00 en verano: confírmalo.</li>
       <li><b>Clima:</b> entre 6 y 15 °C, con viento fuerte. Lleva cortaviento, gorro y lentes de sol aunque sea verano.</li>
       <li><b>Cerrado:</b> el Palacio Braun-Menéndez (Museo Regional de Magallanes) está en restauración y reabriría en 2030.</li>
-      <li><b>Versión de 5 días:</b> el día 2 combina Isla Magdalena en la mañana y el viaje a Natales en la tarde (unas 3 horas de ruta, con luz hasta las 22:00), y se saca el día 3.</li>
+      <li><b>Versión de 6 días:</b> se saca el sábado libre. Funciona, pero se pierde el margen para elegir el día despejado en el parque.</li><li><b>Navegaciones a glaciares:</b> la del Grey y la de Balmaceda-Serrano cuestan unos $120.000 cada una; con una basta. La del Grey se ve el hielo de cerca dentro del parque.</li>
     </ul>
   </section>
   <p class="src">Fuentes: <a href="https://parquetorresdelpaine.cl/tarifas-y-horarios-2026/" target="_blank" rel="noopener">Parque Torres del Paine, tarifas 2026</a> · <a href="https://www.conaf.cl/parque_nacionales/monumento-natural-los-pinguinos/" target="_blank" rel="noopener">CONAF, Monumento Natural Los Pingüinos</a> · <a href="https://comapa.com/en/tours/penguin-tour/" target="_blank" rel="noopener">Comapa, tour a Isla Magdalena</a> · <a href="https://cuevadelmilodon.cl/horarios-y-precios/" target="_blank" rel="noopener">Cueva del Milodón, horarios</a> · <a href="https://www.museomaggiorinoborgatello.cl" target="_blank" rel="noopener">Museo Borgatello</a> · <a href="https://parquedelestrecho.cl" target="_blank" rel="noopener">Parque del Estrecho</a> · Mapa base © colaboradores de OpenStreetMap. Fotos de Wikimedia Commons con su autor y licencia al pie, recortadas para encajar.</p>

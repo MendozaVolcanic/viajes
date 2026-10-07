@@ -58,42 +58,47 @@ S = {
  'gre': ('Lago Grey', -51.1218, -73.1298),
  'mil': ('Cueva del Milodón', -51.5653, -72.6192),
  'bul': ('Fuerte Bulnes y Parque del Estrecho', -53.6303, -70.9172),
+ 'pud': ('Pudeto, muelle del catamarán', -51.0623, -72.9937),
 }
 # (parada, minutos, texto, modo)  modo 'barco' = no se maneja
 DAYS = [
- dict(id='d1', tag='Día 1', title='Llegada y Punta Arenas con calma', col='--d1', start='13:00',
+ dict(id='d1', tag='Mié 9', title='Llegada y Punta Arenas con calma', col='--d1', start='13:00',
   stops=[('puq', 45, 'Retiro del auto en el aeropuerto. Ajusta la hora a tu vuelo.', ''),
          ('nao', 60, 'Réplicas a escala real de la nao Victoria de Magallanes y de la goleta Ancud, al aire libre junto al estrecho. De 9:00 a 19:00 de septiembre a marzo. Queda de camino desde el aeropuerto.', ''),
          ('pla', 60, 'Check-in en el hotel y paseo por la plaza. El centro es plano.', ''),
          ('cru', 30, 'Mirador sobre la ciudad y el estrecho de Magallanes, con estacionamiento al lado.', ''),
-         ('mue', 60, 'Costanera y muelle al atardecer. En diciembre el sol se pone cerca de las 22:00: hay luz para todo.', '')]),
- dict(id='d2', tag='Día 2', title='Pingüinos de Isla Magdalena y museos', col='--d2', start='08:30',
+         ('mue', 60, 'Costanera y muelle al atardecer, que en diciembre es cerca de las 22:00. Para comer, Sotito\'s (O\'Higgins 1138) es el clásico de centolla y cordero.', '')]),
+ dict(id='d2', tag='Jue 10', title='Pingüinos de Isla Magdalena y museos', col='--d2', start='08:30',
   stops=[('pla', 0, 'Salida del hotel.', ''),
          ('tpu', 30, 'Embarque en el ferry de Comapa. Confirma el horario de diciembre (una fuente dice 9:30, otra 10:30).', ''),
-         ('mag', 300, 'Navegación de 1 h 45 por tramo y una hora en la isla. El sendero mide 1,4 km y CONAF lo da fácil, pero cerca del faro hay una subida: quien no quiera, se queda en el tramo bajo. Ojo: la colonia cayó a unas 7.000 parejas según CONAF (feb-2026); confirma con Comapa que opere este diciembre.', 'barco'),
+         ('mag', 300, 'Navegación de 1 h 45 por tramo y una hora en la isla, por un sendero de 1,4 km que CONAF da como fácil, con una subida al final hacia el faro. Ojo: la colonia cayó a unas 7.000 parejas según CONAF (feb-2026); confirma con Comapa que opere este diciembre.', 'barco'),
          ('cem', 60, 'Uno de los cementerios más bonitos de Sudamérica: avenidas de cipreses recortados y mausoleos de las familias pioneras. Abre de 8:00 a 19:00. Es plano.', ''),
          ('bor', 75, 'Museo salesiano con historia natural y de los pueblos originarios de Magallanes. Martes a sábado, de 10:00 a 12:30 y de 14:00 a 17:30; solo efectivo. El Palacio Braun-Menéndez está cerrado hasta 2030.', '')]),
- dict(id='d3', tag='Día 3', title='A Puerto Natales', col='--d3', start='10:00',
-  stops=[('pla', 0, 'Salida por la ruta 9 al norte. Si Isla Magdalena no opera, cambia este día: ve primero a Fuerte Bulnes (1 h por tramo) y sal a Natales al día siguiente.', ''),
-         ('nat', 60, 'Unas 3 horas de ruta pavimentada. Check-in y almuerzo.', ''),
+ dict(id='d3', tag='Vie 11', title='A Puerto Natales por la ruta 9', col='--d3', start='10:00',
+  stops=[('pla', 0, 'Salida por la ruta 9 al norte. Si Isla Magdalena no operó ayer, esta mañana va Fuerte Bulnes (1 h por tramo) y se sale a Natales después de almuerzo.', ''),
+         ('nat', 60, 'Unas 3 horas de ruta pavimentada. En diciembre empiezan a florecer los lupinos a orillas del camino: si aparecen, vale una parada. Check-in y almuerzo.', ''),
          ('bri', 45, 'Antiguo frigorífico de 1915, a 5 km por la costanera, con vista al seno Última Esperanza.', ''),
          ('nat', 0, 'Costanera de Natales: cisnes de cuello negro, flamencos y cormoranes en la orilla. Noche en Natales.', '')]),
- dict(id='d4', tag='Día 4', title='Torres del Paine en auto, por Laguna Amarga', col='--d4', start='08:30',
+ dict(id='d4', tag='Sáb 12', title='Día libre en Natales, o de reserva por el clima', col='--d4', start='09:00',
+  stops=[('nat', 240, 'Este día está para usarlo según el pronóstico. Si el domingo viene malo y el sábado despejado, hagan hoy el día del parque y corran todo un día. Si no, opciones: descansar; o la navegación express a los glaciares Balmaceda y Serrano, que sale del muelle de Natales de 6:40 a 13:30 ($120.000 con entrada al parque incluida, mirador a pocos metros del desembarco). Si ya van a hacer la del glaciar Grey el lunes, basta con una de las dos.', ''),
+         ('nat', 0, 'Noche en Natales.', '')]),
+ dict(id='d5', tag='Dom 13', title='Torres del Paine en auto y catamarán', col='--d5', start='08:00',
   stops=[('nat', 0, 'Llena el estanque: dentro del parque no hay bencina.', ''),
          ('cas', 25, 'Café y baño en el pueblo, junto al paso a Argentina.', ''),
          ('ama', 30, 'Portería del parque. Los mayores de 60 entran gratis; el hermano paga $9.400 (adulto chileno, 2026). Compra en pasesparques.cl. Primera vista de las Torres sobre la laguna.', ''),
          ('nor', 30, 'Mirador sobre el lago Nordenskjöld y los Cuernos, con estacionamiento y caminata mínima.', ''),
-         ('sal', 45, 'Cascada del río Paine. Una fuente dice 5 minutos a pie desde el estacionamiento y otra 1,5 km desde Pudeto: confírmalo en terreno. Cafetería con baños en Pudeto.', ''),
+         ('sal', 40, 'Cascada del río Paine. Una fuente dice 5 minutos a pie desde el estacionamiento y otra 1,5 km desde Pudeto.', ''),
+         ('pud', 120, 'Catamarán por el lago Pehoé frente a los Cuernos: ida a Paine Grande y vuelta sin bajarse, unas 2 horas. La temporada pasada salía a las 10:30 y 16:15, a $27.000 por tramo; confirma 2026-27 en catamaranpehoe.com. Cafetería con baños en Pudeto.', ''),
          ('peh', 25, 'Lago turquesa con el macizo del Paine al fondo, al lado del camino.', ''),
          ('ser', 0, 'Noche en Villa Río Serrano, fuera del parque. Reserva ya: en diciembre se llena.', '')]),
- dict(id='d5', tag='Día 5', title='Lago Grey, Cueva del Milodón y vuelta a Natales', col='--d5', start='09:00',
-  stops=[('ser', 0, 'Salida por la Y-150.', ''),
-         ('gre', 90, 'Playa plana con témpanos y el glaciar al fondo, cruzando un puente colgante: alrededor de una hora ida y vuelta, sin pendiente. Almuerzo en el hotel Lago Grey, abierto a visitantes.', ''),
+ dict(id='d6', tag='Lun 14', title='Glaciar Grey en barco y Cueva del Milodón', col='--d6', start='07:30',
+  stops=[('ser', 0, 'Salida temprano por la Y-150.', ''),
+         ('gre', 300, 'Navegación de 3 horas hasta el frente del glaciar Grey en el barco Grey III, desde el Hotel Lago Grey: $120.000 por adulto (2026-27), salidas 8:30, 12:00, 15:00 y 18:00; tomen la de 8:30. Para embarcar se caminan 30 a 45 minutos por la playa de témpanos. Después, almuerzo en el hotel.', ''),
          ('mil', 60, 'Cueva enorme donde se hallaron restos del milodón, un perezoso gigante. De 8:00 a 18:30; los mayores de 60 entran gratis. Desde junio hay un tramo interior restringido por grietas.', ''),
          ('nat', 0, 'Noche en Natales.', '')]),
- dict(id='d6', tag='Día 6', title='Natales al aeropuerto', col='--d6', start='10:00',
+ dict(id='d7', tag='Mar 15', title='Natales al aeropuerto', col='--d7', start='10:00',
   stops=[('nat', 0, 'Mañana libre en la costanera y salida a Punta Arenas.', ''),
-         ('puq', 0, 'Unas 3 horas. Devuelve el auto donde lo retiraste para no pagar recargo.', '')]),
+         ('puq', 0, 'Unas 3 horas. Devuelve el auto donde lo retiraste para no pagar recargo. Si el vuelo es tarde, la Zona Franca de Punta Arenas abre todos los días.', '')]),
 ]
 IMG = {
  'nao': ('Museo Nao Victoria Punta Arenas Chile La réplica de la Goleta Ancud, vista ', 'Réplica de la goleta Ancud en el Museo Nao Victoria'),
@@ -110,15 +115,16 @@ IMG = {
  'peh': ('Cuernos del Paine (Lago Pehoé) - panoramio.jpg', 'Lago Pehoé'),
  'ser': ('Torres del Paine, Río Serrano 3.jpg', 'El macizo del Paine desde Río Serrano'),
  'gre': ('Iceberg en Lago Grey.jpg', 'Témpano en el Lago Grey'),
+ 'pud': ('Amancer en Lago Pehoé (cropped).jpg', 'Lago Pehoé al amanecer'),
  'mil': ('Cueva del Milodón, Puerto Natales, Chile2.jpg', 'Cueva del Milodón'),
  'bul': ('Fuerte Bulnes 1.jpg', 'Fuerte Bulnes'),
 }
 KIND = {'puq': 'casa', 'pla': 'casa', 'nat': 'casa', 'ser': 'casa', 'mag': 'par', 'ama': 'par', 'nor': 'mir', 'sal': 'mir', 'peh': 'mir', 'cru': 'mir',
-        'gre': 'mir', 'mue': 'mir', 'nao': 'geo', 'cem': 'geo', 'bor': 'geo', 'bri': 'geo', 'mil': 'geo', 'cas': 'flo', 'tpu': 'flo', 'bul': 'geo'}
+        'gre': 'mir', 'mue': 'mir', 'pud': 'mir', 'nao': 'geo', 'cem': 'geo', 'bor': 'geo', 'bri': 'geo', 'mil': 'geo', 'cas': 'flo', 'tpu': 'flo', 'bul': 'geo'}
 SHORT = {'puq': ('Aeropuerto', 'r'), 'nao': ('Nao Victoria', 'r'), 'pla': ('Punta Arenas', 'r'), 'cru': ('Cerro de la Cruz', 'l'), 'mue': ('Muelle', 'l'),
          'tpu': ('Tres Puentes', 'r'), 'mag': ('Isla Magdalena', 'r'), 'cem': ('Cementerio', 'r'), 'bor': ('Museo Borgatello', 'l'), 'nat': ('Puerto Natales', 'r'),
          'bri': ('Puerto Bories', 'l'), 'cas': ('Cerro Castillo', 'r'), 'ama': ('Laguna Amarga', 'r'), 'nor': ('Nordenskjöld', 'r'), 'sal': ('Salto Grande', 'l'),
-         'peh': ('Pehoé', 'r'), 'ser': ('Río Serrano', 'r'), 'gre': ('Lago Grey', 'l'), 'mil': ('Cueva del Milodón', 'l'), 'bul': ('Fuerte Bulnes (opción)', 'r')}
+         'peh': ('Pehoé', 'r'), 'ser': ('Río Serrano', 'r'), 'gre': ('Lago Grey', 'l'), 'pud': ('Pudeto', 'l'), 'mil': ('Cueva del Milodón', 'l'), 'bul': ('Fuerte Bulnes (opción)', 'r')}
 CM = {}
 for v in json.load(open('commons_pa.json', encoding='utf-8')).values():
     for x in v: CM[x['t'][5:]] = x
@@ -232,7 +238,7 @@ svg = (f'<svg viewBox="0 0 {W} {H}" role="img" aria-label="Mapa del viaje por Ma
        f'<g>{"".join(p for p in parks if p.startswith("<text"))}</g><g>{"".join(labs)}</g><g>{"".join(base)}</g>{"".join(numbered)}{scale}</svg>')
 sumrows = ''.join(f'<tr><td>{a}</td><td>{html.escape(b)}</td><td class="n">{c:.0f}</td><td class="n">{d / 60:.1f}</td><td class="n">{e}</td></tr>' for a, b, c, d, e in summary)
 btns = ''.join(f'<button type="button" class="dbtn" data-day="{dd["id"]}" style="--c:var({dd["col"]})" aria-pressed="false">{dd["tag"]}</button>' for dd in DAYS)
-extra = f'<section class="notes gal"><h2>Si Isla Magdalena no opera</h2><div class="grid-pc"><article class="pc">{one(*IMG["bul"])}<h3>Fuerte Bulnes y Parque del Estrecho</h3><p>Réplica del fuerte de 1843 en la punta sur del continente, con miradores sobre el estrecho. 57 km al sur de Punta Arenas, una hora por tramo.</p><p class="hor">De 10:00 a 19:00, último ingreso 17:30. $12.000 adulto, $10.000 desde 60 años (tarifas desde sep-2025).</p><p class="ln"><a href="https://parquedelestrecho.cl" target="_blank" rel="noopener">parquedelestrecho.cl</a></p></article></div></section>'
+extra = f'<section class="notes gal"><h2>Si Isla Magdalena no opera</h2><div class="grid-pc"><article class="pc">{one(*IMG["bul"])}<h3>Fuerte Bulnes y Parque del Estrecho</h3><p>Réplica del fuerte de 1843 en la punta sur del continente, con miradores sobre el estrecho. 57 km al sur de Punta Arenas, una hora por tramo.</p><p class="hor">Horario y precio no confirmados: las fuentes dan cierre entre 17:30 y 19:00, y precios entre $10.000 y $12.000, o USD 22.</p><p class="ln"><a href="https://parquedelestrecho.cl" target="_blank" rel="noopener">parquedelestrecho.cl</a></p></article></div></section>'
 tpl = open('tpl_pa.html', encoding='utf-8').read()
 out = tpl.replace('%%SVG%%', svg).replace('%%DAYS%%', '\n'.join(cards)).replace('%%BTNS%%', btns).replace('%%SUM%%', sumrows).replace('%%EXTRA%%', extra)
 open('magallanes-2026.html', 'w', encoding='utf-8').write('<!DOCTYPE html>\n<html lang="es-CL">\n<head>\n<meta charset="utf-8">\n<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">\n' + out + '\n</html>\n')
