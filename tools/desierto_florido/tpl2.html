@@ -122,6 +122,9 @@ li .t{grid-column:1;grid-row:1;font:500 14px "JetBrains Mono",monospace;font-var
 li div{grid-column:3;grid-row:1}
 li b{font-weight:600}
 li p{margin:2px 0 0;font-size:15px;color:var(--muted);max-width:60ch}
+.daymap{margin:14px 0 0;border:1px solid var(--line);border-radius:6px;overflow:hidden;background:var(--sea)}
+.daymap svg{display:block;width:100%;height:auto;max-height:360px;cursor:zoom-in}
+.daymap figcaption{font-size:12px;color:var(--muted);padding:6px 8px;background:var(--panel)}
 .gm{display:inline-block;margin-top:14px;font-weight:600;color:var(--c);text-decoration:none;border-bottom:1.5px solid currentColor}
 .notes{margin-top:24px;background:var(--note);border-radius:6px;padding:18px 20px}
 .notes h2{font-size:19px;margin-bottom:8px}
@@ -250,6 +253,40 @@ li p{margin:2px 0 0;font-size:15px;color:var(--muted);max-width:60ch}
   }
   document.getElementById('open-fs').addEventListener('click',openFs);
   mapSvg.addEventListener('click',openFs);
+  // mapa chico por día: copia del mapa general encuadrado en la ruta de ese día
+  function bboxOf(els){
+    var x0=1e9,y0=1e9,x1=-1e9,y1=-1e9;
+    els.forEach(function(el){
+      if(el.tagName==='path'){
+        var n=(el.getAttribute('d')||'').match(/-?\d+(\.\d+)?/g)||[];
+        for(var i=0;i+1<n.length;i+=2){var x=+n[i],y=+n[i+1];if(x<x0)x0=x;if(x>x1)x1=x;if(y<y0)y0=y;if(y>y1)y1=y;}
+      } else {
+        var m=(el.getAttribute('transform')||'').match(/translate\(([-\d.]+),([-\d.]+)\)/);
+        if(m){var x=+m[1],y=+m[2];if(x<x0)x0=x;if(x>x1)x1=x;if(y<y0)y0=y;if(y>y1)y1=y;}
+      }
+    });
+    return [x0,y0,x1,y1];
+  }
+  document.querySelectorAll('section.day').forEach(function(sec){
+    var id=sec.id, els=[].slice.call(mapSvg.querySelectorAll('.route[data-day="'+id+'"]')).concat([].slice.call(mapSvg.querySelectorAll('.num[data-day="'+id+'"] g')));
+    if(!els.length) return;
+    var b=bboxOf(els); if(b[0]>b[2]) return;
+    var w=Math.max(b[2]-b[0],140), h=Math.max(b[3]-b[1],110), cx=(b[0]+b[2])/2, cy=(b[1]+b[3])/2;
+    if(w/h<1.2) w=h*1.2; if(w/h>2.2) h=w/2.2;
+    w*=1.25; h*=1.25;
+    var sv=mapSvg.cloneNode(true);
+    sv.setAttribute('viewBox',[cx-w/2,cy-h/2,w,h].map(function(v){return v.toFixed(1)}).join(' '));
+    sv.querySelectorAll('.route').forEach(function(r){ if(r.dataset.day!==id) r.classList.add('dim'); });
+    sv.querySelectorAll('.num').forEach(function(g){ g.classList.toggle('on', g.dataset.day===id); });
+    sv.querySelectorAll('.mk').forEach(function(m){ if((m.dataset.days||'').split(' ').indexOf(id)<0) m.classList.add('dim'); });
+    sv.querySelectorAll('.scale').forEach(function(s){ s.remove(); });
+    sv.setAttribute('aria-label','Mapa del '+(sec.querySelector('.chip')||{}).textContent);
+    var f=document.createElement('figure'); f.className='daymap'; f.appendChild(sv);
+    var c=document.createElement('figcaption'); c.textContent='Ruta del día. Toca para ver el mapa completo.'; f.appendChild(c);
+    var hd=sec.querySelector('header'); hd.parentNode.insertBefore(f, hd.nextSibling);
+    sv.addEventListener('click',openFs);
+  });
+
 
 })();
 </script>
