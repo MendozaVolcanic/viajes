@@ -66,6 +66,10 @@ h1{font-size:clamp(30px,5vw,48px);font-weight:800;letter-spacing:-.02em;line-hei
 body.no-verde .verde{display:none} body.no-prot .prots,body.no-prot .plab{display:none}
 .layers{display:flex;flex-wrap:wrap;align-items:center;gap:6px 16px;font-size:13.5px;padding:8px 4px 0}
 .layers label{display:flex;align-items:center;gap:6px;cursor:pointer}
+.lgd{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:6px 14px;font-size:13.5px;color:var(--ink);padding:10px 4px 0}
+.lg{display:flex;align-items:center;gap:8px;line-height:1.2}
+.lg svg{flex:none;color:var(--ink)}
+.hint{font-size:12.5px;color:var(--muted);margin:8px 4px 0}
 .kinds{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:13px;color:var(--muted);padding:6px 4px 0}
 .kinds svg{vertical-align:middle;margin-right:4px;color:var(--ink)}
 .zoom-btn{font:600 13px "Public Sans",sans-serif;border:1.5px solid var(--line);background:var(--panel);color:var(--ink);padding:6px 12px;border-radius:999px;cursor:pointer}
@@ -150,14 +154,19 @@ li p{margin:2px 0 0;font-size:15px;color:var(--muted);max-width:60ch}
         <label><input type="checkbox" id="ly-verde" checked> Reverdecimiento satelital</label>
         <label><input type="checkbox" id="ly-prot" checked> Parques y santuarios</label>
       </div>
-      <div class="kinds">
-        <span><svg width="22" height="22" viewBox="-11 -11 22 22"><circle r="8" fill="#C2457F" stroke="currentColor" stroke-width="2"/></svg>Flores</span>
-        <span><svg width="22" height="22" viewBox="-11 -11 22 22"><path d="M0,-9 L9,6 L-9,6 Z" fill="#fff" stroke="currentColor" stroke-width="2"/></svg>Mirador</span>
-        <span><svg width="22" height="22" viewBox="-11 -11 22 22"><rect x="-8" y="-8" width="16" height="16" rx="3" fill="#3E8A5B" stroke="currentColor" stroke-width="2"/></svg>Parque nacional</span>
-        <span><svg width="22" height="22" viewBox="-11 -11 22 22"><path d="M0,-9 L9,0 L0,9 L-9,0 Z" fill="#D08A1E" stroke="currentColor" stroke-width="2"/></svg>Geología</span>
-        <span><svg width="22" height="12"><rect x="1" y="1" width="20" height="10" fill="rgba(36,125,60,.5)"/></svg>Reverdeció desde marzo</span>
+      <div class="lgd">
+        <span class="lg"><svg width="28" height="18" viewBox="0 0 28 18" aria-hidden="true"><circle cx="14" cy="9" r="6.5" fill="#C2457F" stroke="currentColor" stroke-width="1.8"/></svg>Flores</span>
+        <span class="lg"><svg width="28" height="18" viewBox="0 0 28 18" aria-hidden="true"><path d="M14,2 L21,15 L7,15 Z" fill="#FFFFFF" stroke="currentColor" stroke-width="1.8"/></svg>Mirador</span>
+        <span class="lg"><svg width="28" height="18" viewBox="0 0 28 18" aria-hidden="true"><rect x="7.5" y="2.5" width="13" height="13" rx="2.5" fill="#3E8A5B" stroke="currentColor" stroke-width="1.8"/></svg>Parada en parque</span>
+        <span class="lg"><svg width="28" height="18" viewBox="0 0 28 18" aria-hidden="true"><path d="M14,2 L21,9 L14,16 L7,9 Z" fill="#D08A1E" stroke="currentColor" stroke-width="1.8"/></svg>Geología y fósiles</span>
+        <span class="lg"><svg width="28" height="18" viewBox="0 0 28 18" aria-hidden="true"><path d="M14,2 L21,8 L21,16 L7,16 L7,8 Z" fill="currentColor" stroke="currentColor" stroke-width="1.8"/></svg>Cabaña</span>
+        <span class="lg"><svg width="28" height="18" viewBox="0 0 28 18" aria-hidden="true"><rect x="2" y="3" width="24" height="12" rx="2" fill="rgba(62,138,91,.16)" stroke="#2F6E47" stroke-width="2.4" stroke-dasharray="6 3"/></svg>Parque nacional</span>
+        <span class="lg"><svg width="28" height="18" viewBox="0 0 28 18" aria-hidden="true"><rect x="2" y="3" width="24" height="12" rx="2" fill="rgba(46,127,168,.3)" stroke="#2E7FA8" stroke-width="2"/></svg>Santuario o área protegida</span>
+        <span class="lg"><svg width="28" height="18" viewBox="0 0 28 18" aria-hidden="true"><rect x="2" y="3" width="24" height="12" rx="2" fill="rgba(36,125,60,.55)"/></svg>Reverdeció desde marzo</span>
+        <span class="lg"><svg width="28" height="18" viewBox="0 0 28 18" aria-hidden="true"><line x1="2" y1="9" x2="26" y2="9" stroke="currentColor" stroke-width="4" stroke-linecap="round"/></svg>Pavimento</span>
+        <span class="lg"><svg width="28" height="18" viewBox="0 0 28 18" aria-hidden="true"><line x1="3" y1="9" x2="26" y2="9" stroke="currentColor" stroke-width="4.5" stroke-linecap="round" stroke-dasharray="1 6"/></svg>Ripio, tierra o huella</span>
       </div>
-      <div class="legend"><span><svg width="34" height="8"><line x1="4" y1="4" x2="30" y2="4"/></svg>Pavimento</span><span><svg width="34" height="8"><line x1="4" y1="4" x2="30" y2="4" stroke-dasharray="2 7"/></svg>Ripio, tierra o huella</span><span>Elige un día para ver sus paradas numeradas</span></div>
+      <p class="hint">Elige un día arriba para ver sus paradas numeradas.</p>
       <figcaption>El verde es la diferencia de NDVI de Sentinel-2 entre fines de septiembre y marzo de 2026, en estación seca: más oscuro, más reverdeció. Marca vegetación nueva, no flores abiertas, y también pinta los valles regados. Límites de parques y santuarios: OpenStreetMap. Rutas calculadas por camino con OSRM sobre OpenStreetMap; el tipo de calzada sale de las etiquetas de OpenStreetMap, que pueden estar desactualizadas. Los tiempos de manejo son del ruteador y en ripio suelen ser optimistas.</figcaption>
     </figure>
     <div class="days">
