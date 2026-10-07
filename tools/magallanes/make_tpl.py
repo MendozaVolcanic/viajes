@@ -35,7 +35,7 @@ body = f'''<title>Magallanes en diciembre</title>
     <thead><tr><th>Día</th><th>Qué</th><th class="n">Km</th><th class="n">Horas de manejo</th><th class="n">Termina</th></tr></thead>
     <tbody>%%SUM%%</tbody>
   </table></div>
-  <p class="hint">Clima de diciembre: la estación de la Dirección Meteorológica en Punta Arenas registra 7,5 días con lluvia de 1 mm o más y 232 horas de sol, unas 7,5 por día (1991-2020). Torres del Paine, junto a la cordillera, es más lluvioso y cambiante: por eso el martes 15 queda de reserva. El Museo Borgatello abre de martes a sábado, así que va el sábado de llegada.</p>
+  <p class="hint">Clima de diciembre: la estación de la Dirección Meteorológica en Punta Arenas registra 7,5 días con lluvia de 1 mm o más y 232 horas de sol, unas 7,5 por día (1991-2020). Torres del Paine, junto a la cordillera, es más lluvioso y cambiante: por eso el martes 15 queda de reserva. Con el vuelo de llegada a las 16:00 del sábado no alcanza el Museo Borgatello, que cierra a las 17:30 y no abre domingo ni lunes.</p>
   <div class="bar" role="group" aria-label="Destacar un día en el mapa">
     <button type="button" class="all" id="btn-all">Todos los días</button>
     %%BTNS%%

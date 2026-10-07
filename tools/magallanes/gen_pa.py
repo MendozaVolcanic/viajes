@@ -59,21 +59,22 @@ S = {
  'mil': ('Cueva del Milodón', -51.5653, -72.6192),
  'bul': ('Fuerte Bulnes y Parque del Estrecho', -53.6303, -70.9172),
  'pud': ('Pudeto, muelle del catamarán', -51.0623, -72.9937),
+ 'zof': ('Zona Franca de Punta Arenas', -53.1336, -70.8760),
 }
 # (parada, minutos, texto, modo)  modo 'barco' = no se maneja
 DAYS = [
- dict(id='d1', tag='Sáb 12', title='Llegada y Punta Arenas con calma', col='--d1', start='13:00',
-  stops=[('puq', 45, 'Retiro del auto en el aeropuerto. Ajusta la hora a tu vuelo.', ''),
-         ('pla', 45, 'Check-in en el hotel y paseo por la plaza. El centro es plano.', ''),
-         ('bor', 75, 'Museo salesiano con historia natural y de los pueblos originarios de Magallanes. Abre los sábados, de 14:00 a 17:30 en la tarde, y cierra domingo y lunes: si el vuelo llega a tiempo, es hoy o el viernes nunca; solo efectivo. El Palacio Braun-Menéndez está cerrado hasta 2030.', ''),
+ dict(id='d1', tag='Sáb 12', title='Llegada, Nao Victoria y Punta Arenas al atardecer', col='--d1', start='16:00',
+  stops=[('puq', 45, 'El vuelo llega a las 16:00. Retiro del auto en el aeropuerto.', ''),
+         ('nao', 60, 'Réplicas a escala real de la nao Victoria de Magallanes y de la goleta Ancud, al aire libre junto al estrecho. De 9:00 a 19:00 de septiembre a marzo. Queda de camino desde el aeropuerto.', ''),
+         ('pla', 30, 'Check-in en el hotel. El centro es plano.', ''),
          ('cru', 30, 'Mirador sobre la ciudad y el estrecho de Magallanes, con estacionamiento al lado.', ''),
          ('mue', 60, "Costanera y muelle al atardecer, que en diciembre es cerca de las 22:00. Para comer, Sotito's (O'Higgins 1138) es el clásico de centolla y cordero.", '')]),
- dict(id='d2', tag='Dom 13', title='Pingüinos de Isla Magdalena, Nao Victoria y cementerio', col='--d2', start='08:30',
+ dict(id='d2', tag='Dom 13', title='Pingüinos de Isla Magdalena y cementerio', col='--d2', start='08:30',
   stops=[('pla', 0, 'Salida del hotel.', ''),
          ('tpu', 30, 'Embarque en el ferry de Comapa, que sale todos los días. Confirma el horario de diciembre (una fuente dice 9:30, otra 10:30).', ''),
          ('mag', 300, 'Navegación de 1 h 45 por tramo y una hora en la isla, por un sendero de 1,4 km que CONAF da como fácil, con una subida al final hacia el faro. La colonia cayó a unas 7.000 parejas según CONAF (feb-2026), frente a 63.000 en 2008-09: se ven menos pingüinos que antes. Se pidió suspender el turismo, pero CONAF lo descartó y la Corte de Apelaciones rechazó el recurso en abril de 2026. Reserva con anticipación, porque hay cupos.', 'barco'),
-         ('nao', 60, 'Réplicas a escala real de la nao Victoria de Magallanes y de la goleta Ancud, al aire libre junto al estrecho. De 9:00 a 19:00 de septiembre a marzo. Queda a 4 km del terminal de Tres Puentes.', ''),
-         ('cem', 60, 'Uno de los cementerios más bonitos de Sudamérica: avenidas de cipreses recortados y mausoleos de las familias pioneras. Abre de 8:00 a 19:00. Es plano.', '')]),
+         ('cem', 60, 'Uno de los cementerios más bonitos de Sudamérica: avenidas de cipreses recortados y mausoleos de las familias pioneras. Abre de 8:00 a 19:00. Es plano.', ''),
+         ('zof', 90, 'Opcional para la tarde libre: tiendas techadas y planas, abiertas el domingo de 10:30 a 19:30. El Museo Borgatello no abre los domingos.', '')]),
  dict(id='d3', tag='Lun 14', title='A Puerto Natales por la ruta 9', col='--d3', start='10:00',
   stops=[('pla', 0, 'Salida por la ruta 9 al norte. Si Isla Magdalena no operó ayer, esta mañana va Fuerte Bulnes (1 h por tramo) y se sale a Natales después de almuerzo.', ''),
          ('nat', 60, 'Unas 3 horas de ruta pavimentada. En diciembre empiezan a florecer los lupinos a orillas del camino: si aparecen, vale una parada. Check-in y almuerzo.', ''),
@@ -96,9 +97,9 @@ DAYS = [
          ('gre', 150, 'Caminata plana de 30 a 45 minutos por la playa del lago, entre témpanos varados, con el glaciar Grey al fondo; se cruza un puente colgante. Almuerzo en el Hotel Lago Grey, abierto a visitantes. Opcional y pagado: la navegación de 3 horas al frente del glaciar ($120.000 por adulto, 2026-27).', ''),
          ('mil', 60, 'Cueva enorme donde se hallaron restos del milodón, un perezoso gigante. De 8:00 a 18:30; los mayores de 60 entran gratis. Desde junio hay un tramo interior restringido por grietas.', ''),
          ('nat', 0, 'Noche en Natales.', '')]),
- dict(id='d7', tag='Vie 18', title='Natales al aeropuerto', col='--d7', start='10:00',
-  stops=[('nat', 0, 'Mañana libre en la costanera y salida a Punta Arenas.', ''),
-         ('puq', 0, 'Unas 3 horas. Devuelve el auto donde lo retiraste para no pagar recargo. Si el vuelo es tarde, la Zona Franca de Punta Arenas abre todos los días.', '')]),
+ dict(id='d7', tag='Vie 18', title='Natales al aeropuerto', col='--d7', start='07:45',
+  stops=[('nat', 0, 'Salida temprano: el vuelo sale a las 13:00.', ''),
+         ('puq', 0, 'Unas 3 horas de ruta: llegan cerca de las 10:45, con tiempo para devolver el auto y hacer el check-in antes del vuelo de las 13:00.', '')]),
 ]
 IMG = {
  'nao': ('Museo Nao Victoria Punta Arenas Chile La réplica de la Goleta Ancud, vista ', 'Réplica de la goleta Ancud en el Museo Nao Victoria'),
@@ -120,11 +121,11 @@ IMG = {
  'bul': ('Fuerte Bulnes 1.jpg', 'Fuerte Bulnes'),
 }
 KIND = {'puq': 'casa', 'pla': 'casa', 'nat': 'casa', 'ser': 'casa', 'mag': 'par', 'ama': 'par', 'nor': 'mir', 'sal': 'mir', 'peh': 'mir', 'cru': 'mir',
-        'gre': 'mir', 'mue': 'mir', 'pud': 'mir', 'nao': 'geo', 'cem': 'geo', 'bor': 'geo', 'bri': 'geo', 'mil': 'geo', 'cas': 'flo', 'tpu': 'flo', 'bul': 'geo'}
+        'gre': 'mir', 'mue': 'mir', 'pud': 'mir', 'zof': 'flo', 'nao': 'geo', 'cem': 'geo', 'bor': 'geo', 'bri': 'geo', 'mil': 'geo', 'cas': 'flo', 'tpu': 'flo', 'bul': 'geo'}
 SHORT = {'puq': ('Aeropuerto', 'r'), 'nao': ('Nao Victoria', 'r'), 'pla': ('Punta Arenas', 'r'), 'cru': ('Cerro de la Cruz', 'l'), 'mue': ('Muelle', 'l'),
          'tpu': ('Tres Puentes', 'r'), 'mag': ('Isla Magdalena', 'r'), 'cem': ('Cementerio', 'r'), 'bor': ('Museo Borgatello', 'l'), 'nat': ('Puerto Natales', 'r'),
          'bri': ('Puerto Bories', 'l'), 'cas': ('Cerro Castillo', 'r'), 'ama': ('Laguna Amarga', 'r'), 'nor': ('Nordenskjöld', 'r'), 'sal': ('Salto Grande', 'l'),
-         'peh': ('Pehoé', 'r'), 'ser': ('Río Serrano', 'r'), 'gre': ('Lago Grey', 'l'), 'pud': ('Pudeto', 'l'), 'mil': ('Cueva del Milodón', 'l'), 'bul': ('Fuerte Bulnes (opción)', 'r')}
+         'peh': ('Pehoé', 'r'), 'ser': ('Río Serrano', 'r'), 'gre': ('Lago Grey', 'l'), 'pud': ('Pudeto', 'l'), 'zof': ('Zona Franca', 'r'), 'mil': ('Cueva del Milodón', 'l'), 'bul': ('Fuerte Bulnes (opción)', 'r')}
 CM = {}
 for v in json.load(open('commons_pa.json', encoding='utf-8')).values():
     for x in v: CM[x['t'][5:]] = x
