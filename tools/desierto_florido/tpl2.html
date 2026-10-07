@@ -1,0 +1,255 @@
+<title>Ruta del Desierto Florido</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Public+Sans:wght@400;600&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+:root{
+  --ground:#F4F5F2; --panel:#FFFFFF; --ink:#1F2422; --muted:#5C6561; --line:#DCDFD9;
+  --land:#E6DCC6; --sea:#D8E5E9; --road:#BDB29A; --road5:#9A8F78;
+  --d1:#6E726D; --d2:#B03A78; --d3:#B86E0E; --d4:#2E6E8E;
+  --note:#F6EEDC; --park:#2F6E47;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --ground:#141716; --panel:#1C201E; --ink:#E7E9E4; --muted:#9BA39E; --line:#2F3532;
+    --land:#2E2B24; --sea:#13222A; --road:#5D5646; --road5:#7A715E;
+    --d1:#A3A8A2; --d2:#E07AB2; --d3:#E5A04A; --d4:#6FB2D3;
+    --note:#2A2619; --park:#8FD3A6;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --ground:#141716; --panel:#1C201E; --ink:#E7E9E4; --muted:#9BA39E; --line:#2F3532;
+  --land:#2E2B24; --sea:#13222A; --road:#5D5646; --road5:#7A715E;
+  --d1:#A3A8A2; --d2:#E07AB2; --d3:#E5A04A; --d4:#6FB2D3;
+  --note:#2A2619; --park:#8FD3A6;
+}
+*{box-sizing:border-box}
+body{background:var(--ground);color:var(--ink);font:16px/1.55 "Public Sans",system-ui,sans-serif;margin:0}
+.wrap{max-width:1180px;margin:0 auto;padding-inline:20px;padding-block:32px 64px}
+h1,h2{font-family:"Bricolage Grotesque",system-ui,sans-serif;text-wrap:balance;margin:0}
+h1{font-size:clamp(30px,5vw,48px);font-weight:800;letter-spacing:-.02em;line-height:1.05}
+.lede{max-width:64ch;color:var(--muted);margin:12px 0 0}
+.lede b{color:var(--ink)}
+.facts{display:flex;flex-wrap:wrap;gap:8px 18px;margin:18px 0 0;padding:0;list-style:none;font-size:14px;color:var(--muted)}
+.facts b{color:var(--ink)}
+.bar{display:flex;flex-wrap:wrap;gap:8px;margin:26px 0 18px}
+.dbtn,.all{font:600 14px "Public Sans",sans-serif;border:1.5px solid var(--line);background:var(--panel);color:var(--ink);padding:7px 14px;border-radius:999px;cursor:pointer}
+.dbtn{border-color:var(--c)}
+.dbtn[aria-pressed="true"]{background:var(--c);color:var(--ground)}
+.dbtn:focus-visible,.all:focus-visible,.gm:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+.grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:28px;align-items:start}
+.map{position:sticky;top:calc(env(safe-area-inset-top,0px) + 12px);background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:10px}
+.map > svg{display:block;width:100%;height:auto;max-height:calc(100vh - 120px)}
+.map figcaption{font-size:12.5px;color:var(--muted);padding:8px 4px 2px}
+.sea-bg{fill:var(--sea)} .land{fill:var(--land);stroke:var(--road5);stroke-width:.6}
+.r5{fill:none;stroke:var(--road5);stroke-width:2.2} .rc{fill:none;stroke:var(--road);stroke-width:1.2}
+.route{fill:none;stroke-width:4.5;stroke-linecap:round;stroke-linejoin:round;opacity:.92;transition:opacity .2s}
+.route.rip{stroke-dasharray:2 7;stroke-width:5}
+.route.dim{opacity:.1}
+.mk path,.mk rect,.mk circle{stroke:var(--ink);stroke-width:2.4}
+.mk .in{stroke:var(--panel);stroke-width:2.4}
+.k-mir path{fill:#FFFFFF} .k-flo circle{fill:#C2457F} .k-par rect{fill:#3E8A5B} .k-geo path{fill:#D08A1E} .k-sup circle{fill:#2E7FA8} .k-casa path{fill:var(--ink)} .k-pue circle{fill:var(--panel)}
+.mk text{font:700 14px "Public Sans",sans-serif;fill:var(--ink);paint-order:stroke;stroke:var(--land);stroke-width:4.5px;stroke-linejoin:round}
+.mk.dim{opacity:.18}
+.verde{opacity:.95}
+.prot{fill-rule:evenodd}
+.prot.pn{fill:rgba(62,138,91,.16);stroke:#2F6E47;stroke-width:3;stroke-dasharray:9 5}
+.prot.sn{fill:rgba(46,127,168,.3);stroke:#2E7FA8;stroke-width:2.2}
+.plab{font:800 15px "Public Sans",sans-serif;fill:var(--park);paint-order:stroke;stroke:var(--land);stroke-width:4px}
+body.no-verde .verde{display:none} body.no-prot .prots,body.no-prot .plab{display:none}
+.layers{display:flex;flex-wrap:wrap;align-items:center;gap:6px 16px;font-size:13.5px;padding:8px 4px 0}
+.layers label{display:flex;align-items:center;gap:6px;cursor:pointer}
+.lgd{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(190px,100%),1fr));gap:6px 14px;font-size:13.5px;color:var(--ink);padding:10px 4px 0}
+.lg{display:flex;align-items:center;gap:8px;line-height:1.2}
+.lg svg{flex:none;color:var(--ink)}
+.hint{font-size:12.5px;color:var(--muted);margin:8px 4px 0}
+.kinds{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:13px;color:var(--muted);padding:6px 4px 0}
+.kinds svg{vertical-align:middle;margin-right:4px;color:var(--ink)}
+.zoom-btn{font:600 13px "Public Sans",sans-serif;border:1.5px solid var(--line);background:var(--panel);color:var(--ink);padding:6px 12px;border-radius:999px;cursor:pointer}
+.map > svg{cursor:zoom-in}
+#fs{position:fixed;inset:0;z-index:50;background:var(--ground);display:flex;flex-direction:column;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+#fs .bar2{display:flex;gap:8px;align-items:center;padding:10px 14px;border-bottom:1px solid var(--line);flex-wrap:wrap}
+#fs .bar2 b{font-family:"Bricolage Grotesque",sans-serif;font-size:17px;margin-right:auto}
+#fs .stage{flex:1;min-height:0;overflow:hidden;touch-action:none}
+#fs .stage svg{width:100%;height:100%;max-height:none;display:block;cursor:grab}
+.num{display:none}
+.num.on{display:inline}
+.num circle{fill:var(--c);stroke:var(--panel);stroke-width:2}
+.num text{font:700 12px "Public Sans",sans-serif;fill:var(--ground)}
+.legend{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:13px;color:var(--muted);padding:8px 4px 0}
+.legend svg{vertical-align:middle;margin-right:6px}
+.legend line{stroke:var(--ink);stroke-width:4;stroke-linecap:round}
+.sum{width:100%;border-collapse:collapse;font-size:14.5px;margin:22px 0 0;min-width:420px}
+.sum th{font:700 11px "Public Sans",sans-serif;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);text-align:left;padding:6px 10px;border-bottom:1px solid var(--line)}
+.sum td{padding:7px 10px;border-bottom:1px solid var(--line)}
+.sum .n{font-family:"JetBrains Mono",monospace;font-variant-numeric:tabular-nums;text-align:right}
+.sum th.n{text-align:right}
+.tw{overflow-x:auto}
+li.leg{display:block;border-top:0;padding:2px 0 2px 88px;font-size:13px;color:var(--muted)}
+li.leg::before{content:none}
+li.leg span{border-left:2px dotted var(--c);padding:3px 0 3px 12px;display:inline-block}
+.rp{color:var(--c);font-weight:700}
+.phs{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(150px,100%),1fr));gap:8px;margin-top:10px;max-width:520px}
+.phs .ph{margin:0;max-width:none}
+.gal{background:var(--panel);border:1px solid var(--line)}
+.grid-ph{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(150px,100%),1fr));gap:12px}
+.grid-ph .ph{margin:0;max-width:none}
+.grid-pc{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(240px,100%),1fr));gap:16px}
+.pc{display:flex;flex-direction:column;gap:6px}
+.pc .ph{margin:0;max-width:none}
+.pc h3{font:600 17px "Bricolage Grotesque",sans-serif;margin:4px 0 0}
+.pc p{margin:0;font-size:14.5px;color:var(--muted)}
+.pc .hor{color:var(--ink);font-weight:600;font-size:13.5px}
+.pc .ln a{color:var(--d3);font-weight:600}
+.ph{margin:10px 0 0;max-width:420px}
+.ph img{display:block;width:100%;height:auto;max-width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:4px;background:var(--line)}
+.ph figcaption{font-size:12px;color:var(--muted);margin-top:4px}
+.ph a{color:var(--muted)}
+.town{font:600 15px "Public Sans",sans-serif;fill:var(--ink);paint-order:stroke;stroke:var(--land);stroke-width:4px}
+.sea{font:italic 600 17px "Public Sans",sans-serif;fill:var(--muted);letter-spacing:.08em}
+.scale line{stroke:var(--ink);stroke-width:2} .scale text{font:500 13px "JetBrains Mono",monospace;fill:var(--ink)}
+.days{display:flex;flex-direction:column;gap:22px}
+.day{background:var(--panel);border:1px solid var(--line);border-top:4px solid var(--c);border-radius:6px;padding:20px 20px 18px;scroll-margin-top:16px}
+.chip{display:inline-block;font:700 11.5px "Public Sans",sans-serif;text-transform:uppercase;letter-spacing:.1em;color:var(--c)}
+.day h2{font-size:23px;font-weight:600;margin:4px 0 2px}
+.meta{margin:0;color:var(--muted);font-size:14px}
+ol{list-style:none;margin:16px 0 0;padding:0;counter-reset:s}
+li.st{display:grid;grid-template-columns:52px 26px 1fr;gap:10px;padding:10px 0;border-top:1px solid var(--line);counter-increment:s}
+li.st::before{content:counter(s);grid-column:2;grid-row:1;width:24px;height:24px;border-radius:50%;background:var(--c);color:var(--ground);font:700 12px "Public Sans",sans-serif;display:grid;place-items:center;margin-top:1px}
+li .t{grid-column:1;grid-row:1;font:500 14px "JetBrains Mono",monospace;font-variant-numeric:tabular-nums;color:var(--muted);padding-top:2px}
+li div{grid-column:3;grid-row:1}
+li b{font-weight:600}
+li p{margin:2px 0 0;font-size:15px;color:var(--muted);max-width:60ch}
+.gm{display:inline-block;margin-top:14px;font-weight:600;color:var(--c);text-decoration:none;border-bottom:1.5px solid currentColor}
+.notes{margin-top:24px;background:var(--note);border-radius:6px;padding:18px 20px}
+.notes h2{font-size:19px;margin-bottom:8px}
+.notes ul{margin:0;padding-left:18px}
+.notes li{display:list-item;border:0;padding:4px 0;grid-template-columns:none}
+.notes li::before{content:none}
+.src{font-size:13px;color:var(--muted);margin-top:22px}
+.src a{color:var(--muted)}
+@media (max-width:820px){
+  .grid{grid-template-columns:minmax(0,1fr)}
+  .map{position:static}
+  .map > svg{max-height:none}
+}
+@media (prefers-reduced-motion:reduce){.route{transition:none}}
+</style>
+<div class="wrap">
+  <h1>Ruta del Desierto Florido</h1>
+  <p class="lede">Del viernes 9 al lunes 12 de octubre de 2026, con base en <b>Bahía Inglesa</b> y camioneta 4x4. Sernatur sitúa el peak a mediados de octubre: les toca de lleno. Salida temprano cada día (el viernes a las 14:00 desde La Serena), para llegar a las flores cuando abren, entre las <b>11:00 y las 16:00</b>, una vez que se retira la camanchaca.</p>
+  <ul class="facts">
+    <li><b>Más denso:</b> provincia de Huasco, donde más llovió</li>
+    <li><b>Ruta costera C-10:</b> pavimentada de Caldera a Huasco; los accesos a caletas pueden ser de ripio</li>
+    <li><b>Llanos de Challe:</b> cierra los lunes</li>
+  </ul>
+  <div class="tw"><table class="sum">
+    <thead><tr><th>Día</th><th class="n">Km</th><th class="n">Horas de manejo</th><th class="n">Km de ripio</th><th class="n">Termina</th></tr></thead>
+    <tbody>%%SUM%%</tbody>
+  </table></div>
+  <div class="bar" role="group" aria-label="Destacar un día en el mapa">
+    <button type="button" class="all" id="btn-all">Todos los días</button>
+    %%BTNS%%
+  </div>
+  <div class="grid">
+    <figure class="map" style="margin:0">
+      %%SVG%%
+      <div class="layers">
+        <button type="button" class="zoom-btn" id="open-fs">Agrandar mapa</button>
+        <label><input type="checkbox" id="ly-verde" checked> Reverdecimiento satelital</label>
+        <label><input type="checkbox" id="ly-prot" checked> Parques y santuarios</label>
+      </div>
+      <div class="lgd">
+        <span class="lg"><svg width="28" height="18" viewBox="0 0 28 18" aria-hidden="true"><circle cx="14" cy="9" r="6.5" fill="#C2457F" stroke="currentColor" stroke-width="1.8"/></svg>Flores</span>
+        <span class="lg"><svg width="28" height="18" viewBox="0 0 28 18" aria-hidden="true"><path d="M14,2 L21,15 L7,15 Z" fill="#FFFFFF" stroke="currentColor" stroke-width="1.8"/></svg>Mirador</span>
+        <span class="lg"><svg width="28" height="18" viewBox="0 0 28 18" aria-hidden="true"><rect x="7.5" y="2.5" width="13" height="13" rx="2.5" fill="#3E8A5B" stroke="currentColor" stroke-width="1.8"/></svg>Parada en parque</span>
+        <span class="lg"><svg width="28" height="18" viewBox="0 0 28 18" aria-hidden="true"><path d="M14,2 L21,9 L14,16 L7,9 Z" fill="#D08A1E" stroke="currentColor" stroke-width="1.8"/></svg>Geología y fósiles</span>
+        <span class="lg"><svg width="28" height="18" viewBox="0 0 28 18" aria-hidden="true"><path d="M14,2 L21,8 L21,16 L7,16 L7,8 Z" fill="currentColor" stroke="currentColor" stroke-width="1.8"/></svg>Cabaña</span>
+        <span class="lg"><svg width="28" height="18" viewBox="0 0 28 18" aria-hidden="true"><rect x="2" y="3" width="24" height="12" rx="2" fill="rgba(62,138,91,.16)" stroke="#2F6E47" stroke-width="2.4" stroke-dasharray="6 3"/></svg>Parque nacional</span>
+        <span class="lg"><svg width="28" height="18" viewBox="0 0 28 18" aria-hidden="true"><rect x="2" y="3" width="24" height="12" rx="2" fill="rgba(46,127,168,.3)" stroke="#2E7FA8" stroke-width="2"/></svg>Santuario o área protegida</span>
+        <span class="lg"><svg width="28" height="18" viewBox="0 0 28 18" aria-hidden="true"><rect x="2" y="3" width="24" height="12" rx="2" fill="rgba(36,125,60,.55)"/></svg>Reverdeció desde marzo</span>
+        <span class="lg"><svg width="28" height="18" viewBox="0 0 28 18" aria-hidden="true"><line x1="2" y1="9" x2="26" y2="9" stroke="currentColor" stroke-width="4" stroke-linecap="round"/></svg>Pavimento</span>
+        <span class="lg"><svg width="28" height="18" viewBox="0 0 28 18" aria-hidden="true"><line x1="3" y1="9" x2="26" y2="9" stroke="currentColor" stroke-width="4.5" stroke-linecap="round" stroke-dasharray="1 6"/></svg>Ripio, tierra o huella</span>
+      </div>
+      <p class="hint">Elige un día arriba para ver sus paradas numeradas.</p>
+      <figcaption>El verde es la diferencia de NDVI de Sentinel-2 entre fines de septiembre y marzo de 2026, en estación seca: más oscuro, más reverdeció. Marca vegetación nueva, no flores abiertas. La franja pegada al mar queda sin dato por la máscara de costa. Límites de parques y santuarios: OpenStreetMap. Rutas calculadas por camino con OSRM sobre OpenStreetMap; el tipo de calzada sale de las etiquetas de OpenStreetMap, que pueden estar desactualizadas. Los tiempos de manejo son del ruteador y en ripio suelen ser optimistas.</figcaption>
+    </figure>
+    <div class="days">
+      %%DAYS%%
+    </div>
+  </div>
+  %%PALEO%%
+  %%FLORES%%
+  <section class="notes">
+    <h2>Cómo está, al 6 de octubre</h2>
+    <ul>
+      <li><b>Casi no hay reportes de terreno con fecha.</b> La prensa repite lo que proyectan CONAF, Sernatur y el Gobierno Regional. El único dato observado: el 30 de septiembre había mantos en Carrizal (Madero).</li>
+      <li><b>Llanos de Challe:</b> según su administrador, el peak partía el fin de semana del 3 y 4 de octubre (BioBio, 2 de octubre).</li>
+      <li><b>Especies:</b> añañucas y huilles desde fines de agosto; también cebollines, patas de guanaco y suspiros. La garra de león se espera hasta fines de noviembre (Sernatur, Megatiempo).</li>
+      <li><b>Caminos:</b> Vialidad informó rutas habilitadas el 17 de septiembre: la C-382 desde la ruta 5, la C-370 por Barranquilla hasta la C-10, la C-390 a Bahía Salada, la C-440 por Carrizal Bajo a Llanos de Challe y la C-46 con la C-480 hasta Caleta Los Bronces. También pide viajar de día y con combustible suficiente. No nombra la C-416 (Quebrada Totoral) ni la C-414. Sernatur decía el 12 de septiembre que el 70 % de las rutas estaba transitable.</li>
+      <li><b>La lluvia:</b> en el temporal del 16 al 22 de julio cayeron 168 mm en Vallenar y hasta 240 mm en Alto del Carmen. CONAF habla de récords sin precedente comparable en algunas zonas. El evento grande anterior fue 1997, y la prensa dice que este año podría superarlo. En Caldera llovió mucho menos: 38 mm en julio, aunque es el máximo de esa estación desde 2005.</li>
+      <li><b>Para ver cómo está de verdad</b> antes de cada salida, revisa el Instagram o Facebook de CONAF Atacama y de las municipalidades de Caldera y Huasco.</li>
+    </ul>
+  </section>
+  <section class="notes">
+    <h2>Antes de salir</h2>
+    <ul>
+      <li>Compra ya la entrada a Llanos de Challe en pasesparques.cl, el portal de CONAF desde 2024. El lunes 12 es feriado: es fin de semana largo y peak.</li>
+      <li>Mira desde los caminos. No entres con la camioneta a los campos de flores: según CONAF es el daño más grande que sufre el desierto florido.</li>
+      <li>Descarga Google Maps sin conexión para toda la zona: en la costa y en los llanos casi no hay señal. Abre esta página una vez con señal antes de salir cada día, o guárdala como PDF, porque sin conexión no carga las fotos.</li>
+      <li>Carga bencina en Vallenar o Copiapó. En la costa hay muy pocas bencineras.</li>
+      <li>Kilómetros y tiempos de manejo vienen del ruteador; súmales margen en ripio y por las paradas no planeadas. Llano El Lagarto tiene estado por confirmar.</li><li>Pampa Caracoles quedó fuera: llegar desde Bahía Inglesa son cerca de 2 horas de caminos lentos por ida, y es el borde norte de la floración.</li><li>Llévate abrigo para las vueltas de noche, y no manejes cansado: el domingo vuelven cerca de las 21:00.</li>
+      <li>Para decidir dónde parar, revisa el mapa satelital de Esri Chile con la extensión de la floración de esta temporada.</li>
+    </ul>
+  </section>
+  <p class="src">Fuentes: <a href="https://www.sernatur.cl/region-de-atacama-lanza-oficialmente-la-temporada-del-desierto-florido-2026-en-freirina/" target="_blank" rel="noopener">Sernatur, lanzamiento de la temporada 2026</a> · <a href="https://www.andeshandbook.org/blog/de-norte-a-sur-guia-para-conocer-el-desierto-florido-este-2026" target="_blank" rel="noopener">Andeshandbook</a> · <a href="https://experience.arcgis.com/experience/517a478a751149bd8012d650d0a24eaf" target="_blank" rel="noopener">Esri Chile, mapa de la floración</a> · <a href="https://www.wikiloc.com/offroading-trails/casa-de-sal-y-piramides-20641718" target="_blank" rel="noopener">Wikiloc, Casa de Sal y pirámides</a> · <a href="https://www.latercera.com/noticia/nuevo-tramo-costero-de-huasco-a-caldera-por-el-mar/" target="_blank" rel="noopener">La Tercera, ruta costera Huasco-Caldera</a> · <a href="https://vialidad.mop.gob.cl/2026/09/17/mop-informa-cuatro-rutas-habilitadas-para-visitar-el-desierto-florido-con-seguridad/" target="_blank" rel="noopener">Vialidad, rutas habilitadas</a> · <a href="https://www.biobiochile.cl/noticias/servicios/toma-nota/2026/10/02/se-viene-un-peak-en-octubre-las-flores-que-pintaran-de-color-el-desierto-florido-este-2026.shtml" target="_blank" rel="noopener">BioBio, peak en Llanos de Challe</a> · <a href="https://madero.cl/turistas-sobre-mantos-del-desierto-florido-en-carrizal-generan-denuncia-autor-tambien-acusa-extraccion-de-flores/" target="_blank" rel="noopener">Madero, mantos en Carrizal</a> · <a href="https://madero.cl/desierto-florido-enfrenta-llegada-masiva-de-visitantes-con-rutas-danadas-y-escasa-infraestructura/" target="_blank" rel="noopener">Madero, rutas y servicios</a> · <a href="https://www.latercera.com/nacional/noticia/tras-intensas-lluvias-del-invierno-este-2026-atacama-podria-tener-el-desierto-florido-mas-extenso-de-la-historia/" target="_blank" rel="noopener">La Tercera, comparación con 1997</a> · Mapa base © colaboradores de OpenStreetMap. Fotos de Wikimedia Commons con su autor y licencia al pie, recortadas para encajar; son de otros años, no de esta temporada.</p>
+</div>
+<script>
+(function(){
+  var btns=[].slice.call(document.querySelectorAll('.dbtn'));
+  function show(day){
+    btns.forEach(function(b){b.setAttribute('aria-pressed', b.dataset.day===day?'true':'false')});
+    document.querySelectorAll('.route').forEach(function(r){r.classList.toggle('dim', !!day && r.dataset.day!==day)});
+    document.querySelectorAll('.mk').forEach(function(m){m.classList.toggle('dim', !!day && m.dataset.days.split(' ').indexOf(day)<0)});
+    document.querySelectorAll('.num').forEach(function(g){g.classList.toggle('on', g.dataset.day===day)});
+  }
+  btns.forEach(function(b){b.addEventListener('click',function(){
+    show(b.dataset.day);
+    var s=document.getElementById(b.dataset.day); if(s&&window.innerWidth>820) s.scrollIntoView({behavior:'smooth',block:'start'});
+  })});
+  document.getElementById('btn-all').addEventListener('click',function(){show(null)});
+  document.getElementById('ly-verde').addEventListener('change',function(e){document.body.classList.toggle('no-verde',!e.target.checked)});
+  document.getElementById('ly-prot').addEventListener('change',function(e){document.body.classList.toggle('no-prot',!e.target.checked)});
+  var mapSvg=document.querySelector('.map > svg'), VB=mapSvg.getAttribute('viewBox').split(' ').map(Number);
+  function openFs(){
+    if(document.getElementById('fs')) return;
+    var fs=document.createElement('div'); fs.id='fs';
+    fs.innerHTML='<div class="bar2"><b>Ruta del Desierto Florido</b><button class="zoom-btn" data-z="1.5">Acercar</button><button class="zoom-btn" data-z="0.667">Alejar</button><button class="zoom-btn" data-z="0">Ver todo</button><button class="zoom-btn" id="fs-close">Cerrar</button></div><div class="stage"></div>';
+    var sv=mapSvg.cloneNode(true); fs.querySelector('.stage').appendChild(sv); document.body.appendChild(fs);
+    document.body.style.overflow='hidden';
+    var vb=VB.slice(); function set(){sv.setAttribute('viewBox',vb.join(' '))}
+    function zoom(f,cx,cy){ if(f===0){vb=VB.slice();set();return} var nw=vb[2]/f, nh=vb[3]/f; if(nw<80||nw>VB[2]*1.5) return;
+      if(cx===undefined){cx=vb[0]+vb[2]/2;cy=vb[1]+vb[3]/2}
+      vb=[cx-(cx-vb[0])/f, cy-(cy-vb[1])/f, nw, nh]; set(); }
+    function toSvg(ev){var r=sv.getBoundingClientRect(); var s=Math.max(vb[2]/r.width,vb[3]/r.height); var ox=(r.width*s-vb[2])/2, oy=(r.height*s-vb[3])/2; return [vb[0]+(ev.clientX-r.left)*s-ox, vb[1]+(ev.clientY-r.top)*s-oy, s]}
+    fs.querySelectorAll('[data-z]').forEach(function(b){b.onclick=function(){zoom(parseFloat(b.dataset.z))}});
+    sv.addEventListener('wheel',function(ev){ev.preventDefault(); var p=toSvg(ev); zoom(ev.deltaY<0?1.25:0.8,p[0],p[1])},{passive:false});
+    var pts={}, last=null, lastDist=null;
+    sv.addEventListener('pointerdown',function(ev){sv.setPointerCapture(ev.pointerId); pts[ev.pointerId]=ev; last=ev});
+    sv.addEventListener('pointermove',function(ev){ if(!pts[ev.pointerId]) return; pts[ev.pointerId]=ev; var ids=Object.keys(pts);
+      if(ids.length===2){ var a=pts[ids[0]],b=pts[ids[1]]; var d=Math.hypot(a.clientX-b.clientX,a.clientY-b.clientY);
+        if(lastDist){ var m={clientX:(a.clientX+b.clientX)/2,clientY:(a.clientY+b.clientY)/2}; var p=toSvg(m); zoom(d/lastDist,p[0],p[1]) } lastDist=d; last=null; return }
+      if(last){ var s=toSvg(ev)[2]; vb[0]-=(ev.clientX-last.clientX)*s; vb[1]-=(ev.clientY-last.clientY)*s; set() } last=ev });
+    function up(ev){delete pts[ev.pointerId]; lastDist=null; last=null}
+    sv.addEventListener('pointerup',up); sv.addEventListener('pointercancel',up);
+    function esc(e){if(e.key==='Escape') close()}
+    function close(){fs.remove(); document.body.style.overflow=''; document.removeEventListener('keydown',esc)}
+    document.addEventListener('keydown',esc); fs.querySelector('#fs-close').onclick=close;
+  }
+  document.getElementById('open-fs').addEventListener('click',openFs);
+  mapSvg.addEventListener('click',openFs);
+
+})();
+</script>

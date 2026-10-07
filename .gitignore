@@ -4,3 +4,8 @@ Thumbs.db
 .claude/settings.local.json
 # checklist personal del viaje (tarjeta, finanzas): el repo es publico, se respalda por OneDrive
 docs/GUIONES-Y-CHECKLIST.md
+
+# datos regenerables del generador del desierto florido
+tools/desierto_florido/*.json
+tools/desierto_florido/*.npy
+tools/desierto_florido/*.png
