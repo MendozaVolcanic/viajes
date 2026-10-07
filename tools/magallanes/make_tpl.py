@@ -25,7 +25,7 @@ body = f'''<title>Magallanes en diciembre</title>
 {fonts}{style}
 <div class="wrap">
   <h1>Magallanes en diciembre</h1>
-  <p class="lede">Siete días, del miércoles 9 al martes 15 de diciembre de 2026, para tres personas, con auto arrendado en Punta Arenas. Pensado para caminatas de no más de 45 minutos y no más de unas 4 horas de manejo al día, con un día de reserva por si el clima no acompaña en Torres del Paine. En diciembre hay luz de 5:10 a 22:00.</p>
+  <p class="lede">Siete días, del sábado 12 al viernes 18 de diciembre de 2026, para tres personas, con auto arrendado en Punta Arenas. Pensado para caminatas de no más de 45 minutos y no más de unas 4 horas de manejo al día, con un día de reserva por si el clima no acompaña en Torres del Paine. En diciembre hay luz de 5:10 a 22:00.</p>
   <ul class="facts">
     <li><b>Mayores de 60:</b> entran gratis a Torres del Paine y a la Cueva del Milodón</li>
     <li><b>Bencina:</b> no hay dentro del parque, se carga en Natales</li>
@@ -35,7 +35,7 @@ body = f'''<title>Magallanes en diciembre</title>
     <thead><tr><th>Día</th><th>Qué</th><th class="n">Km</th><th class="n">Horas de manejo</th><th class="n">Termina</th></tr></thead>
     <tbody>%%SUM%%</tbody>
   </table></div>
-  <p class="hint">Por qué estas fechas: en 25 años de datos diarios (reanálisis ERA5), la primera mitad de diciembre sale algo menos lluviosa y ventosa que la segunda; la diferencia es chica. Para tener la medida real: la estación de la Dirección Meteorológica en Punta Arenas registra en diciembre 7,5 días con lluvia de 1 mm o más y 232 horas de sol, unas 7,5 por día (1991-2020). Torres del Paine, junto a la cordillera, es más lluvioso y cambiante. El martes 8 es feriado. El jueves 10 cae dentro del horario del Museo Borgatello (martes a sábado).</p>
+  <p class="hint">Clima de diciembre: la estación de la Dirección Meteorológica en Punta Arenas registra 7,5 días con lluvia de 1 mm o más y 232 horas de sol, unas 7,5 por día (1991-2020). Torres del Paine, junto a la cordillera, es más lluvioso y cambiante: por eso el martes 15 queda de reserva. El Museo Borgatello abre de martes a sábado, así que va el sábado de llegada.</p>
   <div class="bar" role="group" aria-label="Destacar un día en el mapa">
     <button type="button" class="all" id="btn-all">Todos los días</button>
     %%BTNS%%
