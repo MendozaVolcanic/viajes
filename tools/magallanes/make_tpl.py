@@ -59,7 +59,7 @@ body = f'''<title>Magallanes en diciembre</title>
   <section class="notes">
     <h2>Antes de reservar</h2>
     <ul>
-      <li><b>Pingüinos:</b> confirma con Comapa que Isla Magdalena opere en diciembre de 2026 y el horario. CONAF informó en febrero de 2026 que la colonia cayó a unas 7.000 parejas, y una naviera cerró su temporada anterior. Seno Otway está cerrado al turismo. Pingüino Rey, en Tierra del Fuego, son más de 9 horas de transporte en el día: no lo recomiendo para ellos.</li>
+      <li><b>Pingüinos:</b> Isla Magdalena sigue abierta: CONAF descartó suspender el turismo y la Corte de Apelaciones de Punta Arenas rechazó el recurso que lo pedía (abril de 2026). La colonia sí está muy disminuida, unas 7.000 parejas según CONAF (feb-2026). Reserva con Comapa con tiempo y confirma el horario. Seno Otway está cerrado al turismo. Pingüino Rey, en Tierra del Fuego, son más de 9 horas de transporte en el día: no lo recomiendo para ellos.</li>
       <li><b>Alojamiento:</b> Natales y Torres del Paine tienen sobre 85 % de ocupación en temporada. Reserva Natales (días 3 y 5) y Río Serrano (día 4) apenas tengan fechas.</li>
       <li><b>Auto:</b> retíralo y devuélvelo en el aeropuerto de Punta Arenas para no pagar recargo de una vía. Mejor un SUV o un auto alto por el ripio del parque, con seguro de vidrios y neumáticos. Mitta, Europcar, Econorent y Avis atienden en el aeropuerto.</li>
       <li><b>Torres del Paine:</b> pases en pasesparques.cl; el hermano paga $9.400 por un día (adulto chileno, 2026) y los mayores de 60 entran liberados. El sitio del parque da horario de 8:00 a 19:00; Pases Parques da 7:00 a 21:00 en verano: confírmalo.</li>

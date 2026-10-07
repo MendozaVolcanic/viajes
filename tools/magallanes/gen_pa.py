@@ -71,7 +71,7 @@ DAYS = [
  dict(id='d2', tag='Dom 13', title='Pingüinos de Isla Magdalena, Nao Victoria y cementerio', col='--d2', start='08:30',
   stops=[('pla', 0, 'Salida del hotel.', ''),
          ('tpu', 30, 'Embarque en el ferry de Comapa, que sale todos los días. Confirma el horario de diciembre (una fuente dice 9:30, otra 10:30).', ''),
-         ('mag', 300, 'Navegación de 1 h 45 por tramo y una hora en la isla, por un sendero de 1,4 km que CONAF da como fácil, con una subida al final hacia el faro. Ojo: la colonia cayó a unas 7.000 parejas según CONAF (feb-2026); confirma con Comapa que opere este diciembre.', 'barco'),
+         ('mag', 300, 'Navegación de 1 h 45 por tramo y una hora en la isla, por un sendero de 1,4 km que CONAF da como fácil, con una subida al final hacia el faro. La colonia cayó a unas 7.000 parejas según CONAF (feb-2026), frente a 63.000 en 2008-09: se ven menos pingüinos que antes. Se pidió suspender el turismo, pero CONAF lo descartó y la Corte de Apelaciones rechazó el recurso en abril de 2026. Reserva con anticipación, porque hay cupos.', 'barco'),
          ('nao', 60, 'Réplicas a escala real de la nao Victoria de Magallanes y de la goleta Ancud, al aire libre junto al estrecho. De 9:00 a 19:00 de septiembre a marzo. Queda a 4 km del terminal de Tres Puentes.', ''),
          ('cem', 60, 'Uno de los cementerios más bonitos de Sudamérica: avenidas de cipreses recortados y mausoleos de las familias pioneras. Abre de 8:00 a 19:00. Es plano.', '')]),
  dict(id='d3', tag='Lun 14', title='A Puerto Natales por la ruta 9', col='--d3', start='10:00',
