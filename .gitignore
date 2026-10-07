@@ -9,3 +9,5 @@ docs/GUIONES-Y-CHECKLIST.md
 tools/desierto_florido/*.json
 tools/desierto_florido/*.npy
 tools/desierto_florido/*.png
+tools/magallanes/*.json
+tools/magallanes/*.png
