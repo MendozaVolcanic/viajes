@@ -91,6 +91,19 @@ li.leg{display:block;border-top:0;padding:2px 0 2px 88px;font-size:13px;color:va
 li.leg::before{content:none}
 li.leg span{border-left:2px dotted var(--c);padding:3px 0 3px 12px;display:inline-block}
 .rp{color:var(--c);font-weight:700}
+.obs{fill:#C2457F;opacity:.55;stroke:none}
+.obs.hl{fill:#7A1F55;opacity:1;r:5}
+body.no-obs .obsl{display:none}
+.grid-sp{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(230px,100%),1fr));gap:16px}
+.sp{display:flex;flex-direction:column;gap:6px;border:1px solid var(--line);border-radius:6px;padding:10px;background:var(--panel)}
+.sp.done{outline:2px solid #3E8A5B}
+.sp h3{font:600 16px "Bricolage Grotesque",sans-serif;margin:2px 0 0}
+.sp h3 i{font-family:"Public Sans",sans-serif;font-weight:400;font-size:13.5px;color:var(--muted);display:block}
+.sp p{margin:0;font-size:14px;color:var(--muted)}
+.sp .ph{margin:0;max-width:none}
+.chk{display:flex;align-items:center;gap:6px;font-weight:600;font-size:14px;cursor:pointer}
+.chk input{width:20px;height:20px}
+.see{font:600 13px "Public Sans",sans-serif;border:1.5px solid var(--line);background:var(--panel);color:var(--ink);padding:4px 10px;border-radius:999px;cursor:pointer}
 .phs{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(150px,100%),1fr));gap:8px;margin-top:10px;max-width:520px}
 .phs .ph{margin:0;max-width:none}
 .gal{background:var(--panel);border:1px solid var(--line)}
@@ -163,6 +176,7 @@ li p{margin:2px 0 0;font-size:15px;color:var(--muted);max-width:60ch}
         <button type="button" class="zoom-btn" id="open-fs">Agrandar mapa</button>
         <label><input type="checkbox" id="ly-verde" checked> Reverdecimiento satelital</label>
         <label><input type="checkbox" id="ly-prot" checked> Parques y santuarios</label>
+        <label><input type="checkbox" id="ly-obs" checked> Plantas registradas 2026</label>
       </div>
       <div class="lgd">
         <span class="lg"><svg width="28" height="18" viewBox="0 0 28 18" aria-hidden="true"><circle cx="14" cy="9" r="6.5" fill="#C2457F" stroke="currentColor" stroke-width="1.8"/></svg>Flores</span>
@@ -183,6 +197,8 @@ li p{margin:2px 0 0;font-size:15px;color:var(--muted);max-width:60ch}
       %%DAYS%%
     </div>
   </div>
+  %%HOT%%
+  %%GUIA%%
   %%PALEO%%
   %%FLORES%%
   <section class="notes">
@@ -253,6 +269,19 @@ li p{margin:2px 0 0;font-size:15px;color:var(--muted);max-width:60ch}
   }
   document.getElementById('open-fs').addEventListener('click',openFs);
   mapSvg.addEventListener('click',openFs);
+  document.getElementById('ly-obs')?.addEventListener('change',function(e){document.body.classList.toggle('no-obs',!e.target.checked)});
+  function store(k,v){try{ if(v===undefined) return localStorage.getItem(k); localStorage.setItem(k,v);}catch(e){return null}}
+  function recount(){var n=document.querySelectorAll('.sp input:checked').length; var c=document.getElementById('cnt'); if(c) c.textContent=n;}
+  document.querySelectorAll('.sp input[data-k]').forEach(function(cb){
+    var k='df26-'+cb.dataset.k; if(store(k)==='1'){cb.checked=true; cb.closest('.sp').classList.add('done');}
+    cb.addEventListener('change',function(){store(k,cb.checked?'1':'0'); cb.closest('.sp').classList.toggle('done',cb.checked); recount();});
+  }); recount();
+  document.querySelectorAll('.see').forEach(function(b){ b.addEventListener('click',function(){
+    var t=b.dataset.t; document.body.classList.remove('no-obs'); var ly=document.getElementById('ly-obs'); if(ly) ly.checked=true;
+    mapSvg.querySelectorAll('.obs').forEach(function(c){c.classList.toggle('hl',c.dataset.t===t)});
+    mapSvg.scrollIntoView({behavior:'smooth',block:'center'});
+  });});
+
   // mapa chico por día: copia del mapa general encuadrado en la ruta de ese día
   function bboxOf(els){
     var x0=1e9,y0=1e9,x1=-1e9,y1=-1e9;

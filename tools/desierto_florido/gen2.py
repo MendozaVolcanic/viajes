@@ -54,6 +54,7 @@ S={
  'ded':('Parque Paleontológico Los Dedos',-27.1526,-70.8862),
  'msj':('Mina San José, memorial de los 33',-27.1568,-70.4984),
  'tra':('Travesía, punto oficial de información',-27.5418,-70.4426),
+ 'pcx':('Pampa Caracoles',-26.956,-70.718),
  'mra':('Museo Regional de Atacama',-27.3625,-70.3421),
  'dun':('Dunas del cerro Bramador',-27.3167,-70.4200),
  'mus':('Museo Paleontológico de Caldera',-27.0649,-70.8234),
@@ -71,9 +72,10 @@ DAYS=[
  dict(id='sab',tag='Sábado 10',title='SUP, sandboard en las dunas, Parque Nacional Desierto Florido y atardecer',col='--d2',start='07:30',
   stops=[('bi',60,'SUP en Bahía Inglesa a primera hora, cuando el agua está quieta y todavía no sube el viento.'),
          ('ton',30,'Santuario de la Naturaleza Granito Orbicular, 11 km al norte de Caldera por la C-316: orbículos de unos 7 cm de hornblenda, ortoclasa, biotita y cuarzo. Al aire libre, sin horario.'),
-         ('dun',120,'Mar de dunas del cerro Bramador, frente a Copiapó, para tirarse en sandboard o esquís: calculen unas tres bajadas con la subida a pie entre cada una. El cerro tiene fama de bramar cuando la arena seca se desliza. Lleven agua, bloqueador y lentes; a mediodía la arena quema y el viento sube en la tarde. Con la 4x4 entren solo hasta donde el suelo es firme: en la arena suelta se entierra cualquiera.'),
+         ('pcx',50,'Al noreste del Granito Orbicular. Es el tercer sector con más registros de plantas en iNaturalist este año (124 registros de 68 especies, del 8 de septiembre al 6 de octubre), y el Gobierno Regional lo da como el extremo norte de la floración. El punto es el centro de esos registros; el camino más cercano es la C-449.'),
+         ('dun',110,'Mar de dunas del cerro Bramador, frente a Copiapó, para tirarse en sandboard o esquís: calculen unas tres bajadas con la subida a pie entre cada una. El cerro tiene fama de bramar cuando la arena seca se desliza. Lleven agua, bloqueador y lentes; a mediodía la arena quema y el viento sube en la tarde. Con la 4x4 entren solo hasta donde el suelo es firme: en la arena suelta se entierra cualquiera.'),
          ('tra',20,'Punto oficial de información del Gobierno Regional, en el cruce de la ruta 5 con la C-382. Pregunta aquí dónde están hoy los mejores mantos del parque y cómo llegar a Pampa Caracoles y a Piedras Grandes, en Freirina, que no tienen ubicación publicada.'),
-         ('pdf',210,'Parque nacional por la C-382: tómate la tarde para recorrer sus dos sectores, a ambos lados de la ruta 5, y parar en cada manto, abierto de martes a domingo de 9:00 a 18:00, sin baños ni senderos habilitados: lleva agua. Llegas cuando las flores ya abrieron.'),
+         ('pdf',160,'Parque nacional por la C-382: tómate la tarde para recorrer sus dos sectores, a ambos lados de la ruta 5, y parar en cada manto, abierto de martes a domingo de 9:00 a 18:00, sin baños ni senderos habilitados: lleva agua. Llegas cuando las flores ya abrieron.'),
          ('cho',90,'Atardecer en el Mirador Aguada de Chorrillos y el Salto del Gato. El sol se pone cerca de las 19:47 y hay luz hasta las 20:10.'),
          ('bi',0,'Cabaña.')]),
  dict(id='dom',tag='Domingo 11',title='Hacienda Castilla, Quebrada Totoral, Llanos de Challe y Canto del Agua',col='--d3',start='07:30',
@@ -350,11 +352,11 @@ base=[]
 KIND={'cho':'mir','mbc':'mir','est':'mir','mhu':'mir','cb':'mir',
       'pb':'par','pdf':'par','lag':'par',
       'paj':'flo','tot':'flo','ct':'flo','hc':'flo','bs':'flo','bar':'flo','toy':'flo','fre':'flo','fc':'flo','clb':'mir','pc':'flo',
-      'pir':'geo','ton':'geo','ded':'geo','mus':'geo','msj':'geo','mra':'geo','tra':'mir','dun':'mir','lvi':'sup','bi':'casa','val':'pue'}
+      'pir':'geo','ton':'geo','ded':'geo','mus':'geo','msj':'geo','mra':'geo','tra':'mir','pcx':'flo','dun':'mir','lvi':'sup','bi':'casa','val':'pue'}
 SHORT={'cho':('Chorrillos','l'),'mbc':('Bahía Cisne','l'),'est':('Estuario','l'),'mhu':('Mirador Huasco','l'),'cb':('Carrizal Bajo','r'),
  'pb':('Playa Blanca','l'),'pdf':('PN Desierto Florido','r'),'lag':('Canto del Agua','r'),'paj':('Pajaritos','r'),'tot':('Oasis Totoral','r'),
  'ct':('Caleta Totoral','l'),'hc':('Hacienda Castilla','r'),'bs':('Bahía Salada','r'),'bar':('Barranquilla','r'),'toy':('Los Toyos','l'),
- 'fre':('Freirina','r'),'fc':('Costa de Freirina','r'),'clb':('Caleta Los Bronces','l'),'pir':('Pirámides de sal','r'),'ton':('Granito Orbicular','r'),'ded':('Los Dedos, fósiles','l'),'mus':('Museo Paleontológico','r'),'msj':('Mina San José','r'),'mra':('Museo Regional','l'),'tra':('Travesía','r'),'dun':('Dunas del Bramador','r'),'lvi':('Playa La Virgen · SUP','l'),'bi':('Cabaña','r'),'val':('Vallenar','r')}
+ 'fre':('Freirina','r'),'fc':('Costa de Freirina','r'),'clb':('Caleta Los Bronces','l'),'pir':('Pirámides de sal','r'),'ton':('Granito Orbicular','r'),'ded':('Los Dedos, fósiles','l'),'mus':('Museo Paleontológico','r'),'msj':('Mina San José','r'),'mra':('Museo Regional','l'),'tra':('Travesía','r'),'pcx':('Pampa Caracoles','r'),'dun':('Dunas del Bramador','r'),'lvi':('Playa La Virgen · SUP','l'),'bi':('Cabaña','r'),'val':('Vallenar','r')}
 def shape(kind):
     if kind=='mir': return '<path d="M0,-11 L10,7 L-10,7 Z"/>'
     if kind=='geo': return '<path d="M0,-11 L10,0 L0,11 L-10,0 Z"/>'
@@ -382,9 +384,17 @@ svg=(f'<svg viewBox="0 0 {W} {H}" role="img" aria-label="Mapa del itinerario por
  f'<rect class="sea-bg" width="{W}" height="{H}"/><path class="land" d="{land}"/>'+''.join(f'<path class="land" d="{p}"/>' for p in isl)
  +green_svg+'<g class="prots">'+''.join(prot_svg)+'</g>'+f'<g>{road_svg}</g><g>{"".join(routes_svg)}</g><g>{"".join(prot_lab)}</g><g>{"".join(lab)}</g><g>{"".join(base)}</g>{"".join(numbered)}{scale}</svg>')
 sumrows=''.join(f'<tr><td>{a}</td><td class="n">{b:.0f}</td><td class="n">{c/60:.1f}</td><td class="n">{(e if e>=1.5 else 0):.0f}</td><td class="n">{f}</td></tr>' for a,b,c,e,f in summary)
+import guia as _g
+_route=[]
+for _d in DAYS:
+    _r=json.load(open(f"osrm_{_d['id']}.json")); _route+=[(la,lo) for lo,la in _r['geometry']['coordinates'][::3]]
+_used={s for dd in DAYS for s,_,_ in dd['stops']}
+GUIA,OBS_SVG,HOT=_g.build(S,_used,P,_route) if IMGS else ('','','')
+_LG='<g>'+''.join(lab)+'</g>'
+if OBS_SVG: svg=svg.replace(_LG,OBS_SVG+_LG,1)
 btns=''.join(f'<button type="button" class="dbtn" data-day="{dd["id"]}" style="--c:var({dd["col"]})" aria-pressed="false">{dd["tag"]}</button>' for dd in DAYS)
 tpl=open('tpl2.html',encoding='utf-8').read()
-out=tpl.replace('%%PALEO%%',paleo_html()).replace('%%FLORES%%',flores_html()).replace('%%SVG%%',svg).replace('%%DAYS%%','\n'.join(cards)).replace('%%BTNS%%',btns).replace('%%SUM%%',sumrows)
+out=tpl.replace('%%HOT%%',HOT).replace('%%GUIA%%',GUIA).replace('%%PALEO%%',paleo_html()).replace('%%FLORES%%',flores_html()).replace('%%SVG%%',svg).replace('%%DAYS%%','\n'.join(cards)).replace('%%BTNS%%',btns).replace('%%SUM%%',sumrows)
 open('desierto-florido-fotos.html' if IMGS else 'desierto-florido-mapa.html','w',encoding='utf-8').write(out)
 if IMGS:
     open('desierto-florido-2026.html','w',encoding='utf-8').write('<!DOCTYPE html>\n<html lang="es-CL">\n<head>\n<meta charset="utf-8">\n<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">\n'+out+'\n</html>\n')
