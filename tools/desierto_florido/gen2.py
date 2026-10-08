@@ -53,6 +53,7 @@ S={
  'fc':('Costa de Freirina por la C-480',-28.604,-71.204),
  'ded':('Parque Paleontológico Los Dedos',-27.1526,-70.8862),
  'msj':('Mina San José, memorial de los 33',-27.1568,-70.4984),
+ 'tra':('Travesía, punto oficial de información',-27.5418,-70.4426),
  'mra':('Museo Regional de Atacama',-27.3625,-70.3421),
  'dun':('Dunas del cerro Bramador',-27.3167,-70.4200),
  'mus':('Museo Paleontológico de Caldera',-27.0649,-70.8234),
@@ -67,12 +68,12 @@ DAYS=[
   stops=[('ls',0,'Salida por la ruta 5 al norte.'),
          ('val',20,'Bencina. Entre Vallenar y el cruce a Llanos de Challe el satélite marca algunos de los llanos más verdes de la zona, a los dos lados de la ruta 5: si ves un manto, para en una berma ancha.'),
          ('bi',0,'Llegada a la cabaña, ya de noche.')]),
- dict(id='sab',tag='Sábado 10',title='SUP, fósiles, sandboard en las dunas, parque nacional y atardecer',col='--d2',start='07:30',
+ dict(id='sab',tag='Sábado 10',title='SUP, sandboard en las dunas, Parque Nacional Desierto Florido y atardecer',col='--d2',start='07:30',
   stops=[('bi',60,'SUP en Bahía Inglesa a primera hora, cuando el agua está quieta y todavía no sube el viento.'),
          ('ton',30,'Santuario de la Naturaleza Granito Orbicular, 11 km al norte de Caldera por la C-316: orbículos de unos 7 cm de hornblenda, ortoclasa, biotita y cuarzo. Al aire libre, sin horario.'),
-         ('ded',50,'Formación Bahía Inglesa al aire libre: perezosos marinos, tiburones y aves gigantes como Pelagornis. Abre de martes a domingo; las fuentes dan cierre entre 17:30 y 18:00, así que mejor en la mañana, apenas abre.'),
          ('dun',120,'Mar de dunas del cerro Bramador, frente a Copiapó, para tirarse en sandboard o esquís: calculen unas tres bajadas con la subida a pie entre cada una. El cerro tiene fama de bramar cuando la arena seca se desliza. Lleven agua, bloqueador y lentes; a mediodía la arena quema y el viento sube en la tarde. Con la 4x4 entren solo hasta donde el suelo es firme: en la arena suelta se entierra cualquiera.'),
-         ('pdf',150,'Parque nacional por la C-382, abierto de martes a domingo de 9:00 a 18:00, sin baños ni senderos habilitados: lleva agua. Llegas cuando las flores ya abrieron.'),
+         ('tra',20,'Punto oficial de información del Gobierno Regional, en el cruce de la ruta 5 con la C-382. Pregunta aquí dónde están hoy los mejores mantos del parque y cómo llegar a Pampa Caracoles y a Piedras Grandes, en Freirina, que no tienen ubicación publicada.'),
+         ('pdf',210,'Parque nacional por la C-382: tómate la tarde para recorrer sus dos sectores, a ambos lados de la ruta 5, y parar en cada manto, abierto de martes a domingo de 9:00 a 18:00, sin baños ni senderos habilitados: lleva agua. Llegas cuando las flores ya abrieron.'),
          ('cho',90,'Atardecer en el Mirador Aguada de Chorrillos y el Salto del Gato. El sol se pone cerca de las 19:47 y hay luz hasta las 20:10.'),
          ('bi',0,'Cabaña.')]),
  dict(id='dom',tag='Domingo 11',title='Hacienda Castilla, Quebrada Totoral, Llanos de Challe y Canto del Agua',col='--d3',start='07:30',
@@ -175,7 +176,7 @@ def paleo_html():
         im=one(ph,nm) if IMGS else ''
         ln=' · '.join(f'<a href="{u}" target="_blank" rel="noopener">{html.escape(t)}</a>' for t,u in links)
         cards.append(f'<article class="pc">{im}<h3>{html.escape(nm)}</h3><p>{html.escape(txt)}</p><p class="hor">{html.escape(hor)}</p><p class="ln">{ln}</p></article>')
-    return ('<section class="notes gal"><h2>Geología y paleontología: para decidir</h2><p class="hint" style="margin:0 0 10px">Granito Orbicular y Los Dedos están en el plan del sábado; el museo de Caldera está cerrado. '
+    return ('<section class="notes gal"><h2>Geología y paleontología: para decidir</h2><p class="hint" style="margin:0 0 10px">El Granito Orbicular está en el plan del sábado; Los Dedos quedó fuera para dar más tiempo a las flores, y el museo de Caldera está cerrado. '
             'Si alguno no te convence, se saca sin mover el resto.</p>' f'<div class="grid-pc">{"".join(cards)}</div></section>')
 
 PAVED={'asphalt','paved','concrete','chipseal','concrete:plates','paving_stones','sett','cobblestone'}
@@ -349,11 +350,11 @@ base=[]
 KIND={'cho':'mir','mbc':'mir','est':'mir','mhu':'mir','cb':'mir',
       'pb':'par','pdf':'par','lag':'par',
       'paj':'flo','tot':'flo','ct':'flo','hc':'flo','bs':'flo','bar':'flo','toy':'flo','fre':'flo','fc':'flo','clb':'mir','pc':'flo',
-      'pir':'geo','ton':'geo','ded':'geo','mus':'geo','msj':'geo','mra':'geo','dun':'mir','lvi':'sup','bi':'casa','val':'pue'}
+      'pir':'geo','ton':'geo','ded':'geo','mus':'geo','msj':'geo','mra':'geo','tra':'mir','dun':'mir','lvi':'sup','bi':'casa','val':'pue'}
 SHORT={'cho':('Chorrillos','l'),'mbc':('Bahía Cisne','l'),'est':('Estuario','l'),'mhu':('Mirador Huasco','l'),'cb':('Carrizal Bajo','r'),
  'pb':('Playa Blanca','l'),'pdf':('PN Desierto Florido','r'),'lag':('Canto del Agua','r'),'paj':('Pajaritos','r'),'tot':('Oasis Totoral','r'),
  'ct':('Caleta Totoral','l'),'hc':('Hacienda Castilla','r'),'bs':('Bahía Salada','r'),'bar':('Barranquilla','r'),'toy':('Los Toyos','l'),
- 'fre':('Freirina','r'),'fc':('Costa de Freirina','r'),'clb':('Caleta Los Bronces','l'),'pir':('Pirámides de sal','r'),'ton':('Granito Orbicular','r'),'ded':('Los Dedos, fósiles','l'),'mus':('Museo Paleontológico','r'),'msj':('Mina San José','r'),'mra':('Museo Regional','l'),'dun':('Dunas del Bramador','r'),'lvi':('Playa La Virgen · SUP','l'),'bi':('Cabaña','r'),'val':('Vallenar','r')}
+ 'fre':('Freirina','r'),'fc':('Costa de Freirina','r'),'clb':('Caleta Los Bronces','l'),'pir':('Pirámides de sal','r'),'ton':('Granito Orbicular','r'),'ded':('Los Dedos, fósiles','l'),'mus':('Museo Paleontológico','r'),'msj':('Mina San José','r'),'mra':('Museo Regional','l'),'tra':('Travesía','r'),'dun':('Dunas del Bramador','r'),'lvi':('Playa La Virgen · SUP','l'),'bi':('Cabaña','r'),'val':('Vallenar','r')}
 def shape(kind):
     if kind=='mir': return '<path d="M0,-11 L10,7 L-10,7 Z"/>'
     if kind=='geo': return '<path d="M0,-11 L10,0 L0,11 L-10,0 Z"/>'
