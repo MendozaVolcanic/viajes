@@ -104,6 +104,9 @@ body.no-obs .obsl{display:none}
 .chk{display:flex;align-items:center;gap:6px;font-weight:600;font-size:14px;cursor:pointer}
 .chk input{width:20px;height:20px}
 .see{font:600 13px "Public Sans",sans-serif;border:1.5px solid var(--line);background:var(--panel);color:var(--ink);padding:4px 10px;border-radius:999px;cursor:pointer}
+.offline{margin:18px 0 0;padding:14px 16px;border:1.5px dashed var(--line);border-radius:6px;background:var(--panel);font-size:14.5px}
+.offline p{margin:4px 0 10px;color:var(--muted);max-width:70ch}
+#off-st{font-size:13.5px;color:var(--muted);margin-left:8px}
 .phs{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(150px,100%),1fr));gap:8px;margin-top:10px;max-width:520px}
 .phs .ph{margin:0;max-width:none}
 .gal{background:var(--panel);border:1px solid var(--line)}
@@ -161,6 +164,11 @@ li p{margin:2px 0 0;font-size:15px;color:var(--muted);max-width:60ch}
     <li><b>Ruta costera C-10:</b> pavimentada de Caldera a Huasco; los accesos a caletas pueden ser de ripio</li>
     <li><b>Llanos de Challe:</b> cierra los lunes</li>
   </ul>
+  <div class="offline" id="offline" hidden>
+    <b>Para usarla sin señal</b>
+    <p>Con señal, toca el botón: guarda esta página, el mapa y todas las fotos en el celular. Después abre siempre este mismo enlace en el mismo navegador, aunque no haya señal. Lo que marques en la guía queda guardado en el celular y no se pierde al cerrar.</p>
+    <button type="button" class="zoom-btn" id="btn-off">Guardar para usar sin señal</button> <span id="off-st"></span>
+  </div>
   <div class="tw"><table class="sum">
     <thead><tr><th>Día</th><th class="n">Km</th><th class="n">Horas de manejo</th><th class="n">Km de ripio</th><th class="n">Termina</th></tr></thead>
     <tbody>%%SUM%%</tbody>
@@ -269,6 +277,25 @@ li p{margin:2px 0 0;font-size:15px;color:var(--muted);max-width:60ch}
   }
   document.getElementById('open-fs').addEventListener('click',openFs);
   mapSvg.addEventListener('click',openFs);
+  // uso sin señal: service worker solo en el sitio publicado
+  (function(){
+    if(!('serviceWorker' in navigator) || location.protocol!=='https:' || !/github\.io$/.test(location.hostname)) return;
+    var box=document.getElementById('offline'); if(!box) return; box.hidden=false;
+    var st=document.getElementById('off-st');
+    navigator.serviceWorker.register('sw-df.js').catch(function(){ st.textContent='Este navegador no permite guardar la página.'; });
+    navigator.serviceWorker.addEventListener('message',function(e){
+      if(e.data&&e.data.type==='precached'){ st.textContent='Listo: '+e.data.ok+' de '+e.data.total+' archivos guardados. Ya puedes usarla sin señal.'; try{localStorage.setItem('df26-off','1')}catch(x){} }
+    });
+    try{ if(localStorage.getItem('df26-off')==='1') st.textContent='Ya guardada en este celular. Vuelve a tocar si actualizaste la página.'; }catch(x){}
+    document.getElementById('btn-off').addEventListener('click',async function(){
+      st.textContent='Guardando…';
+      var urls=[].slice.call(document.querySelectorAll('img')).map(function(i){return i.currentSrc||i.src}).filter(function(u){return /^https?:/.test(u)});
+      var css=[].slice.call(document.querySelectorAll('link[rel=stylesheet]')).map(function(l){return l.href});
+      for(var k=0;k<css.length;k++){ urls.push(css[k]); try{ var tx=await (await fetch(css[k])).text(); (tx.match(/url\((https:[^)]+)\)/g)||[]).forEach(function(m){urls.push(m.slice(4,-1))}); }catch(x){} }
+      var reg=await navigator.serviceWorker.ready; reg.active.postMessage({type:'precache',urls:urls});
+    });
+  })();
+
   document.getElementById('ly-obs')?.addEventListener('change',function(e){document.body.classList.toggle('no-obs',!e.target.checked)});
   function store(k,v){try{ if(v===undefined) return localStorage.getItem(k); localStorage.setItem(k,v);}catch(e){return null}}
   function recount(){var n=document.querySelectorAll('.sp input:checked').length; var c=document.getElementById('cnt'); if(c) c.textContent=n;}

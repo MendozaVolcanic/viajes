@@ -55,6 +55,7 @@ S={
  'msj':('Mina San José, memorial de los 33',-27.1568,-70.4984),
  'tra':('Travesía, punto oficial de información',-27.5418,-70.4426),
  'pcx':('Pampa Caracoles',-26.956,-70.718),
+ 'llv':('Llanos al norte de Vallenar, ruta 5',-28.4006,-70.7173),
  'mra':('Museo Regional de Atacama',-27.3625,-70.3421),
  'dun':('Dunas del cerro Bramador',-27.3167,-70.4200),
  'mus':('Museo Paleontológico de Caldera',-27.0649,-70.8234),
@@ -68,6 +69,7 @@ DAYS=[
  dict(id='vie',tag='Viernes 9',title='La Serena a Bahía Inglesa',col='--d1',start='14:00',
   stops=[('ls',0,'Salida por la ruta 5 al norte.'),
          ('val',20,'Bencina. Entre Vallenar y el cruce a Llanos de Challe el satélite marca algunos de los llanos más verdes de la zona, a los dos lados de la ruta 5: si ves un manto, para en una berma ancha.'),
+         ('llv',20,'Pasando Vallenar, la ruta 5 cruza los llanos que el satélite marca entre los más verdes de la zona, y iNaturalist tiene 43 registros a unos 5 km de aquí. Para en una berma ancha o en un acceso de tierra, con balizas, y mira los mantos con la luz de la tarde.'),
          ('bi',0,'Llegada a la cabaña, ya de noche.')]),
  dict(id='sab',tag='Sábado 10',title='SUP, sandboard en las dunas, Parque Nacional Desierto Florido y atardecer',col='--d2',start='07:30',
   stops=[('bi',60,'SUP en Bahía Inglesa a primera hora, cuando el agua está quieta y todavía no sube el viento.'),
@@ -352,11 +354,11 @@ base=[]
 KIND={'cho':'mir','mbc':'mir','est':'mir','mhu':'mir','cb':'mir',
       'pb':'par','pdf':'par','lag':'par',
       'paj':'flo','tot':'flo','ct':'flo','hc':'flo','bs':'flo','bar':'flo','toy':'flo','fre':'flo','fc':'flo','clb':'mir','pc':'flo',
-      'pir':'geo','ton':'geo','ded':'geo','mus':'geo','msj':'geo','mra':'geo','tra':'mir','pcx':'flo','dun':'mir','lvi':'sup','bi':'casa','val':'pue'}
+      'pir':'geo','ton':'geo','ded':'geo','mus':'geo','msj':'geo','mra':'geo','tra':'mir','pcx':'flo','llv':'flo','dun':'mir','lvi':'sup','bi':'casa','val':'pue'}
 SHORT={'cho':('Chorrillos','l'),'mbc':('Bahía Cisne','l'),'est':('Estuario','l'),'mhu':('Mirador Huasco','l'),'cb':('Carrizal Bajo','r'),
  'pb':('Playa Blanca','l'),'pdf':('PN Desierto Florido','r'),'lag':('Canto del Agua','r'),'paj':('Pajaritos','r'),'tot':('Oasis Totoral','r'),
  'ct':('Caleta Totoral','l'),'hc':('Hacienda Castilla','r'),'bs':('Bahía Salada','r'),'bar':('Barranquilla','r'),'toy':('Los Toyos','l'),
- 'fre':('Freirina','r'),'fc':('Costa de Freirina','r'),'clb':('Caleta Los Bronces','l'),'pir':('Pirámides de sal','r'),'ton':('Granito Orbicular','r'),'ded':('Los Dedos, fósiles','l'),'mus':('Museo Paleontológico','r'),'msj':('Mina San José','r'),'mra':('Museo Regional','l'),'tra':('Travesía','r'),'pcx':('Pampa Caracoles','r'),'dun':('Dunas del Bramador','r'),'lvi':('Playa La Virgen · SUP','l'),'bi':('Cabaña','r'),'val':('Vallenar','r')}
+ 'fre':('Freirina','r'),'fc':('Costa de Freirina','r'),'clb':('Caleta Los Bronces','l'),'pir':('Pirámides de sal','r'),'ton':('Granito Orbicular','r'),'ded':('Los Dedos, fósiles','l'),'mus':('Museo Paleontológico','r'),'msj':('Mina San José','r'),'mra':('Museo Regional','l'),'tra':('Travesía','r'),'pcx':('Pampa Caracoles','r'),'llv':('Llanos de Vallenar','r'),'dun':('Dunas del Bramador','r'),'lvi':('Playa La Virgen · SUP','l'),'bi':('Cabaña','r'),'val':('Vallenar','r')}
 def shape(kind):
     if kind=='mir': return '<path d="M0,-11 L10,7 L-10,7 Z"/>'
     if kind=='geo': return '<path d="M0,-11 L10,0 L0,11 L-10,0 Z"/>'
