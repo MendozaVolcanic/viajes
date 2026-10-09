@@ -55,7 +55,7 @@ S={
  'msj':('Mina San José, memorial de los 33',-27.1568,-70.4984),
  'tra':('Travesía, punto oficial de información',-27.5418,-70.4426),
  'pcx':('Pampa Caracoles',-26.956,-70.718),
- 'llv':('Llanos al norte de Vallenar, ruta 5',-28.4006,-70.7173),
+ 'llv':('Punta de Marañón: llanos y vía del tren',-28.4276,-70.7192),
  'mra':('Museo Regional de Atacama',-27.3625,-70.3421),
  'dun':('Dunas del cerro Bramador',-27.3167,-70.4200),
  'mus':('Museo Paleontológico de Caldera',-27.0649,-70.8234),
@@ -69,7 +69,7 @@ DAYS=[
  dict(id='vie',tag='Viernes 9',title='La Serena a Bahía Inglesa',col='--d1',start='14:00',
   stops=[('ls',0,'Salida por la ruta 5 al norte.'),
          ('val',20,'Bencina. Entre Vallenar y el cruce a Llanos de Challe el satélite marca algunos de los llanos más verdes de la zona, a los dos lados de la ruta 5: si ves un manto, para en una berma ancha.'),
-         ('llv',20,'Pasando Vallenar, la ruta 5 cruza los llanos que el satélite marca entre los más verdes de la zona, y iNaturalist tiene 43 registros a unos 5 km de aquí. Para en una berma ancha o en un acceso de tierra, con balizas, y mira los mantos con la luz de la tarde.'),
+         ('llv',30,'Sector Marañón, el del video viral del tren de carga entre mantos de pata de guanaco (prensa, 26 de septiembre). La vía corre a 1 km al este de la ruta 5 (línea negra punteada en el mapa). El tren no tiene horario: si quieren intentarlo, esperen unos 20 a 30 minutos en un camino lateral, nunca sobre la vía. Aunque no pase, el satélite marca estos llanos entre los más verdes de la zona.'),
          ('bi',0,'Llegada a la cabaña, ya de noche.')]),
  dict(id='sab',tag='Sábado 10',title='SUP, sandboard en las dunas, Parque Nacional Desierto Florido y atardecer',col='--d2',start='07:30',
   stops=[('bi',60,'SUP en Bahía Inglesa a primera hora, cuando el agua está quieta y todavía no sube el viento.'),
@@ -351,6 +351,10 @@ for e in d:
     if not any(LAT0-.1<a<LAT1+.1 and LON0-.1<b<LON1+.1 for a,b in g): continue
     roads.append(('r5' if k=='5' else 'rc', path(g,eps=0.8)))
 road_svg=''.join(f'<path class="{c}" d="{p}"/>' for c,p in roads)
+try:
+    _rl=json.load(open('rail.json',encoding='utf-8'))['elements']
+    road_svg+='<g class="rail">'+''.join(f'<path d="{path([(p["lat"],p["lon"]) for p in e["geometry"]],eps=0.6)}"/>' for e in _rl if e.get('geometry'))+'</g>'
+except Exception: pass
 base=[]
 KIND={'cho':'mir','mbc':'mir','est':'mir','mhu':'mir','cb':'mir',
       'pb':'par','pdf':'par','lag':'par',
@@ -359,7 +363,7 @@ KIND={'cho':'mir','mbc':'mir','est':'mir','mhu':'mir','cb':'mir',
 SHORT={'cho':('Chorrillos','l'),'mbc':('Bahía Cisne','l'),'est':('Estuario','l'),'mhu':('Mirador Huasco','l'),'cb':('Carrizal Bajo','r'),
  'pb':('Playa Blanca','l'),'pdf':('PN Desierto Florido','r'),'lag':('Canto del Agua','r'),'paj':('Pajaritos','r'),'tot':('Oasis Totoral','r'),
  'ct':('Caleta Totoral','l'),'hc':('Hacienda Castilla','r'),'bs':('Bahía Salada','r'),'bar':('Barranquilla','r'),'toy':('Los Toyos','l'),
- 'fre':('Freirina','r'),'ls':('La Serena','r'),'fc':('Costa de Freirina','r'),'clb':('Caleta Los Bronces','l'),'pir':('Pirámides de sal','r'),'ton':('Granito Orbicular','r'),'ded':('Los Dedos, fósiles','l'),'mus':('Museo Paleontológico','r'),'msj':('Mina San José','r'),'mra':('Museo Regional','l'),'tra':('Travesía','r'),'pcx':('Pampa Caracoles','r'),'llv':('Llanos de Vallenar','r'),'dun':('Dunas del Bramador','r'),'lvi':('Playa La Virgen · SUP','l'),'bi':('Cabaña','r'),'val':('Vallenar','r')}
+ 'fre':('Freirina','r'),'ls':('La Serena','r'),'fc':('Costa de Freirina','r'),'clb':('Caleta Los Bronces','l'),'pir':('Pirámides de sal','r'),'ton':('Granito Orbicular','r'),'ded':('Los Dedos, fósiles','l'),'mus':('Museo Paleontológico','r'),'msj':('Mina San José','r'),'mra':('Museo Regional','l'),'tra':('Travesía','r'),'pcx':('Pampa Caracoles','r'),'llv':('Marañón, tren','r'),'dun':('Dunas del Bramador','r'),'lvi':('Playa La Virgen · SUP','l'),'bi':('Cabaña','r'),'val':('Vallenar','r')}
 def shape(kind):
     if kind=='mir': return '<path d="M0,-11 L10,7 L-10,7 Z"/>'
     if kind=='geo': return '<path d="M0,-11 L10,0 L0,11 L-10,0 Z"/>'
