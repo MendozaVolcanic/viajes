@@ -38,7 +38,7 @@ def composite(rng, maxcc):
         print('  ok', used[-1], flush=True)
     return best, used
 
-rec, ur = composite('2026-09-20/2026-10-06', 40)
+rec, ur = composite('2026-09-20/2026-10-09', 60)
 base, ub = composite('2026-03-01/2026-03-25', 5)
 np.save('ndvi_rec.npy', rec); np.save('ndvi_base.npy', base)
 json.dump({'reciente': ur, 'base': ub, 'grid': [LON0, LON1, LAT0, LAT1, RES]}, open('ndvi_meta.json', 'w'))
