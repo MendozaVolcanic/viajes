@@ -3,7 +3,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 UA={'User-Agent':'viajes-nicolas/1.0'}
 d=json.load(open('osm.json',encoding='utf-8'))['elements']
 chains=json.load(open('coast_chains.json'))
-LAT0,LAT1,LON0,LON1=-28.72,-26.84,-71.36,-70.36
+LAT0,LAT1,LON0,LON1=-29.98,-26.84,-71.40,-70.36
 K=math.cos(math.radians(-27.8)); W=1000
 H=round(W*(LAT1-LAT0)/((LON1-LON0)*K))
 def P(lat,lon): return ((lon-LON0)/(LON1-LON0)*W, (LAT1-lat)/(LAT1-LAT0)*H)
@@ -336,7 +336,8 @@ for e in json.load(open('prot.json',encoding='utf-8'))['elements']:
     if kind=='pn':
         x,y=P(la,lo); prot_lab.append(f'<text class="plab" x="{x:.1f}" y="{y+(34 if 'Challe' in short else 0):.1f}" text-anchor="middle">{html.escape(short)}</text>')
 verde=base64.b64encode(open('verde.png','rb').read()).decode()
-green_svg=f'<image class="verde" href="data:image/png;base64,{verde}" x="0" y="0" width="{W}" height="{H}" preserveAspectRatio="none"/>'
+_ng=json.load(open('ndvi_meta.json'))['grid']; _ga=P(_ng[3],_ng[0]); _gb=P(_ng[2],_ng[1])
+green_svg=f'<image class="verde" href="data:image/png;base64,{verde}" x="{_ga[0]:.1f}" y="{_ga[1]:.1f}" width="{_gb[0]-_ga[0]:.1f}" height="{_gb[1]-_ga[1]:.1f}" preserveAspectRatio="none"/>'
 
 # base map
 main=[p for p in chains[0] if LAT0-0.3<p[0]<LAT1+0.3]
@@ -354,11 +355,11 @@ base=[]
 KIND={'cho':'mir','mbc':'mir','est':'mir','mhu':'mir','cb':'mir',
       'pb':'par','pdf':'par','lag':'par',
       'paj':'flo','tot':'flo','ct':'flo','hc':'flo','bs':'flo','bar':'flo','toy':'flo','fre':'flo','fc':'flo','clb':'mir','pc':'flo',
-      'pir':'geo','ton':'geo','ded':'geo','mus':'geo','msj':'geo','mra':'geo','tra':'mir','pcx':'flo','llv':'flo','dun':'mir','lvi':'sup','bi':'casa','val':'pue'}
+      'pir':'geo','ton':'geo','ded':'geo','mus':'geo','msj':'geo','mra':'geo','tra':'mir','pcx':'flo','llv':'flo','dun':'mir','lvi':'sup','bi':'casa','ls':'casa','val':'pue'}
 SHORT={'cho':('Chorrillos','l'),'mbc':('Bahía Cisne','l'),'est':('Estuario','l'),'mhu':('Mirador Huasco','l'),'cb':('Carrizal Bajo','r'),
  'pb':('Playa Blanca','l'),'pdf':('PN Desierto Florido','r'),'lag':('Canto del Agua','r'),'paj':('Pajaritos','r'),'tot':('Oasis Totoral','r'),
  'ct':('Caleta Totoral','l'),'hc':('Hacienda Castilla','r'),'bs':('Bahía Salada','r'),'bar':('Barranquilla','r'),'toy':('Los Toyos','l'),
- 'fre':('Freirina','r'),'fc':('Costa de Freirina','r'),'clb':('Caleta Los Bronces','l'),'pir':('Pirámides de sal','r'),'ton':('Granito Orbicular','r'),'ded':('Los Dedos, fósiles','l'),'mus':('Museo Paleontológico','r'),'msj':('Mina San José','r'),'mra':('Museo Regional','l'),'tra':('Travesía','r'),'pcx':('Pampa Caracoles','r'),'llv':('Llanos de Vallenar','r'),'dun':('Dunas del Bramador','r'),'lvi':('Playa La Virgen · SUP','l'),'bi':('Cabaña','r'),'val':('Vallenar','r')}
+ 'fre':('Freirina','r'),'ls':('La Serena','r'),'fc':('Costa de Freirina','r'),'clb':('Caleta Los Bronces','l'),'pir':('Pirámides de sal','r'),'ton':('Granito Orbicular','r'),'ded':('Los Dedos, fósiles','l'),'mus':('Museo Paleontológico','r'),'msj':('Mina San José','r'),'mra':('Museo Regional','l'),'tra':('Travesía','r'),'pcx':('Pampa Caracoles','r'),'llv':('Llanos de Vallenar','r'),'dun':('Dunas del Bramador','r'),'lvi':('Playa La Virgen · SUP','l'),'bi':('Cabaña','r'),'val':('Vallenar','r')}
 def shape(kind):
     if kind=='mir': return '<path d="M0,-11 L10,7 L-10,7 Z"/>'
     if kind=='geo': return '<path d="M0,-11 L10,0 L0,11 L-10,0 Z"/>'
@@ -378,8 +379,7 @@ lab=[]
 for tx,la,lo,a in labels:
     x,y=P(la,lo); anchor={'r':'start','l':'end','c':'middle'}[a]; dx={'r':11,'l':-11,'c':0}[a]
     lab.append(f'<text class="{"sea" if a=="c" else "town"}" x="{x+dx:.1f}" y="{y+5:.1f}" text-anchor="{anchor}">{tx}</text>')
-xb,yb=P(LAT0,-70.95)
-lab.append(f'<text class="town" x="{xb:.1f}" y="{yb-12:.1f}" text-anchor="middle">↓ a La Serena, 190 km</text>')
+
 km_px=W/((LON1-LON0)*111.32*K); sx,sy=40,H-40
 scale=f'<g class="scale"><line x1="{sx}" y1="{sy}" x2="{sx+50*km_px:.1f}" y2="{sy}"/><line x1="{sx}" y1="{sy-5}" x2="{sx}" y2="{sy+5}"/><line x1="{sx+50*km_px:.1f}" y1="{sy-5}" x2="{sx+50*km_px:.1f}" y2="{sy+5}"/><text x="{sx}" y="{sy-10}">50 km</text></g>'
 svg=(f'<svg viewBox="0 0 {W} {H}" data-bbox="{LON0},{LON1},{LAT0},{LAT1}" role="img" aria-label="Mapa del itinerario por Atacama, de Bahía Inglesa a Huasco, con las rutas de cada día">'
