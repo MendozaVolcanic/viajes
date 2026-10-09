@@ -3,7 +3,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 UA={'User-Agent':'viajes-nicolas/1.0'}
 d=json.load(open('osm.json',encoding='utf-8'))['elements']
 chains=json.load(open('coast_chains.json'))
-LAT0,LAT1,LON0,LON1=-29.98,-26.84,-71.40,-70.36
+LAT0,LAT1,LON0,LON1=-28.72,-26.84,-71.36,-70.36
 K=math.cos(math.radians(-27.8)); W=1000
 H=round(W*(LAT1-LAT0)/((LON1-LON0)*K))
 def P(lat,lon): return ((lon-LON0)/(LON1-LON0)*W, (LAT1-lat)/(LAT1-LAT0)*H)
@@ -384,6 +384,8 @@ for tx,la,lo,a in labels:
     x,y=P(la,lo); anchor={'r':'start','l':'end','c':'middle'}[a]; dx={'r':11,'l':-11,'c':0}[a]
     lab.append(f'<text class="{"sea" if a=="c" else "town"}" x="{x+dx:.1f}" y="{y+5:.1f}" text-anchor="{anchor}">{tx}</text>')
 
+xb,yb=P(LAT0,-70.95)
+lab.append(f'<text class="town" x="{xb:.1f}" y="{yb-12:.1f}" text-anchor="middle">↓ a La Serena, 190 km</text>')
 km_px=W/((LON1-LON0)*111.32*K); sx,sy=40,H-40
 scale=f'<g class="scale"><line x1="{sx}" y1="{sy}" x2="{sx+50*km_px:.1f}" y2="{sy}"/><line x1="{sx}" y1="{sy-5}" x2="{sx}" y2="{sy+5}"/><line x1="{sx+50*km_px:.1f}" y1="{sy-5}" x2="{sx+50*km_px:.1f}" y2="{sy+5}"/><text x="{sx}" y="{sy-10}">50 km</text></g>'
 svg=(f'<svg viewBox="0 0 {W} {H}" data-bbox="{LON0},{LON1},{LAT0},{LAT1}" role="img" aria-label="Mapa del itinerario por Atacama, de Bahía Inglesa a Huasco, con las rutas de cada día">'
