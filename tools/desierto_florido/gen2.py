@@ -382,7 +382,7 @@ xb,yb=P(LAT0,-70.95)
 lab.append(f'<text class="town" x="{xb:.1f}" y="{yb-12:.1f}" text-anchor="middle">↓ a La Serena, 190 km</text>')
 km_px=W/((LON1-LON0)*111.32*K); sx,sy=40,H-40
 scale=f'<g class="scale"><line x1="{sx}" y1="{sy}" x2="{sx+50*km_px:.1f}" y2="{sy}"/><line x1="{sx}" y1="{sy-5}" x2="{sx}" y2="{sy+5}"/><line x1="{sx+50*km_px:.1f}" y1="{sy-5}" x2="{sx+50*km_px:.1f}" y2="{sy+5}"/><text x="{sx}" y="{sy-10}">50 km</text></g>'
-svg=(f'<svg viewBox="0 0 {W} {H}" role="img" aria-label="Mapa del itinerario por Atacama, de Bahía Inglesa a Huasco, con las rutas de cada día">'
+svg=(f'<svg viewBox="0 0 {W} {H}" data-bbox="{LON0},{LON1},{LAT0},{LAT1}" role="img" aria-label="Mapa del itinerario por Atacama, de Bahía Inglesa a Huasco, con las rutas de cada día">'
  f'<rect class="sea-bg" width="{W}" height="{H}"/><path class="land" d="{land}"/>'+''.join(f'<path class="land" d="{p}"/>' for p in isl)
  +green_svg+'<g class="prots">'+''.join(prot_svg)+'</g>'+f'<g>{road_svg}</g><g>{"".join(routes_svg)}</g><g>{"".join(prot_lab)}</g><g>{"".join(lab)}</g><g>{"".join(base)}</g>{"".join(numbered)}{scale}</svg>')
 sumrows=''.join(f'<tr><td>{a}</td><td class="n">{b:.0f}</td><td class="n">{c/60:.1f}</td><td class="n">{(e if e>=1.5 else 0):.0f}</td><td class="n">{f}</td></tr>' for a,b,c,e,f in summary)
@@ -396,7 +396,17 @@ _LG='<g>'+''.join(lab)+'</g>'
 if OBS_SVG: svg=svg.replace(_LG,OBS_SVG+_LG,1)
 btns=''.join(f'<button type="button" class="dbtn" data-day="{dd["id"]}" style="--c:var({dd["col"]})" aria-pressed="false">{dd["tag"]}</button>' for dd in DAYS)
 tpl=open('tpl2.html',encoding='utf-8').read()
-out=tpl.replace('%%HOT%%',HOT).replace('%%GUIA%%',GUIA).replace('%%PALEO%%',paleo_html()).replace('%%FLORES%%',flores_html()).replace('%%SVG%%',svg).replace('%%DAYS%%','\n'.join(cards)).replace('%%BTNS%%',btns).replace('%%SUM%%',sumrows)
+_STOPS=[[S[k][0],S[k][1],S[k][2]] for k in sorted(_used) if S[k][1]>LAT0-0.5]
+if IMGS:
+    import xml.sax.saxutils as _x
+    _g=['<?xml version="1.0" encoding="UTF-8"?>','<gpx version="1.1" creator="viajes-nicolas" xmlns="http://www.topografix.com/GPX/1/1">']
+    for n,la,lo in _STOPS: _g.append(f'<wpt lat="{la}" lon="{lo}"><name>{_x.escape(n)}</name></wpt>')
+    for _d in DAYS:
+        _r=json.load(open(f"osrm_{_d['id']}.json"))
+        _g.append(f'<trk><name>{_x.escape(_d["tag"]+": "+_d["title"])}</name><trkseg>'+''.join(f'<trkpt lat="{la:.5f}" lon="{lo:.5f}"/>' for lo,la in _r['geometry']['coordinates'][::2])+'</trkseg></trk>')
+    _g.append('</gpx>')
+    open('desierto-florido-2026.gpx','w',encoding='utf-8').write('\n'.join(_g))
+out=tpl.replace('%%STOPS%%',json.dumps(_STOPS,ensure_ascii=False)).replace('%%HOT%%',HOT).replace('%%GUIA%%',GUIA).replace('%%PALEO%%',paleo_html()).replace('%%FLORES%%',flores_html()).replace('%%SVG%%',svg).replace('%%DAYS%%','\n'.join(cards)).replace('%%BTNS%%',btns).replace('%%SUM%%',sumrows)
 open('desierto-florido-fotos.html' if IMGS else 'desierto-florido-mapa.html','w',encoding='utf-8').write(out)
 if IMGS:
     open('desierto-florido-2026.html','w',encoding='utf-8').write('<!DOCTYPE html>\n<html lang="es-CL">\n<head>\n<meta charset="utf-8">\n<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">\n'+out+'\n</html>\n')

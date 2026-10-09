@@ -107,6 +107,9 @@ body.no-obs .obsl{display:none}
 .offline{margin:18px 0 0;padding:14px 16px;border:1.5px dashed var(--line);border-radius:6px;background:var(--panel);font-size:14.5px}
 .offline p{margin:4px 0 10px;color:var(--muted);max-width:70ch}
 #off-st{font-size:13.5px;color:var(--muted);margin-left:8px}
+.me{fill:#1E6FD9;stroke:#fff;stroke-width:3}
+.me-halo{fill:rgba(30,111,217,.18);stroke:none}
+#geo-st{color:var(--ink);font-size:14px}
 .phs{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(150px,100%),1fr));gap:8px;margin-top:10px;max-width:520px}
 .phs .ph{margin:0;max-width:none}
 .gal{background:var(--panel);border:1px solid var(--line)}
@@ -185,6 +188,8 @@ li p{margin:2px 0 0;font-size:15px;color:var(--muted);max-width:60ch}
         <label><input type="checkbox" id="ly-verde" checked> Reverdecimiento satelital</label>
         <label><input type="checkbox" id="ly-prot" checked> Parques y santuarios</label>
         <label><input type="checkbox" id="ly-obs" checked> Plantas registradas 2026</label>
+        <button type="button" class="zoom-btn" id="btn-geo">Mostrar mi ubicación</button>
+        <a class="zoom-btn" href="desierto-florido-2026.gpx" download style="text-decoration:none">Descargar GPX</a>
       </div>
       <div class="lgd">
         <span class="lg"><svg width="28" height="18" viewBox="0 0 28 18" aria-hidden="true"><circle cx="14" cy="9" r="6.5" fill="#C2457F" stroke="currentColor" stroke-width="1.8"/></svg>Flores</span>
@@ -198,6 +203,7 @@ li p{margin:2px 0 0;font-size:15px;color:var(--muted);max-width:60ch}
         <span class="lg"><svg width="28" height="18" viewBox="0 0 28 18" aria-hidden="true"><line x1="2" y1="9" x2="26" y2="9" stroke="currentColor" stroke-width="4" stroke-linecap="round"/></svg>Pavimento</span>
         <span class="lg"><svg width="28" height="18" viewBox="0 0 28 18" aria-hidden="true"><line x1="3" y1="9" x2="26" y2="9" stroke="currentColor" stroke-width="4.5" stroke-linecap="round" stroke-dasharray="1 6"/></svg>Ripio, tierra o huella</span>
       </div>
+      <p class="hint" id="geo-st"></p>
       <p class="hint">Elige un día arriba para ver sus paradas numeradas.</p>
       <figcaption>El verde es la diferencia de NDVI de Sentinel-2 entre fines de septiembre y marzo de 2026, en estación seca: más oscuro, más reverdeció. Marca vegetación nueva, no flores abiertas. La franja pegada al mar queda sin dato por la máscara de costa. Límites de parques y santuarios: OpenStreetMap. Rutas calculadas por camino con OSRM sobre OpenStreetMap; el tipo de calzada sale de las etiquetas de OpenStreetMap, que pueden estar desactualizadas. Los tiempos de manejo son del ruteador y en ripio suelen ser optimistas.</figcaption>
     </figure>
@@ -277,6 +283,41 @@ li p{margin:2px 0 0;font-size:15px;color:var(--muted);max-width:60ch}
   }
   document.getElementById('open-fs').addEventListener('click',openFs);
   mapSvg.addEventListener('click',openFs);
+  // mi ubicación: funciona sin señal (usa el GPS), solo en el sitio publicado con https
+  (function(){
+    var btn=document.getElementById('btn-geo'), st=document.getElementById('geo-st'); if(!btn) return;
+    var STOPS=%%STOPS%%;
+    var bb=mapSvg.dataset.bbox.split(',').map(Number), VBm=mapSvg.getAttribute('viewBox').split(' ').map(Number);
+    function xy(la,lo){return [(lo-bb[0])/(bb[1]-bb[0])*VBm[2],(bb[3]-la)/(bb[3]-bb[2])*VBm[3]]}
+    function ll(x,y){return [bb[3]-y/VBm[3]*(bb[3]-bb[2]), bb[0]+x/VBm[2]*(bb[1]-bb[0])]}
+    function km(a,b,c,d){var k=Math.cos(a*Math.PI/180);return Math.hypot((a-c)*111.2,(b-d)*111.2*k)}
+    var obsLL=null, watch=null;
+    function draw(la,lo,acc){
+      var p=xy(la,lo);
+      document.querySelectorAll('svg[data-bbox], .daymap svg, #fs svg').forEach(function(sv){
+        var g=sv.querySelector('g.meg'); if(!g){g=document.createElementNS('http://www.w3.org/2000/svg','g');g.setAttribute('class','meg');sv.appendChild(g);}
+        g.innerHTML='<circle class="me-halo" cx="'+p[0]+'" cy="'+p[1]+'" r="18"/><circle class="me" cx="'+p[0]+'" cy="'+p[1]+'" r="8"><title>Estás aquí</title></circle>';
+      });
+      var best=STOPS.map(function(s){return [km(la,lo,s[1],s[2]),s[0]]}).sort(function(a,b){return a[0]-b[0]});
+      if(!obsLL) obsLL=[].slice.call(mapSvg.querySelectorAll('.obs')).map(function(c){return ll(+c.getAttribute('cx'),+c.getAttribute('cy')).concat([c.dataset.t])});
+      var cerca=obsLL.filter(function(o){return km(la,lo,o[0],o[1])<2});
+      var names={}; document.querySelectorAll('.sp').forEach(function(a){names[a.dataset.t]=a.querySelector('h3').childNodes[0].textContent.trim()});
+      var sp={}; cerca.forEach(function(o){ if(names[o[2]]) sp[names[o[2]]]=(sp[names[o[2]]]||0)+1 });
+      var top=Object.keys(sp).sort(function(a,b){return sp[b]-sp[a]}).slice(0,4);
+      st.textContent='Parada más cercana: '+best[0][1]+', a '+best[0][0].toFixed(1)+' km. Luego: '+best[1][1]+' ('+best[1][0].toFixed(1)+' km). '
+        +(cerca.length?('Registros de flores a menos de 2 km: '+cerca.length+(top.length?' ('+top.join(', ')+')':'')+'.'):'No hay registros de flores a menos de 2 km.')
+        +(la<bb[2]||la>bb[3]||lo<bb[0]||lo>bb[1]?' Estás fuera del mapa.':'')+(acc>200?' Precisión baja: '+Math.round(acc)+' m.':'');
+    }
+    btn.addEventListener('click',function(){
+      if(!('geolocation' in navigator)){st.textContent='Este navegador no permite ver la ubicación.';return;}
+      if(watch!==null){navigator.geolocation.clearWatch(watch);watch=null;btn.textContent='Mostrar mi ubicación';st.textContent='';document.querySelectorAll('g.meg').forEach(function(g){g.remove()});return;}
+      st.textContent='Buscando tu ubicación…'; btn.textContent='Dejar de mostrar';
+      watch=navigator.geolocation.watchPosition(function(p){draw(p.coords.latitude,p.coords.longitude,p.coords.accuracy)},
+        function(e){st.textContent='No pude obtener la ubicación: '+(e.code===1?'falta dar permiso en el navegador.':'sin señal de GPS por ahora.');},
+        {enableHighAccuracy:true,maximumAge:30000,timeout:30000});
+    });
+  })();
+
   // uso sin señal: service worker solo en el sitio publicado
   (function(){
     if(!('serviceWorker' in navigator) || location.protocol!=='https:' || !/github\.io$/.test(location.hostname)) return;
