@@ -69,7 +69,7 @@ DAYS=[
  dict(id='vie',tag='Viernes 9',title='La Serena a Bahía Inglesa',col='--d1',start='14:00',
   stops=[('ls',0,'Salida por la ruta 5 al norte.'),
          ('val',20,'Bencina. Entre Vallenar y el cruce a Llanos de Challe el satélite marca algunos de los llanos más verdes de la zona, a los dos lados de la ruta 5: si ves un manto, para en una berma ancha.'),
-         ('llv',30,'Sector Marañón, el del video viral del tren de carga entre mantos de pata de guanaco (prensa, 26 de septiembre). La vía corre a 1 km al este de la ruta 5 (línea negra punteada en el mapa). El tren no tiene horario: si quieren intentarlo, esperen unos 20 a 30 minutos en un camino lateral, nunca sobre la vía. Aunque no pase, el satélite marca estos llanos entre los más verdes de la zona.'),
+         ('llv',50,'Sector Marañón, el del video viral del tren de carga entre mantos de pata de guanaco (prensa, 26 de septiembre). La vía corre a 1 km al este de la ruta 5 (línea negra punteada en el mapa). Es el tren de mineral de Ferronor entre la mina Los Colorados y el puerto de Huasco. No publica horario; según el volumen de la mina, estimo un tren cada 1 a 1,5 horas (cálculo propio, no dato oficial): esperen 45 a 60 minutos en un camino lateral, nunca sobre la vía. Los cargados van hacia el sur. Aunque no pase, el satélite marca estos llanos entre los más verdes de la zona.'),
          ('bi',0,'Llegada a la cabaña, ya de noche.')]),
  dict(id='sab',tag='Sábado 10',title='SUP, sandboard en las dunas, Parque Nacional Desierto Florido y atardecer',col='--d2',start='07:30',
   stops=[('bi',60,'SUP en Bahía Inglesa a primera hora, cuando el agua está quieta y todavía no sube el viento.'),
