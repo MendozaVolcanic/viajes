@@ -312,7 +312,7 @@ li p{margin:2px 0 0;font-size:15px;color:var(--muted);max-width:60ch}
       var names={}; document.querySelectorAll('.sp').forEach(function(a){names[a.dataset.t]=a.querySelector('h3').childNodes[0].textContent.trim()});
       var sp={}; cerca.forEach(function(o){ if(names[o[2]]) sp[names[o[2]]]=(sp[names[o[2]]]||0)+1 });
       var top=Object.keys(sp).sort(function(a,b){return sp[b]-sp[a]}).slice(0,4);
-      st.textContent='Parada más cercana: '+best[0][1]+', a '+best[0][0].toFixed(1)+' km. Luego: '+best[1][1]+' ('+best[1][0].toFixed(1)+' km). '
+      st.textContent='Parada más cercana: '+best[0][1]+', a '+best[0][0].toFixed(1).replace('.',',')+' km. Luego: '+best[1][1]+' ('+best[1][0].toFixed(1).replace('.',',')+' km). '
         +(cerca.length?('Registros de flores a menos de 2 km: '+cerca.length+(top.length?' ('+top.join(', ')+')':'')+'.'):'No hay registros de flores a menos de 2 km.')
         +(la<bb[2]||la>bb[3]||lo<bb[0]||lo>bb[1]?' Estás fuera del mapa.':'')+(acc>200?' Precisión baja: '+Math.round(acc)+' m.':'');
     }
