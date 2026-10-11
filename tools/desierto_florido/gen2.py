@@ -337,6 +337,30 @@ verde=base64.b64encode(open('verde.png','rb').read()).decode()
 _ng=json.load(open('ndvi_meta.json'))['grid']; _ga=P(_ng[3],_ng[0]); _gb=P(_ng[2],_ng[1])
 green_svg=f'<image class="verde" href="data:image/png;base64,{verde}" x="{_ga[0]:.1f}" y="{_ga[1]:.1f}" width="{_gb[0]-_ga[0]:.1f}" height="{_gb[1]-_ga[1]:.1f}" preserveAspectRatio="none"/>'
 
+
+# etiquetas con el número de cada ruta
+_REFS=['5','C-10','C-302','C-46','C-480','C-416','C-414','C-432','C-440','C-382','C-370','C-390','C-449','C-316','C-470','C-358']
+_hw=json.load(open('hw.json',encoding='utf-8'))['elements']
+_byref={}
+for e in _hw+[x for x in d if x.get('geometry')]:
+    t=e.get('tags',{}); r=(t.get('ref') or '').split(';')[0]
+    if r not in _REFS or not e.get('geometry'): continue
+    for p in e['geometry']:
+        _byref.setdefault(r,[]).append(P(p['lat'],p['lon']))
+_placed=[]; _rl=[]
+for r in _REFS:
+    pts=_byref.get(r,[])
+    if not pts: continue
+    gap=380 if r=='5' else 260
+    for x,y in pts[::7]:
+        if not (15<x<W-15 and 15<y<H-15): continue
+        if any(abs(x-a)<gap and abs(y-b)<gap for a,b,rr in _placed if rr==r): continue
+        if any(abs(x-a)<40 and abs(y-b)<22 for a,b,rr in _placed): continue
+        _placed.append((x,y,r))
+        lab_t='Ruta 5' if r=='5' else r; w=8.2*len(lab_t)+10
+        cls='rlab r5l' if r=='5' else 'rlab'
+        _rl.append(f'<g class="{cls}" transform="translate({x:.1f},{y:.1f})"><rect x="{-w/2:.1f}" y="-10" width="{w:.1f}" height="20" rx="4"/><text y="5" text-anchor="middle">{lab_t}</text></g>')
+ROADLAB='<g class="rlabs">'+''.join(_rl)+'</g>'
 # base map
 main=[p for p in chains[0] if LAT0-0.3<p[0]<LAT1+0.3]
 land=path(main+[(LAT0-0.3,LON1+0.5),(LAT1+0.3,LON1+0.5)],close=True)
@@ -397,6 +421,7 @@ for _d in DAYS:
 _used={s for dd in DAYS for s,_,_ in dd['stops']}
 GUIA,OBS_SVG,HOT=_g.build(S,_used,P,_route) if IMGS else ('','','')
 _LG='<g>'+''.join(lab)+'</g>'
+svg=svg.replace(_LG,ROADLAB+_LG,1)
 if OBS_SVG: svg=svg.replace(_LG,OBS_SVG+_LG,1)
 btns=''.join(f'<button type="button" class="dbtn" data-day="{dd["id"]}" style="--c:var({dd["col"]})" aria-pressed="false">{dd["tag"]}</button>' for dd in DAYS)
 tpl=open('tpl2.html',encoding='utf-8').read()
