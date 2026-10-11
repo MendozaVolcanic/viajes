@@ -53,6 +53,8 @@ h1{font-size:clamp(30px,5vw,48px);font-weight:800;letter-spacing:-.02em;line-hei
 .route{fill:none;stroke-width:4.5;stroke-linecap:round;stroke-linejoin:round;opacity:.92;transition:opacity .2s}
 .route.rip{stroke-dasharray:2 7;stroke-width:5}
 .route.dim{opacity:.1}
+.arw{stroke:var(--panel);stroke-width:1.2}
+.arw.dim{opacity:.1}
 .mk path,.mk rect,.mk circle{stroke:var(--ink);stroke-width:2.4}
 .mk .in{stroke:var(--panel);stroke-width:2.4}
 .k-mir path{fill:#FFFFFF} .k-flo circle{fill:#C2457F} .k-par rect{fill:#3E8A5B} .k-geo path{fill:#D08A1E} .k-sup circle{fill:#2E7FA8} .k-casa path{fill:var(--ink)} .k-pue circle{fill:var(--panel)}
@@ -255,6 +257,7 @@ li p{margin:2px 0 0;font-size:15px;color:var(--muted);max-width:60ch}
   function show(day){
     btns.forEach(function(b){b.setAttribute('aria-pressed', b.dataset.day===day?'true':'false')});
     document.querySelectorAll('.route').forEach(function(r){r.classList.toggle('dim', !!day && r.dataset.day!==day)});
+    document.querySelectorAll('.arw').forEach(function(r){r.classList.toggle('dim', !!day && r.dataset.day!==day)});
     document.querySelectorAll('.mk').forEach(function(m){m.classList.toggle('dim', !!day && m.dataset.days.split(' ').indexOf(day)<0)});
     document.querySelectorAll('.num').forEach(function(g){g.classList.toggle('on', g.dataset.day===day)});
   }
@@ -360,6 +363,24 @@ li p{margin:2px 0 0;font-size:15px;color:var(--muted);max-width:60ch}
     mapSvg.scrollIntoView({behavior:'smooth',block:'center'});
   });});
 
+
+  // flechas de sentido sobre cada ruta
+  (function(){
+    var NS='http://www.w3.org/2000/svg', g=document.createElementNS(NS,'g'); g.setAttribute('class','arrows');
+    mapSvg.querySelectorAll('.route').forEach(function(p){
+      var L=0; try{L=p.getTotalLength()}catch(e){} if(!L||L<40) return;
+      var col=p.style.stroke, step=110;
+      for(var s=step/2;s<L;s+=step){
+        var a=p.getPointAtLength(s), b=p.getPointAtLength(Math.min(L,s+2)), ang=Math.atan2(b.y-a.y,b.x-a.x)*180/Math.PI;
+        var t=document.createElementNS(NS,'path'); t.setAttribute('d','M-6,-5 L6,0 L-6,5 Z');
+        t.setAttribute('transform','translate('+a.x.toFixed(1)+','+a.y.toFixed(1)+') rotate('+ang.toFixed(0)+')');
+        t.setAttribute('class','arw'); t.setAttribute('data-day',p.dataset.day); t.style.fill=col; g.appendChild(t);
+      }
+    });
+    var mk=mapSvg.querySelector('g.marks')||null;
+    var routesG=mapSvg.querySelector('.route') ? mapSvg.querySelector('.route').parentNode : mapSvg;
+    routesG.parentNode.insertBefore(g, routesG.nextSibling);
+  })();
   // mapa chico por día: copia del mapa general encuadrado en la ruta de ese día
   function bboxOf(els){
     var x0=1e9,y0=1e9,x1=-1e9,y1=-1e9;
@@ -383,7 +404,7 @@ li p{margin:2px 0 0;font-size:15px;color:var(--muted);max-width:60ch}
     w*=1.25; h*=1.25;
     var sv=mapSvg.cloneNode(true);
     sv.setAttribute('viewBox',[cx-w/2,cy-h/2,w,h].map(function(v){return v.toFixed(1)}).join(' '));
-    sv.querySelectorAll('.route').forEach(function(r){ if(r.dataset.day!==id) r.classList.add('dim'); });
+    sv.querySelectorAll('.route,.arw').forEach(function(r){ if(r.dataset.day!==id) r.classList.add('dim'); });
     sv.querySelectorAll('.num').forEach(function(g){ g.classList.toggle('on', g.dataset.day===id); });
     sv.querySelectorAll('.mk').forEach(function(m){ if((m.dataset.days||'').split(' ').indexOf(id)<0) m.classList.add('dim'); });
     sv.querySelectorAll('.scale').forEach(function(s){ s.remove(); });
