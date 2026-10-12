@@ -60,6 +60,8 @@ S={
  'dun':('Dunas del cerro Bramador',-27.3167,-70.4200),
  'mus':('Museo Paleontológico de Caldera',-27.0649,-70.8234),
  'clb':('Caleta Los Bronces',-28.6561,-71.2887),
+ 'fc1':('Costa de Freirina, primer sector (C-480)',-28.576,-71.224),
+ 'fc2':('Costa de Freirina, sector sur (C-480)',-28.593,-71.277),
  'fre':('Freirina',-28.509,-71.079),
  'toy':('Los Toyos, costa de Huasco',-28.382,-71.182),
  'mhu':('Mirador Huasco',-28.4607,-71.2238),
@@ -88,15 +90,12 @@ DAYS=[
          ('pb',150,'Parque nacional, cerrado los lunes. Camina el sendero Centenario hasta el mirador sobre Playa Blanca. Compra la entrada ya en pasesparques.cl (el portal de CONAF desde 2024): abre de martes a domingo de 9:00 a 18:00 y es fin de semana largo. Su administrador dijo que el peak partía el 3 y 4 de octubre.'),
          ('lag',40,'Oasis de limoneros y naranjos sobre la C-432, con ruinas de 1820 y un cementerio antiguo. Los fines de semana la comunidad vende jugos, empanadas y caldillo de gallina, de 8:00 a 17:00 según la prensa de 2025. Llegas cerca de las 15:00, con los puestos abiertos. Según el satélite, el foco más verde de toda la zona está a pocos kilómetros de aquí.'),
          ('bi',0,'Vuelta por la C-432 y la ruta 5, pavimentadas, con luz de día. Carga bencina en Copiapó si te queda menos de medio estanque.')]),
- dict(id='lun',tag='Lunes 12',title='Costa hasta Huasco, costa de Freirina y vuelta',col='--d4',start='08:00',
-  stops=[('bi',0,'Salida por la C-302 al sur, por la costa.'),
-         ('est',10,'Mirador sobre la desembocadura del río Copiapó.'),
-         ('bar',10,'Llanos costeros por la C-10.'),
-         ('bs',15,'Andeshandbook recomienda los llanos interiores entre Caldera y Bahía Salada.'),
-         ('toy',20,'Costa de Huasco, punto oficial de información.'),
-         ('mhu',45,'Mirador sobre el puerto y almuerzo en Huasco.'),
-         ('fc',45,'La C-480 baja por la costa de Freirina, una de las zonas que más reverdeció según el satélite, y Vialidad la dio por habilitada. Sector oficial de Sernatur.'),
-         ('clb',20,'Caleta Los Bronces, fin de la costa. De aquí vuelves por la C-480 y la C-46 a Vallenar.'),
+ dict(id='lun',tag='Lunes 12',title='Ruta 5, Huasco y costa de Freirina, y vuelta a La Serena',col='--d4',start='08:00',
+  stops=[('bi',0,'Salida por la ruta 5 al sur. Hoy no se repite la costa de ayer.'),
+         ('val',15,'Bencina en Vallenar. Toma la C-46 hacia Huasco.'),
+         ('mhu',60,'Mirador sobre el puerto y el faro, y almuerzo en Huasco. En los alrededores hay 51 registros de plantas de 44 especies este año: suspiros, cactus, huilli, violeta.'),
+         ('fc1',30,'La C-480 sale de Huasco al sur por la costa de Freirina, sector oficial de Sernatur y del Gobierno Regional, donde se lanzó la temporada. Toda esta costa suma 229 registros de 108 especies en iNaturalist: terciopelo, lirio del campo, oreja de zorro, azulillo, copao. Camino lento: vayan parando donde vean mantos.'),
+         ('fc2',30,'Sector sur, cerca de Caleta Los Bronces: otro foco de registros (34) y de verde en el satélite. Desde aquí se vuelve por la C-480 y la C-46.'),
          ('ls',0,'Llegada a La Serena. El vuelo es el martes 13.')]),
 ]
 
@@ -380,12 +379,12 @@ except Exception: pass
 base=[]
 KIND={'cho':'mir','mbc':'mir','est':'mir','mhu':'mir','cb':'mir',
       'pb':'par','pdf':'par','lag':'par',
-      'paj':'flo','tot':'flo','ct':'flo','hc':'flo','bs':'flo','bar':'flo','toy':'flo','fre':'flo','fc':'flo','clb':'mir','pc':'flo',
+      'paj':'flo','tot':'flo','ct':'flo','hc':'flo','bs':'flo','bar':'flo','toy':'flo','fre':'flo','fc':'flo','clb':'mir','fc1':'flo','fc2':'flo','pc':'flo',
       'pir':'geo','ton':'geo','ded':'geo','mus':'geo','msj':'geo','mra':'geo','tra':'mir','pcx':'flo','llv':'flo','dun':'mir','lvi':'sup','bi':'casa','ls':'casa','val':'pue'}
 SHORT={'cho':('Chorrillos','l'),'mbc':('Bahía Cisne','l'),'est':('Estuario','l'),'mhu':('Mirador Huasco','l'),'cb':('Carrizal Bajo','r'),
  'pb':('Playa Blanca','l'),'pdf':('PN Desierto Florido','r'),'lag':('Canto del Agua','r'),'paj':('Pajaritos','r'),'tot':('Oasis Totoral','r'),
  'ct':('Caleta Totoral','l'),'hc':('Hacienda Castilla','r'),'bs':('Bahía Salada','r'),'bar':('Barranquilla','r'),'toy':('Los Toyos','l'),
- 'fre':('Freirina','r'),'ls':('La Serena','r'),'fc':('Costa de Freirina','r'),'clb':('Caleta Los Bronces','l'),'pir':('Pirámides de sal','r'),'ton':('Granito Orbicular','r'),'ded':('Los Dedos, fósiles','l'),'mus':('Museo Paleontológico','r'),'msj':('Mina San José','r'),'mra':('Museo Regional','l'),'tra':('Travesía','r'),'pcx':('Pampa Caracoles','r'),'llv':('Marañón, tren','r'),'dun':('Dunas del Bramador','r'),'lvi':('Playa La Virgen · SUP','l'),'bi':('Cabaña','r'),'val':('Vallenar','r')}
+ 'fre':('Freirina','r'),'ls':('La Serena','r'),'fc':('Costa de Freirina','r'),'clb':('Caleta Los Bronces','l'),'fc1':('Costa de Freirina','r'),'fc2':('Freirina sur','l'),'pir':('Pirámides de sal','r'),'ton':('Granito Orbicular','r'),'ded':('Los Dedos, fósiles','l'),'mus':('Museo Paleontológico','r'),'msj':('Mina San José','r'),'mra':('Museo Regional','l'),'tra':('Travesía','r'),'pcx':('Pampa Caracoles','r'),'llv':('Marañón, tren','r'),'dun':('Dunas del Bramador','r'),'lvi':('Playa La Virgen · SUP','l'),'bi':('Cabaña','r'),'val':('Vallenar','r')}
 def shape(kind):
     if kind=='mir': return '<path d="M0,-11 L10,7 L-10,7 Z"/>'
     if kind=='geo': return '<path d="M0,-11 L10,0 L0,11 L-10,0 Z"/>'
